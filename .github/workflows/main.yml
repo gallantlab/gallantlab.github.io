@@ -7,11 +7,7 @@ jobs:
     steps:
     - name: Check out
       uses: actions/checkout@v3
-    - name: Set permissions
-      run: sudo chown -R $(whoami) .
-    - name: Build and Deploy Nikola as super user
-      run: |
-        sudo -s <<EOF
-        docker run --rm -v ${PWD}:/src -v ${HOME}/.gitconfig:/root/.gitconfig getnikola/nikola-action@v4
-        EOF
-
+    - name: Build and Deploy Nikola
+      uses: getnikola/nikola-action@v8
+      with:
+        dry_run: false
