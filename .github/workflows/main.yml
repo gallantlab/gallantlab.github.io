@@ -7,6 +7,8 @@ jobs:
     steps:
     - name: Check out
       uses: actions/checkout@v3
+    - name: Set permissions
+      run: sudo chown -R $(whoami) .
     - name: Build and Deploy Nikola
       uses: getnikola/nikola-action@v4
       with:
