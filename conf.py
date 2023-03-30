@@ -15,7 +15,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Jack L. Gallant"  # (translatable)
-BLOG_TITLE = "GallantLab@UCBerkeley"  # (translatable)
+BLOG_TITLE = "GallantLab"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://gallantlab.org/"
@@ -23,7 +23,7 @@ SITE_URL = "https://gallantlab.org/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://gallantlab.org/"
 BLOG_EMAIL = "gallant@berkeley.edu"
-BLOG_DESCRIPTION = "Prof. Jack Gallant's Cognitive, Systems and Computational Neuroscience lab at the University of California, Berkeley."  # (translatable)
+BLOG_DESCRIPTION = "@ UCB"  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -145,7 +145,7 @@ NAVIGATION_LINKS = {
 #        ("/rss.xml", "RSS feed"),
 
 # (JLG) THESE ARE OUR SITE PAGES.
-	("", "Home"),
+	("/", "Home"),
 	("/brain_viewers", "BrainViewers"),
 	("/papers", "Papers"),
 	("/people", "People"),
@@ -166,7 +166,7 @@ NAVIGATION_ALT_LINKS = {
 # Name of the theme to use.
 # NOTE: FLATLY COMBINED WITH BOOSTRAP4 USING FOLLOWING COMMAND IN NIKOLA:
 # nikola subtheme -n custom_theme -s flatly -p bootstrap4
-THEME = "bootstrap3"
+THEME = "hyde"
 
 # A theme color. In default themes, it might be displayed by some browsers as
 # the browser UI color (eg. Chrome on Android). Other themes might also use it

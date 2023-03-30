@@ -60,5 +60,5 @@
       and modeling.
 
   * - .. image:: /images/people/Jen.Holmberg.jpg
-\    - :strong:`Jen Holmberg`, Neuroscience graduate student. Areas of interest include brain
+    - :strong:`Jen Holmberg`, Neuroscience graduate student. Areas of interest include brain
       mechanisms mediating the psychedelic experience.

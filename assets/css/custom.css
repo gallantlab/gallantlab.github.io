@@ -1,0 +1,7 @@
+.image-left {
+  float: left;
+  width: 25% !important;
+  max-width: 25% !important;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
