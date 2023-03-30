@@ -23,7 +23,7 @@ SITE_URL = "https://gallantlab.org/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://gallantlab.org/"
 BLOG_EMAIL = "gallant@berkeley.edu"
-BLOG_DESCRIPTION = "@ UCB"  # (translatable)
+BLOG_DESCRIPTION = "The web home of the Gallant CogNeuro lab at UC Berkeley"  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -166,7 +166,7 @@ NAVIGATION_ALT_LINKS = {
 # Name of the theme to use.
 # NOTE: FLATLY COMBINED WITH BOOSTRAP4 USING FOLLOWING COMMAND IN NIKOLA:
 # nikola subtheme -n custom_theme -s flatly -p bootstrap4
-THEME = "hyde"
+THEME = "bootstrap4"
 
 # A theme color. In default themes, it might be displayed by some browsers as
 # the browser UI color (eg. Chrome on Android). Other themes might also use it
@@ -257,7 +257,7 @@ PAGES = (
     ("pages/*.html", "", "page.tmpl"),
 )
 
-# ADDED AS ADVISED IN NON-BLOG INSTRUCTIONS HERE:
+# (JLG) ADDED AS ADVISED IN NON-BLOG INSTRUCTIONS HERE:
 # https://getnikola.com/creating-a-site-not-a-blog-with-nikola.html
 INDEX_PATH = "blog"
 
@@ -307,6 +307,9 @@ TIMEZONE = "America/Los_Angeles"
 # Default is:
 # FILES_FOLDERS = {'files': ''}
 # Which means copy 'files' into 'output'
+
+# (JLG) ADDED TO MAKE SURE THAT NIKOLA READS THE CUSTOM CSS FILE
+FILES_FOLDERS = {'assets': 'assets'}
 
 # One or more folders containing code listings to be processed and published on
 # the site. The format is a dictionary of {source: relative destination}.
@@ -995,6 +998,7 @@ LICENSE = ""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
+# (JLG) MODIFIED FOR MY PURPOSES
 CONTENT_FOOTER = 'This site was last updated on {date} &copy;          <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         {license}'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
@@ -1279,7 +1283,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # before </head>
 # (translatable)
 # (JLG) CSS TO ALLOW WRAPPING
-EXTRA_HEAD_DATA = '<link rel="stylesheet" type="text/css" href="/assets/css/custom.css">'
+# EXTRA_HEAD_DATA = '<link rel="stylesheet" type="text/css" href="/assets/css/custom.css">'
 
 
 # Google Analytics or whatever else you use. Added to the bottom of <body>
@@ -1429,4 +1433,3 @@ GLOBAL_CONTEXT = {}
 # GLOBAL_CONTEXT as parameter when the template is about to be
 # rendered
 GLOBAL_CONTEXT_FILLER = []
-
