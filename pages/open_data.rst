@@ -10,7 +10,7 @@
 .. list-table:: 
   :header-rows: 0
 
-  * - .. image:: /images/papers/Deniz.F.2023.png
+  * - .. image:: /images/papers/Deniz.F.2023.jpg
     - `This 3T fMRI data set consists of recordings made from participants
       who were listening to or reading narrative stories.
       <https://berkeley.app.box.com/v/Deniz-et-al-2019>`_ 
@@ -20,7 +20,7 @@
       context, Deniz et al., J. Neuroscience, 2023
       <https://www.biorxiv.org/content/10.1101/2021.12.15.472839.full.pdf>`_).
 
-  * - .. image:: /images/papers/Huth.A.2016.png
+  * - .. image:: /images/papers/Huth.A.2016.jpg
     - `This 3T fMRI data set consists of recordings made from participants
       who were listening to narrative stories, or who were watching a collection
       of short video clips.

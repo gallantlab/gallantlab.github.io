@@ -10,7 +10,7 @@
 .. list-table:: 
   :header-rows: 0
 
-  * - .. image:: /images/people/Regression.Jack.png
+  * - .. image:: /images/people/Regression.Jack.jpg
     - :strong:`Jack Gallant`, PhD. Head of lab.
 
   * - .. image:: /images/people/Matteo.ViscontidOC.jpg
@@ -18,7 +18,7 @@
       include individual differences, clinical applications of functional imaging,
       and fMRI methods development.
 
-  * - .. image:: /images/people/Tom.DuprelaTour.png
+  * - .. image:: /images/people/Tom.DuprelaTour.jpg
     - :strong:`Tom Dupre la Tour`, PhD. Postdoc. Areas of interest include algorithms for
       brain data processing, and applications of data science to improve fMRI.
 

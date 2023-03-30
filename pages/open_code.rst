@@ -10,7 +10,7 @@
 .. list-table:: 
   :header-rows: 0
 
-  * - .. image:: /images/other/pycortex.png
+  * - .. image:: /images/other/pycortex.jpg
     - `Pycortex interactive brain viewer. 
       <https://github.com/gallantlab/pycortex>`_
       Pycortex is a python-based toolkit for surface visualization
@@ -21,7 +21,7 @@
       `here. 
       <https://www.frontiersin.org/articles/10.3389/fninf.2015.00023/full>`_
 
-  * - .. image:: /images/other/cottoncandy.png
+  * - .. image:: /images/other/cottoncandy.jpg
     - `CottonCandy, syntactic sugar for S3. 
       <https://github.com/gallantlab/cottoncandy>`_
       A scientific library for storing and accessing numpy array 
@@ -33,7 +33,7 @@
       `2018. 
       <https://joss.theoj.org/papers/10.21105/joss.00890.pdf>`_
 
-  * - .. image:: /images/other/himalaya.png
+  * - .. image:: /images/other/himalaya.jpg
     - `Himalaya linear(ized) modeling package. 
       <https://github.com/gallantlab/himalaya>`_
       Himalaya implements machine learning linear(ized) models in

@@ -28,7 +28,7 @@ Recent news
 .. list-table:: 
   :header-rows: 0
 
-  * - .. image:: /images/papers/Deniz.F.2023.png
+  * - .. image:: /images/papers/Deniz.F.2023.jpg
     - **January 2023:** 
       Our new paper on the importance of naturalistic stimuli is out!
       `Semantic representations during language production are affected by
@@ -45,7 +45,7 @@ Recent news
       findings from studies using out-of-context stimuli may not generalize 
       to natural language used in daily life.
 
-  * - .. image:: /images/papers/DuprelaTour.T.2022.png
+  * - .. image:: /images/papers/DuprelaTour.T.2022.jpg
     - **December 2022:**
       Our new paper presenting the Himalaya framework for banded ridge
       regression is out!
@@ -69,7 +69,7 @@ Recent news
       position in the lab while the studies are prepared for publication.
       Congratulations Christine!
 
-  * - .. image:: /images/papers/Popham.S.2021.png
+  * - .. image:: /images/papers/Popham.S.2021.jpg
     - **October 2021:**
       Our new paper on the relationship between the visual semantic
       network and the amodal distributed conceptual network is out

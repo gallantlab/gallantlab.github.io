@@ -10,7 +10,7 @@
 .. list-table:: 
   :header-rows: 0
 
-  * - .. image:: /images/papers/Deniz.F.2023.png
+  * - .. image:: /images/papers/Deniz.F.2023.jpg
     - `Semantic representations during language production are affected by
       context 
       (Deniz et al., J. Neuroscience, 2023
@@ -25,7 +25,7 @@
       These results suggest that findings from studies using out-of-context 
       stimuli may not generalize to natural language used in daily life.
 
-  * - .. image:: /images/papers/DuprelaTour.T.2022.png
+  * - .. image:: /images/papers/DuprelaTour.T.2022.jpg
     - `Feature-space selection with banded ridge regression 
       (Dupre la Tour et al., Neuroimage, 2022
       <https://www.sciencedirect.com/science/article/pii/S1053811922008497>`_).
@@ -38,7 +38,7 @@
       implementations are released in an open-source Python package called 
       Himalaya. 
 
-  * - .. image:: /images/papers/Popham.S.2021.png
+  * - .. image:: /images/papers/Popham.S.2021.jpg
     - `Visual and linguistic semantic representations are aligned at the
       border of human visual cortex
       (Popham et al., Nature Neuroscience, 2021
@@ -69,7 +69,7 @@
       in a low-dimensional state space that reflects task parameters, and that
       attention increases state separation in the task-related subspace.
 
-  * - .. image:: /images/papers/Slivkoff.S.2021.png
+  * - .. image:: /images/papers/Slivkoff.S.2021.jpg
     - `Design of complex neuroscience experiments
       using mixed-integer linear programming
       (Slivkoff and Gallant, Neuron, 2021
@@ -81,7 +81,7 @@
       --such as question answering studies--that aim to manipulat
       and probe many dimensions simultaneously.
 
-  * - .. image:: /images/papers/Deniz.F.2019.png
+  * - .. image:: /images/papers/Deniz.F.2019.jpg
     - `The representation of semantic information across human cerebral cortex
       during listening versus reading is invariant to stimulus modality
       (Deniz et al., J. Neurosci., 2019
@@ -111,7 +111,7 @@
       of large surfaces. The most important dimensions of 3D 
       structure are distance and openness.
 
-  * - .. image:: /images/papers/Huth.A.2016.png
+  * - .. image:: /images/papers/Huth.A.2016.jpg
     - `Natural speech reveals the semantic maps that tile the
       human cerebral cortex
       (Huth et al., Nature, 2016

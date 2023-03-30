@@ -10,7 +10,7 @@
 .. list-table:: 
   :header-rows: 0
 
-  * - .. image:: /images/other/himalaya.png
+  * - .. image:: /images/other/himalaya.jpg
     - `Voxelwise modeling tutorials.
       <https://github.com/gallantlab/voxelwise_tutorials>`_
       Voxelwise modeling is a framework for fitting linear(ized)
