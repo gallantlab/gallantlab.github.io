@@ -7,6 +7,9 @@
 .. description: 
 .. type: text
 
+============================================================
+TEMPORARILY OUT OF SERVICE - PLEASE CHECK BACK IN A FEW DAYS
+============================================================
 
 This page collects public brain viewers that you can use to interact
 with the data and results from many of our published studies. To reach
@@ -23,7 +26,7 @@ you will have the best experience with a computer or a tablet.
       cortex during listening versus reading is invariant to stimulus
       modality
       (Deniz et al., J. Neuroscience, 2019
-      <https://www.gallantlab.org/brainviewer/Deniz2019/>`_).
+      <https://169.229.219.171>`_).
       In this experiment, people listened to and read stories from the 
       Moth Radio Hour while brain activity was recorded. Voxelwise 
       modeling was used to determine how each individual brain location 
