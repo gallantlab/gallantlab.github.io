@@ -16,11 +16,13 @@ and it is hosted on github pages. I expect that the new site will be much easier
 to update and maintain than was the old one. As part of the site redesign, we have
 added two important new pages:
 
-- The `Open Data page <https://gallantlab.org/open_data/index.html>`_ provides
+- The `Open Data page <https://gallantlab.org/open_data/>`_ provides
   direct links to the data sets that we have released to date. We will try to
   maintain canonical links to all our data through this page.
-- The `Open Code page <https://gallantlab.org/open_code/index.html>`_ provides
+- The `Open Code page <https://gallantlab.org/open_code>`_ provides
   direct links to the open code that we have released on github.
+- The `Learn page <https://gallantlab.org/learn>`_ provides direct links to our
+  voxelwise encoding model tutorials and to other teaching resources.
 - Nikola also includes the capacity to host a blog, with provision for jupyter
   notebooks, code and the like. Its
   my hope that the blog will become a great resource for the cognitive neuroscience

@@ -143,13 +143,16 @@ NAVIGATION_LINKS = {
 #        ("/archive.html", "Archive"),
 #        ("/categories/", "Tags"),
 #        ("/rss.xml", "RSS feed"),
-	("/index.html", "Home"),
-	("/brain_viewers/index.html", "BrainViewers"),
-	("/papers/index.html", "Papers"),
-	("/people/index.html", "People"),
-	("/open_data/index.html", "OpenData"),
-	("/open_code/index.html", "OpenCode"),
-	("/blog/index.html", "Blog")
+
+# (JLG) THESE ARE OUR SITE PAGES.
+	("", "Home"),
+	("/brain_viewers", "BrainViewers"),
+	("/papers", "Papers"),
+	("/people", "People"),
+	("/open_data", "OpenData"),
+	("/open_code", "OpenCode"),
+	("/learn", "Learn"),
+	("/blog", "Blog")
     ),
 }
 
