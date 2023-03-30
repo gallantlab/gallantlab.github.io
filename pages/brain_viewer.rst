@@ -20,8 +20,7 @@ you will have the best experience with a computer or a tablet.
 .. list-table:: 
   :header-rows: 0
 
-
-  * - .. image:: /images/other/viewer.Deniz.F.2019.png
+  * - .. image:: /images/other/viewer.Deniz.F.2019.playing
     - `The representation of semantic information across human cerebral
       cortex during listening versus reading is invariant to stimulus
       modality

@@ -166,7 +166,7 @@ NAVIGATION_ALT_LINKS = {
 # Name of the theme to use.
 # NOTE: FLATLY COMBINED WITH BOOSTRAP4 USING FOLLOWING COMMAND IN NIKOLA:
 # nikola subtheme -n custom_theme -s flatly -p bootstrap4
-THEME = "custom"
+THEME = "bootstrap3"
 
 # A theme color. In default themes, it might be displayed by some browsers as
 # the browser UI color (eg. Chrome on Android). Other themes might also use it
@@ -1278,7 +1278,10 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </head>
 # (translatable)
-# EXTRA_HEAD_DATA = ""
+# (JLG) CSS TO ALLOW WRAPPING
+EXTRA_HEAD_DATA = '<link rel="stylesheet" type="text/css" href="/assets/css/custom.css">'
+
+
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
