@@ -7,9 +7,9 @@
 .. description: 
 .. type: text
 
-============================================================
-TEMPORARILY OUT OF SERVICE - PLEASE CHECK BACK IN A FEW DAYS
-============================================================
+===========================================================================
+TEMPORARILY OUT OF SERVICE AS OF 29MAR2023- PLEASE CHECK BACK IN A FEW DAYS
+===========================================================================
 
 This page collects public brain viewers that you can use to interact
 with the data and results from many of our published studies. To reach
@@ -82,7 +82,7 @@ you will have the best experience with a computer or a tablet.
       click on the WordNet tree), you can see how tuning changes under 
       different states of attention.
 
-  * - .. image:: /images/other/viewer.Huth.A.2012.png
+  * - .. image:: /images/other/viewer.Huth.A.2012.jpg
     - `A continuous semantic space describes the representation of
       thousands of object and action categories across the human brain
       (Huth et al., Neuron, 2012
