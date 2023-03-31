@@ -1,5 +1,5 @@
 .. title: OpenCode
-.. slug: open_code
+.. slug: opencode
 .. date: 2023-03-24 23:52:52 UTC-07:00
 .. tags: software, open source, python, fmri
 .. category: neuroscience
