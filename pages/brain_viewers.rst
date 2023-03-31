@@ -7,10 +7,6 @@
 .. description: 
 .. type: text
 
-===========================================================================
-TEMPORARILY OUT OF SERVICE AS OF 29MAR2023- PLEASE CHECK BACK IN A FEW DAYS
-===========================================================================
-
 This page collects public brain viewers that you can use to interact
 with the data and results from many of our published studies. To reach
 the brain viewer for any topic, just click on the highlighted hyperlink.
@@ -26,7 +22,7 @@ you will have the best experience with a computer or a tablet.
       cortex during listening versus reading is invariant to stimulus
       modality
       (Deniz et al., J. Neuroscience, 2019
-      <https://169.229.219.171>`_).
+      <https://gallantlab.org/viewer-deniz-2019/>`_).
       In this experiment, people listened to and read stories from the 
       Moth Radio Hour while brain activity was recorded. Voxelwise 
       modeling was used to determine how each individual brain location 
@@ -40,8 +36,8 @@ you will have the best experience with a computer or a tablet.
   * - .. image:: /images/other/viewer.Lescroart.M.2019.jpg
     - `Human scene-selective areas represent the 3D configuration of
       surfaces
-      (Lescroart et al., Neuron, 2019
-      <https://www.gallantlab.org/brainviewer/Lescroart2018/>`_).
+      (Lescroart et al., Neuron, 2018
+      <https://gallantlab.org/viewer-lescroart-2018//>`_).
       In this experiment people viewed rendered animations depicting 
       objects placed in scenes. The MRI data were analyzed by 
       voxelwise modeling to recover the cortical representation of 
@@ -53,7 +49,7 @@ you will have the best experience with a computer or a tablet.
     - `Natural speech reveals the semantic maps that tile human
       cerebral cortex
       (Huth et al., Nature, 2016
-      <https://www.gallantlab.org/Huth2016/>`_).
+      <https://gallantlab.org/viewer-huth-2016/>`_).
       In this experiment people passively listened to stories from the 
       Moth Radio Hour while brain activity was recorded. Voxelwise 
       modeling was used to determine how each individual brain location 
@@ -69,7 +65,7 @@ you will have the best experience with a computer or a tablet.
     - `Attention during natural vision warps semantic representations
       across the human brain
       (Cukur et al., Nature Neuroscience, 2013
-      <https://gallantlab.org/brainviewer/cukuretal2013/>`_).
+      <https://gallantlab.org/viewer-cukur-2013>`_).
       In this experiment people passively watched movies while monitoring
       for the presence of either “humans” or “vehicles”, and in a neutral
       condition. Voxelwise modeling was used to determine how each brain 
@@ -86,7 +82,7 @@ you will have the best experience with a computer or a tablet.
     - `A continuous semantic space describes the representation of
       thousands of object and action categories across the human brain
       (Huth et al., Neuron, 2012
-      <https://gallantlab.org/brainviewer/huthetal2012/>`_).
+      <https://gallantlab.org/viewer-huth-2012/>`_).
       In this experiment people passively watched movies while brain 
       activity was recorded. Voxelwise modeling was used to determine 
       how each brain location responded to 1785 distinct categories 
