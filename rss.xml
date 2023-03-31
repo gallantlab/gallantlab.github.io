@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GallantLab</title><link>https://gallantlab.org/</link><description>The web home of the Gallant CogNeuro lab at UC Berkeley</description><atom:link href="https://gallantlab.org/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © March 31, 2023 &lt;a href="mailto:gallant@berkeley.edu"&gt;Jack L. Gallant&lt;/a&gt; </copyright><lastBuildDate>Fri, 31 Mar 2023 06:02:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Updated web site</title><link>https://gallantlab.org/blog/updated-web-site/</link><dc:creator>Jack L. Gallant</dc:creator><description>&lt;p&gt;Perhaps you’ve noticed that the Gallant lab web site has not been updated for
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GallantLab@UCB</title><link>https://gallantlab.org/</link><description>The web home of the Gallant CogSysCompNeuro lab at UC Berkeley</description><atom:link href="https://gallantlab.org/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © March 31, 2023 &lt;a href="mailto:gallant@berkeley.edu"&gt;Jack L. Gallant&lt;/a&gt; </copyright><lastBuildDate>Fri, 31 Mar 2023 16:38:38 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Updated web site</title><link>https://gallantlab.org/blog/updated-web-site/</link><dc:creator>Jack L. Gallant</dc:creator><description>&lt;p&gt;Perhaps you’ve noticed that the Gallant lab web site has not been updated for
 the last couple of years. The old site was always unwieldy to manage, and after
 our last system upgrade it became practically impossible. So a complete refactor
 was overdue. The new site is based on the
 &lt;a class="reference external" href="https://getnikola.com"&gt;Nikola static site framework&lt;/a&gt;,
 and it is hosted on github pages. I expect that the new site will be much easier
 to update and maintain than was the old one. As part of the site redesign, we have
-added two important new pages:&lt;/p&gt;
+added three important new pages:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;The &lt;a class="reference external" href="https://gallantlab.org/open_data/"&gt;Open Data page&lt;/a&gt; provides
 direct links to the data sets that we have released to date. We will try to
@@ -16,8 +16,7 @@ direct links to the open code that we have released on github.&lt;/p&gt;&lt;/li&
 &lt;li&gt;&lt;p&gt;The &lt;a class="reference external" href="https://gallantlab.org/learn"&gt;Learn page&lt;/a&gt; provides direct links to our
 voxelwise encoding model tutorials and to other teaching resources.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Nikola also includes the capacity to host a blog, with provision for jupyter
-notebooks, code and the like. Its
-my hope that the blog will become a great resource for the cognitive neuroscience
-community.&lt;/p&gt;&lt;/li&gt;
+notebooks, code and the like. Its my hope that the blog will become a valuable
+resource for the cognitive, systems and computational neuroscience community.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Jack G&lt;/p&gt;</description><guid>https://gallantlab.org/blog/updated-web-site/</guid><pubDate>Tue, 28 Mar 2023 04:26:25 GMT</pubDate></item></channel></rss>
