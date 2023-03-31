@@ -309,7 +309,10 @@ TIMEZONE = "America/Los_Angeles"
 # Which means copy 'files' into 'output'
 
 # (JLG) ADDED TO MAKE SURE THAT NIKOLA READS THE CUSTOM CSS FILE
-FILES_FOLDERS = {'assets': 'assets'}
+FILES_FOLDERS = {
+    'files': '',
+    'assets': 'assets'
+    }
 
 # One or more folders containing code listings to be processed and published on
 # the site. The format is a dictionary of {source: relative destination}.

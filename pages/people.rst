@@ -35,7 +35,7 @@
       computational modeling of neurophysiology data.
 
   * - .. image:: /images/people/Lily.Gong.jpg
-    - :strong:`Lily Gong`, Neuroscience graduate student. Areas of interest includea bilungual
+    - :strong:`Lily Gong`, Neuroscience graduate student. Areas of interest include bilingual
       language processing, and reading.
 
   * - .. image:: /images/people/Catherine.Chen.jpg
