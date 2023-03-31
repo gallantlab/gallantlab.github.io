@@ -46,8 +46,8 @@
     - :strong:`Emily Meschke`, Neuroscience graduate student. Areas of interest include
       development of new methods for recovering and interpreting brain networks.
 
-  * - .. image:: /images/people/Amanda.Lebel.jpg
-    - :strong:`Amanda Lebel`, Neuroscience graduate student. Areas of interest include
+  * - .. image:: /images/people/Amanda.LeBel.jpg
+    - :strong:`Amanda LeBel`, Neuroscience graduate student. Areas of interest include
       functional imaging of the cerebellum, and dyslexia.
 
   * - .. image:: /images/people/Alicia.Zeng.jpg
