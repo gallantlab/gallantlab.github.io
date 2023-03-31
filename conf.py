@@ -15,7 +15,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Jack L. Gallant"  # (translatable)
-BLOG_TITLE = "GallantLab"  # (translatable)
+BLOG_TITLE = "GallantLab@UCB"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://gallantlab.org/"
@@ -23,7 +23,7 @@ SITE_URL = "https://gallantlab.org/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://gallantlab.org/"
 BLOG_EMAIL = "gallant@berkeley.edu"
-BLOG_DESCRIPTION = "The web home of the Gallant CogNeuro lab at UC Berkeley"  # (translatable)
+BLOG_DESCRIPTION = "The web home of the Gallant CogSysCompNeuro lab at UC Berkeley"  # (translatable)
 
 # Nikola is multilingual!
 #
