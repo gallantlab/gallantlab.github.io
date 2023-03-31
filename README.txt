@@ -25,3 +25,20 @@ git push       # Uploads to github
 # works properly. Go into Settings->Pages->Custom Domain
 # and enter gallantlab.org there. To prevent interruption
 # try to do this BEFORE the site finishes building.
+
+# NOTE: Several of the pages herein are dummy pages to do
+# client-side redirection of the old brain viewers to the
+# new github-hosted brain viewers. These pages are as
+# follows (all relative to this directory):
+#  pages/huth2016.rst
+#  pages/pycortex/retinotopy_demo.rst
+#  pages/brainviewer/Deniz2019.rst
+#  pages/brainviewer/Lescroart2018.rst
+#  pages/brainviewer/huthetal2012.rst
+#  pages/brainviewer/sulcigyri.rst
+
+
+
+
+
+

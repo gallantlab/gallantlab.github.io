@@ -138,19 +138,21 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 #          with a ``/``, otherwise end them with ``/index.html`` — or
 #          else they won’t be highlighted when active.
 
-NAVIGATION_LINKS = {
-    DEFAULT_LANG: (
+#NAVIGATION_LINKS = {
+#    DEFAULT_LANG: (
 #        ("/archive.html", "Archive"),
 #        ("/categories/", "Tags"),
 #        ("/rss.xml", "RSS feed"),
 
 # (JLG) THESE ARE OUR SITE PAGES.
+NAVIGATION_LINKS = {
+    DEFAULT_LANG: (
 	("/", "Home"),
-	("/brain_viewers", "BrainViewers"),
+	("/brainviewers", "BrainViewers"),
 	("/papers", "Papers"),
 	("/people", "People"),
-	("/open_data", "OpenData"),
-	("/open_code", "OpenCode"),
+	("/opendata", "OpenData"),
+	("/opencode", "OpenCode"),
 	("/learn", "Learn"),
 	("/blog", "Blog")
     ),
@@ -678,7 +680,17 @@ ATOM_FILENAME_BASE = "feed"
 # relative URL.
 #
 # If you don't need any of these, just set to []
-REDIRECTIONS = []
+REDIRECTION = []
+# (JLG - 30Mar2023) FOR SOME REASON THE REDIRECTION IS NOT WORKING. 
+#  I AM DEALING WITH THIS BY CREATING REDIRECTION PAGES BY HAND.
+# (JLG) REDIRECT ALL VIEWERS TO NEW BRAINVIEWERS PAGE
+#REDIRECTION = [("brainviewer/Deniz2019.html", "/brainviewers.html"),
+#                ("brainviewer/Lescroart2018.html", "/brainviewers.html"),
+#                ("huth2016.html", "brainviewers.html"),
+#                ("brainviewer/cukuretal2013.html", "brainviewers.html"),
+#                ("brainviewer/huthetal2012.html", "brainviewers.html"),
+#                ("brainviewer/sulcigyri.html", "brainviewers.html"),
+#                ("pycortex/retinotopy_demo.html", "brainviewers.html")]
 
 # Presets of commands to execute to deploy. Can be anything, for
 # example, you may use rsync:
