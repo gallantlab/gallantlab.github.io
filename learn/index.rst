@@ -12,7 +12,7 @@
    <div class="container" style="margin-bottom: 20px">
      <div class="row">
        <div class="col-md-3">
-         <img src="/images/other/learnvm.jpg" alt="voxelwise modeling" class="img-fluid">
+         <img src="/images/other/learn.vm.jpg" alt="voxelwise modeling" class="img-fluid">
        </div>
        <div class="col-md-9">
          <a href="https://github.com/gallantlab/voxelwise_tutorials">
