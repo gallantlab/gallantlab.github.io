@@ -15,7 +15,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Jack L. Gallant"  # (translatable)
-BLOG_TITLE = "GallantLab@UCB"  # (translatable)
+BLOG_TITLE = "GallantLab.org"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://gallantlab.org/"

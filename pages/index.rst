@@ -7,12 +7,11 @@
 .. description: 
 .. type: text
 
-This site provides information about ongoing research in our lab, the great
-people who do the work, our open data, and our open source code. The blog
-presents opinions by the PI and lab staff.
-
-If you would like to know more about the general philosophy of the lab,
-please listen to this 
+This site provides information about ongoing research in the Gallant lab
+at UC Berkeley. Here you can find our cool brain viewers, some of our
+published papers, information about the great people who do the work, 
+our open data, open source code, and tutorials. If you would like to know
+more about the general philosophy of the lab, please listen to this 
 `Freakanomics podcast interview with Jack Gallant
 <https://freakonomics.com/podcast/this-is-your-brain-on-podcasts/>`_
 or to these OHBM discussions between Peter Bandettini and Jack Gallant
