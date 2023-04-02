@@ -148,7 +148,7 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
 	("/", "Home"),
-	("/brainviewers", "BrainViewers"),
+	("/brain-viewers", "BrainViewers"),
 	("/papers", "Papers"),
 	("/people", "People"),
 	("/opendata", "OpenData"),

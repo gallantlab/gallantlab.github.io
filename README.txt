@@ -9,6 +9,12 @@
 #  nikola: the nikola site building software
 #  BACKUP.restful.pages.30Mar2023: backup of old stuff
 
+# Remember that you need to be running nikola in your
+# shell in order to build or deploy your site locally.
+# If you are just deploying to github you do not need
+# to do this.
+python3 -m venv nikola
+
 # To get into the working web site directory
 cd gallantlab
 
