@@ -1,5 +1,5 @@
 .. title: BrainViewers
-.. slug: brainviewers
+.. slug: brain-viewers
 .. date: 2023-03-24 23:52:52 UTC-07:00
 .. tags: interactive, demos, pycortex
 .. category: neuroscience
