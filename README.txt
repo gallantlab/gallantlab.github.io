@@ -37,6 +37,10 @@ git push       # Uploads to github
 #  pages/brainviewer/huthetal2012.rst
 #  pages/brainviewer/sulcigyri.rst
 
+# ALSO NOTE: Previously there was a news page, so I
+# also made a dummy news page that redirects to the main
+# page
+#  pages/news.rst
 
 
 
