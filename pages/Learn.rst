@@ -28,3 +28,17 @@
      </div>
    </div>
 
+   <div class="container" style="margin-bottom: 20px">
+     <div class="row">
+       <div class="col-md-3">
+         <img src="/images/other/learn.vm.jpg" alt="voxelwise modeling" class="img-fluid">
+       </div>
+       <div class="col-md-9">
+         At the 2021 OHBM meeting we held a workshop on voxelwise modeling.
+         You can find a video recording of the workshop
+         <a href="https://www.youtube.com/watch?v=jobQmEJpbhY">
+         here</a>.
+       </div>
+     </div>
+   </div>
+
