@@ -7,7 +7,8 @@
 .. description: 
 .. type: text
 
-This site provides information about ongoing research in the Gallant lab
+This site provides information about ongoing research in Jack Gallant's
+cognitive, systems and computational neuroscience lab
 at UC Berkeley. Here you can find our cool brain viewers, some of our
 published papers, information about the great people who do the work, 
 our open data, open source code, and tutorials. If you would like to know
