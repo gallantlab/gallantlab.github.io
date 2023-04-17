@@ -12,11 +12,12 @@
    <div class="container" style="margin-bottom: 20px">
      <div class="row">
        <div class="col-md-3">
-         <img src="/images/other/gitgub.jpg" alt="github" class="img-fluid">
+         <img src="/images/other/github.jpg" alt="github" class="img-fluid">
        </div>
        <div class="col-md-9">
+         Our 
          <a href="https://github.com/gallantlab">
-         Our github repository contains lots of open code that may be useful
+         github repository</a> contains lots of open code that may be useful
          for scientific computing in general, or for fitting encoding models
          to fMRI or neurophysiology data sets.
        </div>
