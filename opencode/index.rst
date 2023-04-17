@@ -12,6 +12,20 @@
    <div class="container" style="margin-bottom: 20px">
      <div class="row">
        <div class="col-md-3">
+         <img src="/images/other/gitgub.jpg" alt="github" class="img-fluid">
+       </div>
+       <div class="col-md-9">
+         <a href="https://github.com/gallantlab">
+         Our github repository contains lots of open code that may be useful
+         for scientific computing in general, or for fitting encoding models
+         to fMRI or neurophysiology data sets.
+       </div>
+     </div>
+   </div>
+
+   <div class="container" style="margin-bottom: 20px">
+     <div class="row">
+       <div class="col-md-3">
          <img src="/images/other/pycortex.jpg" alt="pycortex" class="img-fluid">
        </div>
        <div class="col-md-9">
