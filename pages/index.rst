@@ -27,6 +27,27 @@ Recent news
 
 .. raw:: html
 
+
+
+
+
+   <div class="container" style="margin-bottom: 20px">
+     <div class="row">
+       <div class="col-md-3">
+          <img src="/images/people/Fatma.Deniz.jpg" alt="F. Deniz" class="img-fluid">
+       </div>
+       <div class="col-md-9">
+          Our (former) senior postdoc, Dr. Fatma Deniz, has accepted
+          a tenured full Professor position at the Technical University
+          of Berlin. She began her new position as of April 1, 2024.
+          Congratulations Professor Deniz! We expect great things from you!
+      </div>
+     </div>
+   </div>
+
+
+
+
    <div class="container" style="margin-bottom: 20px">
      <div class="row">
        <div class="col-md-3">
