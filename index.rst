@@ -21,12 +21,32 @@ or to these OHBM discussions between Peter Bandettini and Jack Gallant
 `[discussion 2]
 <https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy80ZDQ2NmIzOC9wb2RjYXN0L3Jzcw/episode/MzNiYjc1MDYtNjJmMi00YTAzLWFhZjYtMDQyYTIzMmE5NWE4?sa=X&ved=0CAUQkfYCahcKEwiw-OLu_vj9AhUAAAAAHQAAAAAQCg>`_.
 
-
-===============
+===========
 Recent news
-===============
+===========
 
 .. raw:: html
+
+
+
+
+
+   <div class="container" style="margin-bottom: 20px">
+     <div class="row">
+       <div class="col-md-3">
+          <img src="/images/people/Fatma.Deniz.jpg" alt="F. Deniz" class="img-fluid">
+       </div>
+       <div class="col-md-9">
+          Our (former) senior postdoc, Dr. Fatma Deniz, has accepted
+          a tenured full Professor position at the Technical University
+          of Berlin. She began her new position as of April 1, 2024.
+          Congratulations Professor Deniz! We expect great things from you!
+      </div>
+     </div>
+   </div>
+
+
+
 
    <div class="container" style="margin-bottom: 20px">
      <div class="row">
