@@ -132,7 +132,7 @@ We created the following two brain viewers for educiational purposes.
           <img src="/images/other/retinotopy.jpg" alt="Retinotopy" class="img-fluid">
        </div>
        <div class="col-md-9">
-          <a href="https://gallantlab.org/retinotopy-anatomy/">
+          <a href="https://gallantlab.org/viewer-retinotopy-demo/">
           Retinotopy viewer.</a>
           The human brain contains many different retinotopic maps, and these maps are
           one of the primary tools used to parcellate the visual system. Given the large
@@ -145,5 +145,3 @@ We created the following two brain viewers for educiational purposes.
      </div>
    </div>
 
-
-      
