@@ -59,7 +59,7 @@ Recent news
        <div class="col-md-9">
           Our (former) senior postdoc, Dr. Fatma Deniz, has accepted
           a tenured full Professor position at the Technical University
-          of Berlin. She began her new position as of April 1, 2024.
+          of Berlin. She began her new position as of April 1, 2023.
           Congratulations Professor Deniz! We expect great things from you!
       </div>
      </div>
