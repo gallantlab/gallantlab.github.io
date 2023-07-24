@@ -27,9 +27,29 @@ Recent news
 
 .. raw:: html
 
-
-
-
+   <div class="container" style="margin-bottom: 20px">
+     <div class="row">
+       <div class="col-md-3">
+         <img src="/images/papers/Gong.X.etal.2023.png" alt="Gong 2023" class="img-fluid">
+       </div>
+       <div class="col-md-9">
+        New paper! 
+        <a href="/papers/Gong.X.etal.2023.pdf">
+        Phonemic segmentation of narrative speech in human cerebral cortex 
+        (Gong et al., Nature Communications, 2023)</a>.
+        Phonemes are a critical intermediate element of speech. This fMRI study
+        identifies the brain representation of single phonemes, and of diphones and
+        triphones. We find that many regions in and around the auditory cortex
+        represent phonemes. These regions include classical areas in the dorsal
+        superior temporal gyrus and a larger region in the lateral temporal cortex
+        (where diphone features appear to be represented). Furthermore, we identify
+        regions where phonemic processing and lexical retrieval are intertwined.
+        (Note: this is work done in collaboration with the
+        <a href="http://theunissen.berkeley.edu/">Theunissen lab</a>
+        here at UCB.)
+       </div>
+     </div>
+   </div>
 
    <div class="container" style="margin-bottom: 20px">
      <div class="row">
@@ -45,15 +65,13 @@ Recent news
      </div>
    </div>
 
-
-
-
    <div class="container" style="margin-bottom: 20px">
      <div class="row">
        <div class="col-md-3">
           <img src="/images/papers/Deniz.F.2023.jpg" alt="Deniz 2023" class="img-fluid">
        </div>
        <div class="col-md-9">
+          New paper! 
           <a href="https://www.biorxiv.org/content/10.1101/2021.12.15.472839.full.pdf">
           Semantic representations during language production are affected by
           context (Deniz et al., J. Neuroscience, 2023).</a>
@@ -76,6 +94,7 @@ Recent news
           <img src="/images/papers/DuprelaTour.T.2022.jpg" alt="Dupre la Tour 2022" class="img-fluid">
        </div>
        <div class="col-md-9">
+          New paper! 
           <a href="https://doi.org/10.1016/j.neuroimage.2022.119728">
           Feature-space selection with banded ridge regression 
           (Dupre la Tour et al., Neuroimage, 2022).</a>
@@ -114,6 +133,7 @@ Recent news
           <img src="/images/papers/Popham.S.2021.jpg" alt="Popham 2021" class="img-fluid">
        </div>
        <div class="col-md-9">
+          New paper!
           <a href="https://www.nature.com/articles/s41593-021-00921-6">
           Visual and linguistic semantic representations are aligned at the 
           border of human visual cortex (Popham et al., Nature Neuroscience, 2021).</a>

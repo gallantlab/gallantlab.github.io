@@ -82,3 +82,30 @@
        </div>
      </div>
    </div>
+
+
+VOXELWISE MODELING TUTORIAL GOES HERE 
+HERE IS THE YOUTUBE TO THE COURSE: 
+https://www.youtube.com/watch?v=jobQmEJpbhY
+
+   <div class="container" style="margin-bottom: 20px">
+     <div class="row">
+       <div class="col-md-3">
+         <img src="/images/other/himalaya.jpg" alt="himalaya" class="img-fluid">
+       </div>
+       <div class="col-md-9">
+         <a href="https://github.com/gallantlab/himalaya">
+         Himalaya</a> implements machine learning linear(ized) models in
+         Python, focusing on computational efficiency for large numbers 
+         of targets. Himalaya efficiently estimates linear(ized) models
+         on large numbers of targets (for example, thousands of voxels in an
+        fMRI experiment), it runs on both CPU and GPU hardware, and it
+         provides estimators that are compatible with scikit-learn's API.
+         Himalaya is routinely used in our lab to fit voxelwise encoding
+         models to very large fMRI data sets. A paper describing Himalaya
+         can be found
+         <a href="https://www.sciencedirect.com/science/article/pii/S1053811922008497">
+         here</a>.
+       </div>
+     </div>
+   </div>
