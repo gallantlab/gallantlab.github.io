@@ -19,10 +19,6 @@
       include individual differences, clinical applications of functional imaging,
       and fMRI methods development.
 
-  * - .. image:: /images/people/Tom.DuprelaTour.jpg
-    - :strong:`Tom Dupre la Tour`, PhD. Postdoc. Areas of interest include algorithms for
-      brain data processing, and applications of data science to improve fMRI.
-
   * - .. image:: /images/people/Tianjiao.Zhang.jpg
     - :strong:`Tianjiao Zhang`, PhD. Postdoc. Areas of interest include studies of the human
       navigation system, and fMRI studies in VR.
