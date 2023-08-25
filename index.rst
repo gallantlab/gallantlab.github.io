@@ -30,6 +30,35 @@ Recent news
    <div class="container" style="margin-bottom: 20px">
      <div class="row">
        <div class="col-md-3">
+         <img src="/images/papers/Meschke.etal.preprint.png" alt="Meschke Biorxiv preprint" class="img-fluid">
+       </div>
+       <div class="col-md-9">
+        New preprint! 
+        <a href="/papers/Meschke.etal.preprint.pdf">
+        Model connectivity: leveraging the power of encoding models to overcome
+        the limitations of functional connectivity
+        (Meschke et al., in review)</a>.
+        Functional connectivity (FC) is the most popular method for recovering
+        functional networks of brain areas with fMRI. However, because FC is
+        defined as temporal correlations in brain activity, FC networks are
+        inevitably confounded by noise and their function cannot be determined
+        directly from FC. To overcome these limitations, we have developed model
+        connectivity (MC). MC is defined as similarities in encoding model weights,
+        which quantify reliable functional activity in terms of interpretable
+        stimulus- or task-related features. In this paper we compare these two
+        methods directly in a language comprehension dataset. We confirm the
+        confounds of FC, and we show that MC does not suffer from these confounds.
+        MC recovers more spatially localized networks and it reveals their
+        functional assignment. MC is powerful tool for recovering the functional
+        networks that support complex cognitive processes.
+       </div>
+     </div>
+   </div>
+
+
+   <div class="container" style="margin-bottom: 20px">
+     <div class="row">
+       <div class="col-md-3">
          <img src="/images/papers/Gong.X.etal.2023.png" alt="Gong 2023" class="img-fluid">
        </div>
        <div class="col-md-9">
