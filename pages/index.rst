@@ -34,7 +34,7 @@ Recent news
        </div>
        <div class="col-md-9">
         New preprint! 
-        <a href="/papers/Meschke.etal.preprint.pdf">
+        <a href="/papers/Meschke.etal.2023preprint.pdf">
         Model connectivity: leveraging the power of encoding models to overcome
         the limitations of functional connectivity
         (Meschke et al., in review)</a>.
