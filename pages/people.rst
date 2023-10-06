@@ -10,7 +10,7 @@
 .. list-table:: 
   :header-rows: 0
 
-  * - .. image:: /images/people/Gallant.Headshot.1.5x1.jpg
+  * - .. image:: /images/people/Regression.Jack.jpg
     - :strong:`Jack Gallant`, PhD. Head of lab. Mailing address: 2121 Berkeley Way West,
       Berkeley CA, 94720-1650. Email: gallant@berkeley.edu.
 
