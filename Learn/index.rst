@@ -1,5 +1,5 @@
-.. title: learn
-.. slug: learn
+.. title: Learn
+.. slug: Learn
 .. date: 2023-03-24 23:52:52 UTC-07:00
 .. tags: 
 .. category: tutorials, training, learning
