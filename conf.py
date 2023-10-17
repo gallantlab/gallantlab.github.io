@@ -154,6 +154,7 @@ NAVIGATION_LINKS = {
 	("/opendata", "OpenData"),
 	("/opencode", "OpenCode"),
 	("/learn", "Learn"),
+    ("/joinus", "JoinUs!"),
 	("/blog", "Blog")
     ),
 }
