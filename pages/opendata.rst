@@ -1,4 +1,4 @@
-﻿.. title: OpenData
+﻿.. title: Open data sets
 .. slug: opendata
 .. date: 2023-03-24 23:52:52 UTC-07:00
 .. tags: data, brain, fmri

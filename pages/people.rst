@@ -1,4 +1,4 @@
-.. title: People
+.. title: Current members of the lab
 .. slug: people
 .. date: 2023-03-24 23:52:52 UTC-07:00
 .. tags: neuroscience, people, graduate, postdoc
