@@ -30,12 +30,16 @@ Jack Gallant directly.
 Potential graduate students:
 ----------------------------
 
-We do not accept graduate students directly into the lab; students must first complete
-a first-year lab rotation supported by an appropriate UC Berkeley graduate program.
-We accept graduate students through the following graduate programs at Berkeley:
+We are always looking for great graduate students. However, we do not accept graduate students
+directly into the lab. Potential graduate students must first be admitted to a UC Berkeley
+graduate program, and then they must complete a first-year rotation in our laboratory. We
+accept graduate students through the following graduate programs at Berkeley: 
 Neuroscience, Bioengineering, Biophysics, Vision Science, and Electrical Engineering and
-Computer Science. Please note that because the Psychology program does not support first-year
-rotations, we do not accept graduate students through that program.
+Computer Science. (Please note that because the Psychology program does not support
+first-year rotations, we do not accept graduate students through that program.) Unfortunately,
+we receive too many inquiries about graduate positions to respond to each one individually.
+However, once you have been accepted into a graduate program at Berkeley, please contact
+Jack Gallant directly and we will be happy to set up a first-year rotation for you.
 
 -----------------------------
 Others interested in the lab:
@@ -44,4 +48,3 @@ Others interested in the lab:
 UC Berkeley undergraduates who are interested in working in the lab should email Jack Gallant
 directly. Due to time and resource constraints, at this time we are not considering research
 requests for undergraduates at other institutions, or from high school students.
-

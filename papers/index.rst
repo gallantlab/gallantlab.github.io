@@ -1,4 +1,4 @@
-.. title: Papers
+.. title: Open publications from the lab
 .. slug: papers
 .. date: 2023-03-24 23:52:52 UTC-07:00
 .. tags: neuroscience, research, publications

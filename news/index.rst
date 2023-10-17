@@ -1,4 +1,4 @@
-.. title: news
+.. title: Recent news
 .. slug: news
 .. date: 2023-03-24 23:52:52 UTC-07:00
 .. tags: 
