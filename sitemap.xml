@@ -7,82 +7,86 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://gallantlab.org/</loc>
-  <lastmod>2023-10-06T07:01:00Z</lastmod>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://gallantlab.org/2023/</loc>
-  <lastmod>2023-10-06T07:01:00Z</lastmod>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://gallantlab.org/Learn/</loc>
-  <lastmod>2023-10-06T07:01:00Z</lastmod>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://gallantlab.org/archive.html</loc>
-  <lastmod>2023-10-06T07:01:00Z</lastmod>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://gallantlab.org/blog/</loc>
-  <lastmod>2023-10-06T07:01:00Z</lastmod>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://gallantlab.org/blog/updated-web-site/</loc>
-  <lastmod>2023-10-06T07:01:00Z</lastmod>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://gallantlab.org/brain-viewers/</loc>
-  <lastmod>2023-10-06T07:01:00Z</lastmod>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://gallantlab.org/brainviewer/Deniz2019/</loc>
-  <lastmod>2023-10-06T07:01:00Z</lastmod>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://gallantlab.org/brainviewer/Lescroart2018/</loc>
-  <lastmod>2023-10-06T07:01:00Z</lastmod>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://gallantlab.org/brainviewer/huthetal2012/</loc>
-  <lastmod>2023-10-06T07:01:00Z</lastmod>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://gallantlab.org/brainviewer/sulcigyri/</loc>
-  <lastmod>2023-10-06T07:01:00Z</lastmod>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://gallantlab.org/categories/</loc>
-  <lastmod>2023-10-06T07:01:00Z</lastmod>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://gallantlab.org/categories/cat_general/</loc>
-  <lastmod>2023-10-06T07:01:00Z</lastmod>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://gallantlab.org/huth2016/</loc>
-  <lastmod>2023-10-06T07:01:00Z</lastmod>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://gallantlab.org/joinus/</loc>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://gallantlab.org/news/</loc>
-  <lastmod>2023-10-06T07:01:00Z</lastmod>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://gallantlab.org/opencode/</loc>
-  <lastmod>2023-10-06T07:01:00Z</lastmod>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://gallantlab.org/opendata/</loc>
-  <lastmod>2023-10-06T07:01:00Z</lastmod>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://gallantlab.org/papers/</loc>
-  <lastmod>2023-10-06T07:01:00Z</lastmod>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://gallantlab.org/people/</loc>
-  <lastmod>2023-10-06T07:01:00Z</lastmod>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://gallantlab.org/pycortex/retinotopy_demo/</loc>
-  <lastmod>2023-10-06T07:01:00Z</lastmod>
+  <lastmod>2023-10-17T01:25:00Z</lastmod>
  </url>
 </urlset>
