@@ -8,9 +8,9 @@
 .. type: text
 
 
---------------------------------
+================================
 General guidance on recruitment:
---------------------------------
+================================
 
 Our laboratory is very interdisciplinary, and we are always on the lookout for good postdocs
 and graduate students with a strong desire to break new ground in cognitive, systems and
@@ -19,16 +19,16 @@ in neuroscience, neuroimaging, and data science tailored for neuroscience are ty
 of graduate and postdoctoral training in the lab. That said, strong quantitative and
 computational skills are an asset.
 
--------------------
+===================
 Potential postdocs:
--------------------
+===================
 
 At this time we are actively seeking new postdocs. If you are interested please contact
 Jack Gallant directly.
 
-----------------------------
+============================
 Potential graduate students:
-----------------------------
+============================
 
 We are always looking for great graduate students. However, we do not accept graduate students
 directly into the lab. Potential graduate students must first be admitted to a UC Berkeley
@@ -41,9 +41,9 @@ we receive too many inquiries about graduate positions to respond to each one in
 However, once you have been accepted into a graduate program at Berkeley, please contact
 Jack Gallant directly and we will be happy to set up a first-year rotation for you.
 
------------------------------
+=============================
 Others interested in the lab:
------------------------------
+=============================
 
 UC Berkeley undergraduates who are interested in working in the lab should email Jack Gallant
 directly. Due to time and resource constraints, at this time we are not considering research
