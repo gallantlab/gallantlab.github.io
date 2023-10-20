@@ -26,7 +26,7 @@ or to these OHBM discussions between Peter Bandettini and Jack Gallant
 We are recruiting postdocs!
 ===========================
 
-We currently have openings for potential postdocs.If you are interested please contact
+We currently have openings for potential postdocs. If you are interested please contact
 Jack Gallant directly (gallant @ berkeley.edu).
 
 
