@@ -1428,6 +1428,16 @@ ninja-keys::part(ninja-input-wrapper) {
   background: var(--global-bg-color);
 }
 
+// news
+.news-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  float: left;
+  margin-right: 10px;
+}
+
 // newsletter
 .newsletter-form-container {
   margin-bottom: 20px;
