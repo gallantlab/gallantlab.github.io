@@ -731,15 +731,21 @@ footer.fixed-bottom {
 
 footer.sticky-bottom {
   border-top: 1px solid var(--global-divider-color);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: $font-size-text;
 
   .container {
     text-align: center;
   }
 
-  // Desktop: more padding
+  // Tablet: medium padding
+  @media (min-width: 576px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  // Desktop: full padding
   @media (min-width: 768px) {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -1442,6 +1448,33 @@ ninja-keys::part(ninja-input-wrapper) {
   border-radius: 4px;
   float: left;
   margin-right: 10px;
+}
+
+// Make news section more mobile-friendly
+.news {
+  .table-responsive {
+    max-height: none !important;
+    
+    @media (max-width: 767px) {
+      max-height: 50vh !important;
+      overflow-y: auto;
+    }
+  }
+  
+  table {
+    @media (max-width: 767px) {
+      font-size: 0.9rem;
+      
+      th {
+        width: 25% !important;
+        font-size: 0.8rem;
+      }
+      
+      td {
+        padding: 0.5rem 0.25rem;
+      }
+    }
+  }
 }
 
 // newsletter
