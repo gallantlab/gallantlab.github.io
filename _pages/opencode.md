@@ -2,7 +2,7 @@
 layout: page
 title: code
 permalink: /opencode/
-description: 
+description:
 nav: true
 nav_order: 6
 ---

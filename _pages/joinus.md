@@ -16,11 +16,12 @@ At this time we are actively seeking new postdocs. If you are interested please 
 
 ## Potential graduate students
 
-We are always looking for great graduate students. However, we do not accept graduate students directly into the lab. Potential graduate students must first be admitted to a UC Berkeley graduate program, and then they must complete a first-year rotation in our laboratory. 
+We are always looking for great graduate students. However, we do not accept graduate students directly into the lab. Potential graduate students must first be admitted to a UC Berkeley graduate program, and then they must complete a first-year rotation in our laboratory.
 
 We accept graduate students through the following graduate programs at Berkeley:
+
 - Neuroscience
-- Bioengineering  
+- Bioengineering
 - Biophysics
 - Vision Science
 - Electrical Engineering and Computer Science

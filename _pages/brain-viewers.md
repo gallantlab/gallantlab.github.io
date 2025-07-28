@@ -2,7 +2,7 @@
 layout: page
 title: brain viewers
 permalink: /brain-viewers/
-description: 
+description:
 nav: true
 nav_order: 1
 ---

@@ -9,11 +9,16 @@ h1 {
   font-size: $font-size-heading-main;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: $font-size-heading-sub;
 }
 
-body, p {
+body,
+p {
   font-size: $font-size-text;
 }
 
@@ -98,7 +103,7 @@ table {
   // Responsive design
   @media (max-width: 768px) {
     flex-direction: column;
-    
+
     .person-image {
       margin-right: 0;
       margin-bottom: 1rem;
@@ -139,7 +144,7 @@ table {
   // Responsive design
   @media (max-width: 768px) {
     flex-direction: column;
-    
+
     .code-image {
       margin-right: 0;
       margin-bottom: 1rem;
@@ -180,7 +185,7 @@ table {
   // Responsive design
   @media (max-width: 768px) {
     flex-direction: column;
-    
+
     .tutorial-image {
       margin-right: 0;
       margin-bottom: 1rem;
@@ -221,7 +226,7 @@ table {
   // Responsive design
   @media (max-width: 768px) {
     flex-direction: column;
-    
+
     .viewer-image {
       margin-right: 0;
       margin-bottom: 1rem;
@@ -262,7 +267,7 @@ table {
   // Responsive design
   @media (max-width: 768px) {
     flex-direction: column;
-    
+
     .publication-image {
       margin-right: 0;
       margin-bottom: 1rem;
@@ -745,7 +750,7 @@ footer.sticky-bottom {
     padding-top: 3px;
     padding-bottom: 3px;
     font-size: 0.65rem;
-    
+
     .container {
       line-height: 1.1;
     }
@@ -1477,22 +1482,22 @@ ninja-keys::part(ninja-input-wrapper) {
 .news {
   .table-responsive {
     max-height: none !important;
-    
+
     @media (max-width: 767px) {
       max-height: 50vh !important;
       overflow-y: auto;
     }
   }
-  
+
   table {
     @media (max-width: 767px) {
       font-size: 0.9rem;
-      
+
       th {
         width: 25% !important;
         font-size: 0.8rem;
       }
-      
+
       td {
         padding: 0.5rem 0.25rem;
       }
@@ -1503,7 +1508,7 @@ ninja-keys::part(ninja-input-wrapper) {
 // header links
 .news-header-link {
   color: inherit !important;
-  
+
   &:hover {
     color: var(--global-theme-color) !important;
     text-decoration: none;

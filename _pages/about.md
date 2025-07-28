@@ -20,7 +20,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-This site provides information about ongoing research in Jack Gallant's cognitive, systems and computational neuroscience lab at UC Berkeley. Here you can find our cool brain viewers, some of our published papers, information about the great people who do the work, our open data, open source code, and tutorials. 
+This site provides information about ongoing research in Jack Gallant's cognitive, systems and computational neuroscience lab at UC Berkeley. Here you can find our cool brain viewers, some of our published papers, information about the great people who do the work, our open data, open source code, and tutorials.
 
 If you would like to know more about the general philosophy of the lab, please listen to this [Freakonomics podcast interview with Jack Gallant](https://freakonomics.com/podcast/this-is-your-brain-on-podcasts/) or to these OHBM discussions between Peter Bandettini and Jack Gallant: [discussion 1](https://www.youtube.com/watch?v=cKmGF3REyuA)
 [discussion 2](https://www.youtube.com/watch?v=skX7tzWxwFk).

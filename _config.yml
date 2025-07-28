@@ -183,8 +183,8 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
-  - assets/jupyter/    # ADDED TO EXCLUDE JUPYTER
-  - '*.ipynb'          # ADDED TO EXCLUDE JUPYTER
+  - assets/jupyter/ # ADDED TO EXCLUDE JUPYTER
+  - "*.ipynb" # ADDED TO EXCLUDE JUPYTER
 keep_files:
   - CNAME
   - .nojekyll
