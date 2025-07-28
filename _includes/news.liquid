@@ -34,7 +34,7 @@
             <td>
               {% if item.inline %}
                 {% if item.image %}
-                  <img src="{{ item.image | relative_url }}" alt="{{ item.title | default: 'News image' }}" class="news-image">
+                  <img src="{{ item.image | relative_url }}" alt="News image" class="news-image">
                 {% endif %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
               {% else %}
