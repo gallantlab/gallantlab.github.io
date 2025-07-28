@@ -731,12 +731,18 @@ footer.fixed-bottom {
 
 footer.sticky-bottom {
   border-top: 1px solid var(--global-divider-color);
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: $font-size-text;
 
   .container {
     text-align: center;
+  }
+
+  // Desktop: more padding
+  @media (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
