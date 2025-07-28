@@ -30,7 +30,7 @@ nav_order: 6
     <img src="/assets/img/other/pycortex.jpg" alt="pycortex" class="img-fluid">
   </div>
   <div class="code-info">
-    <a href="https://github.com/gallantlab/pycortex">Pycortex</a> is a python-based toolkit for surface visualization of fMRI data. (It can also be used to visualize other types of volumetric brain data.) The brain viewers on this site were all generated using Pycortex. The 2015 publication describing Pycortex can be found <a href="https://www.frontiersin.org/articles/10.3389/fninf.2015.00023/full">here</a>. Documentation for Pycortex can be found <a href="https://gallantlab.org/pycortex/">here</a>.
+    <a href="https://github.com/gallantlab/pycortex">Pycortex</a> is a python-based toolkit for surface visualization of fMRI data. (It can also be used to visualize other types of volumetric brain data.) The brain viewers on this site were all generated using Pycortex. The 2015 publication describing Pycortex can be found <a href="https://www.frontiersin.org/articles/10.3389/fninf.2015.00023/full">here</a>. Documentation for Pycortex can be found <a href="https://gallantlab.github.io/pycortex/">here</a>.
   </div>
 </div>
 
