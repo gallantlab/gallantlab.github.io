@@ -158,7 +158,7 @@ nav_order: 3
 
 <div class="person-profile">
   <div class="person-image">
-    <img src="/assets/img/people/Alicia.Zeng.jpg" alt="Yuerou Tang" class="img-fluid">
+    <img src="/assets/img/people/Yuerou.Tang.jpeg" alt="Yuerou Tang" class="img-fluid">
   </div>
   <div class="person-info">
     <h3>Yuerou Tang</h3>
