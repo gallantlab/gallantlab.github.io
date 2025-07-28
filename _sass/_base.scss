@@ -731,24 +731,38 @@ footer.fixed-bottom {
 
 footer.sticky-bottom {
   border-top: 1px solid var(--global-divider-color);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: $font-size-text;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.7rem;
 
   .container {
     text-align: center;
+    line-height: 1.2;
+  }
+
+  // Mobile: ultra-compact footer
+  @media (max-width: 575px) {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 0.65rem;
+    
+    .container {
+      line-height: 1.1;
+    }
   }
 
   // Tablet: medium padding
   @media (min-width: 576px) {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.8rem;
   }
 
   // Desktop: full padding
   @media (min-width: 768px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: $font-size-text;
   }
 }
 
