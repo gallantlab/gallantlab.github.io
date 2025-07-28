@@ -9,10 +9,24 @@
     >
       <table class="table table-sm table-borderless">
         {% assign news = site.news | reverse %}
+        
+        <!-- Filter news by date if limit is set (for homepage) -->
+        {% if include.limit %}
+          {% assign one_year_ago = 'now' | date: '%s' | minus: 31536000 | plus: 0 %}
+          {% assign recent_news = '' | split: '' %}
+          {% for item in news %}
+            {% assign item_timestamp = item.date | date: '%s' | plus: 0 %}
+            {% if item_timestamp >= one_year_ago %}
+              {% assign recent_news = recent_news | push: item %}
+            {% endif %}
+          {% endfor %}
+          {% assign news = recent_news %}
+        {% endif %}
+        
         {% if include.limit and page.announcements.limit %}
           {% assign news_limit = page.announcements.limit %}
         {% else %}
-          {% assign news_limit = news_size %}
+          {% assign news_limit = news.size %}
         {% endif %}
         {% for item in news limit: news_limit %}
           <tr>
