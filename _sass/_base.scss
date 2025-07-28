@@ -1464,6 +1464,15 @@ ninja-keys::part(ninja-input-wrapper) {
   margin-right: 10px;
 }
 
+// News table structure
+.news-scrollable {
+  max-height: 60vw;
+}
+
+.news-date-column {
+  width: 20%;
+}
+
 // Make news section more mobile-friendly
 .news {
   .table-responsive {
@@ -1488,6 +1497,16 @@ ninja-keys::part(ninja-input-wrapper) {
         padding: 0.5rem 0.25rem;
       }
     }
+  }
+}
+
+// header links
+.news-header-link {
+  color: inherit !important;
+  
+  &:hover {
+    color: var(--global-theme-color) !important;
+    text-decoration: none;
   }
 }
 
