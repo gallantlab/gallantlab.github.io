@@ -86,7 +86,7 @@ nav_order: 3
     <h3>Amanda LeBel</h3>
     <div class="person-title">Neuroscience Graduate Student</div>
     <div class="person-description">
-      Areas of interest include functional imaging of the cerebellum, and dyslexia.
+      Areas of interest include functional imaging of the cerebellum, and autism.
     </div>
   </div>
 </article>
@@ -179,7 +179,7 @@ nav_order: 3
     <h3>Christine Tseng, PhD</h3>
     <div class="person-title">Former Postdoc</div>
     <div class="person-description">
-      Areas of interest include brain systems mediating concepts of the self and others, and language processing.
+      Dr. Tseng is now doing a postdoc with Prof. Fatma Deniz at the Technical University of Berlin.
     </div>
   </div>
 </article>
@@ -192,7 +192,7 @@ nav_order: 3
     <h3>Michele Winter</h3>
     <div class="person-title">Former Vision Science Graduate Student</div>
     <div class="person-description">
-      Areas of interest include computational modeling of neurophysiology data.
+      Dr. Winter is now working in the technology industry.
     </div>
   </div>
 </article>
@@ -205,7 +205,7 @@ nav_order: 3
     <h3>Lily Xue Gong</h3>
     <div class="person-title">Former Neuroscience Graduate Student</div>
     <div class="person-description">
-      Areas of interest include bilingual language processing, and reading.
+      Dr. Gong is now a staff scientist with Prof. Edward Chang at UCSF.
     </div>
   </div>
 </article>
@@ -218,7 +218,7 @@ nav_order: 3
     <h3>Catherine Chen</h3>
     <div class="person-title">Former EECS Graduate Student</div>
     <div class="person-description">
-      Areas of interest include brain representations of linguistic and spatial relationships, and bilingualism.
+      Dr. Chen is now working in the technology industry.
     </div>
   </div>
 </article>
