@@ -189,7 +189,7 @@ nav_order: 3
     <img src="{{ '/assets/img/people/Michele.Winter.jpg' | relative_url }}" alt="Michele Winter" class="img-fluid">
   </div>
   <div class="person-info">
-    <h3>Michele Winter</h3>
+    <h3>Michele Winter, PhD</h3>
     <div class="person-title">Former Vision Science Graduate Student</div>
     <div class="person-description">
       Dr. Winter is now working in the technology industry.
@@ -202,7 +202,7 @@ nav_order: 3
     <img src="{{ '/assets/img/people/Lily.Gong.jpg' | relative_url }}" alt="Lily Xue Gong" class="img-fluid">
   </div>
   <div class="person-info">
-    <h3>Lily Xue Gong</h3>
+    <h3>Lily Xue Gong, PhD</h3>
     <div class="person-title">Former Neuroscience Graduate Student</div>
     <div class="person-description">
       Dr. Gong is now a staff scientist with Prof. Edward Chang at UCSF.
@@ -215,7 +215,7 @@ nav_order: 3
     <img src="{{ '/assets/img/people/Catherine.Chen.jpg' | relative_url }}" alt="Catherine Chen" class="img-fluid">
   </div>
   <div class="person-info">
-    <h3>Catherine Chen</h3>
+    <h3>Catherine Chen, PhD</h3>
     <div class="person-title">Former EECS Graduate Student</div>
     <div class="person-description">
       Dr. Chen is now working in the technology industry.
