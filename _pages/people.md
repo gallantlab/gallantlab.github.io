@@ -70,7 +70,7 @@ nav_order: 3
     <img src="{{ '/assets/img/people/Emily.Meschke.jpg' | relative_url }}" alt="Emily Meschke" class="img-fluid">
   </div>
   <div class="person-info">
-    <h3>Emily Meschke</h3>
+    <h3>Emily Meschke, PhD</h3>
     <div class="person-title">Postdoc</div>
     <div class="person-description">
       Areas of interest include development of new methods for recovering and interpreting brain networks.
