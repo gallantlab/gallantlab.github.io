@@ -1,7 +1,7 @@
 # this file uses prebuilt image in dockerhub
 services:
   jekyll:
-    build: 
+    build:
       context: .
       args:
         GROUPID: ${DOCKER_GID:-1000}

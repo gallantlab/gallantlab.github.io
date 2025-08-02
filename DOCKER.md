@@ -48,6 +48,7 @@ docker run -p 8080:8080 -p 35729:35729 -v $(pwd):/srv/jekyll gallant-lab-site
 ### Permission Issues
 
 If you encounter permission errors like:
+
 ```
 Permission denied @ rb_sysopen - /srv/jekyll/.jekyll-cache/.gitignore (Errno::EACCES)
 ```
@@ -65,15 +66,16 @@ docker compose build --no-cache
 ## Configuration
 
 The Docker setup uses:
+
 - **Port 8080**: Jekyll development server
 - **Port 35729**: LiveReload for automatic browser refresh
 - **Volume mount**: Current directory mounted to `/srv/jekyll` in container
 
 ## Environment Variables
 
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `DOCKER_UID` | 1000 | User ID for container user |
-| `DOCKER_GID` | 1000 | Group ID for container user |
-| `DOCKER_USER` | jekyll | Username for container user |
-| `DOCKER_GROUP` | docker | Group name for container user |
+| Variable       | Default | Description                   |
+| -------------- | ------- | ----------------------------- |
+| `DOCKER_UID`   | 1000    | User ID for container user    |
+| `DOCKER_GID`   | 1000    | Group ID for container user   |
+| `DOCKER_USER`  | jekyll  | Username for container user   |
+| `DOCKER_GROUP` | docker  | Group name for container user |
