@@ -8,6 +8,15 @@ nav_order: 2
 
 <div class="publication-entry">
   <div class="publication-image">
+    <img src="/assets/img/papers/DuprelaTour.T.2025.png" alt="Dupre la Tour 2025" class="img-fluid">
+  </div>
+  <div class="publication-info">
+    <a href="https://doi.org/10.1162/imag_a_00575">The Voxelwise Encoding Model framework: A tutorial introduction to fitting encoding models to fMRI data (Dupré la Tour et al., Imaging Neuroscience, 2025)</a>. This comprehensive tutorial provides practical guidance on using the Voxelwise Encoding Model (VEM) framework for functional brain mapping. The VEM approach extracts features from stimuli or tasks and uses them in encoding models to predict brain activity. When models successfully predict activity in brain regions, we can conclude that information represented in the features is also encoded in those regions. The tutorial includes hands-on examples with public datasets, code repositories, and interactive notebooks to make this powerful methodology accessible to researchers at all levels.
+  </div>
+</div>
+
+<div class="publication-entry">
+  <div class="publication-image">
     <img src="/assets/img/papers/Gong.X.etal.2023.png" alt="Gong 2023" class="img-fluid">
   </div>
   <div class="publication-info">
