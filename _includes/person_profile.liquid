@@ -1,0 +1,20 @@
+<article class="person-profile">
+  <div class="person-image">
+    <img src="{{ '/assets/img/' | append: include.person.image | relative_url }}" alt="{{ include.person.name }}" class="img-fluid">
+  </div>
+  <div class="person-info">
+    <h3>{{ include.person.name }}</h3>
+    <div class="person-title">{{ include.person.title }}</div>
+    {% if include.person.description != "" %}
+      {% if include.principal_investigator %}
+        <address class="person-description">
+          {{ include.person.description }}
+        </address>
+      {% else %}
+        <div class="person-description">
+          {{ include.person.description }}
+        </div>
+      {% endif %}
+    {% endif %}
+  </div>
+</article>
