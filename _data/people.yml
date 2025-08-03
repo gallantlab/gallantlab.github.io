@@ -13,52 +13,52 @@ current_members:
     title: "Senior Postdoc"
     image: "people/Matteo.ViscontidOC.jpg"
     description: "Areas of interest include individual differences, clinical applications of functional imaging, and fMRI methods development."
-    
+
   - name: "Tianjiao Zhang, PhD"
     title: "Postdoc"
     image: "people/Tianjiao.Zhang.jpg"
     description: "Areas of interest include studies of the human navigation system, and fMRI studies in VR."
-    
+
   - name: "Evi Hendrikx, PhD"
     title: "Postdoc"
     image: "people/Evi.Hendrikx.jpg"
     description: "Areas of interest include the representation of number, space, and time."
-    
+
   - name: "Emily Meschke, PhD"
     title: "Postdoc"
     image: "people/Emily.Meschke.jpg"
     description: "Areas of interest include development of new methods for recovering and interpreting brain networks."
-    
+
   - name: "Amanda LeBel"
     title: "Neuroscience Graduate Student"
     image: "people/Amanda.LeBel.jpg"
     description: "Areas of interest include functional imaging of the cerebellum, and autism."
-    
+
   - name: "Alicia Zeng"
     title: "Biophysics Graduate Student"
     image: "people/Alicia.Zeng.jpg"
     description: "Areas of interest include computational modeling of clinical deep-brain stimulation data."
-    
+
   - name: "Cheol Jun Cho"
     title: "EECS Graduate Student"
     image: "people/CheolJun.Cho.jpg"
     description: "Areas of interest include language, navigation, and using deep networks in data analysis and modeling."
-    
+
   - name: "Jen Holmberg"
     title: "Neuroscience Graduate Student"
     image: "people/Jen.Holmberg.jpg"
     description: "Areas of interest include brain mechanisms mediating the psychedelic experience."
-    
+
   - name: "Carolyn Irving"
     title: "Neuroscience Graduate Student"
     image: "people/Carolyn.Irving.jpg"
     description: "Areas of interest include learning and the cerebellum."
-    
+
   - name: "Sunjae Shim"
     title: "Neuroscience Graduate Student"
     image: "people/Sunjae.Shim.jpg"
     description: "Areas of interest include learning in complex tasks."
-    
+
   - name: "Yuerou Tang"
     title: "Lab RA"
     image: "people/Yuerou.Tang.jpeg"
@@ -69,22 +69,22 @@ alumni:
     title: "Former EECS Graduate Student"
     image: "people/Catherine.Chen.jpg"
     description: "Dr. Chen is now working in the technology industry."
-    
+
   - name: "Tom Dupre la Tour, PhD"
     title: "Former Postdoc"
     image: "people/Tom.DuprelaTour.jpg"
     description: "Dr. Dupre la Tour is now working in the technology industry."
-    
+
   - name: "Lily Xue Gong, PhD"
     title: "Former Neuroscience Graduate Student"
     image: "people/Lily.Gong.jpg"
     description: "Dr. Gong is now a staff scientist with Prof. Edward Chang at UCSF."
-    
+
   - name: "Christine Tseng, PhD"
     title: "Former Neuroscience Graduate Student and Postdoc"
     image: "people/Christine.Tseng.jpg"
     description: "Dr. Tseng is now doing a postdoc with Prof. Fatma Deniz at the Technical University of Berlin."
-    
+
   - name: "Michele Winter, PhD"
     title: "Former Vision Science Graduate Student"
     image: "people/Michele.Winter.jpg"

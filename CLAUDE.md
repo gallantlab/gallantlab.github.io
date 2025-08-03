@@ -44,6 +44,8 @@ npx prettier --write .
 npm install
 ```
 
+**IMPORTANT**: Always run `npx prettier --write .` before committing to ensure GitHub Actions pass.
+
 ## Architecture Overview
 
 ### Jekyll Site Structure
