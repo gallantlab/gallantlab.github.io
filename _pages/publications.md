@@ -17,19 +17,19 @@ nav_order: 2
 
 <div class="publication-entry">
   <div class="publication-image">
-    <img src="/assets/img/papers/Gong.X.etal.2023.png" alt="Gong 2023" class="img-fluid">
+    <img src="/assets/img/papers/Deniz.F.2023.jpg" alt="Deniz 2023" class="img-fluid">
   </div>
   <div class="publication-info">
-    <a href="/papers/Gong.X.etal.2023.pdf">Phonemic segmentation of narrative speech in human cerebral cortex (Gong et al., Nature Communications, 2023)</a>. Phonemes are a critical intermediate element of speech. This fMRI study identifies the brain representation of single phonemes, and of diphones and triphones. We find that many regions in and around the auditory cortex represent phonemes. These regions include classical areas in the dorsal superior temporal gyrus and a larger region in the lateral temporal cortex (where diphone features appear to be represented). Furthermore, we identify regions where phonemic processing and lexical retrieval are intertwined. (Note: this is work done in collaboration with the <a href="http://theunissen.berkeley.edu/">Theunissen lab</a> here at UCB.)
+    <a href="https://www.jneurosci.org/content/jneuro/43/17/3144.full.pdf">Semantic representations during language comprehension are affected by context (Deniz et al., Journal of Neuroscience, 2023)</a>. Context is an important part of understanding the meaning of natural language, but most neuroimaging studies of meaning use isolated words and isolated sentences with little context. In this study, we examined whether the results of neuroimaging language studies that use out-of-context stimuli generalize to natural language. We find that increasing context improves the quality of neuroimaging data and changes where and how semantic information is represented in the brain. These results suggest that findings from studies using out-of-context stimuli may not generalize to natural language used in daily life.
   </div>
 </div>
 
 <div class="publication-entry">
   <div class="publication-image">
-    <img src="/assets/img/papers/Deniz.F.2023.jpg" alt="Deniz 2023" class="img-fluid">
+    <img src="/assets/img/papers/Gong.X.etal.2023.png" alt="Gong 2023" class="img-fluid">
   </div>
   <div class="publication-info">
-    <a href="/papers/Deniz.F.etal.2023.pdf">Semantic representations during language comprehension are affected by context (Deniz et al., Journal of Neuroscience, 2023)</a>. Context is an important part of understanding the meaning of natural language, but most neuroimaging studies of meaning use isolated words and isolated sentences with little context. In this study, we examined whether the results of neuroimaging language studies that use out-of-context stimuli generalize to natural language. We find that increasing context improves the quality of neuroimaging data and changes where and how semantic information is represented in the brain. These results suggest that findings from studies using out-of-context stimuli may not generalize to natural language used in daily life.
+    <a href="https://www.nature.com/articles/s41467-023-39872-w.pdf">Phonemic segmentation of narrative speech in human cerebral cortex (Gong et al., Nature Communications, 2023)</a>. Phonemes are a critical intermediate element of speech. This fMRI study identifies the brain representation of single phonemes, and of diphones and triphones. We find that many regions in and around the auditory cortex represent phonemes. These regions include classical areas in the dorsal superior temporal gyrus and a larger region in the lateral temporal cortex (where diphone features appear to be represented). Furthermore, we identify regions where phonemic processing and lexical retrieval are intertwined. (Note: this is work done in collaboration with the <a href="http://theunissen.berkeley.edu/">Theunissen lab</a> here at UCB.)
   </div>
 </div>
 
