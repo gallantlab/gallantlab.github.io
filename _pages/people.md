@@ -20,6 +20,8 @@ nav_order: 3
 
 ## Alumni
 
+<div class="alumni-grid">
 {% for person in site.data.people.alumni %}
-{% include person_profile.liquid person=person %}
+{% include person_profile_compact.liquid person=person %}
 {% endfor %}
+</div>
