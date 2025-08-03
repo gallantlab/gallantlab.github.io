@@ -46,6 +46,8 @@ npm install
 
 **IMPORTANT**: Always run `npx prettier --write .` before committing to ensure GitHub Actions pass.
 
+**CLAUDE BEHAVIOR**: Always ask the user before running Prettier and before committing. Never run these commands automatically.
+
 ## Architecture Overview
 
 ### Jekyll Site Structure

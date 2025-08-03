@@ -2,6 +2,7 @@ principal_investigator:
   - name: "Jack Gallant, PhD"
     title: "Head of Lab"
     image: "people/Regression.Jack.jpg"
+    alt_image: "people/Gallant.Headshot.1.5x1.jpg"
     description: |
       Neuroscience Department<br>
       1 Barker Hall<br>
@@ -12,6 +13,7 @@ current_members:
   - name: "Matteo Visconti di Oleggio Castello, PhD"
     title: "Senior Postdoc"
     image: "people/Matteo.ViscontidOC.jpg"
+    website: "https://matteovisconti.com/"
     description: "Areas of interest include individual differences, clinical applications of functional imaging, and fMRI methods development."
 
   - name: "Tianjiao Zhang, PhD"
