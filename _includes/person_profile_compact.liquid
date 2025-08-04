@@ -12,14 +12,14 @@
   <div class="person-info">
     <h3>{{ include.person.name }}</h3>
     <div class="person-title">{{ include.person.title }}</div>
-    {% if include.person.website %}
-      <div class="person-website">
-        <a href="{{ include.person.website }}" target="_blank" rel="noopener noreferrer">Website</a>
-      </div>
-    {% endif %}
     {% if include.person.description != '' %}
       <div class="person-description">
         {{ include.person.description }}
+      </div>
+    {% endif %}
+    {% if include.person.website %}
+      <div class="person-website">
+        <a href="{{ include.person.website }}" target="_blank" rel="noopener noreferrer">Website</a>
       </div>
     {% endif %}
   </div>
