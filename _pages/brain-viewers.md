@@ -49,7 +49,7 @@ We created the following two brain viewers for educational purposes.
 
 <div class="viewer-entry">
   <div class="viewer-image">
-    <img src="/assets/img/other/sulcigyri.jpg" alt="Sulci and Gyri" class="img-fluid">
+    <img src="{{ '/assets/img/other/sulcigyri.jpg' | relative_url }}" alt="Sulci and Gyri" class="img-fluid">
   </div>
   <div class="viewer-info">
     <a href="https://gallantlab.org/viewer-cortical-anatomy/">Cortical anatomy viewer</a>. In order to be able to visualize the complete cortical surface, neuroscientists often work with inflated or flattened cortical maps. However, it can be difficult to orient oneself correctly when inspecting these maps. This viewer provides labels for many of the most commonly referenced sulci and gyri. By switching between folded, inflated and flattened views one can get a good sense of how important cortical landmarks vary across these different views.
@@ -58,7 +58,7 @@ We created the following two brain viewers for educational purposes.
 
 <div class="viewer-entry">
   <div class="viewer-image">
-    <img src="/assets/img/other/retinotopy.jpg" alt="Retinotopy" class="img-fluid">
+    <img src="{{ '/assets/img/other/retinotopy.jpg' | relative_url }}" alt="Retinotopy" class="img-fluid">
   </div>
   <div class="viewer-info">
     <a href="https://gallantlab.org/viewer-retinotopy-demo/">Retinotopy viewer</a>. The human brain contains many different retinotopic maps, and these maps are one of the primary tools used to parcellate the visual system. Given the large number of maps and their complicated spatial relationships to one another, it is often difficult for students to fully understand how the maps are related. This viewer shows real-time functional activity evoked in a retinal mapping experiment. By identifying the angular and eccentricity functional maps one can gain a good understanding of retinotopic organization.

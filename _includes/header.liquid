@@ -23,6 +23,9 @@
       </button>
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <div class="navbar-brand d-none d-sm-block">
+          <a class="navbar-brand-text" href="{{ '/' | relative_url }}">Gallant Lab @ UCB</a>
+        </div>
         <ul class="navbar-nav ml-auto flex-nowrap">
           {% for page in site.pages %}
             {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
