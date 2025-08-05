@@ -4,6 +4,11 @@
 
 @import "variables";
 
+// Fix layout shift caused by scrollbar appearing/disappearing on short pages
+html {
+  overflow-y: scroll;
+}
+
 // Standardized headings
 h1 {
   font-size: $font-size-heading-main;
