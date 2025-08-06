@@ -9,7 +9,7 @@ nav_order: 7
 
 <div class="code-entry">
   <div class="code-image">
-    <img src="{{ '/assets/img/datasets/Popham.etal.2021.png' | relative_url }}" alt="Gallant Lab Natural Short Clips fMRI Dataset" class="img-fluid">
+    <img src="{{ '/assets/img/datasets/Popham.etal.2021.jpg' | relative_url }}" alt="Gallant Lab Natural Short Clips fMRI Dataset" class="img-fluid">
   </div>
   <div class="code-info">
     <a href="https://doi.gin.g-node.org/10.12751/g-node.vy1zjd/">Natural Short Clips 3T fMRI Data</a> contains BOLD fMRI responses from 5 human subjects viewing natural short video clips across 3 sessions over 3 separate days for each subject. This dataset has been used in multiple publications studying visual processing and semantic representation. If you publish work that uses these data please cite the following paper: <a href="https://doi.org/10.1038/s41593-021-00921-6">Popham, S. F., Huth, A. G., Bilenko, N. Y., Deniz, F., Gao, J. S., Nunez-Elizalde, A. O., & Gallant, J. L. (2021). Visual and linguistic semantic representations are aligned at the border of human visual cortex. Nature Neuroscience, 24(11), 1628-1636.</a>
@@ -36,7 +36,16 @@ nav_order: 7
 
 <div class="code-entry">
   <div class="code-image">
-    <img src="{{ '/assets/img/datasets/Nishimoto.etal.2011.png' | relative_url }}" alt="Gallant Lab Natural Movie fMRI Dataset" class="img-fluid">
+    <img src="{{ '/assets/img/papers/Huth.A.2016.jpg' | relative_url }}" alt="Gallant Lab Story Listening fMRI Dataset" class="img-fluid">
+  </div>
+  <div class="code-info">
+    <a href="https://gin.g-node.org/gallantlab/story_listening">Story Listening fMRI Data</a> contains BOLD fMRI responses from human subjects listening to natural narrative stories. This dataset was used to map semantic representations across the human cerebral cortex and create detailed semantic atlases of language processing. If you publish work that uses these data please cite the following paper: <a href="https://www.nature.com/articles/nature17637">Huth, A. G., De Heer, W. A., Griffiths, T. L., Theunissen, F. E., & Gallant, J. L. (2016). Natural speech reveals the semantic maps that tile human cerebral cortex. Nature, 532(7600), 453-458.</a>
+  </div>
+</div>
+
+<div class="code-entry">
+  <div class="code-image">
+    <img src="{{ '/assets/img/datasets/Nishimoto.etal.2011.jpg' | relative_url }}" alt="Gallant Lab Natural Movie fMRI Dataset" class="img-fluid">
   </div>
   <div class="code-info">
     <a href="https://crcns.org/data-sets/vc/vim-2/about-vim-2">Natural Movie 4T fMRI Data (vim-2)</a> contains BOLD fMRI responses from 3 subjects viewing natural movies, collected across 3 sessions on separate days. This dataset was used in the landmark study reconstructing visual experiences from brain activity. If you publish work that uses these data please cite the following paper: <a href="https://www.sciencedirect.com/science/article/pii/S0960982211009377">Nishimoto, S., Vu, A. T., Naselaris, T., Benjamini, Y., Yu, B., & Gallant, J. L. (2011). Reconstructing visual experiences from brain activity evoked by natural movies. Current Biology, 21(19), 1641-1646.</a>
@@ -45,7 +54,7 @@ nav_order: 7
 
 <div class="code-entry">
   <div class="code-image">
-    <img src="{{ '/assets/img/datasets/Kay.etal.2008.png' | relative_url }}" alt="Gallant Lab Natural Images fMRI Dataset" class="img-fluid">
+    <img src="{{ '/assets/img/datasets/Kay.etal.2008.jpg' | relative_url }}" alt="Gallant Lab Natural Images fMRI Dataset" class="img-fluid">
   </div>
   <div class="code-info">
     <a href="http://crcns.org/data-sets/vc/vim-1/about-vim-1">Natural Images fMRI Data (vim-1)</a> contains BOLD fMRI responses from 2 subjects viewing natural images across 70 experimental runs collected over 5 separate days. This dataset demonstrated the ability to identify which images a subject was viewing from brain activity using Bayesian reconstruction techniques. If you publish work that uses these data please cite the following paper: <a href="https://www.nature.com/articles/nature06713">Kay, K. N., Naselaris, T., Prenger, R. J., & Gallant, J. L. (2008). Identifying natural images from human brain activity. Nature, 452(7185), 352-355.</a>

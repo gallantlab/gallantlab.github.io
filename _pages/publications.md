@@ -8,10 +8,19 @@ nav_order: 2
 
 <div class="publication-entry">
   <div class="publication-image">
-    <img src="{{ '/assets/img/papers/DuprelaTour.T.2025.png' | relative_url }}" alt="Dupre la Tour 2025" class="img-fluid">
+    <img src="{{ '/assets/img/papers/DuprelaTour.T.2025.jpg' | relative_url }}" alt="Dupre la Tour 2025" class="img-fluid">
   </div>
   <div class="publication-info">
     <a href="https://doi.org/10.1162/imag_a_00575">The Voxelwise Encoding Model framework: A tutorial introduction to fitting encoding models to fMRI data (Dupré la Tour et al., Imaging Neuroscience, 2025)</a>. This comprehensive tutorial provides practical guidance on using the Voxelwise Encoding Model (VEM) framework for functional brain mapping. The VEM approach extracts features from stimuli or tasks and uses them in encoding models to predict brain activity. When models successfully predict activity in brain regions, we can conclude that information represented in the features is also encoded in those regions. The tutorial includes hands-on examples with public datasets, code repositories, and interactive notebooks to make this powerful methodology accessible to researchers at all levels.
+  </div>
+</div>
+
+<div class="publication-entry">
+  <div class="publication-image">
+    <img src="{{ '/assets/img/papers/Chen.etal.2024.jpg' | relative_url }}" alt="Chen 2024" class="img-fluid">
+  </div>
+  <div class="publication-info">
+    <a href="https://www.nature.com/articles/s42003-024-05909-z.pdf">The cortical representation of language timescales is shared between reading and listening (Chen et al., Communications Biology, 2024)</a>. Language comprehension involves integrating low-level sensory inputs into a hierarchy of increasingly high-level features. To recover this hierarchy we mapped the intrinsic timescale of language representation across the cerebral cortex during listening and reading. We find that the timescale of representation is organized similarly for the two modalities.
   </div>
 </div>
 
@@ -26,7 +35,7 @@ nav_order: 2
 
 <div class="publication-entry">
   <div class="publication-image">
-    <img src="{{ '/assets/img/papers/Gong.X.etal.2023.png' | relative_url }}" alt="Gong 2023" class="img-fluid">
+    <img src="{{ '/assets/img/papers/Gong.X.etal.2023.jpg' | relative_url }}" alt="Gong 2023" class="img-fluid">
   </div>
   <div class="publication-info">
     <a href="https://www.nature.com/articles/s41467-023-39872-w.pdf">Phonemic segmentation of narrative speech in human cerebral cortex (Gong et al., Nature Communications, 2023)</a>. Phonemes are a critical intermediate element of speech. This fMRI study identifies the brain representation of single phonemes, and of diphones and triphones. We find that many regions in and around the auditory cortex represent phonemes. These regions include classical areas in the dorsal superior temporal gyrus and a larger region in the lateral temporal cortex (where diphone features appear to be represented). Furthermore, we identify regions where phonemic processing and lexical retrieval are intertwined. (Note: this is work done in collaboration with the <a href="http://theunissen.berkeley.edu/">Theunissen lab</a> here at UCB.)
