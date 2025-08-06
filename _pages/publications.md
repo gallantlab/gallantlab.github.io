@@ -8,7 +8,7 @@ nav_order: 2
 
 <div class="publication-entry">
   <div class="publication-image">
-    <img src="{{ '/assets/img/papers/DuprelaTour.T.2025.jpg' | relative_url }}" alt="Dupre la Tour 2025" class="img-fluid">
+    <img src="{{ '/assets/img/papers/DuprelaTour.T.2025.jpg' | relative_url }}" alt="Dupré la Tour 2025" class="img-fluid">
   </div>
   <div class="publication-info">
     <a href="https://doi.org/10.1162/imag_a_00575">The Voxelwise Encoding Model framework: A tutorial introduction to fitting encoding models to fMRI data (Dupré la Tour et al., Imaging Neuroscience, 2025)</a>. This comprehensive tutorial provides practical guidance on using the Voxelwise Encoding Model (VEM) framework for functional brain mapping. The VEM approach extracts features from stimuli or tasks and uses them in encoding models to predict brain activity. When models successfully predict activity in brain regions, we can conclude that information represented in the features is also encoded in those regions. The tutorial includes hands-on examples with public datasets, code repositories, and interactive notebooks to make this powerful methodology accessible to researchers at all levels.
@@ -47,7 +47,7 @@ nav_order: 2
     <img src="{{ '/assets/img/papers/DuprelaTour.T.2022.jpg' | relative_url }}" alt="Dupre 2022" class="img-fluid">
   </div>
   <div class="publication-info">
-    <a href="https://www.sciencedirect.com/science/article/pii/S1053811922008497">Feature-space selection with banded ridge regression (Dupre la Tour et al., Neuroimage, 2022)</a>. Encoding models identify the information represented in brain recordings, but fitting multiple models simultaneously presents several challenges. This paper describes how banded ridge regression can be used to solve these problems. Furthermore, several methods are proposed to address the computational challenge of fitting banded ridge regressions on large numbers of voxels and feature spaces. All implementations are released in an open-source Python package called Himalaya.
+    <a href="https://www.sciencedirect.com/science/article/pii/S1053811922008497">Feature-space selection with banded ridge regression (Dupré la Tour et al., Neuroimage, 2022)</a>. Encoding models identify the information represented in brain recordings, but fitting multiple models simultaneously presents several challenges. This paper describes how banded ridge regression can be used to solve these problems. Furthermore, several methods are proposed to address the computational challenge of fitting banded ridge regressions on large numbers of voxels and feature spaces. All implementations are released in an open-source Python package called Himalaya.
   </div>
 </div>
 

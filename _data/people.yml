@@ -72,10 +72,10 @@ alumni:
     image: "people/Catherine.Chen.jpg"
     description: "Dr. Chen is now working in the technology industry."
 
-  - name: "Tom Dupre la Tour, PhD"
+  - name: "Tom Dupré la Tour, PhD"
     title: "Former Postdoc"
     image: "people/Tom.DuprelaTour.jpg"
-    description: "Dr. Dupre la Tour is now working in the technology industry."
+    description: "Dr. Dupré la Tour is now working in the technology industry."
 
   - name: "Lily Xue Gong, PhD"
     title: "Former Neuroscience Graduate Student"
