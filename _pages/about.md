@@ -6,7 +6,7 @@ subtitle: Cognitive, Systems and Computational Neuroscience at the Leading Edge
 
 profile:
   align: right
-  image: people/LAB.PHOTO.5-24.2.jpg
+  image: people/LAB.PHOTO.5-24.2.webp
   image_circular: false # crops the image to make it circular
 
 announcements:

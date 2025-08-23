@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-<img src="{{ "/assets/img/people/Evi.Hendrikx.jpg" | relative_url }}" alt="Evi Hendrikx" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px; float: left; margin-right: 10px;"> Dr. Evi Hendrikx has joined our lab as our newest postdoc! It's great to have you on board Evi!
+<img src="{{ "/assets/img/people/Evi.Hendrikx.webp" | relative_url }}" alt="Evi Hendrikx" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px; float: left; margin-right: 10px;"> Dr. Evi Hendrikx has joined our lab as our newest postdoc! It's great to have you on board Evi!

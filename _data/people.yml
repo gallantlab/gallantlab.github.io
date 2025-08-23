@@ -1,8 +1,8 @@
 principal_investigator:
   - name: "Jack Gallant, PhD"
     title: "Head of Lab"
-    image: "people/Regression.Jack.jpg"
-    alt_image: "people/Gallant.Headshot.1.5x1.jpg"
+    image: "people/Regression.Jack.webp"
+    alt_image: "people/Gallant.Headshot.1.5x1.webp"
     description: |
       Neuroscience Department<br>
       1 Barker Hall<br>
@@ -12,53 +12,53 @@ principal_investigator:
 current_members:
   - name: "Matteo Visconti di Oleggio Castello, PhD"
     title: "Senior Postdoc"
-    image: "people/Matteo.ViscontidOC.jpg"
+    image: "people/Matteo.ViscontidOC.webp"
     website: "https://matteovisconti.com/"
     description: "Areas of interest include individual differences, clinical applications of functional imaging, and fMRI methods development."
 
   - name: "Tianjiao Zhang, PhD"
     title: "Postdoc"
-    image: "people/Tianjiao.Zhang.jpg"
+    image: "people/Tianjiao.Zhang.webp"
     description: "Areas of interest include studies of the human navigation system, and fMRI studies in VR."
 
   - name: "Evi Hendrikx, PhD"
     title: "Postdoc"
-    image: "people/Evi.Hendrikx.jpg"
+    image: "people/Evi.Hendrikx.webp"
     description: "Areas of interest include the representation of number, space, and time."
 
   - name: "Emily Meschke, PhD"
     title: "Postdoc"
-    image: "people/Emily.Meschke.jpg"
+    image: "people/Emily.Meschke.webp"
     description: "Areas of interest include development of new methods for recovering and interpreting brain networks."
 
   - name: "Amanda LeBel"
     title: "Neuroscience Graduate Student"
-    image: "people/Amanda.LeBel.jpg"
+    image: "people/Amanda.LeBel.webp"
     description: "Areas of interest include functional imaging of the cerebellum, and autism."
 
   - name: "Alicia Zeng"
     title: "Biophysics Graduate Student"
-    image: "people/Alicia.Zeng.jpg"
+    image: "people/Alicia.Zeng.webp"
     description: "Areas of interest include computational modeling of clinical deep-brain stimulation data."
 
   - name: "Cheol Jun Cho"
     title: "EECS Graduate Student"
-    image: "people/CheolJun.Cho.jpg"
+    image: "people/CheolJun.Cho.webp"
     description: "Areas of interest include language, navigation, and using deep networks in data analysis and modeling."
 
   - name: "Jen Holmberg"
     title: "Neuroscience Graduate Student"
-    image: "people/Jen.Holmberg.jpg"
+    image: "people/Jen.Holmberg.webp"
     description: "Areas of interest include brain mechanisms mediating the psychedelic experience."
 
   - name: "Carolyn Irving"
     title: "Neuroscience Graduate Student"
-    image: "people/Carolyn.Irving.jpg"
+    image: "people/Carolyn.Irving.webp"
     description: "Areas of interest include learning and the cerebellum."
 
   - name: "Sunjae Shim"
     title: "Neuroscience Graduate Student"
-    image: "people/Sunjae.Shim.jpg"
+    image: "people/Sunjae.Shim.webp"
     description: "Areas of interest include learning in complex tasks."
 
   - name: "Yuerou Tang"
@@ -69,25 +69,25 @@ current_members:
 alumni:
   - name: "Catherine Chen, PhD"
     title: "Former EECS Graduate Student"
-    image: "people/Catherine.Chen.jpg"
+    image: "people/Catherine.Chen.webp"
     description: "Dr. Chen is now working in the technology industry."
 
   - name: "Tom Dupré la Tour, PhD"
     title: "Former Postdoc"
-    image: "people/Tom.DuprelaTour.jpg"
+    image: "people/Tom.DuprelaTour.webp"
     description: "Dr. Dupré la Tour is now working in the technology industry."
 
   - name: "Lily Xue Gong, PhD"
     title: "Former Neuroscience Graduate Student"
-    image: "people/Lily.Gong.jpg"
+    image: "people/Lily.Gong.webp"
     description: "Dr. Gong is now a staff scientist with Prof. Edward Chang at UCSF."
 
   - name: "Christine Tseng, PhD"
     title: "Former Neuroscience Graduate Student and Postdoc"
-    image: "people/Christine.Tseng.jpg"
+    image: "people/Christine.Tseng.webp"
     description: "Dr. Tseng is now doing a postdoc with Prof. Fatma Deniz at the Technical University of Berlin."
 
   - name: "Michele Winter, PhD"
     title: "Former Vision Science Graduate Student"
-    image: "people/Michele.Winter.jpg"
+    image: "people/Michele.Winter.webp"
     description: "Dr. Winter is now working in the technology industry."
