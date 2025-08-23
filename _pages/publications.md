@@ -12,10 +12,10 @@ nav_order: 2
 
 <div class="publication-entry">
   <div class="publication-image">
-    <img src="{{ '/assets/img/papers/ViscontiDoC.2025.webp' | relative_url }}" alt="ViscontiDoC 2025" class="img-fluid">
+    <img src="{{ '/assets/img/papers/ViscontiDoC.2025.webp' | relative_url }}" alt="Visconti di Oleggio Castello 2025" class="img-fluid">
   </div>
   <div class="publication-info">
-    <a href="https://www.biorxiv.org/content/10.1101/2025.08.22.671848v1">Individual differences shape conceptual representation in the brain (ViscontiDoC et al., BioArxiv preprint, 2025)</a>. Current cognitive neuroscience studies typically focus on group averages, ignoring meaningful individual differences that are crucial for developing personalized medical interventions. In this study we develop a new computational framework to measure and interpret individual differences in functional brain maps, and use it to identify individual differences in conceptual representation. We found robust individual differences that reflect cognitive traits unique to each person. This framework enables new precision neuroscience approaches to the study of complex functional representations.
+    <a href="https://www.biorxiv.org/content/10.1101/2025.08.22.671848v1">Individual differences shape conceptual representation in the brain (Visconti di Oleggio Castello et al., bioRxiv preprint, 2025)</a>. Current cognitive neuroscience studies typically focus on group averages, ignoring meaningful individual differences that are crucial for developing personalized medical interventions. In this study we develop a new computational framework to measure and interpret individual differences in functional brain maps, and use it to identify individual differences in conceptual representation. We found robust individual differences that reflect cognitive traits unique to each person. This framework enables new precision neuroscience approaches to the study of complex functional representations.
   </div>
 </div>
 
