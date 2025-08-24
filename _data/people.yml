@@ -72,15 +72,30 @@ alumni:
     image: "people/Catherine.Chen.webp"
     description: "Dr. Chen is now working in the technology industry."
 
+  - name: "Fatma Deniz, PhD"
+    title: "Former Postdoc"
+    image: "people/Fatma.Deniz.webp"
+    description: "Dr. Deniz is now a Professor at the Technical University of Berlin."
+
   - name: "Tom Dupré la Tour, PhD"
     title: "Former Postdoc"
     image: "people/Tom.DuprelaTour.webp"
     description: "Dr. Dupré la Tour is now working in the technology industry."
 
+  - name: "Michael Eickenberg, PhD"
+    title: "Former Postdoc"
+    image: "people/Michael.Eickenberg.webp"
+    description: "Dr. Eickenberg is now a staff scientist at the Flatiron Institute."
+
   - name: "Lily Xue Gong, PhD"
     title: "Former Neuroscience Graduate Student"
     image: "people/Lily.Gong.webp"
     description: "Dr. Gong is now a staff scientist with Prof. Edward Chang at UCSF."
+
+  - name: "Michael Oliver, PhD"
+    title: "Former Postdoc"
+    image: "people/Mike.Oliver.webp"
+    description: "Dr. Oliver is now working in the technology industry."
 
   - name: "Christine Tseng, PhD"
     title: "Former Neuroscience Graduate Student and Postdoc"
