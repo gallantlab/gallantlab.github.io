@@ -72,6 +72,11 @@ alumni:
     image: "people/Catherine.Chen.webp"
     description: "Dr. Chen is now working in the technology industry."
 
+  - name: "Stephen David, PhD"
+    title: "Former Postdoc"
+    image: "people/Stephen.David.webp"
+    description: "Dr. David is now a Professor at Oregon Health & Science University."
+
   - name: "Fatma Deniz, PhD"
     title: "Former Postdoc"
     image: "people/Fatma.Deniz.webp"
@@ -92,6 +97,21 @@ alumni:
     image: "people/Lily.Gong.webp"
     description: "Dr. Gong is now a staff scientist with Prof. Edward Chang at UCSF."
 
+  - name: "Kendrick Kay, PhD"
+    title: "Former Postdoc"
+    image: "people/Kendrick.Kay.webp"
+    description: "Dr. Kay is now a Professor at the University of Minnesota."
+
+  - name: "Thomas Naselaris, PhD"
+    title: "Former Postdoc"
+    image: "people/Thomas.Naselaris.webp"
+    description: "Dr. Naselaris is now a Professor at the University of Minnesota."
+
+  - name: "Shinji Nishimoto, PhD"
+    title: "Former Postdoc"
+    image: "people/Shinji.Nishimoto.webp"
+    description: "Dr. Nishimoto is now a Professor at Osaka University."
+
   - name: "Michael Oliver, PhD"
     title: "Former Postdoc"
     image: "people/Michael.Oliver.webp"
@@ -101,6 +121,11 @@ alumni:
     title: "Former Neuroscience Graduate Student and Postdoc"
     image: "people/Christine.Tseng.webp"
     description: "Dr. Tseng is now doing a postdoc with Prof. Fatma Deniz at the Technical University of Berlin."
+
+  - name: "Leila Wehbe, PhD"
+    title: "Former Postdoc"
+    image: "people/Leila.Wehbe.webp"
+    description: "Dr. Wehbe is now a Professor at Carnegie Mellon University."
 
   - name: "Michele Winter, PhD"
     title: "Former Vision Science Graduate Student"
