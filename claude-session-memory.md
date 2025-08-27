@@ -233,7 +233,7 @@ b11068d5 - Update Sunjae Shim profile image with proper aspect ratio
 ### Major Changes Made
 
 1. **Join Us Page Updated**: Complete restructuring of undergraduate and other inquiries section
-   - **Changed Section Header**: "Others interested in the lab" → "Undergraduates" 
+   - **Changed Section Header**: "Others interested in the lab" → "Undergraduates"
    - **Updated Contact Method**: Replaced direct email instruction with Google Form link
    - **Added Google Form**: https://docs.google.com/forms/d/e/1FAIpQLSc1YN-UDi8m1NQbCj4zaThVnVlPyvzmuYa8NVRBCq7oAsi8PQ/viewform?usp=header
    - **New "Others interested in the lab" Section**: Added with restriction message for non-Berkeley undergraduates and high school students
@@ -241,6 +241,7 @@ b11068d5 - Update Sunjae Shim profile image with proper aspect ratio
 ### Content Changes Made
 
 1. **Undergraduate Section**:
+
    - **Old**: "UC Berkeley undergraduates who are interested in working in the lab should email Jack Gallant directly"
    - **New**: "UC Berkeley undergraduates who are interested in working in the lab should fill out the form at [this link](https://docs.google.com/forms/d/e/1FAIpQLSc1YN-UDi8m1NQbCj4zaThVnVlPyvzmuYa8NVRBCq7oAsi8PQ/viewform?usp=header). We will get back to you if there are any opportunities."
 
