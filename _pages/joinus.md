@@ -28,6 +28,10 @@ We accept graduate students through the following graduate programs at Berkeley:
 
 Unfortunately, we receive too many inquiries about graduate positions to respond to each one individually. However, once you have been accepted into a graduate program at Berkeley, please contact Jack Gallant directly and we will be happy to set up a first-year rotation for you.
 
+## Undergraduates
+
+UC Berkeley undergraduates who are interested in working in the lab should fill out the form at [this link](https://docs.google.com/forms/d/e/1FAIpQLSc1YN-UDi8m1NQbCj4zaThVnVlPyvzmuYa8NVRBCq7oAsi8PQ/viewform?usp=header). We will get back to you if there are any opportunities.
+
 ## Others interested in the lab
 
-UC Berkeley undergraduates who are interested in working in the lab should email Jack Gallant directly. Due to time and resource constraints, at this time we are not considering research requests for undergraduates at other institutions, or from high school students.
+Due to time and resource constraints, at this time we are not considering research requests for undergraduates at other institutions, or from high school students.

@@ -619,3 +619,778 @@ WARNING: 43 repetitive deprecation warnings omitted.
 Run in verbose mode to see all warnings.
                     ...done in 3.372867 seconds.
                     
+      Regenerating: 2 file(s) changed at 2025-08-26 23:27:14
+                    jekyll.log
+                    claude-session-memory.md
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/bibsearch.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/chartjs-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/common.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/copy_code.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/diff2html-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/distillpub/overrides.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/distillpub/template.v2.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/distillpub/transforms.v2.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/echarts-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/highlight-search-term.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/jupyter_new_tab.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/leaflet-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/masonry.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/mathjax-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/mermaid-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/newsletter.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/no_defer.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/plotly-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/progress-bar.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/pseudocode-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/search-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/shortcut-key.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/theme.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/tooltips-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/typograms.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/vega-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/venobox-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/wechat.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/zoom.js
+       Imagemagick: Searching files in /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/img/
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/DuprelaTour.T.2025-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/DuprelaTour.T.2025-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/DuprelaTour.T.2025-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Gong.X.etal.2023-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Gong.X.etal.2023-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Gong.X.etal.2023-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Kay.etal.2008-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Kay.etal.2008-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Kay.etal.2008-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Meschke.etal.preprint-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Meschke.etal.preprint-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Meschke.etal.preprint-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Nishimoto.etal.2011-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Nishimoto.etal.2011-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Nishimoto.etal.2011-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Popham.etal.2021-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Popham.etal.2021-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Popham.etal.2021-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/movie.decoding-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/movie.decoding-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/movie.decoding-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/prof_pic_color-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/prof_pic_color-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/prof_pic_color-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/pycortex-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/pycortex-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/pycortex-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/viewer.Deniz.F.2019-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/viewer.Deniz.F.2019-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/viewer.Deniz.F.2019-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/cottoncandy-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/cottoncandy-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/cottoncandy-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/himalaya-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/himalaya-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/himalaya-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/viewer.Huth.A.2012-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/viewer.Huth.A.2012-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/viewer.Huth.A.2012-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/papers/ViscontiDoC.2025-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/papers/ViscontiDoC.2025-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/papers/ViscontiDoC.2025-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/people/Yuerou.Tang-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/people/Yuerou.Tang-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/people/Yuerou.Tang-1400.webp
+       Imagemagick: Generated 0 file(s)
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+7 │   "variables",
+  │   ^^^^^^^^^^^
+  ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 7:3  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+8 │   "themes",
+  │   ^^^^^^^^
+  ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 8:3  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+9 │   "layout",
+  │   ^^^^^^^^
+  ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 9:3  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+10 │   "base",
+   │   ^^^^^^
+   ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 10:3  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+11 │   "distill",
+   │   ^^^^^^^^^
+   ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 11:3  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+9 │     #{$fa-icon-property}: unquote("\"#{ $icon }\"");
+  │                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_sass/font-awesome/_icons.scss 9:27  @import
+    font-awesome/fontawesome.scss 20:9                                                                @import
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 15:3            root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+10 │     #{$fa-duotone-icon-property}: unquote("\"#{$icon}#{$icon}\"");
+   │                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_sass/font-awesome/_icons.scss 10:35  @import
+    font-awesome/fontawesome.scss 20:9                                                                 @import
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 15:3             root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+29 │   .#{$fa-css-prefix}-#{$name} { #{$fa-icon-property}: unquote("\"#{ $icon }\""); }
+   │                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    font-awesome/brands.scss 29:55                                                          @import
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 16:3  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+36 │   @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+   │           ^^^^^^^^^^^^^
+   ╵
+    tabler-icons/tabler-icons.scss 36:11                                                    unicode()
+    tabler-icons/tabler-icons.scss 40:15                                                    @import
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 19:3  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.insert instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+36 │   @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+   │                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    tabler-icons/tabler-icons.scss 36:33                                                    unicode()
+    tabler-icons/tabler-icons.scss 40:15                                                    @import
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 19:3  root stylesheet
+WARNING: 43 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+                    ...done in 3.45954 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2025-08-27 14:43:53
+                    _pages/joinus.md
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/bibsearch.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/chartjs-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/common.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/copy_code.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/diff2html-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/distillpub/overrides.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/distillpub/template.v2.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/distillpub/transforms.v2.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/echarts-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/highlight-search-term.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/jupyter_new_tab.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/leaflet-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/masonry.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/mathjax-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/mermaid-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/newsletter.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/no_defer.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/plotly-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/progress-bar.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/pseudocode-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/search-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/shortcut-key.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/theme.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/tooltips-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/typograms.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/vega-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/venobox-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/wechat.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/zoom.js
+       Imagemagick: Searching files in /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/img/
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/DuprelaTour.T.2025-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/DuprelaTour.T.2025-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/DuprelaTour.T.2025-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Gong.X.etal.2023-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Gong.X.etal.2023-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Gong.X.etal.2023-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Kay.etal.2008-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Kay.etal.2008-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Kay.etal.2008-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Meschke.etal.preprint-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Meschke.etal.preprint-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Meschke.etal.preprint-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Nishimoto.etal.2011-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Nishimoto.etal.2011-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Nishimoto.etal.2011-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Popham.etal.2021-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Popham.etal.2021-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Popham.etal.2021-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/movie.decoding-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/movie.decoding-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/movie.decoding-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/prof_pic_color-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/prof_pic_color-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/prof_pic_color-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/pycortex-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/pycortex-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/pycortex-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/viewer.Deniz.F.2019-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/viewer.Deniz.F.2019-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/viewer.Deniz.F.2019-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/cottoncandy-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/cottoncandy-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/cottoncandy-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/himalaya-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/himalaya-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/himalaya-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/viewer.Huth.A.2012-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/viewer.Huth.A.2012-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/viewer.Huth.A.2012-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/papers/ViscontiDoC.2025-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/papers/ViscontiDoC.2025-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/papers/ViscontiDoC.2025-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/people/Yuerou.Tang-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/people/Yuerou.Tang-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/people/Yuerou.Tang-1400.webp
+       Imagemagick: Generated 0 file(s)
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+7 │   "variables",
+  │   ^^^^^^^^^^^
+  ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 7:3  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+8 │   "themes",
+  │   ^^^^^^^^
+  ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 8:3  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+9 │   "layout",
+  │   ^^^^^^^^
+  ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 9:3  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+10 │   "base",
+   │   ^^^^^^
+   ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 10:3  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+11 │   "distill",
+   │   ^^^^^^^^^
+   ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 11:3  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+9 │     #{$fa-icon-property}: unquote("\"#{ $icon }\"");
+  │                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_sass/font-awesome/_icons.scss 9:27  @import
+    font-awesome/fontawesome.scss 20:9                                                                @import
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 15:3            root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+10 │     #{$fa-duotone-icon-property}: unquote("\"#{$icon}#{$icon}\"");
+   │                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_sass/font-awesome/_icons.scss 10:35  @import
+    font-awesome/fontawesome.scss 20:9                                                                 @import
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 15:3             root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+29 │   .#{$fa-css-prefix}-#{$name} { #{$fa-icon-property}: unquote("\"#{ $icon }\""); }
+   │                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    font-awesome/brands.scss 29:55                                                          @import
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 16:3  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+36 │   @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+   │           ^^^^^^^^^^^^^
+   ╵
+    tabler-icons/tabler-icons.scss 36:11                                                    unicode()
+    tabler-icons/tabler-icons.scss 40:15                                                    @import
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 19:3  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.insert instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+36 │   @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+   │                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    tabler-icons/tabler-icons.scss 36:33                                                    unicode()
+    tabler-icons/tabler-icons.scss 40:15                                                    @import
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 19:3  root stylesheet
+WARNING: 43 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+                    ...done in 3.390053 seconds.
+                    
+[2025-08-27 14:43:56] ERROR Errno::ECONNRESET: Connection reset by peer @ io_fillbuf - fd:18 
+	/Users/gallant/.gem/ruby/3.3.5/gems/webrick-1.9.1/lib/webrick/httpserver.rb:82:in `eof?'
+	/Users/gallant/.gem/ruby/3.3.5/gems/webrick-1.9.1/lib/webrick/httpserver.rb:82:in `run'
+	/Users/gallant/.gem/ruby/3.3.5/gems/webrick-1.9.1/lib/webrick/server.rb:310:in `block in start_thread'
+[2025-08-27 14:43:56] ERROR Errno::ECONNRESET: Connection reset by peer @ io_fillbuf - fd:22 
+	/Users/gallant/.gem/ruby/3.3.5/gems/webrick-1.9.1/lib/webrick/httpserver.rb:82:in `eof?'
+	/Users/gallant/.gem/ruby/3.3.5/gems/webrick-1.9.1/lib/webrick/httpserver.rb:82:in `run'
+	/Users/gallant/.gem/ruby/3.3.5/gems/webrick-1.9.1/lib/webrick/server.rb:310:in `block in start_thread'
+      Regenerating: 2 file(s) changed at 2025-08-27 14:46:29
+                    jekyll.log
+                    claude-session-memory.md
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/bibsearch.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/chartjs-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/common.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/copy_code.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/diff2html-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/distillpub/overrides.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/distillpub/template.v2.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/distillpub/transforms.v2.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/echarts-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/highlight-search-term.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/jupyter_new_tab.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/leaflet-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/masonry.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/mathjax-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/mermaid-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/newsletter.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/no_defer.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/plotly-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/progress-bar.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/pseudocode-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/search-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/shortcut-key.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/theme.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/tooltips-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/typograms.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/vega-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/venobox-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/wechat.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/zoom.js
+       Imagemagick: Searching files in /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/img/
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/DuprelaTour.T.2025-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/DuprelaTour.T.2025-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/DuprelaTour.T.2025-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Gong.X.etal.2023-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Gong.X.etal.2023-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Gong.X.etal.2023-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Kay.etal.2008-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Kay.etal.2008-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Kay.etal.2008-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Meschke.etal.preprint-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Meschke.etal.preprint-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Meschke.etal.preprint-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Nishimoto.etal.2011-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Nishimoto.etal.2011-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Nishimoto.etal.2011-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Popham.etal.2021-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Popham.etal.2021-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Popham.etal.2021-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/movie.decoding-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/movie.decoding-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/movie.decoding-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/prof_pic_color-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/prof_pic_color-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/prof_pic_color-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/pycortex-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/pycortex-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/pycortex-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/viewer.Deniz.F.2019-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/viewer.Deniz.F.2019-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/viewer.Deniz.F.2019-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/cottoncandy-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/cottoncandy-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/cottoncandy-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/himalaya-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/himalaya-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/himalaya-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/viewer.Huth.A.2012-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/viewer.Huth.A.2012-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/viewer.Huth.A.2012-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/papers/ViscontiDoC.2025-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/papers/ViscontiDoC.2025-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/papers/ViscontiDoC.2025-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/people/Yuerou.Tang-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/people/Yuerou.Tang-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/people/Yuerou.Tang-1400.webp
+       Imagemagick: Generated 0 file(s)
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+7 │   "variables",
+  │   ^^^^^^^^^^^
+  ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 7:3  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+8 │   "themes",
+  │   ^^^^^^^^
+  ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 8:3  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+9 │   "layout",
+  │   ^^^^^^^^
+  ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 9:3  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+10 │   "base",
+   │   ^^^^^^
+   ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 10:3  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+11 │   "distill",
+   │   ^^^^^^^^^
+   ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 11:3  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+9 │     #{$fa-icon-property}: unquote("\"#{ $icon }\"");
+  │                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_sass/font-awesome/_icons.scss 9:27  @import
+    font-awesome/fontawesome.scss 20:9                                                                @import
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 15:3            root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+10 │     #{$fa-duotone-icon-property}: unquote("\"#{$icon}#{$icon}\"");
+   │                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_sass/font-awesome/_icons.scss 10:35  @import
+    font-awesome/fontawesome.scss 20:9                                                                 @import
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 15:3             root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+29 │   .#{$fa-css-prefix}-#{$name} { #{$fa-icon-property}: unquote("\"#{ $icon }\""); }
+   │                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    font-awesome/brands.scss 29:55                                                          @import
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 16:3  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+36 │   @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+   │           ^^^^^^^^^^^^^
+   ╵
+    tabler-icons/tabler-icons.scss 36:11                                                    unicode()
+    tabler-icons/tabler-icons.scss 40:15                                                    @import
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 19:3  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.insert instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+36 │   @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+   │                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    tabler-icons/tabler-icons.scss 36:33                                                    unicode()
+    tabler-icons/tabler-icons.scss 40:15                                                    @import
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 19:3  root stylesheet
+WARNING: 43 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+                    ...done in 3.3879 seconds.
+                    
+[2025-08-27 14:46:34] ERROR Errno::ECONNRESET: Connection reset by peer @ io_fillbuf - fd:19 
+	/Users/gallant/.gem/ruby/3.3.5/gems/webrick-1.9.1/lib/webrick/httpserver.rb:82:in `eof?'
+	/Users/gallant/.gem/ruby/3.3.5/gems/webrick-1.9.1/lib/webrick/httpserver.rb:82:in `run'
+	/Users/gallant/.gem/ruby/3.3.5/gems/webrick-1.9.1/lib/webrick/server.rb:310:in `block in start_thread'
+      Regenerating: 2 file(s) changed at 2025-08-27 14:48:54
+                    jekyll.log
+                    claude-session-memory.md
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/bibsearch.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/chartjs-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/common.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/copy_code.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/diff2html-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/distillpub/overrides.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/distillpub/template.v2.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/distillpub/transforms.v2.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/echarts-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/highlight-search-term.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/jupyter_new_tab.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/leaflet-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/masonry.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/mathjax-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/mermaid-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/newsletter.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/no_defer.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/plotly-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/progress-bar.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/pseudocode-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/search-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/shortcut-key.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/theme.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/tooltips-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/typograms.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/vega-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/venobox-setup.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/wechat.js
+Terser: Minifying /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/js/zoom.js
+       Imagemagick: Searching files in /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/img/
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/DuprelaTour.T.2025-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/DuprelaTour.T.2025-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/DuprelaTour.T.2025-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Gong.X.etal.2023-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Gong.X.etal.2023-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Gong.X.etal.2023-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Kay.etal.2008-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Kay.etal.2008-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Kay.etal.2008-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Meschke.etal.preprint-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Meschke.etal.preprint-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Meschke.etal.preprint-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Nishimoto.etal.2011-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Nishimoto.etal.2011-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Nishimoto.etal.2011-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Popham.etal.2021-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Popham.etal.2021-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/Popham.etal.2021-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/movie.decoding-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/movie.decoding-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/movie.decoding-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/prof_pic_color-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/prof_pic_color-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/prof_pic_color-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/pycortex-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/pycortex-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/pycortex-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/viewer.Deniz.F.2019-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/viewer.Deniz.F.2019-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/backup_pngs/viewer.Deniz.F.2019-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/cottoncandy-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/cottoncandy-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/cottoncandy-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/himalaya-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/himalaya-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/himalaya-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/viewer.Huth.A.2012-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/viewer.Huth.A.2012-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/other/viewer.Huth.A.2012-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/papers/ViscontiDoC.2025-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/papers/ViscontiDoC.2025-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/papers/ViscontiDoC.2025-1400.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/people/Yuerou.Tang-480.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/people/Yuerou.Tang-800.webp
+       Imagemagick: Adding static file /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_site/assets/img/people/Yuerou.Tang-1400.webp
+       Imagemagick: Generated 0 file(s)
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+7 │   "variables",
+  │   ^^^^^^^^^^^
+  ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 7:3  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+8 │   "themes",
+  │   ^^^^^^^^
+  ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 8:3  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+9 │   "layout",
+  │   ^^^^^^^^
+  ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 9:3  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+10 │   "base",
+   │   ^^^^^^
+   ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 10:3  root stylesheet
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+11 │   "distill",
+   │   ^^^^^^^^^
+   ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 11:3  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+9 │     #{$fa-icon-property}: unquote("\"#{ $icon }\"");
+  │                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_sass/font-awesome/_icons.scss 9:27  @import
+    font-awesome/fontawesome.scss 20:9                                                                @import
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 15:3            root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+10 │     #{$fa-duotone-icon-property}: unquote("\"#{$icon}#{$icon}\"");
+   │                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/_sass/font-awesome/_icons.scss 10:35  @import
+    font-awesome/fontawesome.scss 20:9                                                                 @import
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 15:3             root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+29 │   .#{$fa-css-prefix}-#{$name} { #{$fa-icon-property}: unquote("\"#{ $icon }\""); }
+   │                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    font-awesome/brands.scss 29:55                                                          @import
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 16:3  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.unquote instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+36 │   @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+   │           ^^^^^^^^^^^^^
+   ╵
+    tabler-icons/tabler-icons.scss 36:11                                                    unicode()
+    tabler-icons/tabler-icons.scss 40:15                                                    @import
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 19:3  root stylesheet
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use string.insert instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+36 │   @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+   │                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    tabler-icons/tabler-icons.scss 36:33                                                    unicode()
+    tabler-icons/tabler-icons.scss 40:15                                                    @import
+    /Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site/assets/css/main.scss 19:3  root stylesheet
+WARNING: 43 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+                    ...done in 3.40758 seconds.
+                    
+[2025-08-27 14:48:59] ERROR Errno::ECONNRESET: Connection reset by peer @ io_fillbuf - fd:7 
+	/Users/gallant/.gem/ruby/3.3.5/gems/webrick-1.9.1/lib/webrick/httpserver.rb:82:in `eof?'
+	/Users/gallant/.gem/ruby/3.3.5/gems/webrick-1.9.1/lib/webrick/httpserver.rb:82:in `run'
+	/Users/gallant/.gem/ruby/3.3.5/gems/webrick-1.9.1/lib/webrick/server.rb:310:in `block in start_thread'
