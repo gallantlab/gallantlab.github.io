@@ -13,8 +13,7 @@ current_members:
   - name: "Matteo Visconti di Oleggio Castello, PhD"
     title: "Senior Postdoc"
     image: "people/Matteo.ViscontidOC.webp"
-    website: "https://matteovisconti.com/"
-    description: "Areas of interest include individual differences, clinical applications of functional imaging, and fMRI methods development."
+    description: "Areas of interest include individual differences, clinical applications of functional imaging, and fMRI methods development. (Personal web site <a href='https://matteovisconti.com/'>here</a>.)"
 
   - name: "Tianjiao Zhang, PhD"
     title: "Postdoc"
@@ -75,12 +74,12 @@ alumni:
   - name: "Stephen David, PhD"
     title: "Former Postdoc"
     image: "people/Stephen.David.webp"
-    description: "Dr. David is now a Professor at Oregon Health & Science University."
+    description: "Dr. David is now a Professor at Oregon Health & Science University. (Lab web site <a href='https://hearingbrain.org/'>here</a>.)"
 
   - name: "Fatma Deniz, PhD"
     title: "Former Postdoc"
     image: "people/Fatma.Deniz.webp"
-    description: "Dr. Deniz is now a Professor at the Technical University of Berlin."
+    description: "Dr. Deniz is now a Professor at the Technical University of Berlin. (Lab web site <a href='https://www.fatmanet.com/'>here</a>.)"
 
   - name: "Tom Dupré la Tour, PhD"
     title: "Former Postdoc"
@@ -100,17 +99,22 @@ alumni:
   - name: "Kendrick Kay, PhD"
     title: "Former Postdoc"
     image: "people/Kendrick.Kay.webp"
-    description: "Dr. Kay is now a Professor at the University of Minnesota."
+    description: "Dr. Kay is now a Professor at the University of Minnesota. (Lab web site <a href='http://cvnlab.net/'>here</a>.)"
+
+  - name: "Mark Lescroart, PhD"
+    title: "Former Postdoc"
+    image: "people/Mark.Lescroart.webp"
+    description: "Dr. Lescroart is now a Professor at the University of Nevada. (Lab web site <a href='http://piecesofmind.psyc.unr.edu/'>here</a>.)"
 
   - name: "Thomas Naselaris, PhD"
     title: "Former Postdoc"
     image: "people/Thomas.Naselaris.webp"
-    description: "Dr. Naselaris is now a Professor at the University of Minnesota."
+    description: "Dr. Naselaris is now a Professor at the University of Minnesota. (Lab web site <a href='http://www.naselarislab.net/'>here</a>.)"
 
   - name: "Shinji Nishimoto, PhD"
     title: "Former Postdoc"
     image: "people/Shinji.Nishimoto.webp"
-    description: "Dr. Nishimoto is now a Professor at Osaka University."
+    description: "Dr. Nishimoto is now a Professor at Osaka University. (Lab web site <a href='https://nishimotolab.org/'>here</a>.)"
 
   - name: "Michael Oliver, PhD"
     title: "Former Postdoc"
@@ -125,7 +129,7 @@ alumni:
   - name: "Leila Wehbe, PhD"
     title: "Former Postdoc"
     image: "people/Leila.Wehbe.webp"
-    description: "Dr. Wehbe is now a Professor at Carnegie Mellon University."
+    description: "Dr. Wehbe is now a Professor at Carnegie Mellon University. (Lab web site <a href='https://www.cs.cmu.edu/~lwehbe/'>here</a>.)"
 
   - name: "Michele Winter, PhD"
     title: "Former Vision Science Graduate Student"
