@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Cognitive, Systems and Computational Neuroscience at the Leading Edge
 

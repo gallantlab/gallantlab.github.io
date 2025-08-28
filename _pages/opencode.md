@@ -1,6 +1,6 @@
 ---
 layout: page
-title: code
+title: Code
 permalink: /opencode/
 description:
 nav: true

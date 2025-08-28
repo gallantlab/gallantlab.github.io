@@ -1,6 +1,6 @@
 ---
 layout: page
-title: tutorials
+title: Tutorials
 permalink: /learn/
 description:
 nav: true

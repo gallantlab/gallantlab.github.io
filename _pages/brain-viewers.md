@@ -1,6 +1,6 @@
 ---
 layout: page
-title: brain viewers
+title: Brain viewers
 permalink: /brain-viewers/
 description:
 nav: true

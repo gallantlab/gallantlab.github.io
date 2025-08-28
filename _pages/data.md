@@ -1,6 +1,6 @@
 ---
 layout: page
-title: data
+title: Data
 permalink: /data/
 description: "Open datasets from the Gallant Lab for neuroscience research, including fMRI data for visual processing and semantic representation studies."
 nav: true

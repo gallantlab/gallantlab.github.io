@@ -1,7 +1,7 @@
 ---
 layout: publications
 permalink: /publications/
-title: publications
+title: Publications
 nav: true
 nav_order: 2
 # This page was converted from manual HTML to proper Jekyll templating.

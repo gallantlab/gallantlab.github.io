@@ -1,6 +1,6 @@
 ---
 layout: page
-title: join us
+title: Join us
 permalink: /joinus/
 nav: true
 nav_order: 4
