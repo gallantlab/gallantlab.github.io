@@ -71,6 +71,11 @@ alumni:
     image: "people/Catherine.Chen.webp"
     description: "Dr. Chen is now working in the technology industry."
 
+  - name: "Tolga Cukur, PhD"
+    title: "Former Postdoc"
+    image: "people/Tolga.Cukur.webp"
+    description: "Dr. Cukur is now a Professor at Bilkent University in Turkey. (Lab web site <a href='https://www.icon.bilkent.edu.tr/'>here</a>.)"
+
   - name: "Stephen David, PhD"
     title: "Former Postdoc"
     image: "people/Stephen.David.webp"
