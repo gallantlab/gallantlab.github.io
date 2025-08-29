@@ -695,20 +695,24 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
-    font-weight: bold;
+    font-weight: normal;
 
     &:hover {
       color: var(--global-hover-color);
     }
   }
 
-  .navbar-nav .nav-item.active > .nav-link {
-    background-color: inherit;
-    font-weight: bolder;
+  // Active navigation styling - override Bootstrap defaults
+  .navbar-nav .nav-item.active .nav-link {
+    font-weight: bold;
     color: var(--global-theme-color);
+    background-color: transparent;
 
-    &:hover {
-      color: var(--global-hover-color);
+    &:hover,
+    &:focus {
+      font-weight: bold;
+      color: var(--global-theme-color);
+      background-color: transparent;
     }
   }
 
