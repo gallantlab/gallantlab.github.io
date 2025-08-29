@@ -91,6 +91,11 @@ alumni:
     image: "people/Tom.DuprelaTour.webp"
     description: "Dr. Dupré la Tour is now working in the technology industry."
 
+  - name: "Ben Hayden, PhD"
+    title: "Former Postdoc"
+    image: "people/Ben.Hayden.webp"
+    description: "Dr. Hayden is now a Professor at Baylor University. (Lab web site <a href='https://www.haydenlab.com/'>here</a>.)"
+
   - name: "Michael Eickenberg, PhD"
     title: "Former Postdoc"
     image: "people/Michael.Eickenberg.webp"
@@ -100,6 +105,11 @@ alumni:
     title: "Former Neuroscience Graduate Student"
     image: "people/Lily.Gong.webp"
     description: "Dr. Gong is now a staff scientist with Prof. Edward Chang at UCSF."
+
+  - name: "Kate Gustavsen, PhD"
+    title: "Former Graduate Student"
+    image: "people/Kate.Gustavsen.webp"
+    description: "Following her PhD, Dr. Gustavsen obtained her DVM and is now a veterinarian at the Lincoln Park Zoo in Chicago."
 
   - name: "Alexander Huth, PhD"
     title: "Former Postdoc"
@@ -131,10 +141,20 @@ alumni:
     image: "people/Shinji.Nishimoto.webp"
     description: "Dr. Nishimoto is now a Professor at Osaka University. (Lab web site <a href='https://nishimotolab.org/'>here</a>.)"
 
+  - name: "Dustin Stansbury, PhD"
+    title: "Former Postdoc"
+    image: "people/Dustin.Stansbury.webp"
+    description: "Dr. Stansbury is now in the technology industry."
+
   - name: "Michael Oliver, PhD"
     title: "Former Postdoc"
     image: "people/Michael.Oliver.webp"
     description: "Dr. Oliver is now working in the technology industry."
+
+  - name: "Sara Popham, PhD"
+    title: "Former Graduate Student"
+    image: "people/Sara.Popham.webp"
+    description: "Dr. Popham is now in the technology industry."
 
   - name: "Christine Tseng, PhD"
     title: "Former Neuroscience Graduate Student and Postdoc"
