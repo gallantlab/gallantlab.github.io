@@ -107,17 +107,17 @@ alumni:
     description: "Dr. Gong is now a staff scientist with Prof. Edward Chang at UCSF."
 
   - name: "Kate Gustavsen, PhD"
-    title: "Former Graduate Student"
+    title: "Former Neuroscience Graduate Student"
     image: "people/Kate.Gustavsen.webp"
     description: "Following her PhD, Dr. Gustavsen obtained her DVM and is now a veterinarian at the Lincoln Park Zoo in Chicago."
 
   - name: "Alexander Huth, PhD"
-    title: "Former Postdoc"
+    title: "Former Neuroscience Graduate Student and Postdoc"
     image: "people/Alexander.Huth.webp"
     description: "Dr. Huth is now a Professor at UC Berkeley. (Lab web site <a href='https://huthlab.github.io/'>here</a>.)"
 
   - name: "Kendrick Kay, PhD"
-    title: "Former Postdoc"
+    title: "Former Psychology Graduate Student"
     image: "people/Kendrick.Kay.webp"
     description: "Dr. Kay is now a Professor at the University of Minnesota. (Lab web site <a href='http://cvnlab.net/'>here</a>.)"
 
@@ -142,17 +142,17 @@ alumni:
     description: "Dr. Nishimoto is now a Professor at Osaka University. (Lab web site <a href='https://nishimotolab.org/'>here</a>.)"
 
   - name: "Dustin Stansbury, PhD"
-    title: "Former Postdoc"
+    title: "Former Bioengineering Graduate Student"
     image: "people/Dustin.Stansbury.webp"
     description: "Dr. Stansbury is now in the technology industry."
 
   - name: "Michael Oliver, PhD"
-    title: "Former Postdoc"
+    title: "Former Vision Science Graduate Student"
     image: "people/Michael.Oliver.webp"
     description: "Dr. Oliver is now working in the technology industry."
 
   - name: "Sara Popham, PhD"
-    title: "Former Graduate Student"
+    title: "Former Neuroscience Graduate Student"
     image: "people/Sara.Popham.webp"
     description: "Dr. Popham is now in the technology industry."
 
