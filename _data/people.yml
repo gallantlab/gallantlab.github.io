@@ -101,6 +101,11 @@ alumni:
     image: "people/Lily.Gong.webp"
     description: "Dr. Gong is now a staff scientist with Prof. Edward Chang at UCSF."
 
+  - name: "Alexander Huth, PhD"
+    title: "Former Postdoc"
+    image: "people/Alexander.Huth.webp"
+    description: "Dr. Huth is now a Professor at UC Berkeley. (Lab web site <a href='https://huthlab.github.io/'>here</a>.)"
+
   - name: "Kendrick Kay, PhD"
     title: "Former Postdoc"
     image: "people/Kendrick.Kay.webp"
