@@ -116,6 +116,11 @@ alumni:
     image: "people/Mark.Lescroart.webp"
     description: "Dr. Lescroart is now a Professor at the University of Nevada. (Lab web site <a href='http://piecesofmind.psyc.unr.edu/'>here</a>.)"
 
+  - name: "James Mazer, PhD"
+    title: "Former Postdoc"
+    image: "people/James.Mazer.webp"
+    description: "After a long academic career as a Professor at Yale and MSU, Dr. Mazer has now moved to the technology industry."
+
   - name: "Thomas Naselaris, PhD"
     title: "Former Postdoc"
     image: "people/Thomas.Naselaris.webp"
