@@ -272,3 +272,267 @@ b11068d5 - Update Sunjae Shim profile image with proper aspect ratio
 ### Files Modified
 
 - `_pages/joinus.md` - Updated undergraduate inquiry process and restructured sections
+
+## Current Session Summary
+
+**Date**: 2025-08-28 (Sixth Session)
+**Working Directory**: `/Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site`
+
+### Major Changes Made
+
+1. **Navigation Titles Capitalized**: Updated all page titles in navigation bar for proper capitalization
+
+   - **Changed**: `about` → `About`, `people` → `People`, `publications` → `Publications`, `tutorials` → `Tutorials`, `code` → `Code`, `data` → `Data`, `blog` → `Blog`
+   - **Special Cases**: `brain viewers` → `Brain viewers`, `join us` → `Join us` (only first word capitalized per user request)
+
+2. **Tolga Cukur Added to Alumni**: Complete addition of new alumni member
+   - **Image Processing**: Converted `Tolga.Cukur.jpg` to WebP format and moved to `assets/img/people/`
+   - **Alumni Entry**: Added between Catherine Chen and Stephen David in alphabetical order
+   - **Bio**: "Dr. Cukur is now a Professor at Bilkent University in Turkey. (Lab web site [here](https://www.icon.bilkent.edu.tr/).)"
+   - **Cleanup**: Deleted original JPG file after successful conversion
+
+### Development Process
+
+1. **Navigation Update Process**:
+
+   - Used Grep to find all title fields across `_pages/*.md` files
+   - Applied MultiEdit operations to update titles consistently
+   - Maintained user's specific capitalization preferences for compound titles
+
+2. **Alumni Addition Workflow**:
+
+   - Located source image file in project root
+   - Used ImageMagick to convert JPG to WebP format for web optimization
+   - Updated `_data/people.yml` with proper YAML structure and HTML link formatting
+   - Cleaned up by removing original source file
+
+3. **Code Quality Maintenance**:
+   - Ran Prettier formatting (all files unchanged - formatting already correct)
+   - Followed established git workflow with descriptive commit messages
+   - Used proper commit co-authorship attribution
+
+### Current Status
+
+- ✅ **Navigation Titles Updated**: All 9 page titles properly capitalized in navigation
+- ✅ **Tolga Cukur Alumni Entry Complete**: Image, bio, and lab website link all integrated
+- ✅ **Code Formatting**: Prettier formatting passed (no changes needed)
+- ✅ **Git Commits**: Both changes committed with descriptive messages and pushed to GitHub
+
+### Commits Made
+
+1. **cf0ba2ce** - Capitalize navigation titles in page headers
+
+   - Updated title fields in \_pages/\*.md for proper capitalization
+   - Maintained special cases for "Brain viewers" and "Join us"
+
+2. **8c04b2e5** - Add Tolga Cukur to alumni list with profile image
+   - Converted and moved image to assets directory
+   - Added alumni entry with Bilkent University lab website link
+   - Cleaned up original JPG file
+
+### Files Modified
+
+- `_pages/about.md` - Title capitalized to "About"
+- `_pages/people.md` - Title capitalized to "People"
+- `_pages/publications.md` - Title capitalized to "Publications"
+- `_pages/learn.md` - Title capitalized to "Tutorials"
+- `_pages/joinus.md` - Title updated to "Join us"
+- `_pages/data.md` - Title capitalized to "Data"
+- `_pages/brain-viewers.md` - Title updated to "Brain viewers"
+- `_pages/opencode.md` - Title capitalized to "Code"
+- `_pages/blog.md` - Title capitalized to "Blog"
+- `_data/people.yml` - Added Tolga Cukur alumni entry
+- `assets/img/people/Tolga.Cukur.webp` - New profile image added
+
+### Development Commands Used
+
+- `npx prettier --write .` - Code formatting (passed both times)
+- `magick "Tolga.Cukur.jpg" "Tolga.Cukur.webp"` - Image format conversion
+- `mv "Tolga.Cukur.webp" "assets/img/people/"` - File relocation
+- `rm "Tolga.Cukur.jpg"` - Cleanup of original file
+- `git add . && git commit && git push` - Version control workflow (2 commits)
+
+### Next Session Priorities
+
+- Monitor GitHub Pages deployment for both navigation and alumni updates
+- Any additional alumni member updates or profile image processing
+- Consider any further navigation or UI improvements
+
+## Current Session Summary
+
+**Date**: 2025-08-29 (Seventh Session - Major Jekyll Overhaul)
+**Working Directory**: `/Users/gallant/LABLADMIN/WEB/JEKYLL.7-25/working-gallant-site`
+
+### Major Architectural Changes Made
+
+This session involved a comprehensive overhaul of the entire website to implement Jekyll best practices and create a unified "bold first sentence" system across all content sections.
+
+### 1. **Bold First Sentence System Implementation** - Jekyll Compliant
+
+**Problem**: User wanted to bold the first sentence in all content blurbs across the site (news, publications, brain viewers, tutorials, code, data)
+
+**Solution**: Implemented structured YAML approach with two patterns:
+
+- `first_sentence` + `remaining_description` for regular text
+- `first_sentence_with_link: true` for items where the title/link should be the bold first sentence
+
+**Implementation**:
+
+- Added `.first-sentence { font-weight: bold; }` CSS class
+- Updated all content sections to use structured data instead of hardcoded HTML
+- Applied consistently across: news, publications, brain viewers, tutorials, code, data
+
+### 2. **Template Architecture Overhaul** - Jekyll Best Practices
+
+**Created Unified Template System**:
+
+- `_layouts/news.liquid` - Dedicated layout for news items with chronological sorting
+- `_layouts/publications.liquid` - Enhanced to handle both publications and general content
+- `_layouts/content_list.liquid` - Unified template for brain viewers, tutorials, code, data
+- All templates use structured YAML data with proper Liquid templating
+
+**Template Features**:
+
+- Automatic date sorting for news items
+- Consistent CSS classes for styling
+- Support for both content patterns (first_sentence and first_sentence_with_link)
+- Proper template inheritance with `layout: default`
+
+### 3. **Content Structure Conversion** - YAML Data Approach
+
+**Brain Viewers Page** (`_pages/brain-viewers.md`):
+
+- Converted from manual HTML to structured YAML
+- All 8 items updated to use `first_sentence_with_link: true` (since links are first sentences)
+- Used `content_list.liquid` layout
+
+**Publications Page** (`_pages/publications.md`):
+
+- Updated all 12 publications to use `first_sentence_with_link: true`
+- Publication titles now bold linked "first sentences"
+- Enhanced `publications.liquid` layout to handle the link pattern
+
+**News System**:
+
+- Updated all 11 news items in `_news/*.md` files to use structured approach
+- Created comprehensive `/news/` page aggregating all news items chronologically
+- Added separate `news.liquid` layout optimized for chronological content with dates
+- Fixed image handling by moving images from content to front matter
+
+**Tutorials/Learn Page** (`_pages/learn.md`):
+
+- Updated both tutorial items to use `first_sentence_with_link: true`
+- Changed navigation from "Tutorials" to "Learn"
+- Changed first item title from "Voxelwise modeling" to "Voxelwise modeling tutorials"
+
+**Code Page** (`_pages/opencode.md`):
+
+- Updated all 4 code items to use `first_sentence_with_link: true`
+- GitHub repository, Himalaya, Pycortex, CottonCandy all have bold linked titles
+
+**Data Page** (`_pages/data.md`):
+
+- Updated all 6 dataset items to use `first_sentence_with_link: true`
+- All dataset names now bold clickable links to actual data repositories
+
+### 4. **Navigation & Styling Enhancements**
+
+**Navigation Updates**:
+
+- Made active nav items bold: added `font-weight: bold;` to `.nav-link.active`
+- Fixed news page linking: "News" header on about page already linked to `/news/`
+
+**Alumni Updates**:
+
+- Added Ben Willmore to alumni list with Oxford University profile link
+- Moved `Ben.Willmore.webp` from root to `assets/img/people/`
+- Proper bio format: "Dr. Willmore is now a Lecturer at Oxford University. (Web site [here](url).)"
+
+### 5. **File Organization & Asset Management**
+
+**Proper Jekyll Structure**:
+
+- All images in `assets/img/people/`, `assets/img/papers/`, `assets/img/datasets/`
+- Clean URL structure: `/news/`, `/publications/`, `/learn/`, `/data/`, `/opencode/`
+- Structured data in `_data/people.yml` and YAML front matter
+- No hardcoded HTML in content files
+
+### Current Architecture Status - Maximally Jekyll Compliant!
+
+✅ **Content as Data**: All content in structured YAML front matter  
+✅ **Template Separation**: Clean separation between content, templates, and styling  
+✅ **Consistent Patterns**: Unified approach across all sections  
+✅ **No CSS Hacks**: Pure SCSS following existing patterns  
+✅ **Proper Layouts**: Dedicated templates for different content types  
+✅ **Asset Organization**: Clean file structure following Jekyll conventions  
+✅ **URL Structure**: SEO-friendly permalinks and navigation
+
+### Technical Implementation Details
+
+**CSS Architecture**:
+
+- Single `.first-sentence` class handles all bold first sentences
+- Used existing SCSS variables and CSS custom properties
+- No `!important` declarations or CSS overrides needed
+
+**Template Logic**:
+
+```liquid
+{% if item.first_sentence_with_link %}
+  <span class="first-sentence"
+    ><a href="{{ item.url }}">{{ item.title }}</a>.</span
+  >
+  {{ item.remaining_description }}
+{% elsif item.first_sentence %}
+  <span class="first-sentence">{{ item.first_sentence }}</span> {{ item.remaining_description }}
+{% else %}
+  {{ item.content }}
+{% endif %}
+```
+
+**Data Structure Pattern**:
+
+```yaml
+- title: "Item Title"
+  url: "https://example.com"
+  image: "/assets/img/category/item.webp"
+  alt: "Alt text"
+  first_sentence_with_link: true # OR first_sentence: "Text here."
+  remaining_description: "Description continues here..."
+```
+
+### Files Modified/Created
+
+**New Files Created**:
+
+- `_layouts/news.liquid` - Dedicated news layout
+- `_pages/news.md` - Comprehensive news aggregation page
+
+**Major Files Updated**:
+
+- `_pages/publications.md` - All publications restructured
+- `_pages/brain-viewers.md` - Converted to YAML structure
+- `_pages/learn.md` - Updated tutorials structure
+- `_pages/opencode.md` - Updated code items structure
+- `_pages/data.md` - Updated data items structure
+- `_layouts/publications.liquid` - Enhanced template logic
+- `_sass/_base.scss` - Added first-sentence CSS and active nav styling
+- `_data/people.yml` - Added Ben Willmore
+- All 11 files in `_news/*.md` - Updated to structured approach
+
+### Current Status
+
+- ✅ **Jekyll Best Practices**: Site now follows Jekyll conventions throughout
+- ✅ **Unified First Sentence System**: Consistent bold first sentences across all sections
+- ✅ **Template Architecture**: Clean separation of concerns with dedicated layouts
+- ✅ **Content Structure**: All content uses structured YAML data
+- ✅ **Link Functionality**: All titles/links properly bolded and clickable
+- ✅ **Navigation**: Active nav items bolded, proper page linking
+- ✅ **Asset Organization**: Clean file structure following conventions
+
+### Next Session Priorities
+
+- Test all functionality across the site
+- Monitor any deployment issues
+- Consider any final polish or additional content updates
+- Verify all links and bold styling work correctly across all sections

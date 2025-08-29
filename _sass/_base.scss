@@ -12,6 +12,7 @@ html {
 // Standardized headings
 h1 {
   font-size: $font-size-heading-main;
+  font-weight: bold;
 }
 
 h2,
@@ -20,6 +21,12 @@ h4,
 h5,
 h6 {
   font-size: $font-size-heading-sub;
+  font-weight: bold;
+}
+
+// Bold first sentences using content structure
+.first-sentence {
+  font-weight: bold;
 }
 
 body,
@@ -679,8 +686,16 @@ ul.task-list input[type="checkbox"] {
     color: var(--global-text-color);
   }
 
+  // Responsive navbar alignment - left align when collapsed, right align when expanded
+  @media (min-width: 576px) {
+    .navbar-nav {
+      margin-left: auto;
+    }
+  }
+
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    font-weight: bold;
 
     &:hover {
       color: var(--global-hover-color);
@@ -1506,6 +1521,7 @@ nav[data-toggle="toc"] {
     color: var(--global-theme-color);
     border-left-color: var(--global-theme-color);
     font-size: $font-size-text;
+    font-weight: bold;
 
     &:hover {
       color: var(--global-hover-color);

@@ -30,10 +30,30 @@
             <th scope="row" class="news-date-column">{{ item.date | date: '%b %d, %Y' }}</th>
             <td>
               {% if item.inline %}
-                {% if item.image %}
-                  <img src="{{ item.image | relative_url }}" alt="News image" class="news-image">
+                {% if item.first_sentence_with_link %}
+                  {% if item.image %}
+                    <img
+                      src="{{ item.image | relative_url }}"
+                      alt="{{ item.alt | default: 'News image' }}"
+                      style="width: 60px; height: auto; max-height: 80px; object-fit: contain; border-radius: 4px; float: left; margin-right: 10px;"
+                    >
+                  {% endif %}
+                  <span class="first-sentence"
+                    ><a href="{{ item.url }}">{{ item.title }}</a>.</span
+                  >
+                  {{ item.remaining_description }}
+                {% elsif item.first_sentence %}
+                  {% if item.image %}
+                    <img
+                      src="{{ item.image | relative_url }}"
+                      alt="{{ item.alt | default: 'News image' }}"
+                      style="width: 60px; height: auto; max-height: 80px; object-fit: contain; border-radius: 4px; float: left; margin-right: 10px;"
+                    >
+                  {% endif %}
+                  <span class="first-sentence">{{ item.first_sentence }}</span> {{ item.remaining_description }}
+                {% else %}
+                  {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
                 {% endif %}
-                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
               {% else %}
                 <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
               {% endif %}

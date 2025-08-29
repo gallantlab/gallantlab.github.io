@@ -1,0 +1,67 @@
+---
+layout: default
+---
+<!--
+  News Layout
+
+  This template displays news items in chronological order with dates.
+  Uses the same CSS classes as publications for consistent styling but optimized for news structure.
+
+  Usage: Set layout: news in page front matter and provide news_items array with:
+  - title: News item title
+  - url: Link (optional)
+  - image: Path to news image
+  - alt: Alt text for image
+  - date: News date
+  - first_sentence: First sentence text
+  - remaining_description: Rest of the description
+  - first_sentence_with_link: true (if first sentence is the link)
+-->
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      {% if site.enable_navbar_social %}
+        {{ page.title }}
+        <div class="social">
+          <div class="contact-icons">
+            {% include social.liquid %}
+          </div>
+        </div>
+      {% else %}
+        {{ page.title }}
+      {% endif %}
+    </h1>
+    <p class="post-description">{{ page.description }}</p>
+  </header>
+
+  <article>
+    {% if page.news_items %}
+      {% assign sorted_news = page.news_items | sort: 'date' | reverse %}
+      {% for item in sorted_news %}
+        <div class="publication-entry">
+          {% if item.image %}
+            <div class="publication-image">
+              <img src="{{ item.image | relative_url }}" alt="{{ item.alt }}" class="img-fluid">
+            </div>
+          {% endif %}
+          <div class="publication-info">
+            <strong>{{ item.date | date: '%B %d, %Y' }}</strong><br>
+            {% if item.first_sentence_with_link %}
+              <span class="first-sentence"
+                ><a href="{{ item.url }}">{{ item.title }}</a>.</span
+              >
+              {{ item.remaining_description }}
+            {% elsif item.first_sentence %}
+              <span class="first-sentence">{{ item.first_sentence }}</span> {{ item.remaining_description }}
+            {% else %}
+              {{ item.title }}. {{ item.description }}
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    {% endif %}
+
+    {{ content }}
+  </article>
+</div>

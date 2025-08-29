@@ -136,6 +136,11 @@ alumni:
     image: "people/Leila.Wehbe.webp"
     description: "Dr. Wehbe is now a Professor at Carnegie Mellon University. (Lab web site <a href='https://www.cs.cmu.edu/~lwehbe/'>here</a>.)"
 
+  - name: "Ben Willmore, PhD"
+    title: "Former Postdoc"
+    image: "people/Ben.Willmore.webp"
+    description: "Dr. Willmore is now a Lecturer at Oxford University. (Web site <a href='https://www.dpag.ox.ac.uk/team/benjamin-willmore'>here</a>.)"
+
   - name: "Michele Winter, PhD"
     title: "Former Vision Science Graduate Student"
     image: "people/Michele.Winter.webp"

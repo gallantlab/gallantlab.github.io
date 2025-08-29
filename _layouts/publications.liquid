@@ -41,13 +41,37 @@ layout: default
 
   <article>
     {% if page.publications %}
-      {% for pub in page.publications %}
+      {% assign sorted_pubs = page.publications | sort: 'date' | reverse %}
+      {% for pub in sorted_pubs %}
         <div class="publication-entry">
           <div class="publication-image">
             <img src="{{ pub.image | relative_url }}" alt="{{ pub.alt }}" class="img-fluid">
           </div>
           <div class="publication-info">
-            <a href="{{ pub.url }}">{{ pub.title }}</a>. {{ pub.description }}
+            {% if pub.date %}
+              <strong>{{ pub.date | date: '%B %d, %Y' }}</strong><br>
+            {% endif %}
+            {% if pub.url and pub.url != '' %}
+              {% if pub.first_sentence_with_link %}
+                <span class="first-sentence"
+                  ><a href="{{ pub.url }}">{{ pub.title }}</a>.</span
+                >
+                {{ pub.remaining_description }}
+              {% else %}
+                <a href="{{ pub.url }}">{{ pub.title }}</a>.
+                {% if pub.first_sentence %}
+                  <span class="first-sentence">{{ pub.first_sentence }}</span> {{ pub.remaining_description }}
+                {% else %}
+                  {{ pub.description }}
+                {% endif %}
+              {% endif %}
+            {% else %}
+              {% if pub.first_sentence %}
+                <span class="first-sentence">{{ pub.first_sentence }}</span> {{ pub.remaining_description }}
+              {% else %}
+                {{ pub.title }}. {{ pub.description }}
+              {% endif %}
+            {% endif %}
           </div>
         </div>
       {% endfor %}
