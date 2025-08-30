@@ -889,3 +889,199 @@ This session involved a comprehensive overhaul of the entire website to implemen
 - Verify chronological ordering is working correctly on live site
 - Test interactive bilingual brain viewer functionality
 - Consider any additional recent publications or brain viewer updates
+
+## Session 9 Continuation - Jekyll News System Architecture Conversion
+
+**Date**: 2025-08-30 (Continued Session - News System Jekyll Collections Migration)
+
+### News System Duplication Problem Resolution
+
+**Issue Identified**: After converting news system from hybrid YAML approach to Jekyll collections, duplicate news items appeared on the news page.
+
+**Root Cause Analysis**:
+
+- Had created both `announcement_*.md` files and properly named dated `_news/*.md` files
+- Jekyll collections (`site.news`) was processing all `.md` files in `_news/` directory
+- This resulted in duplicate content being displayed since same news items existed in both naming schemes
+
+**Solution Implemented**:
+
+- Systematically identified all duplicate `announcement_*.md` files
+- Removed 9 duplicate announcement files: `announcement_1.md` through `announcement_10.md` (excluding `announcement_7.md` which didn't exist)
+- Kept only properly named dated files: `2021-11-20-popham-nature-neuroscience.md`, `2022-05-01-christine-tseng-phd.md`, etc.
+
+### Jekyll Collections Architecture Completed
+
+**Template Conversion**:
+
+- Updated `_layouts/news.liquid` to use `site.news` collection instead of `page.news_items` YAML data
+- Changed sorting logic from page data to collection items
+- Maintained all existing styling and functionality
+
+**Content Migration**:
+
+- Converted `_pages/news.md` from massive YAML front matter data to clean Jekyll collection approach
+- Removed 90+ lines of YAML data from news page
+- Now uses Jekyll best practice of individual `.md` files in `_news/` directory
+
+**Catherine Chen PhD Addition**: Added new news item for Catherine Chen's PhD completion (May 15, 2024) with proper Jekyll collection structure.
+
+### Code Quality and Deployment
+
+**Prettier Formatting**:
+
+- Ran `npx prettier --write .` successfully on all files
+- Fixed YAML formatting issues in news files (corrected misplaced `---` markers)
+- All files now consistently formatted
+
+**Git Workflow Completed**:
+
+- Staged all changes including deletions and modifications
+- Created descriptive commit: "Convert news system from hybrid approach to proper Jekyll collections"
+- Successfully pushed to GitHub: `a72b13fe`
+
+### Technical Achievements
+
+**Jekyll Best Practices Implementation**:
+
+- Eliminated anti-pattern of large YAML data blocks in page front matter
+- Implemented proper Jekyll collections approach with individual content files
+- Maintained all template functionality while improving architecture
+
+**Duplicate Content Resolution**:
+
+- Successfully identified and removed all duplicate news items
+- Jekyll server confirmed regeneration without duplicates
+- News page now displays clean, chronologically sorted content
+
+### Current Status
+
+- ✅ **News Duplicates Eliminated**: All `announcement_*.md` duplicates removed
+- ✅ **Jekyll Collections Active**: Site now uses proper `site.news` collection
+- ✅ **Template Migration Complete**: `news.liquid` updated for collections architecture
+- ✅ **Catherine Chen Addition**: New PhD announcement successfully added
+- ✅ **Code Formatting**: All files formatted with Prettier
+- ✅ **Deployment Complete**: Changes pushed to GitHub (`a72b13fe`)
+
+### Files Modified in Continuation
+
+**Core Architecture**:
+
+- `_layouts/news.liquid` - Template updated for Jekyll collections
+- `_pages/news.md` - YAML data removed, converted to collections approach
+
+**Content Management**:
+
+- Removed: 9 `announcement_*.md` duplicate files
+- Added: `_news/2024-05-15-catherine-chen-phd.md` - Catherine Chen PhD
+- Formatted: All news files with proper YAML structure
+
+**Documentation**:
+
+- `claude-session-memory.md` - Updated with continuation session details
+
+### Commit Made in Continuation
+
+**a72b13fe** - Convert news system from hybrid approach to proper Jekyll collections
+
+- Remove duplicate news items by converting announcement\__.md files to dated \_news/_.md files
+- Update news.liquid template to use site.news collection instead of page.news_items YAML data
+- Add Catherine Chen PhD announcement (May 15, 2024)
+- Fix news item duplication by removing obsolete announcement\_\* files
+- Format news files with Prettier for consistent YAML structure
+
+## Current Session Summary
+
+**Date**: 2025-08-30 (Tenth Session - Publication Date Updates & GitHub Deployment)
+**Working Directory**: `/Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site`
+
+### Major Changes Made
+
+### 1. **Brain Viewers Page Date Addition** - Chen et al. BioRxiv Preprint 2024
+
+**Problem**: User noticed "2024" was missing from the Chen et al. bioRxiv preprint entry on the brain-viewers page.
+
+**Solution**: Updated brain-viewers page to add "2024" after "Chen et al., bioRxiv preprint":
+
+- Changed: "...Chen et al., bioRxiv preprint)" → "...Chen et al., bioRxiv preprint, 2024)"
+- Applied to first brain viewer entry (bilingual language processing study)
+- Change immediately reflected in built site at `_site/brain-viewers/index.html`
+
+### 2. **Publications Page Date Updates** - Comprehensive Publication Date Corrections
+
+**Complete Date Update Process**: Updated publication dates throughout `_pages/publications.md` for chronological accuracy:
+
+**Updated Publication Dates**:
+
+- **Voxelwise Encoding Model Tutorial**: "2025-01-01" → "2025-05-09" (May 9, 2025)
+- **Timescales Paper (Chen et al.)**: "2024-01-01" → "2024-07-01" (July 1, 2024)
+- **Context Paper (Deniz et al.)**: "2023-01-02" → "2023-04-26" (April 26, 2023)
+- **Phonemic Segmentation (Gong et al.)**: "2023-01-01" → "2023-06-29" (June 29, 2023)
+- **Feature-space Selection (Dupré la Tour et al.)**: "2022-01-01" → "2022-12-01" (December 1, 2022)
+- **State Space Modeling (Zhang et al.)**: "2021-01-02" → "2021-05-01" (May 1, 2021)
+- **Mixed Integer Linear Programming (Slivkoff and Gallant)**: "2021-01-01" → "2021-05-05" (May 5, 2021)
+- **Scene-selective Areas (Lescroart et al.)**: "2019-01-01" → "2019-01-02" (January 2, 2019)
+- **Semantic Maps (Huth et al.)**: "2016-01-01" → "2016-04-27" (April 27, 2016)
+
+### 3. **Jekyll Site Rebuilding & Cache Management**
+
+**Browser Cache Resolution Process**:
+
+- User initially couldn't see date updates due to browser cache
+- Ran `bundle exec jekyll build` to ensure all changes reflected in generated site
+- Verified changes appeared in built HTML files
+- User successfully saw updates after browser cache refresh
+
+### Development Process
+
+**Publication Date Research & Application**:
+
+1. **Systematic Updates**: Applied user-provided accurate publication dates to all papers
+2. **Jekyll Date Fields**: Updated `date: "YYYY-MM-DD"` fields used for chronological sorting
+3. **Template Compatibility**: Maintained compatibility with existing `publications.liquid` template sorting logic
+
+**Jekyll Build Process**:
+
+1. **Full Site Rebuild**: Generated complete static site with updated publication dates
+2. **Asset Processing**: Jekyll processed all images, minified JavaScript, compiled SCSS
+3. **Optimization Pipeline**: Automatic WebP generation, responsive image creation, code minification
+
+**Git Workflow Management**:
+
+1. **Change Verification**: Used `git status` and `git diff` to verify all modifications
+2. **Change Staging**: Prepared all publication date updates for commit
+3. **Deployment Preparation**: Set up for final prettier formatting and GitHub push
+
+### Current Status - Ready for Final Deployment
+
+- ✅ **Brain Viewers Updated**: Chen et al. bioRxiv preprint now shows "2024"
+- ✅ **Publication Dates Updated**: All 9 publications have accurate chronological dates
+- ✅ **Jekyll Build Successful**: Complete site rebuild with optimizations completed
+- ✅ **Browser Cache Resolution**: Updates confirmed visible after cache refresh
+- ✅ **Git Changes Staged**: All modifications ready for commit and deployment
+
+### Files Modified This Session
+
+**Content Updates**:
+
+- `_pages/brain-viewers.md` - Added "2024" to Chen et al. bioRxiv preprint title
+- `_pages/publications.md` - Updated 9 publication dates with accurate chronological information
+
+### Development Commands Used
+
+**Jekyll Site Management**:
+
+- `git pull origin main` - Pulled latest changes from GitHub
+- `bundle exec jekyll build` - Rebuilt site with all optimizations and asset processing
+
+**Git Workflow Preparation**:
+
+- `git status` - Verified changed files
+- `git diff _pages/brain-viewers.md` - Confirmed brain viewer changes
+- Ready for: `npx prettier --write .` and `git push` workflow
+
+### Next Steps - Final Deployment
+
+1. ✅ **Append session log** (Current task in progress)
+2. 🔄 **Run prettier formatting**
+3. 🔄 **Push to GitHub for deployment**

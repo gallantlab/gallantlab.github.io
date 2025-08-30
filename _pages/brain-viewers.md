@@ -9,7 +9,7 @@ entry_class: viewer-entry
 image_class: viewer-image
 info_class: viewer-info
 content_items:
-  - title: "Bilingual language processing relies on shared semantic representations that are modulated by each language (Chen et al., bioRxiv preprint)"
+  - title: "Bilingual language processing relies on shared semantic representations that are modulated by each language (Chen et al., bioRxiv preprint, 2024)"
     url: "https://blsemc.github.io/viewer/"
     image: "/assets/img/papers/Chen.etal.2024.2.webp"
     alt: "Chen bilingual 2024"
