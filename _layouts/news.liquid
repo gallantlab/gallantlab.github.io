@@ -36,8 +36,8 @@ layout: default
   </header>
 
   <article>
-    {% if page.news_items %}
-      {% assign sorted_news = page.news_items | sort: 'date' | reverse %}
+    {% if site.news %}
+      {% assign sorted_news = site.news | sort: 'date' | reverse %}
       {% for item in sorted_news %}
         <div class="publication-entry">
           {% if item.image %}
@@ -55,7 +55,7 @@ layout: default
             {% elsif item.first_sentence %}
               <span class="first-sentence">{{ item.first_sentence }}</span> {{ item.remaining_description }}
             {% else %}
-              {{ item.title }}. {{ item.description }}
+              {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
             {% endif %}
           </div>
         </div>

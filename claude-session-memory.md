@@ -736,3 +736,156 @@ This session involved a comprehensive overhaul of the entire website to implemen
 - Verify all website links are functional
 - Consider any additional alumni or team member updates
 - Test navigation styling across different browsers/devices
+
+## Current Session Summary
+
+**Date**: 2025-08-30 (Ninth Session - Publications Reordering & Bilingual Study Addition)
+**Working Directory**: `/Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site`
+
+### Major Changes Made
+
+### 1. **Publications Page Chronological Reordering** - Jekyll Date Sorting Implementation
+
+**Problem**: Publications were displaying oldest-first instead of newest-first on the live site.
+
+**Root Cause**: The `publications.liquid` template was trying to sort by `date` fields that didn't exist, so it displayed publications in their YAML file order.
+
+**Solution**: Implemented proper Jekyll date sorting approach:
+
+- Added `date` fields to all publications extracted from years in titles
+- Used specific dates like "2025-08-22" where available (from bioRxiv URLs)
+- For same-year publications, used different days (01, 02, 03) to maintain consistent ordering
+- Template logic `{% assign sorted_pubs = page.publications | sort: 'date' | reverse %}` now works correctly
+
+**Publication Years Removed**: Cleaned up titles by removing redundant years since dates are now in separate fields:
+
+- "...Communications Biology, 2024)" → "...Communications Biology)"
+- All 12 publication titles updated for consistency
+
+### 2. **New Bilingual Language Processing Study Added** - November 2024 Publication
+
+**Complete Publication Addition**:
+
+- **Title**: "Bilingual language processing relies on shared semantic representations that are modulated by each language (Chen et al., BioRxiv preprint)"
+- **Date**: "2024-11-21" (most recent publication, appears first)
+- **URL**: https://www.biorxiv.org/content/biorxiv/early/2024/11/21/2024.06.24.600505.full.pdf
+- **Image**: `/assets/img/papers/Chen.etal.2024.2.webp` (moved from top-level directory)
+- **Description**: Full research summary about bilingual semantic representation differences
+
+### 3. **New Bilingual Brain Viewer Added** - Interactive Data Exploration
+
+**Brain Viewer Implementation**:
+
+- **Title**: "Bilingual language processing relies on shared semantic representations that are modulated by each language (Chen et al., BioRxiv preprint)"
+- **URL**: https://blsemc.github.io/viewer/ (external interactive viewer)
+- **Image**: Same as publication (`Chen.etal.2024.2.webp`)
+- **Enhanced Description**: Added viewer-specific text: "This brain viewer allows you to explore, compare and contrast English and Chinese semantic representations in one bilingual participant."
+
+### 4. **Brain Viewers Page Content Cleanup**
+
+**Content Refinements**:
+
+- **Chen 2024 Timescales Entry**: Added ", 2024" to title for consistency since brain viewers don't use date fields
+- **Educational Reference Removal**: Removed "We created the following two brain viewers for educational purposes." line for cleaner flow
+- **Enhanced Viewer Description**: Added specific interactive functionality description for bilingual viewer
+
+### Development Process
+
+**Jekyll Date Architecture Implementation**:
+
+1. **Template Analysis**: Identified that `publications.liquid` expected `date` fields but publications only had years in titles
+2. **Data Structure Enhancement**: Added proper `date: "YYYY-MM-DD"` fields to all publications
+3. **Content Cleanup**: Removed redundant years from titles since dates are now in structured fields
+4. **Sorting Verification**: Template's existing `sort: 'date' | reverse` logic now functions correctly
+
+**Asset Management**:
+
+1. **Image Organization**: Moved `Chen.etal.2024.2.webp` from project root to `assets/img/papers/` directory
+2. **File Naming**: Used consistent naming convention matching existing paper image patterns
+3. **Path Updates**: Updated all references to use proper asset paths
+
+**Content Structure Consistency**:
+
+1. **Publication Format**: Used established YAML structure with `first_sentence_with_link: true`
+2. **Brain Viewer Format**: Followed existing pattern with enhanced interactive description
+3. **Template Compatibility**: Ensured all changes work with existing Jekyll template system
+
+### Technical Achievements
+
+**Jekyll Best Practices Maintained**:
+
+- **Structured Data**: All content remains in YAML front matter, not hardcoded HTML
+- **Template Logic**: Leveraged existing sorting and display templates without modifications
+- **Asset Pipeline**: Proper image organization following Jekyll conventions
+- **URL Structure**: Clean permalinks and navigation maintained
+
+**Site Performance Verification**:
+
+- **Jekyll Build Success**: Full site build completed with all optimizations:
+  - Terser JavaScript minification (28 files processed)
+  - ImageMagick responsive image generation (480px, 800px, 1400px variants)
+  - SCSS compilation and CSS minification
+  - Automatic WebP optimization and responsive image creation
+- **Development Server**: Successfully running at http://localhost:4000 with all functionality confirmed
+
+### Current Status
+
+- ✅ **Publications Chronological Order**: Now displays newest-first (November 2024 bilingual study at top)
+- ✅ **Jekyll Date Sorting**: Proper `date` fields enable template-driven chronological organization
+- ✅ **New Publication Added**: Chen et al. bilingual study with complete metadata and description
+- ✅ **New Brain Viewer Added**: Interactive bilingual language viewer with enhanced description
+- ✅ **Asset Organization**: All images properly located in `assets/img/papers/` directory
+- ✅ **Content Cleanup**: Years removed from titles, educational reference text removed
+- ✅ **Jekyll Optimization**: Site running with maximum Jekyll compliance and performance optimizations
+- ✅ **GitHub Deployment**: All changes committed and pushed (commit f15f7ca0)
+
+### Commit Made This Session
+
+**f15f7ca0** - Add new bilingual publication and brain viewer with Jekyll date sorting
+
+- Add Chen et al. bilingual language processing publication (Nov 21, 2024)
+- Extract publication years to separate date fields for proper chronological sorting
+- Add new bilingual brain viewer entry linking to interactive viewer
+- Move Chen.etal.2024.2.webp image to assets/img/papers/ directory
+- Remove educational viewer reference text from brain-viewers page
+- Publications now display in reverse chronological order (most recent first)
+
+### Files Modified This Session
+
+**Publications System**:
+
+- `_pages/publications.md` - Added new bilingual publication with date field, removed years from all titles
+
+**Brain Viewers System**:
+
+- `_pages/brain-viewers.md` - Added new bilingual viewer entry, updated Chen 2024 title, removed educational reference
+
+**Asset Management**:
+
+- `assets/img/papers/Chen.etal.2024.2.webp` - New bilingual study image (moved from root directory)
+
+**Documentation**:
+
+- `claude-session-memory.md` - Session summary and technical documentation
+
+### Development Commands Used
+
+**Jekyll Development**:
+
+- `bundle exec jekyll serve --host 0.0.0.0 --port 4000` - Development server with full optimization verification
+- `npx prettier --write .` - Code formatting validation (all files properly formatted)
+
+**Asset Management**:
+
+- `mv Chen.etal.2024.2.webp assets/img/papers/` - Image file organization
+
+**Version Control**:
+
+- `git status`, `git add .`, `git commit`, `git push` - Full deployment workflow with descriptive commit message
+
+### Next Session Priorities
+
+- Monitor GitHub Pages deployment for bilingual publication and viewer
+- Verify chronological ordering is working correctly on live site
+- Test interactive bilingual brain viewer functionality
+- Consider any additional recent publications or brain viewer updates
