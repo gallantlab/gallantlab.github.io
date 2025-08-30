@@ -536,3 +536,203 @@ This session involved a comprehensive overhaul of the entire website to implemen
 - Monitor any deployment issues
 - Consider any final polish or additional content updates
 - Verify all links and bold styling work correctly across all sections
+
+## Current Session Summary
+
+**Date**: 2025-08-29 (Eighth Session - Navigation Styling & Alumni Additions)
+**Working Directory**: `/Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site`
+
+### Major Changes Made
+
+### 1. **Active Navigation Styling Fix** - Jekyll Best Practices Approach
+
+**Problem**: Active navigation items appeared as "black text on gray square" instead of bold blue styling.
+
+**Root Cause**: CSS selector specificity issue with redundant `.navbar-light` classes causing conflicts with Bootstrap defaults.
+
+**Solution**: Fixed using Jekyll-compliant CSS approach:
+
+- Removed redundant selectors that caused double `.navbar-light .navbar-light` compilation
+- Used proper CSS specificity: `.navbar-nav .nav-item.active .nav-link`
+- Added proper SCSS nesting with `&:hover` and `&:focus` pseudo-selectors
+- Utilized CSS custom properties: `var(--global-theme-color)`
+- No `!important` declarations needed - clean cascade approach
+
+**Implementation**:
+
+```scss
+// Active navigation styling - override Bootstrap defaults
+.navbar-nav .nav-item.active .nav-link {
+  font-weight: bold;
+  color: var(--global-theme-color);
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    font-weight: bold;
+    color: var(--global-theme-color);
+    background-color: transparent;
+  }
+}
+```
+
+### 2. **Alumni Additions with Image Processing** - 6 New Alumni Members
+
+**Complete Alumni Addition Workflow**:
+
+**Alexander Huth**:
+
+- Converted `Alexander.Huth.jpg` to WebP format using ImageMagick
+- Added to alumni: "Dr. Huth is now a Professor at UC Berkeley. (Lab web site [here](https://huthlab.github.io/).)"
+- Title: "Former Postdoc" → Later corrected to "Former Neuroscience Graduate Student and Postdoc"
+
+**James Mazer**:
+
+- Converted `James.Mazer.jpg` to WebP format using ImageMagick
+- Added to alumni: "After a long academic career as a Professor at Yale and MSU, Dr. Mazer has now moved to the technology industry."
+- Title: "Former Postdoc"
+
+**Kate Gustavsen**:
+
+- Moved `Kate.Gustavsen.webp` from root to `assets/img/people/`
+- Added to alumni: "Following her PhD, Dr. Gustavsen obtained her DVM and is now a veterinarian at the Lincoln Park Zoo in Chicago."
+- Title: "Former Graduate Student" → Later corrected to "Former Neuroscience Graduate Student"
+
+**Ben Hayden**:
+
+- Moved `Ben.Hayden.webp` from root to `assets/img/people/` (already WebP format)
+- Added to alumni: "Dr. Hayden is now a Professor at Baylor University. (Lab web site [here](https://www.haydenlab.com/).)"
+- Title: "Former Postdoc"
+
+**Dustin Stansbury**:
+
+- Converted `Dustin.Stansbury.jpg` to WebP format using ImageMagick
+- Added to alumni: "Dr. Stansbury is now in the technology industry."
+- Title: "Former Postdoc" → Later corrected to "Former Bioengineering Graduate Student"
+
+**Sara Popham**:
+
+- Converted `Sara.Popham.jpg` to WebP format using ImageMagick
+- Added to alumni: "Dr. Popham is now in the technology industry."
+- Title: "Former Graduate Student" → Later corrected to "Former Neuroscience Graduate Student"
+
+### 3. **Alumni Title Corrections** - Academic Path Accuracy
+
+**Title Corrections Made**:
+
+- **Kendrick Kay**: "Former Postdoc" → "Former Psychology Graduate Student"
+- **Alexander Huth**: "Former Postdoc" → "Former Neuroscience Graduate Student and Postdoc"
+- **Dustin Stansbury**: "Former Postdoc" → "Former Bioengineering Graduate Student"
+- **Michael Oliver**: "Former Postdoc" → "Former Vision Science Graduate Student"
+- **Sara Popham**: "Former Graduate Student" → "Former Neuroscience Graduate Student"
+- **Kate Gustavsen**: "Former Graduate Student" → "Former Neuroscience Graduate Student"
+
+**Reasoning**: Titles now accurately reflect each person's actual academic journey through the lab, showing their graduate student programs and any subsequent postdoc positions.
+
+### Development Process
+
+**Image Processing Pipeline**:
+
+1. `magick source.jpg target.webp` - Convert JPG to optimized WebP format
+2. `mv target.webp assets/img/people/` - Move to proper directory
+3. `rm source.jpg` - Clean up original files
+
+**Jekyll-Compliant CSS Debugging**:
+
+1. **Identified Issue**: Used browser developer tools to trace CSS cascade problems
+2. **Found Root Cause**: Double `.navbar-light` selector compilation causing specificity conflicts
+3. **Applied Solution**: Simplified selectors, used proper SCSS nesting, leveraged CSS custom properties
+4. **Verified Fix**: Tested across light/dark themes to ensure theme-aware functionality
+
+**Alumni Management**:
+
+1. **Alphabetical Ordering**: Maintained proper alphabetical sorting in `_data/people.yml`
+2. **Consistent Structure**: Used established YAML data patterns
+3. **Link Integration**: Proper HTML link formatting within YAML descriptions
+4. **Title Accuracy**: Corrected titles to reflect actual academic paths
+
+### Technical Details
+
+**CSS Architecture Principles**:
+
+- Used existing SCSS variables and mixins
+- Leveraged CSS custom properties for theme compatibility
+- Maintained Bootstrap compatibility without hacks
+- Applied proper CSS specificity instead of `!important`
+
+**Alumni Data Structure**:
+
+```yaml
+- name: "Full Name, PhD"
+  title: "Former [Program] Graduate Student [and Postdoc]"
+  image: "people/FirstName.LastName.webp"
+  description: "Career description with optional (Lab web site <a href='url'>here</a>.)"
+```
+
+**Git Workflow**:
+
+- Individual commits for major changes (navigation fix, alumni batches)
+- Descriptive commit messages with technical details
+- Proper co-authorship attribution with Claude Code
+- All changes pushed to GitHub for automatic deployment
+
+### Current Status
+
+- ✅ **Active Navigation Fixed**: Bold blue styling works correctly across all pages and themes
+- ✅ **6 Alumni Added**: All with proper images, bios, and website links where applicable
+- ✅ **Title Corrections**: All alumni titles now accurately reflect their academic paths
+- ✅ **Image Optimization**: All profile images converted to WebP format for performance
+- ✅ **Jekyll Compliance**: All changes follow Jekyll best practices without CSS hacks
+- ✅ **GitHub Deployment**: All changes successfully pushed and deployed
+
+### Commits Made This Session
+
+1. **adde8f72** - Fix active navigation styling with Jekyll-compliant CSS
+2. **1a26db81** - Add Alexander Huth to alumni section
+3. **ed0c06c7** - Add James Mazer to alumni section
+4. **22f8e99c** - Add multiple alumni with profile images (Kate, Ben, Dustin, Sara)
+5. **1883544c** - Correct alumni titles to reflect accurate academic paths
+
+### Files Modified
+
+**CSS Architecture**:
+
+- `_sass/_base.scss` - Fixed active navigation styling with proper specificity
+
+**Alumni Database**:
+
+- `_data/people.yml` - Added 6 new alumni and corrected 6 titles
+
+**Image Assets**:
+
+- `assets/img/people/Alexander.Huth.webp`
+- `assets/img/people/James.Mazer.webp`
+- `assets/img/people/Kate.Gustavsen.webp`
+- `assets/img/people/Ben.Hayden.webp`
+- `assets/img/people/Dustin.Stansbury.webp`
+- `assets/img/people/Sara.Popham.webp`
+
+### Development Commands Used
+
+**Image Processing**:
+
+- `magick source.jpg target.webp` - Format conversion
+- `cp source.webp assets/img/people/target.webp` - File management
+- `rm source.jpg` - Cleanup
+
+**Jekyll Development**:
+
+- `bundle exec jekyll serve --host 0.0.0.0 --port 4000 --livereload` - Development server
+- `bundle exec jekyll build` - Production build testing
+
+**Code Quality**:
+
+- `npx prettier --write .` - Code formatting (passed all runs)
+- `git add . && git commit && git push` - Version control workflow
+
+### Next Session Priorities
+
+- Monitor all new alumni profiles on live site
+- Verify all website links are functional
+- Consider any additional alumni or team member updates
+- Test navigation styling across different browsers/devices

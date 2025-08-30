@@ -9,6 +9,20 @@ entry_class: viewer-entry
 image_class: viewer-image
 info_class: viewer-info
 content_items:
+  - title: "Bilingual language processing relies on shared semantic representations that are modulated by each language (Chen et al., BioRxiv preprint)"
+    url: "https://blsemc.github.io/viewer/"
+    image: "/assets/img/papers/Chen.etal.2024.2.webp"
+    alt: "Chen bilingual 2024"
+    first_sentence_with_link: true
+    remaining_description: "Billions of people throughout the world are bilingual and can extract meaning from multiple languages. To determine how semantic representations in the brains of bilinguals can support both shared and distinct processing for different languages, we performed fMRI scans of participants who are fluent in both English and Chinese while they read natural narratives in each language. This brain viewer allows you to explore, compare and contrast English and Chinese semantic representations in one bilingual participant."
+
+  - title: "The cortical representation of language timescales is shared between reading and listening (Chen et al., Communications Biology, 2024)"
+    url: "https://gallantlab.org/viewer-chen-2024/"
+    image: "/assets/img/papers/Chen.etal.2024.webp"
+    alt: "Chen 2024"
+    first_sentence_with_link: true
+    remaining_description: "Language comprehension involves integrating low-level sensory inputs into a hierarchy of increasingly high-level features. To recover this hierarchy we mapped the intrinsic timescale of language representation across the cerebral cortex during listening and reading. We find that the timescale of representation is organized similarly for the two modalities. The interactive brain viewer shows how the timescales of language representation change systematically across the cortical surface. The colors on the cortical map indicate the context length for language representation."
+
   - title: "The representation of semantic information across human cerebral cortex during listening versus reading is invariant to stimulus modality (Deniz et al., J. Neuroscience, 2019)"
     url: "https://gallantlab.org/viewer-deniz-2019/"
     image: "/assets/img/papers/Deniz.F.2019.webp"
@@ -53,5 +67,3 @@ content_items:
 ---
 
 This page collects public brain viewers that you can use to interact with the data and results from many of our published studies. To reach the brain viewer for any topic, just click on the highlighted hyperlink. Please note that these brain viewers do not run well on cell phones, you will have the best experience with a computer or a tablet.
-
-We created the following two brain viewers for educational purposes.
