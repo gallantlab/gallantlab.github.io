@@ -8,7 +8,7 @@ nav_order: 2
 # Each publication is now stored as structured YAML data below, making it much easier to maintain.
 # The publications layout (_layouts/publications.liquid) handles the rendering using the same CSS styling.
 publications:
-  - title: "Bilingual language processing relies on shared semantic representations that are modulated by each language (Chen et al., BioRxiv preprint)"
+  - title: "Bilingual language processing relies on shared semantic representations that are modulated by each language (Chen et al., bioRxiv preprint)"
     date: "2024-11-21"
     url: "https://www.biorxiv.org/content/biorxiv/early/2024/11/21/2024.06.24.600505.full.pdf"
     image: "/assets/img/papers/Chen.etal.2024.2.webp"
