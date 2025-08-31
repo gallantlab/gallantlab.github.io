@@ -76,11 +76,6 @@ alumni:
     image: "people/Catherine.Chen.webp"
     description: "Dr. Chen is now in the technology industry."
 
-  - name: "Bill Vinje, PhD"
-    title: "Former Graduate Student"
-    image: "people/Bill.Vinje.webp"
-    description: "Dr. Vinje is now in the technology industry."
-
   - name: "Tolga Cukur, PhD"
     title: "Former Postdoc"
     image: "people/Tolga.Cukur.webp"
@@ -101,25 +96,20 @@ alumni:
     image: "people/Tom.DuprelaTour.webp"
     description: "Dr. Dupré la Tour is now in the technology industry."
 
-  - name: "Ben Hayden, PhD"
-    title: "Former Postdoc"
-    image: "people/Ben.Hayden.webp"
-    description: "Dr. Hayden is now a Professor at Baylor University. (Lab web site <a href='https://www.haydenlab.com/'>here</a>.)"
-
   - name: "Michael Eickenberg, PhD"
     title: "Former Postdoc"
     image: "people/Michael.Eickenberg.webp"
     description: "Dr. Eickenberg is now a staff scientist at the Flatiron Institute."
 
-  - name: "Lily Xue Gong, PhD"
-    title: "Former Neuroscience Graduate Student"
-    image: "people/Lily.Gong.webp"
-    description: "Dr. Gong is now a staff scientist with Prof. Edward Chang at UCSF."
-
   - name: "James Gao, PhD"
     title: "Former Graduate Student"
     image: "people/James.Gao.webp"
     description: "Dr. Gao is now in the technology industry."
+
+  - name: "Lily Xue Gong, PhD"
+    title: "Former Neuroscience Graduate Student"
+    image: "people/Lily.Gong.webp"
+    description: "Dr. Gong is now a staff scientist with Prof. Edward Chang at UCSF."
 
   - name: "Kate Gustavsen, PhD"
     title: "Former Neuroscience Graduate Student"
@@ -130,6 +120,11 @@ alumni:
     title: "Former Graduate Student"
     image: "people/Kathleen.Hansen.webp"
     description: "Dr. Hansen is now a teacher."
+
+  - name: "Ben Hayden, PhD"
+    title: "Former Postdoc"
+    image: "people/Ben.Hayden.webp"
+    description: "Dr. Hayden is now a Professor at Baylor University. (Lab web site <a href='https://www.haydenlab.com/'>here</a>.)"
 
   - name: "Alexander Huth, PhD"
     title: "Former Neuroscience Graduate Student and Postdoc"
@@ -161,25 +156,15 @@ alumni:
     image: "people/Thomas.Naselaris.webp"
     description: "Dr. Naselaris is now a Professor at the University of Minnesota. (Lab web site <a href='http://www.naselarislab.net/'>here</a>.)"
 
-  - name: "Anwar Nunez-Elizalde, PhD"
-    title: "Former Graduate Student"
-    image: "people/Anwar.Nunez-Elizalde.webp"
-    description: "Dr. Nunez-Elizalde is now in the technology industry."
-
   - name: "Shinji Nishimoto, PhD"
     title: "Former Postdoc"
     image: "people/Shinji.Nishimoto.webp"
     description: "Dr. Nishimoto is now a Professor at Osaka University. (Lab web site <a href='https://nishimotolab.org/'>here</a>.)"
 
-  - name: "Storm Slivkoff, PhD"
+  - name: "Anwar Nunez-Elizalde, PhD"
     title: "Former Graduate Student"
-    image: "people/Storm.Slivkoff.webp"
-    description: "Dr. Slivkoff is now in the technology industry."
-
-  - name: "Dustin Stansbury, PhD"
-    title: "Former Bioengineering Graduate Student"
-    image: "people/Dustin.Stansbury.webp"
-    description: "Dr. Stansbury is now in the technology industry."
+    image: "people/Anwar.Nunez-Elizalde.webp"
+    description: "Dr. Nunez-Elizalde is now in the technology industry."
 
   - name: "Michael Oliver, PhD"
     title: "Former Vision Science Graduate Student"
@@ -196,10 +181,30 @@ alumni:
     image: "people/Ryan.Prenger.webp"
     description: "Dr. Prenger is now in the technology industry."
 
+  - name: "Storm Slivkoff, PhD"
+    title: "Former Graduate Student"
+    image: "people/Storm.Slivkoff.webp"
+    description: "Dr. Slivkoff is now in the technology industry."
+
+  - name: "Dustin Stansbury, PhD"
+    title: "Former Bioengineering Graduate Student"
+    image: "people/Dustin.Stansbury.webp"
+    description: "Dr. Stansbury is now in the technology industry."
+
   - name: "Christine Tseng, PhD"
     title: "Former Neuroscience Graduate Student and Postdoc"
     image: "people/Christine.Tseng.webp"
     description: "Dr. Tseng is now doing a postdoc with Prof. Fatma Deniz at the Technical University of Berlin."
+
+  - name: "Bill Vinje, PhD"
+    title: "Former Graduate Student"
+    image: "people/Bill.Vinje.webp"
+    description: "Dr. Vinje is now in the technology industry."
+
+  - name: "An Vu, PhD"
+    title: "Former Graduate Student"
+    image: "people/An.Vu.webp"
+    description: "Dr. Vu is now a Professor at UCSF. (Lab web site <a href='https://profiles.ucsf.edu/an.vu'>here</a>.)"
 
   - name: "Leila Wehbe, PhD"
     title: "Former Postdoc"
@@ -220,8 +225,3 @@ alumni:
     title: "Former Graduate Student"
     image: "people/Michael.Wu.webp"
     description: "Dr. Wu is now in the technology industry."
-
-  - name: "An Vu, PhD"
-    title: "Former Graduate Student"
-    image: "people/An.Vu.webp"
-    description: "Dr. Vu is now a Professor at UCSF. (Lab web site <a href='https://profiles.ucsf.edu/an.vu'>here</a>.)"
