@@ -76,6 +76,11 @@ alumni:
     image: "people/Catherine.Chen.webp"
     description: "Dr. Chen is now in the technology industry."
 
+  - name: "Bill Vinje, PhD"
+    title: "Former Graduate Student"
+    image: "people/Bill.Vinje.webp"
+    description: "Dr. Vinje is now in the technology industry."
+
   - name: "Tolga Cukur, PhD"
     title: "Former Postdoc"
     image: "people/Tolga.Cukur.webp"
