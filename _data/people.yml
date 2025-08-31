@@ -69,7 +69,7 @@ alumni:
   - name: "Catherine Chen, PhD"
     title: "Former EECS Graduate Student"
     image: "people/Catherine.Chen.webp"
-    description: "Dr. Chen is now working in the technology industry."
+    description: "Dr. Chen is now in the technology industry."
 
   - name: "Tolga Cukur, PhD"
     title: "Former Postdoc"
@@ -89,7 +89,7 @@ alumni:
   - name: "Tom Dupré la Tour, PhD"
     title: "Former Postdoc"
     image: "people/Tom.DuprelaTour.webp"
-    description: "Dr. Dupré la Tour is now working in the technology industry."
+    description: "Dr. Dupré la Tour is now in the technology industry."
 
   - name: "Ben Hayden, PhD"
     title: "Former Postdoc"
@@ -109,7 +109,7 @@ alumni:
   - name: "James Gao, PhD"
     title: "Former Graduate Student"
     image: "people/James.Gao.webp"
-    description: "Dr. Gao is now working in the technology industry."
+    description: "Dr. Gao is now in the technology industry."
 
   - name: "Kate Gustavsen, PhD"
     title: "Former Neuroscience Graduate Student"
@@ -154,7 +154,7 @@ alumni:
   - name: "Michael Oliver, PhD"
     title: "Former Vision Science Graduate Student"
     image: "people/Michael.Oliver.webp"
-    description: "Dr. Oliver is now working in the technology industry."
+    description: "Dr. Oliver is now in the technology industry."
 
   - name: "Sara Popham, PhD"
     title: "Former Neuroscience Graduate Student"
@@ -179,4 +179,9 @@ alumni:
   - name: "Michele Winter, PhD"
     title: "Former Vision Science Graduate Student"
     image: "people/Michele.Winter.webp"
-    description: "Dr. Winter is now working in the technology industry."
+    description: "Dr. Winter is now in the technology industry."
+
+  - name: "Michael Wu, PhD"
+    title: "Former Graduate Student"
+    image: "people/Michael.Wu.webp"
+    description: "Dr. Wu is now in the technology industry."
