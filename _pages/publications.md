@@ -65,7 +65,7 @@ publications:
     remaining_description: "Encoding models identify the information represented in brain recordings, but fitting multiple models simultaneously presents several challenges. This paper describes how banded ridge regression can be used to solve these problems. Furthermore, several methods are proposed to address the computational challenge of fitting banded ridge regressions on large numbers of voxels and feature spaces. All implementations are released in an open-source Python package called Himalaya."
 
   - title: "Visual and linguistic semantic representations are aligned at the border of human visual cortex (Popham et al., Nature Neuroscience)"
-    date: "2021-01-03"
+    date: "2021-10-28"
     url: "https://drive.google.com/file/d/1_CcPfViYAUQFD2HxdneEzSrmBwjd-QkJ/view"
     image: "/assets/img/papers/Popham.S.2021.webp"
     alt: "Popham 2021"
@@ -89,7 +89,7 @@ publications:
     remaining_description: "This tutorial and primer reviews how mixed integer linear programming can be used to optimize the design of complex experiments using many different variables. The approach is particularly useful when designing complex fMRI experiments--such as question answering studies--that aim to manipulate and probe many dimensions simultaneously."
 
   - title: "The representation of semantic information across human cerebral cortex during listening versus reading is invariant to stimulus modality (Deniz et al., J. Neurosci.)"
-    date: "2019-01-02"
+    date: "2019-09-05"
     url: "https://www.jneurosci.org/content/39/39/7722"
     image: "/assets/img/papers/Deniz.F.2019.webp"
     alt: "Deniz 2019"

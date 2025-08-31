@@ -1,496 +1,129 @@
 # Claude Session Memory
 
-## Previous Session Summary
+## Project Overview
 
-**Date**: 2025-08-26 (First Session)
-**Working Directory**: `/Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site`
+**Site Type**: Jekyll website using al-folio theme for Gallant Lab (UC Berkeley neuroscience lab)  
+**Working Directory**: `/Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site`  
+**Git Branch**: main  
+**Architecture**: Maximally Jekyll-compliant with structured YAML data, dedicated layouts, proper collections
 
-### Previous Changes Made
+## Key Development Commands
 
-1. **Theme Default Changed**: Modified `assets/js/theme.js:259` to change site default from dark mode to light mode
-2. **Alumni Added**: Added 5 new alumni members to `_data/people.yml`:
-   - Stephen David, PhD (Oregon Health & Science University)
-   - Kendrick Kay, PhD (University of Minnesota)
-   - Thomas Naselaris, PhD (University of Minnesota)
-   - Shinji Nishimoto, PhD (Osaka University)
-   - Leila Wehbe, PhD (Carnegie Mellon University)
-3. **Images Added**: 5 new WebP profile images in `assets/img/people/`
+**Jekyll Development**:
 
-### Previous Development Commands Used
-
-- `npx prettier --write .` - Code formatting (passed)
 - `bundle exec jekyll serve --host 0.0.0.0 --port 4000 --livereload` - Local dev server
+- `bundle exec jekyll build` - Production build
 - `pkill -f jekyll` - Stop Jekyll server
 
-## Current Session Summary
+**Code Quality**:
 
-**Date**: 2025-08-26 (Second Session)
-**Working Directory**: `/Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site`
+- `npx prettier --write .` - Code formatting (required for GitHub Actions)
+- `magick source.jpg target.webp` - Image format conversion
 
-## Project Context
+**Git Workflow**:
 
-- **Site Type**: Jekyll website using al-folio theme for Gallant Lab (UC Berkeley neuroscience lab)
-- **Git Status**: Clean working tree, all changes committed and pushed
-- **Current Branch**: main
+- Always run prettier before committing
+- Use descriptive commit messages with Claude Code co-authorship
 
-## Recent Changes Made
+## Major Architectural Changes
 
-1. **Issue Resolved**: Discovered and fixed deployment issue with Shinji Nishimoto not appearing on live site
-   - Verified Shinji exists in `_data/people.yml:110-113` with correct data structure
-   - Confirmed people page template `_pages/people.md` correctly loops through alumni data
-   - Verified profile template `_includes/person_profile_compact.liquid` displays correctly
-   - Confirmed image file `assets/img/people/Shinji.Nishimoto.webp` exists
-2. **Deployment Fixed**: Pushed local commit to GitHub to deploy changes to live site
+### Session 7: Complete Jekyll Overhaul (2025-08-29)
 
-## Last Commit Pushed
+**Problem**: Implemented unified "bold first sentence" system across all content sections.
 
-```
-61b2525b - Change default theme to light mode and add new alumni members
-- Set site default theme from dark mode to light mode
-- Add Stephen David, Kendrick Kay, Thomas Naselaris, Shinji Nishimoto, and Leila Wehbe to alumni
-- Include corresponding profile images
-```
+**Solution**: Created comprehensive Jekyll-compliant architecture:
 
-## Development Commands Used
+- **Template System**: `_layouts/news.liquid`, `_layouts/publications.liquid`, `_layouts/content_list.liquid`
+- **Data Structure**: Two patterns: `first_sentence + remaining_description` or `first_sentence_with_link: true`
+- **CSS Implementation**: Single `.first-sentence { font-weight: bold; }` class
+- **Collections**: Proper `_news/*.md` files instead of YAML data blocks
 
-- `git status` - Checked repository status (found local ahead of remote)
-- `git log --oneline -5` - Reviewed recent commits
-- `git push` - Pushed changes to GitHub for deployment
+**Files Restructured**:
 
-## Key Project Files
+- Brain viewers, publications, tutorials, code, data pages converted to structured YAML
+- All 11 news items migrated from YAML to Jekyll collections
+- Active navigation styling fixed with proper CSS specificity
 
-- **Theme Logic**: `assets/js/theme.js` (line 259 contains default theme setting)
-- **People Data**: `_data/people.yml` (structured with current members and alumni)
-- **Config**: `_config.yml` (main Jekyll configuration)
-- **Instructions**: `CLAUDE.md` (project-specific guidance)
+### Session 9: Publications & Brain Viewers Enhancement (2025-08-30)
 
-## Important Notes
+**Jekyll Date Sorting Implementation**:
 
-- Always run prettier before committing (required for GitHub Actions)
-- Site uses dual light/dark theme system with CSS custom properties
-- Alumni should have "Former" prefix in titles
-- Images should be WebP format in `assets/img/people/`
+- Added `date: "YYYY-MM-DD"` fields to all publications for chronological sorting
+- Template logic `{% assign sorted_pubs = page.publications | sort: 'date' | reverse %}` now functional
+- Removed redundant years from titles since dates in separate fields
 
-## Current Issue Status
+**New Content Added**:
 
-- ✅ **RESOLVED**: Shinji Nishimoto deployment issue - changes now live on GitHub Pages
-- ✅ **COMPLETED**: All 5 alumni members successfully added and deployed
+- Chen et al. bilingual language processing publication (Nov 21, 2024) - most recent
+- Corresponding bilingual brain viewer with interactive functionality
+- News system converted from YAML to proper Jekyll collections (eliminated duplicates)
 
-## Next Session Priorities
+## Team Members & Alumni Management
 
-- Monitor GitHub Pages deployment completion (should be live within minutes)
-- Any additional team member updates
-- Performance or styling adjustments if needed
+### Alumni Added Across Sessions
 
-## Current Session Summary
+**Complete Alumni Database** (22 total alumni):
 
-**Date**: 2025-08-26 (Third Session)
-**Working Directory**: `/Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site`
+**Recent Additions**:
 
-### Major Changes Made
+- **Session 8**: Alexander Huth, James Mazer, Kate Gustavsen, Ben Hayden, Dustin Stansbury, Sara Popham (6 alumni)
+- **Session 6**: Ben Willmore, Mark Lescroart, Tolga Cukur (3 alumni)
+- **Session 1-2**: Stephen David, Kendrick Kay, Thomas Naselaris, Shinji Nishimoto, Leila Wehbe (5 alumni)
 
-1. **Website Links Added**: Added personal/lab website links to 7 team members:
+**Title Corrections Applied**: Accurate academic paths reflected:
 
-   - **Matteo Visconti di Oleggio Castello**: Personal website (https://matteovisconti.com/)
-   - **Stephen David**: Lab website (https://hearingbrain.org/)
-   - **Fatma Deniz**: Lab website (https://www.fatmanet.com/)
-   - **Kendrick Kay**: Lab website (http://cvnlab.net/)
-   - **Thomas Naselaris**: Lab website (http://www.naselarislab.net/)
-   - **Shinji Nishimoto**: Lab website (https://nishimotolab.org/)
-   - **Leila Wehbe**: Lab website (https://www.cs.cmu.edu/~lwehbe/)
+- Kendrick Kay: "Former Psychology Graduate Student"
+- Alexander Huth: "Former Neuroscience Graduate Student and Postdoc"
+- Dustin Stansbury: "Former Bioengineering Graduate Student"
+- Michael Oliver: "Former Vision Science Graduate Student"
 
-2. **Mark Lescroart Added**: Complete addition of new alumni member:
-   - Moved `Mark.Lescroart.jpg` from root to `assets/img/people/` and converted to WebP
-   - Added to alumni section in alphabetical order (between Kay and Naselaris)
-   - Found and added his lab website: http://piecesofmind.psyc.unr.edu/ (Pieces of Mind Lab at University of Nevada)
-   - Bio: "Dr. Lescroart is now a Professor at the University of Nevada. (Lab web site [here](url).)"
+**Website Links Added**: 8 lab/personal websites integrated for current faculty members and alumni.
 
-### Development Process
+### Current Team Structure
 
-1. **Website Research**: Used Task agent to systematically search for lab websites of 6 professors
-2. **YAML Syntax Fix**: Resolved quote escaping issues in HTML links within YAML descriptions
-3. **Image Processing**: Used ImageMagick to convert JPG to WebP format
-4. **Local Development**: Started Jekyll server with LiveReload for real-time testing
+**Principal Investigator**: Jack Gallant  
+**Current Members**: 10 active lab members  
+**Alumni**: 22 former members with proper academic titles and career trajectories
 
-### Technical Details
+## Technical Implementation Details
 
-- **Link Format**: Used "(Personal/Lab web site [here](url).)" format with single quotes in HTML href attributes
-- **Alphabetical Insertion**: Placed Mark Lescroart between Kendrick Kay and Thomas Naselaris
-- **File Naming**: `Mark.Lescroart.webp` following existing convention
-- **Fixed Duplicate Links**: Removed duplicate website field for Matteo, keeping only description link
+### Image Processing Pipeline
 
-### Current Status
+**Standard Workflow**:
 
-- ✅ **Local Jekyll Server Running**: http://localhost:4000 with LiveReload enabled
-- ✅ **All Website Links Added**: 8 total website links now integrated
-- ✅ **Mark Lescroart Complete**: Image, bio, and lab website all added
-- ✅ **YAML Syntax Valid**: All HTML links properly escaped
+1. `magick source.jpg target.webp` - Convert to WebP format
+2. `mv target.webp assets/img/people/` - Move to proper directory
+3. Jekyll automatic processing: 480px, 800px, 1400px responsive variants
+4. `rm source.jpg` - Clean up originals
 
-### Development Commands Used
+**Profile Image Requirements**:
 
-- `bundle exec jekyll serve --host 0.0.0.0 --port 4000 --livereload` - Local server with background mode
-- `find` and `mv` commands for image file management
-- `magick` command for JPG to WebP conversion
-- Multi-agent Task searches for website discovery
+- WebP format in `assets/img/people/`
+- 1:1.5 aspect ratio for portraits (where needed)
+- Consistent naming: `FirstName.LastName.webp`
 
-### Files Modified
+### CSS Architecture Principles
 
-- `_data/people.yml` - Added website links and Mark Lescroart entry
-- `assets/img/people/Mark.Lescroart.webp` - New profile image added
+**Jekyll-Compliant Approach**:
 
-### Next Session Priorities
+- Use existing SCSS variables and CSS custom properties
+- Leverage `var(--global-theme-color)` for theme compatibility
+- Proper CSS specificity instead of `!important` declarations
+- Bootstrap compatibility without hacks
 
-- Test all website links to ensure they're working properly
-- Consider running prettier and committing changes
-- Any additional alumni or team member updates
+**Active Navigation Fix**:
 
-## Current Session Summary
-
-**Date**: 2025-08-27 (Fourth Session)
-**Working Directory**: `/Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site`
-
-### Major Changes Made
-
-1. **Sunjae Shim Profile Image Updated**: Complete image processing workflow
-   - **Original Image**: `Sunjae.Shim.JPG` (7728x5152 pixels)
-   - **Cropped to Portrait**: Used ImageMagick to crop to 1:1.5 aspect ratio (3435x5152 pixels) keeping face centered
-   - **Converted to WebP**: `assets/img/people/Sunjae.Shim.webp` for web optimization
-   - **Image Display Issue Resolved**: Initially not showing due to browser cache, resolved after browser refresh
-
-### Development Process
-
-1. **Image Processing Pipeline**:
-
-   - `magick "Sunjae.Shim.JPG" -gravity center -crop 3435x5152+0+0 "Sunjae.Shim.cropped.jpg"`
-   - `magick "Sunjae.Shim.cropped.jpg" "Sunjae.Shim.webp"`
-   - `mv "Sunjae.Shim.webp" "assets/img/people/"`
-
-2. **Jekyll Server Management**:
-
-   - Restarted Jekyll server multiple times to troubleshoot image display
-   - Used clean rebuild (`bundle exec jekyll clean`) to force asset regeneration
-   - Confirmed image appears in generated HTML at `_site/people/index.html`
-
-3. **Git Workflow**:
-   - Ran `npx prettier --write .` (all files unchanged, formatting already correct)
-   - Added all changes to staging area
-   - Created descriptive commit message with proper formatting
-   - Successfully pushed to GitHub Pages for deployment
-
-### Technical Details
-
-- **Aspect Ratio Calculation**: For 1:1.5 portrait, width = height/1.5, so 5152/1.5 ≈ 3435 pixels wide
-- **ImageMagick Configuration**: Jekyll plugin only processes .jpg/.jpeg by default, but .webp files work directly
-- **Jekyll Image Processing**: The imagemagick plugin generates responsive versions (480px, 800px, 1400px) but original .webp files are used as-is
-- **Browser Cache Issue**: Image didn't appear initially due to browser caching, resolved with hard refresh
-
-### Files Modified/Added
-
-- `assets/img/people/Sunjae.Shim.webp` - New processed profile image (1:1.5 aspect ratio)
-- `Sunjae.Shim.JPG` - Original source image (committed for reference)
-- `Sunjae.Shim.cropped.jpg` - Intermediate cropped version (committed for reference)
-- `assets/img/people/Mark.Lescroart.webp` - Previously processed, now committed
-- `claude-session-memory.md` - Session documentation updated
-
-### Current Status
-
-- ✅ **Image Processing Complete**: Sunjae Shim image cropped to 1:1.5 aspect ratio and converted to WebP
-- ✅ **Local Testing Successful**: Image displays correctly on people page at http://localhost:4000
-- ✅ **Code Quality Check**: Prettier formatting passed (no changes needed)
-- ✅ **Git Commit Created**: Descriptive commit with proper co-authorship attribution
-- ✅ **Deployment Pushed**: Changes pushed to GitHub Pages (commit b11068d5)
-
-### Last Commit Details
-
-```
-b11068d5 - Update Sunjae Shim profile image with proper aspect ratio
-- Crop Sunjae.Shim.JPG to 1:1.5 portrait aspect ratio keeping face centered
-- Convert to WebP format and place in assets/img/people/
-- Update existing profile data in _data/people.yml
-- Add Mark Lescroart WebP profile image to assets
+```scss
+.navbar-nav .nav-item.active .nav-link {
+  font-weight: bold;
+  color: var(--global-theme-color);
+  background-color: transparent;
+}
 ```
 
-### Development Commands Used
+### Content Structure Patterns
 
-- `identify "Sunjae.Shim.JPG"` - Check original image dimensions
-- `magick` commands for cropping and format conversion
-- `pkill -f jekyll` and `bundle exec jekyll serve` - Server management
-- `touch _pages/people.md` - Force page regeneration
-- `npx prettier --write .` - Code formatting
-- `git add . && git commit && git push` - Version control workflow
-
-### Next Session Priorities
-
-- Monitor GitHub Pages deployment (should be live within minutes)
-- Clean up temporary files (`Sunjae.Shim.JPG`, `Sunjae.Shim.cropped.jpg`) if desired
-- Any additional team member updates or profile image processing
-
-## Current Session Summary
-
-**Date**: 2025-08-27 (Fifth Session)
-**Working Directory**: `/Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site`
-
-### Major Changes Made
-
-1. **Join Us Page Updated**: Complete restructuring of undergraduate and other inquiries section
-   - **Changed Section Header**: "Others interested in the lab" → "Undergraduates"
-   - **Updated Contact Method**: Replaced direct email instruction with Google Form link
-   - **Added Google Form**: https://docs.google.com/forms/d/e/1FAIpQLSc1YN-UDi8m1NQbCj4zaThVnVlPyvzmuYa8NVRBCq7oAsi8PQ/viewform?usp=header
-   - **New "Others interested in the lab" Section**: Added with restriction message for non-Berkeley undergraduates and high school students
-
-### Content Changes Made
-
-1. **Undergraduate Section**:
-
-   - **Old**: "UC Berkeley undergraduates who are interested in working in the lab should email Jack Gallant directly"
-   - **New**: "UC Berkeley undergraduates who are interested in working in the lab should fill out the form at [this link](https://docs.google.com/forms/d/e/1FAIpQLSc1YN-UDi8m1NQbCj4zaThVnVlPyvzmuYa8NVRBCq7oAsi8PQ/viewform?usp=header). We will get back to you if there are any opportunities."
-
-2. **Others Section**:
-   - **Moved Content**: Restriction text moved from undergraduate section to new "Others interested in the lab" section
-   - **Content**: "Due to time and resource constraints, at this time we are not considering research requests for undergraduates at other institutions, or from high school students."
-
-### File Structure Changes
-
-- **File Modified**: `_pages/joinus.md` - Complete restructuring of inquiry sections
-- **Page Structure**: Now has separate sections for UC Berkeley undergraduates vs. all other inquiries
-- **Link Integration**: Google Form properly embedded as markdown hyperlink
-
-### Development Process
-
-1. **Todo Management**: Used TodoWrite to track all 4 required changes systematically
-2. **Multi-Edit Approach**: Used single MultiEdit operation to make all changes atomically
-3. **Code Formatting**: Ran prettier (no changes needed - formatting already correct)
-4. **Git Workflow**: Staged changes and prepared for commit
-
-### Current Status
-
-- ✅ **Join Us Page Updated**: All 5 requested changes implemented successfully
-- ✅ **Google Form Integrated**: Link properly formatted and functional
-- ✅ **Section Restructuring Complete**: Clear separation between UC Berkeley vs. other inquiries
-- ✅ **Code Formatting**: Prettier run successfully (no changes needed)
-
-### Files Modified
-
-- `_pages/joinus.md` - Updated undergraduate inquiry process and restructured sections
-
-## Current Session Summary
-
-**Date**: 2025-08-28 (Sixth Session)
-**Working Directory**: `/Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site`
-
-### Major Changes Made
-
-1. **Navigation Titles Capitalized**: Updated all page titles in navigation bar for proper capitalization
-
-   - **Changed**: `about` → `About`, `people` → `People`, `publications` → `Publications`, `tutorials` → `Tutorials`, `code` → `Code`, `data` → `Data`, `blog` → `Blog`
-   - **Special Cases**: `brain viewers` → `Brain viewers`, `join us` → `Join us` (only first word capitalized per user request)
-
-2. **Tolga Cukur Added to Alumni**: Complete addition of new alumni member
-   - **Image Processing**: Converted `Tolga.Cukur.jpg` to WebP format and moved to `assets/img/people/`
-   - **Alumni Entry**: Added between Catherine Chen and Stephen David in alphabetical order
-   - **Bio**: "Dr. Cukur is now a Professor at Bilkent University in Turkey. (Lab web site [here](https://www.icon.bilkent.edu.tr/).)"
-   - **Cleanup**: Deleted original JPG file after successful conversion
-
-### Development Process
-
-1. **Navigation Update Process**:
-
-   - Used Grep to find all title fields across `_pages/*.md` files
-   - Applied MultiEdit operations to update titles consistently
-   - Maintained user's specific capitalization preferences for compound titles
-
-2. **Alumni Addition Workflow**:
-
-   - Located source image file in project root
-   - Used ImageMagick to convert JPG to WebP format for web optimization
-   - Updated `_data/people.yml` with proper YAML structure and HTML link formatting
-   - Cleaned up by removing original source file
-
-3. **Code Quality Maintenance**:
-   - Ran Prettier formatting (all files unchanged - formatting already correct)
-   - Followed established git workflow with descriptive commit messages
-   - Used proper commit co-authorship attribution
-
-### Current Status
-
-- ✅ **Navigation Titles Updated**: All 9 page titles properly capitalized in navigation
-- ✅ **Tolga Cukur Alumni Entry Complete**: Image, bio, and lab website link all integrated
-- ✅ **Code Formatting**: Prettier formatting passed (no changes needed)
-- ✅ **Git Commits**: Both changes committed with descriptive messages and pushed to GitHub
-
-### Commits Made
-
-1. **cf0ba2ce** - Capitalize navigation titles in page headers
-
-   - Updated title fields in \_pages/\*.md for proper capitalization
-   - Maintained special cases for "Brain viewers" and "Join us"
-
-2. **8c04b2e5** - Add Tolga Cukur to alumni list with profile image
-   - Converted and moved image to assets directory
-   - Added alumni entry with Bilkent University lab website link
-   - Cleaned up original JPG file
-
-### Files Modified
-
-- `_pages/about.md` - Title capitalized to "About"
-- `_pages/people.md` - Title capitalized to "People"
-- `_pages/publications.md` - Title capitalized to "Publications"
-- `_pages/learn.md` - Title capitalized to "Tutorials"
-- `_pages/joinus.md` - Title updated to "Join us"
-- `_pages/data.md` - Title capitalized to "Data"
-- `_pages/brain-viewers.md` - Title updated to "Brain viewers"
-- `_pages/opencode.md` - Title capitalized to "Code"
-- `_pages/blog.md` - Title capitalized to "Blog"
-- `_data/people.yml` - Added Tolga Cukur alumni entry
-- `assets/img/people/Tolga.Cukur.webp` - New profile image added
-
-### Development Commands Used
-
-- `npx prettier --write .` - Code formatting (passed both times)
-- `magick "Tolga.Cukur.jpg" "Tolga.Cukur.webp"` - Image format conversion
-- `mv "Tolga.Cukur.webp" "assets/img/people/"` - File relocation
-- `rm "Tolga.Cukur.jpg"` - Cleanup of original file
-- `git add . && git commit && git push` - Version control workflow (2 commits)
-
-### Next Session Priorities
-
-- Monitor GitHub Pages deployment for both navigation and alumni updates
-- Any additional alumni member updates or profile image processing
-- Consider any further navigation or UI improvements
-
-## Current Session Summary
-
-**Date**: 2025-08-29 (Seventh Session - Major Jekyll Overhaul)
-**Working Directory**: `/Users/gallant/LABLADMIN/WEB/JEKYLL.7-25/working-gallant-site`
-
-### Major Architectural Changes Made
-
-This session involved a comprehensive overhaul of the entire website to implement Jekyll best practices and create a unified "bold first sentence" system across all content sections.
-
-### 1. **Bold First Sentence System Implementation** - Jekyll Compliant
-
-**Problem**: User wanted to bold the first sentence in all content blurbs across the site (news, publications, brain viewers, tutorials, code, data)
-
-**Solution**: Implemented structured YAML approach with two patterns:
-
-- `first_sentence` + `remaining_description` for regular text
-- `first_sentence_with_link: true` for items where the title/link should be the bold first sentence
-
-**Implementation**:
-
-- Added `.first-sentence { font-weight: bold; }` CSS class
-- Updated all content sections to use structured data instead of hardcoded HTML
-- Applied consistently across: news, publications, brain viewers, tutorials, code, data
-
-### 2. **Template Architecture Overhaul** - Jekyll Best Practices
-
-**Created Unified Template System**:
-
-- `_layouts/news.liquid` - Dedicated layout for news items with chronological sorting
-- `_layouts/publications.liquid` - Enhanced to handle both publications and general content
-- `_layouts/content_list.liquid` - Unified template for brain viewers, tutorials, code, data
-- All templates use structured YAML data with proper Liquid templating
-
-**Template Features**:
-
-- Automatic date sorting for news items
-- Consistent CSS classes for styling
-- Support for both content patterns (first_sentence and first_sentence_with_link)
-- Proper template inheritance with `layout: default`
-
-### 3. **Content Structure Conversion** - YAML Data Approach
-
-**Brain Viewers Page** (`_pages/brain-viewers.md`):
-
-- Converted from manual HTML to structured YAML
-- All 8 items updated to use `first_sentence_with_link: true` (since links are first sentences)
-- Used `content_list.liquid` layout
-
-**Publications Page** (`_pages/publications.md`):
-
-- Updated all 12 publications to use `first_sentence_with_link: true`
-- Publication titles now bold linked "first sentences"
-- Enhanced `publications.liquid` layout to handle the link pattern
-
-**News System**:
-
-- Updated all 11 news items in `_news/*.md` files to use structured approach
-- Created comprehensive `/news/` page aggregating all news items chronologically
-- Added separate `news.liquid` layout optimized for chronological content with dates
-- Fixed image handling by moving images from content to front matter
-
-**Tutorials/Learn Page** (`_pages/learn.md`):
-
-- Updated both tutorial items to use `first_sentence_with_link: true`
-- Changed navigation from "Tutorials" to "Learn"
-- Changed first item title from "Voxelwise modeling" to "Voxelwise modeling tutorials"
-
-**Code Page** (`_pages/opencode.md`):
-
-- Updated all 4 code items to use `first_sentence_with_link: true`
-- GitHub repository, Himalaya, Pycortex, CottonCandy all have bold linked titles
-
-**Data Page** (`_pages/data.md`):
-
-- Updated all 6 dataset items to use `first_sentence_with_link: true`
-- All dataset names now bold clickable links to actual data repositories
-
-### 4. **Navigation & Styling Enhancements**
-
-**Navigation Updates**:
-
-- Made active nav items bold: added `font-weight: bold;` to `.nav-link.active`
-- Fixed news page linking: "News" header on about page already linked to `/news/`
-
-**Alumni Updates**:
-
-- Added Ben Willmore to alumni list with Oxford University profile link
-- Moved `Ben.Willmore.webp` from root to `assets/img/people/`
-- Proper bio format: "Dr. Willmore is now a Lecturer at Oxford University. (Web site [here](url).)"
-
-### 5. **File Organization & Asset Management**
-
-**Proper Jekyll Structure**:
-
-- All images in `assets/img/people/`, `assets/img/papers/`, `assets/img/datasets/`
-- Clean URL structure: `/news/`, `/publications/`, `/learn/`, `/data/`, `/opencode/`
-- Structured data in `_data/people.yml` and YAML front matter
-- No hardcoded HTML in content files
-
-### Current Architecture Status - Maximally Jekyll Compliant!
-
-✅ **Content as Data**: All content in structured YAML front matter  
-✅ **Template Separation**: Clean separation between content, templates, and styling  
-✅ **Consistent Patterns**: Unified approach across all sections  
-✅ **No CSS Hacks**: Pure SCSS following existing patterns  
-✅ **Proper Layouts**: Dedicated templates for different content types  
-✅ **Asset Organization**: Clean file structure following Jekyll conventions  
-✅ **URL Structure**: SEO-friendly permalinks and navigation
-
-### Technical Implementation Details
-
-**CSS Architecture**:
-
-- Single `.first-sentence` class handles all bold first sentences
-- Used existing SCSS variables and CSS custom properties
-- No `!important` declarations or CSS overrides needed
-
-**Template Logic**:
-
-```liquid
-{% if item.first_sentence_with_link %}
-  <span class="first-sentence"
-    ><a href="{{ item.url }}">{{ item.title }}</a>.</span
-  >
-  {{ item.remaining_description }}
-{% elsif item.first_sentence %}
-  <span class="first-sentence">{{ item.first_sentence }}</span> {{ item.remaining_description }}
-{% else %}
-  {{ item.content }}
-{% endif %}
-```
-
-**Data Structure Pattern**:
+**Standard YAML Structure**:
 
 ```yaml
 - title: "Item Title"
@@ -499,589 +132,82 @@ This session involved a comprehensive overhaul of the entire website to implemen
   alt: "Alt text"
   first_sentence_with_link: true # OR first_sentence: "Text here."
   remaining_description: "Description continues here..."
+  date: "YYYY-MM-DD" # For publications
 ```
 
-### Files Modified/Created
+## Recent Changes Summary
 
-**New Files Created**:
+### Session 10: Publication Date Updates (2025-08-30)
 
-- `_layouts/news.liquid` - Dedicated news layout
-- `_pages/news.md` - Comprehensive news aggregation page
+**Problem**: Publication dates were inaccurate, affecting chronological display.
 
-**Major Files Updated**:
+**Solution**: Updated 9 publication dates with accurate information:
 
-- `_pages/publications.md` - All publications restructured
-- `_pages/brain-viewers.md` - Converted to YAML structure
-- `_pages/learn.md` - Updated tutorials structure
-- `_pages/opencode.md` - Updated code items structure
-- `_pages/data.md` - Updated data items structure
-- `_layouts/publications.liquid` - Enhanced template logic
-- `_sass/_base.scss` - Added first-sentence CSS and active nav styling
-- `_data/people.yml` - Added Ben Willmore
-- All 11 files in `_news/*.md` - Updated to structured approach
+- Voxelwise Encoding Tutorial: 2025-05-09
+- Timescales Paper: 2024-07-01
+- Context Paper: 2023-04-26
+- Phonemic Segmentation: 2023-06-29
+- Feature-space Selection: 2022-12-01
+- State Space Modeling: 2021-05-01
+- Mixed Integer Programming: 2021-05-05
+- Scene-selective Areas: 2019-01-02
+- Semantic Maps: 2016-04-27
 
-### Current Status
+**Additional Changes**:
 
-- ✅ **Jekyll Best Practices**: Site now follows Jekyll conventions throughout
-- ✅ **Unified First Sentence System**: Consistent bold first sentences across all sections
-- ✅ **Template Architecture**: Clean separation of concerns with dedicated layouts
-- ✅ **Content Structure**: All content uses structured YAML data
-- ✅ **Link Functionality**: All titles/links properly bolded and clickable
-- ✅ **Navigation**: Active nav items bolded, proper page linking
-- ✅ **Asset Organization**: Clean file structure following conventions
+- Added "2024" to Chen et al. bioRxiv preprint on brain-viewers page
+- Browser cache resolution through Jekyll rebuild
 
-### Next Session Priorities
+## Current Site Status
 
-- Test all functionality across the site
-- Monitor any deployment issues
-- Consider any final polish or additional content updates
-- Verify all links and bold styling work correctly across all sections
+### Architecture Compliance ✅
 
-## Current Session Summary
+- **Content as Data**: All content in structured YAML front matter
+- **Template Separation**: Clean separation between content, templates, styling
+- **Consistent Patterns**: Unified approach across all sections
+- **No CSS Hacks**: Pure SCSS following existing patterns
+- **Proper Collections**: Jekyll best practices for news system
+- **Asset Organization**: Clean file structure following conventions
 
-**Date**: 2025-08-29 (Eighth Session - Navigation Styling & Alumni Additions)
-**Working Directory**: `/Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site`
+### Navigation & Content ✅
 
-### Major Changes Made
+- **Capitalized Navigation**: All page titles properly formatted
+- **Active Navigation Styling**: Bold blue highlighting works correctly
+- **Chronological Sorting**: Publications display newest-first automatically
+- **Bold First Sentences**: Unified system across all content sections
+- **Responsive Images**: Automatic WebP optimization and multiple sizes
 
-### 1. **Active Navigation Styling Fix** - Jekyll Best Practices Approach
+### Recent Deployments
 
-**Problem**: Active navigation items appeared as "black text on gray square" instead of bold blue styling.
+**Latest Commits**:
 
-**Root Cause**: CSS selector specificity issue with redundant `.navbar-light` classes causing conflicts with Bootstrap defaults.
+- `5bd6c815` - Publication date updates and brain viewer 2024 addition
+- `a72b13fe` - News system Jekyll collections conversion
+- `f15f7ca0` - Bilingual publication and brain viewer with Jekyll date sorting
+- `1883544c` - Alumni title corrections for academic accuracy
 
-**Solution**: Fixed using Jekyll-compliant CSS approach:
+## File Organization
 
-- Removed redundant selectors that caused double `.navbar-light .navbar-light` compilation
-- Used proper CSS specificity: `.navbar-nav .nav-item.active .nav-link`
-- Added proper SCSS nesting with `&:hover` and `&:focus` pseudo-selectors
-- Utilized CSS custom properties: `var(--global-theme-color)`
-- No `!important` declarations needed - clean cascade approach
+### Key Directories
 
-**Implementation**:
+- `_pages/` - Main site pages with structured YAML data
+- `_news/` - Individual news items as Jekyll collection
+- `_layouts/` - Dedicated templates (news, publications, content_list)
+- `_data/people.yml` - Team members and alumni database
+- `assets/img/people/` - Profile images (WebP format)
+- `assets/img/papers/` - Publication images
+- `_sass/` - SCSS stylesheets with theme system
 
-```scss
-// Active navigation styling - override Bootstrap defaults
-.navbar-nav .nav-item.active .nav-link {
-  font-weight: bold;
-  color: var(--global-theme-color);
-  background-color: transparent;
+### Important Files
 
-  &:hover,
-  &:focus {
-    font-weight: bold;
-    color: var(--global-theme-color);
-    background-color: transparent;
-  }
-}
-```
+- `_config.yml` - Jekyll configuration with collections enabled
+- `CLAUDE.md` - Project-specific development guidance
+- `assets/js/theme.js` - Theme switching (default light mode)
+- `_sass/_base.scss` - Core styling including first-sentence and navigation
 
-### 2. **Alumni Additions with Image Processing** - 6 New Alumni Members
+## Next Session Priorities
 
-**Complete Alumni Addition Workflow**:
-
-**Alexander Huth**:
-
-- Converted `Alexander.Huth.jpg` to WebP format using ImageMagick
-- Added to alumni: "Dr. Huth is now a Professor at UC Berkeley. (Lab web site [here](https://huthlab.github.io/).)"
-- Title: "Former Postdoc" → Later corrected to "Former Neuroscience Graduate Student and Postdoc"
-
-**James Mazer**:
-
-- Converted `James.Mazer.jpg` to WebP format using ImageMagick
-- Added to alumni: "After a long academic career as a Professor at Yale and MSU, Dr. Mazer has now moved to the technology industry."
-- Title: "Former Postdoc"
-
-**Kate Gustavsen**:
-
-- Moved `Kate.Gustavsen.webp` from root to `assets/img/people/`
-- Added to alumni: "Following her PhD, Dr. Gustavsen obtained her DVM and is now a veterinarian at the Lincoln Park Zoo in Chicago."
-- Title: "Former Graduate Student" → Later corrected to "Former Neuroscience Graduate Student"
-
-**Ben Hayden**:
-
-- Moved `Ben.Hayden.webp` from root to `assets/img/people/` (already WebP format)
-- Added to alumni: "Dr. Hayden is now a Professor at Baylor University. (Lab web site [here](https://www.haydenlab.com/).)"
-- Title: "Former Postdoc"
-
-**Dustin Stansbury**:
-
-- Converted `Dustin.Stansbury.jpg` to WebP format using ImageMagick
-- Added to alumni: "Dr. Stansbury is now in the technology industry."
-- Title: "Former Postdoc" → Later corrected to "Former Bioengineering Graduate Student"
-
-**Sara Popham**:
-
-- Converted `Sara.Popham.jpg` to WebP format using ImageMagick
-- Added to alumni: "Dr. Popham is now in the technology industry."
-- Title: "Former Graduate Student" → Later corrected to "Former Neuroscience Graduate Student"
-
-### 3. **Alumni Title Corrections** - Academic Path Accuracy
-
-**Title Corrections Made**:
-
-- **Kendrick Kay**: "Former Postdoc" → "Former Psychology Graduate Student"
-- **Alexander Huth**: "Former Postdoc" → "Former Neuroscience Graduate Student and Postdoc"
-- **Dustin Stansbury**: "Former Postdoc" → "Former Bioengineering Graduate Student"
-- **Michael Oliver**: "Former Postdoc" → "Former Vision Science Graduate Student"
-- **Sara Popham**: "Former Graduate Student" → "Former Neuroscience Graduate Student"
-- **Kate Gustavsen**: "Former Graduate Student" → "Former Neuroscience Graduate Student"
-
-**Reasoning**: Titles now accurately reflect each person's actual academic journey through the lab, showing their graduate student programs and any subsequent postdoc positions.
-
-### Development Process
-
-**Image Processing Pipeline**:
-
-1. `magick source.jpg target.webp` - Convert JPG to optimized WebP format
-2. `mv target.webp assets/img/people/` - Move to proper directory
-3. `rm source.jpg` - Clean up original files
-
-**Jekyll-Compliant CSS Debugging**:
-
-1. **Identified Issue**: Used browser developer tools to trace CSS cascade problems
-2. **Found Root Cause**: Double `.navbar-light` selector compilation causing specificity conflicts
-3. **Applied Solution**: Simplified selectors, used proper SCSS nesting, leveraged CSS custom properties
-4. **Verified Fix**: Tested across light/dark themes to ensure theme-aware functionality
-
-**Alumni Management**:
-
-1. **Alphabetical Ordering**: Maintained proper alphabetical sorting in `_data/people.yml`
-2. **Consistent Structure**: Used established YAML data patterns
-3. **Link Integration**: Proper HTML link formatting within YAML descriptions
-4. **Title Accuracy**: Corrected titles to reflect actual academic paths
-
-### Technical Details
-
-**CSS Architecture Principles**:
-
-- Used existing SCSS variables and mixins
-- Leveraged CSS custom properties for theme compatibility
-- Maintained Bootstrap compatibility without hacks
-- Applied proper CSS specificity instead of `!important`
-
-**Alumni Data Structure**:
-
-```yaml
-- name: "Full Name, PhD"
-  title: "Former [Program] Graduate Student [and Postdoc]"
-  image: "people/FirstName.LastName.webp"
-  description: "Career description with optional (Lab web site <a href='url'>here</a>.)"
-```
-
-**Git Workflow**:
-
-- Individual commits for major changes (navigation fix, alumni batches)
-- Descriptive commit messages with technical details
-- Proper co-authorship attribution with Claude Code
-- All changes pushed to GitHub for automatic deployment
-
-### Current Status
-
-- ✅ **Active Navigation Fixed**: Bold blue styling works correctly across all pages and themes
-- ✅ **6 Alumni Added**: All with proper images, bios, and website links where applicable
-- ✅ **Title Corrections**: All alumni titles now accurately reflect their academic paths
-- ✅ **Image Optimization**: All profile images converted to WebP format for performance
-- ✅ **Jekyll Compliance**: All changes follow Jekyll best practices without CSS hacks
-- ✅ **GitHub Deployment**: All changes successfully pushed and deployed
-
-### Commits Made This Session
-
-1. **adde8f72** - Fix active navigation styling with Jekyll-compliant CSS
-2. **1a26db81** - Add Alexander Huth to alumni section
-3. **ed0c06c7** - Add James Mazer to alumni section
-4. **22f8e99c** - Add multiple alumni with profile images (Kate, Ben, Dustin, Sara)
-5. **1883544c** - Correct alumni titles to reflect accurate academic paths
-
-### Files Modified
-
-**CSS Architecture**:
-
-- `_sass/_base.scss` - Fixed active navigation styling with proper specificity
-
-**Alumni Database**:
-
-- `_data/people.yml` - Added 6 new alumni and corrected 6 titles
-
-**Image Assets**:
-
-- `assets/img/people/Alexander.Huth.webp`
-- `assets/img/people/James.Mazer.webp`
-- `assets/img/people/Kate.Gustavsen.webp`
-- `assets/img/people/Ben.Hayden.webp`
-- `assets/img/people/Dustin.Stansbury.webp`
-- `assets/img/people/Sara.Popham.webp`
-
-### Development Commands Used
-
-**Image Processing**:
-
-- `magick source.jpg target.webp` - Format conversion
-- `cp source.webp assets/img/people/target.webp` - File management
-- `rm source.jpg` - Cleanup
-
-**Jekyll Development**:
-
-- `bundle exec jekyll serve --host 0.0.0.0 --port 4000 --livereload` - Development server
-- `bundle exec jekyll build` - Production build testing
-
-**Code Quality**:
-
-- `npx prettier --write .` - Code formatting (passed all runs)
-- `git add . && git commit && git push` - Version control workflow
-
-### Next Session Priorities
-
-- Monitor all new alumni profiles on live site
-- Verify all website links are functional
-- Consider any additional alumni or team member updates
-- Test navigation styling across different browsers/devices
-
-## Current Session Summary
-
-**Date**: 2025-08-30 (Ninth Session - Publications Reordering & Bilingual Study Addition)
-**Working Directory**: `/Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site`
-
-### Major Changes Made
-
-### 1. **Publications Page Chronological Reordering** - Jekyll Date Sorting Implementation
-
-**Problem**: Publications were displaying oldest-first instead of newest-first on the live site.
-
-**Root Cause**: The `publications.liquid` template was trying to sort by `date` fields that didn't exist, so it displayed publications in their YAML file order.
-
-**Solution**: Implemented proper Jekyll date sorting approach:
-
-- Added `date` fields to all publications extracted from years in titles
-- Used specific dates like "2025-08-22" where available (from bioRxiv URLs)
-- For same-year publications, used different days (01, 02, 03) to maintain consistent ordering
-- Template logic `{% assign sorted_pubs = page.publications | sort: 'date' | reverse %}` now works correctly
-
-**Publication Years Removed**: Cleaned up titles by removing redundant years since dates are now in separate fields:
-
-- "...Communications Biology, 2024)" → "...Communications Biology)"
-- All 12 publication titles updated for consistency
-
-### 2. **New Bilingual Language Processing Study Added** - November 2024 Publication
-
-**Complete Publication Addition**:
-
-- **Title**: "Bilingual language processing relies on shared semantic representations that are modulated by each language (Chen et al., BioRxiv preprint)"
-- **Date**: "2024-11-21" (most recent publication, appears first)
-- **URL**: https://www.biorxiv.org/content/biorxiv/early/2024/11/21/2024.06.24.600505.full.pdf
-- **Image**: `/assets/img/papers/Chen.etal.2024.2.webp` (moved from top-level directory)
-- **Description**: Full research summary about bilingual semantic representation differences
-
-### 3. **New Bilingual Brain Viewer Added** - Interactive Data Exploration
-
-**Brain Viewer Implementation**:
-
-- **Title**: "Bilingual language processing relies on shared semantic representations that are modulated by each language (Chen et al., BioRxiv preprint)"
-- **URL**: https://blsemc.github.io/viewer/ (external interactive viewer)
-- **Image**: Same as publication (`Chen.etal.2024.2.webp`)
-- **Enhanced Description**: Added viewer-specific text: "This brain viewer allows you to explore, compare and contrast English and Chinese semantic representations in one bilingual participant."
-
-### 4. **Brain Viewers Page Content Cleanup**
-
-**Content Refinements**:
-
-- **Chen 2024 Timescales Entry**: Added ", 2024" to title for consistency since brain viewers don't use date fields
-- **Educational Reference Removal**: Removed "We created the following two brain viewers for educational purposes." line for cleaner flow
-- **Enhanced Viewer Description**: Added specific interactive functionality description for bilingual viewer
-
-### Development Process
-
-**Jekyll Date Architecture Implementation**:
-
-1. **Template Analysis**: Identified that `publications.liquid` expected `date` fields but publications only had years in titles
-2. **Data Structure Enhancement**: Added proper `date: "YYYY-MM-DD"` fields to all publications
-3. **Content Cleanup**: Removed redundant years from titles since dates are now in structured fields
-4. **Sorting Verification**: Template's existing `sort: 'date' | reverse` logic now functions correctly
-
-**Asset Management**:
-
-1. **Image Organization**: Moved `Chen.etal.2024.2.webp` from project root to `assets/img/papers/` directory
-2. **File Naming**: Used consistent naming convention matching existing paper image patterns
-3. **Path Updates**: Updated all references to use proper asset paths
-
-**Content Structure Consistency**:
-
-1. **Publication Format**: Used established YAML structure with `first_sentence_with_link: true`
-2. **Brain Viewer Format**: Followed existing pattern with enhanced interactive description
-3. **Template Compatibility**: Ensured all changes work with existing Jekyll template system
-
-### Technical Achievements
-
-**Jekyll Best Practices Maintained**:
-
-- **Structured Data**: All content remains in YAML front matter, not hardcoded HTML
-- **Template Logic**: Leveraged existing sorting and display templates without modifications
-- **Asset Pipeline**: Proper image organization following Jekyll conventions
-- **URL Structure**: Clean permalinks and navigation maintained
-
-**Site Performance Verification**:
-
-- **Jekyll Build Success**: Full site build completed with all optimizations:
-  - Terser JavaScript minification (28 files processed)
-  - ImageMagick responsive image generation (480px, 800px, 1400px variants)
-  - SCSS compilation and CSS minification
-  - Automatic WebP optimization and responsive image creation
-- **Development Server**: Successfully running at http://localhost:4000 with all functionality confirmed
-
-### Current Status
-
-- ✅ **Publications Chronological Order**: Now displays newest-first (November 2024 bilingual study at top)
-- ✅ **Jekyll Date Sorting**: Proper `date` fields enable template-driven chronological organization
-- ✅ **New Publication Added**: Chen et al. bilingual study with complete metadata and description
-- ✅ **New Brain Viewer Added**: Interactive bilingual language viewer with enhanced description
-- ✅ **Asset Organization**: All images properly located in `assets/img/papers/` directory
-- ✅ **Content Cleanup**: Years removed from titles, educational reference text removed
-- ✅ **Jekyll Optimization**: Site running with maximum Jekyll compliance and performance optimizations
-- ✅ **GitHub Deployment**: All changes committed and pushed (commit f15f7ca0)
-
-### Commit Made This Session
-
-**f15f7ca0** - Add new bilingual publication and brain viewer with Jekyll date sorting
-
-- Add Chen et al. bilingual language processing publication (Nov 21, 2024)
-- Extract publication years to separate date fields for proper chronological sorting
-- Add new bilingual brain viewer entry linking to interactive viewer
-- Move Chen.etal.2024.2.webp image to assets/img/papers/ directory
-- Remove educational viewer reference text from brain-viewers page
-- Publications now display in reverse chronological order (most recent first)
-
-### Files Modified This Session
-
-**Publications System**:
-
-- `_pages/publications.md` - Added new bilingual publication with date field, removed years from all titles
-
-**Brain Viewers System**:
-
-- `_pages/brain-viewers.md` - Added new bilingual viewer entry, updated Chen 2024 title, removed educational reference
-
-**Asset Management**:
-
-- `assets/img/papers/Chen.etal.2024.2.webp` - New bilingual study image (moved from root directory)
-
-**Documentation**:
-
-- `claude-session-memory.md` - Session summary and technical documentation
-
-### Development Commands Used
-
-**Jekyll Development**:
-
-- `bundle exec jekyll serve --host 0.0.0.0 --port 4000` - Development server with full optimization verification
-- `npx prettier --write .` - Code formatting validation (all files properly formatted)
-
-**Asset Management**:
-
-- `mv Chen.etal.2024.2.webp assets/img/papers/` - Image file organization
-
-**Version Control**:
-
-- `git status`, `git add .`, `git commit`, `git push` - Full deployment workflow with descriptive commit message
-
-### Next Session Priorities
-
-- Monitor GitHub Pages deployment for bilingual publication and viewer
-- Verify chronological ordering is working correctly on live site
-- Test interactive bilingual brain viewer functionality
-- Consider any additional recent publications or brain viewer updates
-
-## Session 9 Continuation - Jekyll News System Architecture Conversion
-
-**Date**: 2025-08-30 (Continued Session - News System Jekyll Collections Migration)
-
-### News System Duplication Problem Resolution
-
-**Issue Identified**: After converting news system from hybrid YAML approach to Jekyll collections, duplicate news items appeared on the news page.
-
-**Root Cause Analysis**:
-
-- Had created both `announcement_*.md` files and properly named dated `_news/*.md` files
-- Jekyll collections (`site.news`) was processing all `.md` files in `_news/` directory
-- This resulted in duplicate content being displayed since same news items existed in both naming schemes
-
-**Solution Implemented**:
-
-- Systematically identified all duplicate `announcement_*.md` files
-- Removed 9 duplicate announcement files: `announcement_1.md` through `announcement_10.md` (excluding `announcement_7.md` which didn't exist)
-- Kept only properly named dated files: `2021-11-20-popham-nature-neuroscience.md`, `2022-05-01-christine-tseng-phd.md`, etc.
-
-### Jekyll Collections Architecture Completed
-
-**Template Conversion**:
-
-- Updated `_layouts/news.liquid` to use `site.news` collection instead of `page.news_items` YAML data
-- Changed sorting logic from page data to collection items
-- Maintained all existing styling and functionality
-
-**Content Migration**:
-
-- Converted `_pages/news.md` from massive YAML front matter data to clean Jekyll collection approach
-- Removed 90+ lines of YAML data from news page
-- Now uses Jekyll best practice of individual `.md` files in `_news/` directory
-
-**Catherine Chen PhD Addition**: Added new news item for Catherine Chen's PhD completion (May 15, 2024) with proper Jekyll collection structure.
-
-### Code Quality and Deployment
-
-**Prettier Formatting**:
-
-- Ran `npx prettier --write .` successfully on all files
-- Fixed YAML formatting issues in news files (corrected misplaced `---` markers)
-- All files now consistently formatted
-
-**Git Workflow Completed**:
-
-- Staged all changes including deletions and modifications
-- Created descriptive commit: "Convert news system from hybrid approach to proper Jekyll collections"
-- Successfully pushed to GitHub: `a72b13fe`
-
-### Technical Achievements
-
-**Jekyll Best Practices Implementation**:
-
-- Eliminated anti-pattern of large YAML data blocks in page front matter
-- Implemented proper Jekyll collections approach with individual content files
-- Maintained all template functionality while improving architecture
-
-**Duplicate Content Resolution**:
-
-- Successfully identified and removed all duplicate news items
-- Jekyll server confirmed regeneration without duplicates
-- News page now displays clean, chronologically sorted content
-
-### Current Status
-
-- ✅ **News Duplicates Eliminated**: All `announcement_*.md` duplicates removed
-- ✅ **Jekyll Collections Active**: Site now uses proper `site.news` collection
-- ✅ **Template Migration Complete**: `news.liquid` updated for collections architecture
-- ✅ **Catherine Chen Addition**: New PhD announcement successfully added
-- ✅ **Code Formatting**: All files formatted with Prettier
-- ✅ **Deployment Complete**: Changes pushed to GitHub (`a72b13fe`)
-
-### Files Modified in Continuation
-
-**Core Architecture**:
-
-- `_layouts/news.liquid` - Template updated for Jekyll collections
-- `_pages/news.md` - YAML data removed, converted to collections approach
-
-**Content Management**:
-
-- Removed: 9 `announcement_*.md` duplicate files
-- Added: `_news/2024-05-15-catherine-chen-phd.md` - Catherine Chen PhD
-- Formatted: All news files with proper YAML structure
-
-**Documentation**:
-
-- `claude-session-memory.md` - Updated with continuation session details
-
-### Commit Made in Continuation
-
-**a72b13fe** - Convert news system from hybrid approach to proper Jekyll collections
-
-- Remove duplicate news items by converting announcement\__.md files to dated \_news/_.md files
-- Update news.liquid template to use site.news collection instead of page.news_items YAML data
-- Add Catherine Chen PhD announcement (May 15, 2024)
-- Fix news item duplication by removing obsolete announcement\_\* files
-- Format news files with Prettier for consistent YAML structure
-
-## Current Session Summary
-
-**Date**: 2025-08-30 (Tenth Session - Publication Date Updates & GitHub Deployment)
-**Working Directory**: `/Users/gallant/LABADMIN/WEB/JEKYLL.7-25/working-gallant-site`
-
-### Major Changes Made
-
-### 1. **Brain Viewers Page Date Addition** - Chen et al. BioRxiv Preprint 2024
-
-**Problem**: User noticed "2024" was missing from the Chen et al. bioRxiv preprint entry on the brain-viewers page.
-
-**Solution**: Updated brain-viewers page to add "2024" after "Chen et al., bioRxiv preprint":
-
-- Changed: "...Chen et al., bioRxiv preprint)" → "...Chen et al., bioRxiv preprint, 2024)"
-- Applied to first brain viewer entry (bilingual language processing study)
-- Change immediately reflected in built site at `_site/brain-viewers/index.html`
-
-### 2. **Publications Page Date Updates** - Comprehensive Publication Date Corrections
-
-**Complete Date Update Process**: Updated publication dates throughout `_pages/publications.md` for chronological accuracy:
-
-**Updated Publication Dates**:
-
-- **Voxelwise Encoding Model Tutorial**: "2025-01-01" → "2025-05-09" (May 9, 2025)
-- **Timescales Paper (Chen et al.)**: "2024-01-01" → "2024-07-01" (July 1, 2024)
-- **Context Paper (Deniz et al.)**: "2023-01-02" → "2023-04-26" (April 26, 2023)
-- **Phonemic Segmentation (Gong et al.)**: "2023-01-01" → "2023-06-29" (June 29, 2023)
-- **Feature-space Selection (Dupré la Tour et al.)**: "2022-01-01" → "2022-12-01" (December 1, 2022)
-- **State Space Modeling (Zhang et al.)**: "2021-01-02" → "2021-05-01" (May 1, 2021)
-- **Mixed Integer Linear Programming (Slivkoff and Gallant)**: "2021-01-01" → "2021-05-05" (May 5, 2021)
-- **Scene-selective Areas (Lescroart et al.)**: "2019-01-01" → "2019-01-02" (January 2, 2019)
-- **Semantic Maps (Huth et al.)**: "2016-01-01" → "2016-04-27" (April 27, 2016)
-
-### 3. **Jekyll Site Rebuilding & Cache Management**
-
-**Browser Cache Resolution Process**:
-
-- User initially couldn't see date updates due to browser cache
-- Ran `bundle exec jekyll build` to ensure all changes reflected in generated site
-- Verified changes appeared in built HTML files
-- User successfully saw updates after browser cache refresh
-
-### Development Process
-
-**Publication Date Research & Application**:
-
-1. **Systematic Updates**: Applied user-provided accurate publication dates to all papers
-2. **Jekyll Date Fields**: Updated `date: "YYYY-MM-DD"` fields used for chronological sorting
-3. **Template Compatibility**: Maintained compatibility with existing `publications.liquid` template sorting logic
-
-**Jekyll Build Process**:
-
-1. **Full Site Rebuild**: Generated complete static site with updated publication dates
-2. **Asset Processing**: Jekyll processed all images, minified JavaScript, compiled SCSS
-3. **Optimization Pipeline**: Automatic WebP generation, responsive image creation, code minification
-
-**Git Workflow Management**:
-
-1. **Change Verification**: Used `git status` and `git diff` to verify all modifications
-2. **Change Staging**: Prepared all publication date updates for commit
-3. **Deployment Preparation**: Set up for final prettier formatting and GitHub push
-
-### Current Status - Ready for Final Deployment
-
-- ✅ **Brain Viewers Updated**: Chen et al. bioRxiv preprint now shows "2024"
-- ✅ **Publication Dates Updated**: All 9 publications have accurate chronological dates
-- ✅ **Jekyll Build Successful**: Complete site rebuild with optimizations completed
-- ✅ **Browser Cache Resolution**: Updates confirmed visible after cache refresh
-- ✅ **Git Changes Staged**: All modifications ready for commit and deployment
-
-### Files Modified This Session
-
-**Content Updates**:
-
-- `_pages/brain-viewers.md` - Added "2024" to Chen et al. bioRxiv preprint title
-- `_pages/publications.md` - Updated 9 publication dates with accurate chronological information
-
-### Development Commands Used
-
-**Jekyll Site Management**:
-
-- `git pull origin main` - Pulled latest changes from GitHub
-- `bundle exec jekyll build` - Rebuilt site with all optimizations and asset processing
-
-**Git Workflow Preparation**:
-
-- `git status` - Verified changed files
-- `git diff _pages/brain-viewers.md` - Confirmed brain viewer changes
-- Ready for: `npx prettier --write .` and `git push` workflow
-
-### Next Steps - Final Deployment
-
-1. ✅ **Append session log** (Current task in progress)
-2. 🔄 **Run prettier formatting**
-3. 🔄 **Push to GitHub for deployment**
+- Monitor GitHub Pages deployment of latest changes
+- Verify publication chronological ordering on live site
+- Test all new website links and functionality
+- Consider additional team member updates or content additions
