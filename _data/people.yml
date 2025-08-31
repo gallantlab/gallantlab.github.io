@@ -62,10 +62,15 @@ current_members:
 
   - name: "Yuerou Tang"
     title: "Lab RA"
-    image: "people/Yuerou.Tang.jpeg"
+    image: "people/Yuerou.Tang.webp"
     description: ""
 
 alumni:
+  - name: "Natalia Bilenko, PhD"
+    title: "Former Graduate Student"
+    image: "people/Natalia.Bilenko.webp"
+    description: "Dr. Bilenko is now in the technology industry."
+
   - name: "Catherine Chen, PhD"
     title: "Former EECS Graduate Student"
     image: "people/Catherine.Chen.webp"
@@ -116,6 +121,11 @@ alumni:
     image: "people/Kate.Gustavsen.webp"
     description: "Following her PhD, Dr. Gustavsen obtained her DVM and is now a veterinarian at the Lincoln Park Zoo in Chicago."
 
+  - name: "Kathleen Hansen, PhD"
+    title: "Former Graduate Student"
+    image: "people/Kathleen.Hansen.webp"
+    description: "Dr. Hansen is now a teacher."
+
   - name: "Alexander Huth, PhD"
     title: "Former Neuroscience Graduate Student and Postdoc"
     image: "people/Alexander.Huth.webp"
@@ -131,6 +141,11 @@ alumni:
     image: "people/Mark.Lescroart.webp"
     description: "Dr. Lescroart is now a Professor at the University of Nevada. (Lab web site <a href='http://piecesofmind.psyc.unr.edu/'>here</a>.)"
 
+  - name: "Lydia Majure, PhD"
+    title: "Former Graduate Student"
+    image: "people/Lydia.Majure.webp"
+    description: "Dr. Majure is now an organizer for the UC postdoc union."
+
   - name: "James Mazer, PhD"
     title: "Former Postdoc"
     image: "people/James.Mazer.webp"
@@ -141,10 +156,20 @@ alumni:
     image: "people/Thomas.Naselaris.webp"
     description: "Dr. Naselaris is now a Professor at the University of Minnesota. (Lab web site <a href='http://www.naselarislab.net/'>here</a>.)"
 
+  - name: "Anwar Nunez-Elizalde, PhD"
+    title: "Former Graduate Student"
+    image: "people/Anwar.Nunez-Elizalde.webp"
+    description: "Dr. Nunez-Elizalde is now in the technology industry."
+
   - name: "Shinji Nishimoto, PhD"
     title: "Former Postdoc"
     image: "people/Shinji.Nishimoto.webp"
     description: "Dr. Nishimoto is now a Professor at Osaka University. (Lab web site <a href='https://nishimotolab.org/'>here</a>.)"
+
+  - name: "Storm Slivkoff, PhD"
+    title: "Former Graduate Student"
+    image: "people/Storm.Slivkoff.webp"
+    description: "Dr. Slivkoff is now in the technology industry."
 
   - name: "Dustin Stansbury, PhD"
     title: "Former Bioengineering Graduate Student"
@@ -161,6 +186,11 @@ alumni:
     image: "people/Sara.Popham.webp"
     description: "Dr. Popham is now in the technology industry."
 
+  - name: "Ryan Prenger, PhD"
+    title: "Former Graduate Student"
+    image: "people/Ryan.Prenger.webp"
+    description: "Dr. Prenger is now in the technology industry."
+
   - name: "Christine Tseng, PhD"
     title: "Former Neuroscience Graduate Student and Postdoc"
     image: "people/Christine.Tseng.webp"
@@ -174,7 +204,7 @@ alumni:
   - name: "Ben Willmore, PhD"
     title: "Former Postdoc"
     image: "people/Ben.Willmore.webp"
-    description: "Dr. Willmore is now a Lecturer at Oxford University. (Web site <a href='https://www.dpag.ox.ac.uk/team/benjamin-willmore'>here</a>.)"
+    description: "Dr. Willmore is now a Lecturer at Oxford University. (Lab web site <a href='https://www.dpag.ox.ac.uk/team/benjamin-willmore'>here</a>.)"
 
   - name: "Michele Winter, PhD"
     title: "Former Vision Science Graduate Student"
@@ -185,3 +215,8 @@ alumni:
     title: "Former Graduate Student"
     image: "people/Michael.Wu.webp"
     description: "Dr. Wu is now in the technology industry."
+
+  - name: "An Vu, PhD"
+    title: "Former Graduate Student"
+    image: "people/An.Vu.webp"
+    description: "Dr. Vu is now a Professor at UCSF. (Lab web site <a href='https://profiles.ucsf.edu/an.vu'>here</a>.)"
