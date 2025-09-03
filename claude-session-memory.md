@@ -48,6 +48,33 @@
 
 **Jekyll Date Sorting Implementation**:
 
+### Session 10: Alumni Management and Site Optimization (2025-08-31)
+
+**Alumni System Expansion**:
+
+Added comprehensive alumni management with optimized image processing:
+
+- **New Alumni Members**: Ryan Prenger (tech), Lydia Majure (UC postdoc union organizer)
+- **WebP Conversion Workflow**: Automated JPG → WebP conversion for all profile images
+- **Terminology Standardization**: "Web site here" → "Lab web site here" for consistency
+- **Image Optimization**: All profile images converted to WebP format (Yuerou Tang included)
+
+**Jekyll Site Optimization**:
+
+- **Maximum Jekyllage Achieved**: All modern optimizations enabled
+- **Performance Features**: Terser JS minification, responsive image generation (480px, 800px, 1400px), CSS compression
+- **Clean Build**: Full cache clearing and regeneration with `jekyll clean && jekyll build`
+- **Quality Assurance**: `jekyll doctor` confirms "Everything looks fine"
+
+**Alumni Processing Workflow**:
+
+1. Image conversion: `magick photo.jpg assets/img/people/name.webp`
+2. YAML data entry in `_data/people.yml` (alphabetical order)
+3. Description formatting with consistent link structure
+4. Site rebuild with `bundle exec jekyll build`
+
+**Technical Standards Maintained**:
+
 - Added `date: "YYYY-MM-DD"` fields to all publications for chronological sorting
 - Template logic `{% assign sorted_pubs = page.publications | sort: 'date' | reverse %}` now functional
 - Removed redundant years from titles since dates in separate fields
@@ -205,9 +232,44 @@
 - `assets/js/theme.js` - Theme switching (default light mode)
 - `_sass/_base.scss` - Core styling including first-sentence and navigation
 
+### Session 11: Alumni Management Continuation & Alphabetization Fix (2025-08-31)
+
+**Alumni System Expansion Continued**:
+
+Added final alumni members and resolved critical alphabetization issues:
+
+- **New Alumni Added**: Bill Vinje (tech industry), Lydia Majure (UC postdoc union organizer)
+- **WebP Image Processing**: Continued systematic JPG → WebP conversion workflow
+- **Link Terminology Consistency**: Updated remaining instances of "Web site here" → "Lab web site here"
+
+**Critical Alphabetization Problem & Resolution**:
+
+- **Problem Identified**: Multiple alumni were severely out of alphabetical order by last name
+- **Specific Issues**: Hansen, Nishimoto, Slivkoff, Stansbury positions incorrect; S-names incorrectly placed before O-names
+- **Solution**: Complete rewrite of alumni section with proper alphabetical ordering
+- **Method**: Created entirely new people.yml file from scratch with correct sequence
+
+**Final Alumni Alphabetical Order** (33 total):
+
+Bilenko → Chen → Cukur → David → Deniz → Dupré la Tour → Eickenberg → Gao → Gong → Gustavsen → Hansen → Hayden → Huth → Kay → Lescroart → Majure → Mazer → Naselaris → Nishimoto → Nunez-Elizalde → Oliver → Popham → Prenger → Slivkoff → Stansbury → Tseng → Vinje → Vu → Wehbe → Willmore → Winter → Wu
+
+**Technical Implementation**:
+
+- File replacement strategy: `people.yml` → `people_old.yml`, `people_new.yml` → `people.yml`
+- Maintained all existing data integrity (names, titles, descriptions, images)
+- Preserved consistent YAML structure and formatting
+- Applied Prettier formatting for code quality
+
+**Quality Assurance**:
+
+- Verified correct alphabetical sequence manually
+- Maintained all profile image references (WebP format)
+- Preserved all career descriptions and website links
+- Jekyll site rebuild and deployment successful
+
 ## Next Session Priorities
 
-- Monitor GitHub Pages deployment of latest changes
-- Verify publication chronological ordering on live site
-- Test all new website links and functionality
-- Consider additional team member updates or content additions
+- Monitor GitHub Pages deployment of alphabetization fix
+- Verify all alumni appear in correct order on live site
+- Test all website links for alumni faculty members
+- Consider any remaining team member updates or content additions
