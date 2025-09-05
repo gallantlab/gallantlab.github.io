@@ -51,6 +51,13 @@ content_items:
     first_sentence_with_link: true
     remaining_description: 'In this experiment people passively watched movies while monitoring for the presence of either "humans" or "vehicles", and in a neutral condition. Voxelwise modeling was used to determine how each brain location responded to 985 distinct categories of objects and actions in the movies, and how these responses were modulated by attention. This brain viewer allows you to view data collected under the three different conditions (left click "Passive Viewing", "Attending to Humans" or "Attending to Vehicles"). By selecting single brain locations (left click on the brain) or single categories (left click on the WordNet tree), you can see how tuning changes under different states of attention.'
 
+  - title: "Group-based language comprehension semantic map viewer"
+    url: "https://gallantlab.org/viewer-stories-group/"
+    image: "/assets/img/papers/Huth.A.2016.webp"
+    alt: "Group semantic maps"
+    first_sentence: '<a href="https://gallantlab.org/viewer-stories-group/">Group-based language comprehension semantic map viewer.</a>'
+    remaining_description: 'In 2016 we <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4852309/">published a paper</a> that used fMRI, a language comprehension experiment, and voxelwise encoding models to map lexical semantic concepts across the cortical surface. We released brain viewer for that study (see above on this page), but that viewer only showed data from one participant. This viewer provides a way to inspect cortical lexical-semantic conceptual maps at the group level, vertex-by-vertex. Based on the results that we reported in <a href="https://www.biorxiv.org/content/10.1101/2025.08.22.671848v1">another recent paper</a>, this viewer should account for about 80% of the variance in lexical semantic conceptual maps in any individual.'
+
   - title: "Cortical anatomy viewer"
     url: "https://gallantlab.org/viewer-cortical-anatomy/"
     image: "/assets/img/other/sulcigyri.webp"
