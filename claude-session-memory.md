@@ -267,9 +267,72 @@ Bilenko → Chen → Cukur → David → Deniz → Dupré la Tour → Eickenberg
 - Preserved all career descriptions and website links
 - Jekyll site rebuild and deployment successful
 
+### Session 12: Group-Based Brain Viewer Addition (2025-09-05)
+
+**New Brain Viewer Implementation**:
+
+Added comprehensive group-based language comprehension semantic map viewer:
+
+- **Brain Viewer Entry**: Added new viewer to brain-viewers page positioned above cortical anatomy viewer
+- **URL Integration**: https://gallantlab.org/viewer-stories-group/ with proper linking structure
+- **Content Description**: Complete technical description explaining relationship to original single-participant Huth 2016 viewer
+- **Academic References**: Linked to both Huth 2016 Nature paper and Visconti bioRxiv paper for theoretical foundation
+
+**News Announcement Creation**:
+
+- **News Item**: Created `_news/2025-09-05-group-brain-viewer.md` with proper Jekyll collection structure
+- **Front Page Integration**: News announcement appears on homepage with linked brain viewer and publication references
+- **Image Assets**: Used Huth 2016 paper image for visual consistency across brain viewer and news sections
+- **Link Structure**: "brain viewer" → viewer URL, "another recent paper" → Visconti bioRxiv paper
+
+**Technical Implementation Details**:
+
+**Brain Viewer Data Structure**:
+
+```yaml
+- title: "Group-based language comprehension semantic map viewer"
+  url: "https://gallantlab.org/viewer-stories-group/"
+  image: "/assets/img/papers/Huth.A.2016.webp"
+  alt: "Group semantic maps"
+  first_sentence: '<a href="https://gallantlab.org/viewer-stories-group/">Group-based language comprehension semantic map viewer.</a>'
+  remaining_description: 'In 2016 we <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4852309/">published a paper</a>...'
+```
+
+**News Item Structure**:
+
+```yaml
+layout: post
+date: 2025-09-05 12:00:00-0800
+inline: true
+related_posts: false
+image: "/assets/img/papers/Huth.A.2016.webp"
+alt: "Group semantic maps"
+first_sentence: 'We've created a new <a href="https://gallantlab.org/viewer-stories-group/">brain viewer</a>...'
+```
+
+**Jekyll Build and Deployment**:
+
+- **Site Rebuilds**: Multiple Jekyll builds performed to update static files with new content
+- **Code Quality**: Applied Prettier formatting ensuring GitHub Actions compatibility
+- **Git Workflow**: Proper commit with descriptive message and Claude Code co-authorship
+- **GitHub Push**: Successfully deployed to live repository (commit `1066ba20`)
+
+**Link Verification**:
+
+- **Huth 2016 Paper**: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4852309/ (from publications page)
+- **Visconti Paper**: https://www.biorxiv.org/content/10.1101/2025.08.22.671848v1 (from publications page)
+- **Brain Viewer**: https://gallantlab.org/viewer-stories-group/ (external lab resource)
+
+**Content Integration Success**:
+
+- **Positioning**: New viewer logically placed above cortical anatomy viewer as requested
+- **Cross-References**: Proper integration between brain viewers page and news announcement
+- **Academic Context**: Clear explanation of relationship to existing lab publications and research
+- **User Experience**: Consistent visual design and navigation patterns maintained
+
 ## Next Session Priorities
 
-- Monitor GitHub Pages deployment of alphabetization fix
-- Verify all alumni appear in correct order on live site
-- Test all website links for alumni faculty members
-- Consider any remaining team member updates or content additions
+- Monitor GitHub Pages deployment of new brain viewer and news announcement
+- Verify all links function correctly on live site
+- Test brain viewer functionality and user experience
+- Consider any additional brain viewer or publication updates
