@@ -10,7 +10,7 @@ nav_order: 2
 publications:
   - title: "Encoding models in functional magnetic resonance imaging: the Voxelwise Encoding Model framework (Visconti di Oleggio Castello, Deniz, et al., PsyArXiv preprint)"
     date: "2025-09-17"
-    url: "https://doi.org/10.31234/osf.io/nt2jq_v1"
+    url: "https://www.psyarxiv.com/nt2jq"
     image: "/assets/img/papers/ViscontidOC.Deniz.2025.webp"
     alt: "Visconti di Oleggio Castello et al. 2025 VEM framework"
     first_sentence_with_link: true
