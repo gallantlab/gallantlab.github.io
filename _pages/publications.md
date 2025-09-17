@@ -11,7 +11,7 @@ publications:
   - title: "Encoding models in functional magnetic resonance imaging: the Voxelwise Encoding Model framework (Visconti di Oleggio Castello, Deniz, et al., PsyArXiv preprint)"
     date: "2025-09-17"
     url: "https://doi.org/10.31234/osf.io/nt2jq_v1"
-    image: "/assets/img/papers/ViscontidOC.Deniz.2025.webp"
+    image: "/assets/img/papers/ViscontiDoC.2025.webp"
     alt: "Visconti di Oleggio Castello et al. 2025 VEM framework"
     first_sentence_with_link: true
     remaining_description: "This paper provides the first comprehensive guide for creating encoding models with fMRI data, and complements our VEM tutorials. The Voxelwise Encoding Model (VEM) framework extracts features from stimuli or tasks and uses them in encoding models to predict brain activity. When models successfully predict activity in brain regions, we can conclude that information represented in the features is also encoded in those regions. This comprehensive guide makes this powerful methodology accessible to researchers at all levels."
