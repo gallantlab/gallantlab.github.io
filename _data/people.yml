@@ -50,11 +50,6 @@ current_members:
     image: "people/Jen.Holmberg.webp"
     description: "Areas of interest include brain mechanisms mediating the psychedelic experience."
 
-  - name: "Carolyn Irving"
-    title: "Neuroscience Graduate Student"
-    image: "people/Carolyn.Irving.webp"
-    description: "Areas of interest include learning and the cerebellum."
-
   - name: "Sunjae Shim"
     title: "Neuroscience Graduate Student"
     image: "people/Sunjae.Shim.webp"
