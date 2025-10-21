@@ -621,6 +621,54 @@ After:
 - Merged to main and pushed to production
 - Changes live on gallantlab.github.io
 
+### Session 19: Add Google Scholar Link and Fix Image Rollover (2025-01-21)
+
+**Changes**:
+
+1. **Google Scholar Link**:
+
+   - Added link to Google Scholar page at bottom of publications page
+   - URL: https://scholar.google.com/citations?user=nSZG-vcAAAAJ&hl=en
+   - Provides access to complete publication history
+
+2. **Person Image Rollover Fix**:
+
+   - Fixed broken rollover effect on Jack Gallant's profile image
+   - Issue: Images weren't properly stacked for opacity transition
+   - Solution: Added fixed width to `.person-image` container and `display: block` to images
+   - Rollover now works: hover shows real headshot instead of brain regression image
+
+3. **BibTeX File Added**:
+   - Added `citations.bibtex` with 79 publications from Google Scholar
+   - Contains complete publication history from 1985-2025
+   - Available for future use (older publications page, CV generation, etc.)
+
+**Technical Details**:
+
+Publications page update:
+
+```markdown
+For a complete list of publications, visit our [Google Scholar page](https://scholar.google.com/citations?user=nSZG-vcAAAAJ&hl=en).
+```
+
+CSS fix for image rollover:
+
+```scss
+.person-image {
+  width: 80px; // Fixed width for proper stacking
+
+  img {
+    display: block; // Proper positioning
+  }
+}
+```
+
+**Deployment**:
+
+- Commit: `7792d5d9`
+- Merged to main and pushed to production
+- Changes live on gallantlab.github.io
+
 ## Next Session Priorities
 
 - Monitor learn page engagement with new review paper entry
