@@ -50,7 +50,9 @@ layout: default
             <div class="card-content">
               <div class="card-title">
                 {% if item.first_sentence_with_link %}
-                  <span class="first-sentence"><a href="{{ item.url }}" target="_blank">{{ item.title }}</a>.</span>
+                  <span class="first-sentence"
+                    ><a href="{{ item.url }}" target="_blank">{{ item.title }}</a>.</span
+                  >
                 {% elsif item.first_sentence %}
                   <span class="first-sentence">{{ item.first_sentence }}</span>
                 {% else %}

@@ -502,6 +502,7 @@ Successfully reviewed and merged PR #10 "ENH add review paper to learn page":
 **Content Updates Applied**:
 
 **New Learn Page Entry**:
+
 - **Title**: "Voxelwise Encoding Model review paper"
 - **URL**: https://www.psyarxiv.com/nt2jq (PsyArXiv canonical link)
 - **Image**: Uses existing ViscontidOC.Deniz.2025.webp from papers directory
@@ -509,6 +510,7 @@ Successfully reviewed and merged PR #10 "ENH add review paper to learn page":
 - **Description**: Comprehensive guide to VEM framework with emphasis on sensitivity and best practices
 
 **Tutorial Description Refinement**:
+
 - **Previous**: General VEM framework description (moved to review paper entry)
 - **Updated**: Specific focus on Python tutorials and public dataset usage
 - **Content Flow**: Better separation between conceptual overview (review paper) and practical implementation (tutorials)
@@ -516,11 +518,13 @@ Successfully reviewed and merged PR #10 "ENH add review paper to learn page":
 **Technical Implementation**:
 
 **Merge Execution**:
+
 ```bash
 gh pr merge 10 --squash --delete-branch
 ```
 
 **Repository Status**:
+
 - **Main Branch**: Updated automatically via GitHub merge
 - **Live Deployment**: Auto-deployment via GitHub Pages active
 - **Branch Cleanup**: Feature branch `enh/learn` deleted post-merge
@@ -528,23 +532,27 @@ gh pr merge 10 --squash --delete-branch
 **Content Architecture Improvement**:
 
 **Learn Page Structure Enhancement**:
+
 1. **Review Paper** (conceptual foundation) → VEM framework overview
 2. **Tutorials** (practical implementation) → Python coding tutorials
 3. **Workshop Video** (educational content) → video instruction
 4. **Data Downloads** (resources) → dataset access
 
 **Academic Integration**:
+
 - **Cross-Reference Consistency**: Same VEM paper referenced across publications and learn pages
 - **Image Asset Reuse**: Leveraging existing WebP optimized paper images
 - **URL Standardization**: PsyArXiv canonical links maintained across site
 
 **Site Maintenance Status**:
+
 - **Jekyll Level 11 Compliance**: Maintained through content-driven approach
 - **WebP Optimization**: All images remain in optimized format
 - **Performance Standards**: No impact on build times or asset loading
 - **Code Quality**: Prettier formatting preserved in all modified files
 
 **Deployment Verification**:
+
 - **Automatic Updates**: GitHub Pages deployment pipeline active
 - **Live Site Refresh**: Changes propagate within minutes of merge
 - **No Manual Intervention**: Zero additional deployment steps required

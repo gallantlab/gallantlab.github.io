@@ -52,7 +52,9 @@ layout: default
               <div class="card-title">
                 {% if pub.url and pub.url != '' %}
                   {% if pub.first_sentence_with_link %}
-                    <span class="first-sentence"><a href="{{ pub.url }}" target="_blank">{{ pub.title }}</a>.</span>
+                    <span class="first-sentence"
+                      ><a href="{{ pub.url }}" target="_blank">{{ pub.title }}</a>.</span
+                    >
                   {% else %}
                     <a href="{{ pub.url }}" target="_blank">{{ pub.title }}</a>
                   {% endif %}
