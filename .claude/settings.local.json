@@ -1,6 +1,11 @@
 {
   "permissions": {
-    "allow": ["Bash(magick identify:*)", "Bash(cwebp:*)", "Bash(find:*)"],
+    "allow": [
+      "Bash(magick identify:*)",
+      "Bash(cwebp:*)",
+      "Bash(find:*)",
+      "Bash(cp:*)"
+    ],
     "deny": [],
     "ask": []
   }

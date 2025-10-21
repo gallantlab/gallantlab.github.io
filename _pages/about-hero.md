@@ -1,7 +1,7 @@
 ---
 layout: about_hero
-title: About
-permalink: /
+title: About (Hero Layout)
+permalink: /about-hero/
 subtitle: Cognitive, Systems and Computational Neuroscience at the Leading Edge
 
 profile:

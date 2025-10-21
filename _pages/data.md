@@ -1,13 +1,10 @@
 ---
-layout: content_list
+layout: content_list_grid
 title: Data
 permalink: /data/
 description: "Open datasets from the Gallant Lab for neuroscience research, including fMRI data for visual processing and semantic representation studies."
 nav: true
 nav_order: 7
-entry_class: code-entry
-image_class: code-image
-info_class: code-info
 content_items:
   - title: "Natural Short Clips 3T fMRI Data"
     url: "https://doi.gin.g-node.org/10.12751/g-node.vy1zjd/"

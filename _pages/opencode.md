@@ -1,13 +1,10 @@
 ---
-layout: content_list
+layout: content_list_grid
 title: Code
 permalink: /opencode/
 description:
 nav: true
 nav_order: 6
-entry_class: code-entry
-image_class: code-image
-info_class: code-info
 content_items:
   - title: "GitHub repository"
     url: "https://github.com/gallantlab"

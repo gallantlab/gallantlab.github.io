@@ -1,13 +1,10 @@
 ---
-layout: content_list
+layout: content_list_grid
 title: Learn
 permalink: /learn/
 description:
 nav: true
 nav_order: 5
-entry_class: tutorial-entry
-image_class: tutorial-image
-info_class: tutorial-info
 content_items:
   - title: "Voxelwise Encoding Model review paper"
     url: "https://www.psyarxiv.com/nt2jq"

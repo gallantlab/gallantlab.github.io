@@ -1,0 +1,55 @@
+<div class="news-cards">
+  {% if site.news != blank %}
+    {% assign news = site.news | reverse %}
+
+    <!-- Filter news by date if limit is set (for homepage) -->
+    {% if include.limit %}
+      {% assign one_year_ago = 'now' | date: '%s' | minus: 31536000 | plus: 0 %}
+      {% assign recent_news = '' | split: '' %}
+      {% for item in news %}
+        {% assign item_timestamp = item.date | date: '%s' | plus: 0 %}
+        {% if item_timestamp >= one_year_ago %}
+          {% assign recent_news = recent_news | push: item %}
+        {% endif %}
+      {% endfor %}
+      {% assign news = recent_news %}
+    {% endif %}
+
+    {% if include.limit and page.announcements.limit %}
+      {% assign news_limit = page.announcements.limit %}
+    {% else %}
+      {% assign news_limit = news.size %}
+    {% endif %}
+
+    <div class="news-grid">
+      {% for item in news limit: news_limit %}
+        <div class="news-card">
+          {% if item.image %}
+            <div class="news-card-image">
+              <img src="{{ item.image | relative_url }}" alt="{{ item.alt | default: 'News image' }}">
+            </div>
+          {% endif %}
+          <div class="news-card-content">
+            <div class="news-card-date">{{ item.date | date: '%b %d, %Y' }}</div>
+            <div class="news-card-text">
+              {% if item.inline %}
+                {% if item.first_sentence_with_link %}
+                  {{ item.first_sentence }}
+                  {{ item.remaining_description }}
+                {% elsif item.first_sentence %}
+                  <span class="first-sentence">{{ item.first_sentence }}</span> {{ item.remaining_description }}
+                {% else %}
+                  {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                {% endif %}
+              {% else %}
+                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>No news so far...</p>
+  {% endif %}
+</div>

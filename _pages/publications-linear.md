@@ -1,8 +1,8 @@
 ---
-layout: publications_grid
-permalink: /publications/
-title: Publications
-nav: true
+layout: publications
+permalink: /publications-linear/
+title: Publications (Linear Layout)
+nav: false
 nav_order: 2
 # This page was converted from manual HTML to proper Jekyll templating.
 # Each publication is now stored as structured YAML data below, making it much easier to maintain.

@@ -442,10 +442,117 @@ Successfully merged PR #8 "Add VEM framework review paper":
 - **Performance Excellence**: Optimized for Core Web Vitals and fast loading
 - **Academic Standards**: Proper citation management and publication workflow
 
+### Session 15: Pull Request Management and Site Maintenance (2025-09-17)
+
+**Pull Request #9 Resolution**:
+
+Successfully handled and merged PR #9 "FIX image for latest paper":
+
+- **Issue Identified**: Incorrect image filename and URL references for VEM framework paper
+- **Problem Details**: Image referenced as `ViscontiDoC.2025.webp` instead of correct `ViscontidOC.Deniz.2025.webp`
+- **URL Fix**: Updated PsyArXiv link from versioned (`osf.io/nt2jq_v1`) to canonical (`psyarxiv.com/nt2jq`)
+
+**Files Updated by PR Merge**:
+
+- `_bibliography/papers.bib` - Corrected PsyArXiv URL reference
+- `_news/2025-09-17-vem-framework-paper.md` - Fixed image path and URL
+- `_pages/publications.md` - Fixed image path and URL
+- `assets/img/papers/ViscontidOC.Deniz.2025.webp` - Added correct image file
+- `.claude/settings.local.json` - Added local Claude Code permissions
+
+**Post-Merge Maintenance**:
+
+- **Code Quality**: Applied Prettier formatting across entire codebase
+- **Build Verification**: Full Jekyll clean rebuild with optimizations confirmed
+- **Performance Features**: Terser JS minification, responsive image processing active
+- **Git Deployment**: Changes committed and pushed successfully (`92d8682c`)
+
+**Technical Implementation**:
+
+**Merge Strategy**: Used squash merge with branch deletion for clean history
+**Build Time**: 4.519 seconds with full optimization pipeline
+**Asset Processing**: 0 new responsive images (all already WebP optimized)
+**Warning Resolution**: Acknowledged Sass deprecation warnings (non-blocking)
+
+**Repository Status Post-Merge**:
+
+- **Image References**: All VEM paper references now point to correct WebP file
+- **URL Consistency**: Canonical PsyArXiv URLs across all content sections
+- **Code Quality**: 100% Prettier compliance maintained
+- **Jekyll Standards**: Level 11 compliance preserved with all optimizations active
+
+**Pull Request Workflow Efficiency**:
+
+- **Detection**: Automatic PR identification via `gh pr list`
+- **Review**: Complete diff analysis before merge decision
+- **Execution**: Single-command squash merge with cleanup
+- **Verification**: Post-merge build and deployment confirmation
+
+### Session 16: Pull Request Management - Learn Page Enhancement (2025-09-22)
+
+**Pull Request #10 Processing**:
+
+Successfully reviewed and merged PR #10 "ENH add review paper to learn page":
+
+- **Author**: mvdoc (lab member contribution)
+- **Changes**: Added VEM framework review paper to learn page + improved tutorial descriptions
+- **Review Process**: Examined diff showing 7 additions, 1 deletion
+- **Merge Strategy**: Squash merge with automatic branch deletion
+
+**Content Updates Applied**:
+
+**New Learn Page Entry**:
+- **Title**: "Voxelwise Encoding Model review paper"
+- **URL**: https://www.psyarxiv.com/nt2jq (PsyArXiv canonical link)
+- **Image**: Uses existing ViscontidOC.Deniz.2025.webp from papers directory
+- **Positioning**: Added as first entry above existing VEM tutorials
+- **Description**: Comprehensive guide to VEM framework with emphasis on sensitivity and best practices
+
+**Tutorial Description Refinement**:
+- **Previous**: General VEM framework description (moved to review paper entry)
+- **Updated**: Specific focus on Python tutorials and public dataset usage
+- **Content Flow**: Better separation between conceptual overview (review paper) and practical implementation (tutorials)
+
+**Technical Implementation**:
+
+**Merge Execution**:
+```bash
+gh pr merge 10 --squash --delete-branch
+```
+
+**Repository Status**:
+- **Main Branch**: Updated automatically via GitHub merge
+- **Live Deployment**: Auto-deployment via GitHub Pages active
+- **Branch Cleanup**: Feature branch `enh/learn` deleted post-merge
+
+**Content Architecture Improvement**:
+
+**Learn Page Structure Enhancement**:
+1. **Review Paper** (conceptual foundation) → VEM framework overview
+2. **Tutorials** (practical implementation) → Python coding tutorials
+3. **Workshop Video** (educational content) → video instruction
+4. **Data Downloads** (resources) → dataset access
+
+**Academic Integration**:
+- **Cross-Reference Consistency**: Same VEM paper referenced across publications and learn pages
+- **Image Asset Reuse**: Leveraging existing WebP optimized paper images
+- **URL Standardization**: PsyArXiv canonical links maintained across site
+
+**Site Maintenance Status**:
+- **Jekyll Level 11 Compliance**: Maintained through content-driven approach
+- **WebP Optimization**: All images remain in optimized format
+- **Performance Standards**: No impact on build times or asset loading
+- **Code Quality**: Prettier formatting preserved in all modified files
+
+**Deployment Verification**:
+- **Automatic Updates**: GitHub Pages deployment pipeline active
+- **Live Site Refresh**: Changes propagate within minutes of merge
+- **No Manual Intervention**: Zero additional deployment steps required
+
 ## Next Session Priorities
 
-- Monitor performance improvements from WebP optimization
-- Verify image loading speeds and Core Web Vitals metrics
-- Check for any additional optimization opportunities
-- Consider implementing additional modern web standards
+- Monitor learn page engagement with new review paper entry
+- Verify proper content flow between review paper and tutorials
+- Check for any additional learn page enhancement opportunities
+- Consider expanding educational content sections
 - Maintain the achieved Jekyll Level 11 excellence standard

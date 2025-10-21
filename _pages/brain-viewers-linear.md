@@ -1,9 +1,9 @@
 ---
-layout: content_list_grid
-title: Brain viewers
-permalink: /brain-viewers/
+layout: content_list
+title: Brain viewers (Linear Layout)
+permalink: /brain-viewers-linear/
 description:
-nav: true
+nav: false
 nav_order: 1
 content_items:
   - title: "Bilingual language processing relies on shared semantic representations that are modulated by each language (Chen et al., bioRxiv preprint, 2024)"
