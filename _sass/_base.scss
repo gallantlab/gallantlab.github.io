@@ -228,12 +228,14 @@ table {
   .person-image {
     margin-bottom: 0.75rem;
     position: relative;
+    width: 80px;
 
     img {
       width: 80px;
       height: auto;
       object-fit: cover;
       border-radius: 0.375rem;
+      display: block;
     }
 
     // Hover effect for alternate images
@@ -247,6 +249,7 @@ table {
         position: absolute;
         top: 0;
         left: 0;
+        width: 80px;
         opacity: 0;
       }
 

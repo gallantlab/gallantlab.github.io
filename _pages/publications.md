@@ -124,3 +124,7 @@ publications:
 <!-- This page now uses a proper Jekyll template! The publications data is stored in the YAML front matter
      and rendered using the custom publications layout. This makes it much easier to maintain and follows
      Jekyll best practices while preserving the exact same visual styling. -->
+
+---
+
+For a complete list of publications, visit our [Google Scholar page](https://scholar.google.com/citations?user=nSZG-vcAAAAJ&hl=en).

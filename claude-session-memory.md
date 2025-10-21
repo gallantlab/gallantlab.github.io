@@ -557,6 +557,70 @@ gh pr merge 10 --squash --delete-branch
 - **Live Site Refresh**: Changes propagate within minutes of merge
 - **No Manual Intervention**: Zero additional deployment steps required
 
+### Session 18: Fix Card Image Display for Vertical Images (2025-01-20)
+
+**Problem**: Card layouts were cropping vertical images to 16:9 aspect ratio, showing only half of the image height.
+
+**Solution**: Modified all card layouts to display full images at their natural aspect ratio.
+
+**Changes Made**:
+
+1. **Publications Grid** (`_sass/_publications_grid.scss`):
+
+   - Removed `aspect-ratio: 16 / 9` constraint
+   - Changed `object-fit: cover` to `object-fit: contain`
+   - Set image `height: auto` instead of `height: 100%`
+   - Removed hover zoom effect
+
+2. **Content Grid** (`_sass/_content_grid.scss`):
+
+   - Applied same changes as publications grid
+   - Now properly displays vertical images for Brain Viewers, Learn, Code, and Data pages
+
+3. **News Cards** (`_sass/_hero.scss`):
+   - Removed fixed `height: 180px` constraint
+   - Changed to `height: auto` with `object-fit: contain`
+   - Removed hover zoom effect
+
+**Technical Details**:
+
+Before:
+
+```scss
+.card-image {
+  aspect-ratio: 16 / 9;
+  img {
+    object-fit: cover; // Crops image
+    height: 100%;
+  }
+}
+```
+
+After:
+
+```scss
+.card-image {
+  // No aspect ratio constraint
+  img {
+    object-fit: contain; // Preserves full image
+    height: auto;
+  }
+}
+```
+
+**Impact**:
+
+- ✅ Full vertical images now visible in all card layouts
+- ✅ Images display at natural aspect ratio without cropping
+- ✅ Consistent behavior across all pages (Publications, Brain Viewers, Learn, Code, Data, About)
+- ✅ Prettier formatting applied before commit
+
+**Deployment**:
+
+- Commit: `f3a62797`
+- Merged to main and pushed to production
+- Changes live on gallantlab.github.io
+
 ## Next Session Priorities
 
 - Monitor learn page engagement with new review paper entry
