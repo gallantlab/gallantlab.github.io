@@ -111,6 +111,11 @@ alumni:
     image: "people/Lily.Gong.webp"
     description: "Dr. Gong is now a staff scientist with Prof. Edward Chang at UCSF."
 
+  - name: "Robert Gibboni, PhD"
+    title: "Former Postdoc"
+    image: "people/Robert.Gibboni.webp"
+    description: "Dr. Gibboni is now in the technology industry."
+
   - name: "Kate Gustavsen, PhD"
     title: "Former Neuroscience Graduate Student"
     image: "people/Kate.Gustavsen.webp"
