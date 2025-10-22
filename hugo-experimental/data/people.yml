@@ -1,0 +1,227 @@
+principal_investigator:
+  - name: "Jack Gallant, PhD"
+    title: "Head of Lab"
+    image: "people/Regression.Jack.webp"
+    alt_image: "people/Gallant.Headshot.1.5x1.webp"
+    description: |
+      Neuroscience Department<br>
+      1 Barker Hall<br>
+      Berkeley, CA 94720-3990<br>
+      Email: <a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu</a>
+
+current_members:
+  - name: "Matteo Visconti di Oleggio Castello, PhD"
+    title: "Senior Postdoc"
+    image: "people/Matteo.ViscontidOC.webp"
+    description: "Areas of interest include individual differences, clinical applications of functional imaging, and fMRI methods development. (Personal web site <a href='https://matteovisconti.com/'>here</a>.)"
+
+  - name: "Tianjiao Zhang, PhD"
+    title: "Postdoc"
+    image: "people/Tianjiao.Zhang.webp"
+    description: "Areas of interest include studies of the human navigation system, and fMRI studies in VR."
+
+  - name: "Evi Hendrikx, PhD"
+    title: "Postdoc"
+    image: "people/Evi.Hendrikx.webp"
+    description: "Areas of interest include the representation of number, space, and time."
+
+  - name: "Emily Meschke, PhD"
+    title: "Postdoc"
+    image: "people/Emily.Meschke.webp"
+    description: "Areas of interest include development of new methods for recovering and interpreting brain networks."
+
+  - name: "Amanda LeBel"
+    title: "Neuroscience Graduate Student"
+    image: "people/Amanda.LeBel.webp"
+    description: "Areas of interest include functional imaging of the cerebellum, and autism."
+
+  - name: "Alicia Zeng"
+    title: "Biophysics Graduate Student"
+    image: "people/Alicia.Zeng.webp"
+    description: "Areas of interest include computational modeling of clinical deep-brain stimulation data."
+
+  - name: "Cheol Jun Cho"
+    title: "EECS Graduate Student"
+    image: "people/CheolJun.Cho.webp"
+    description: "Areas of interest include language, navigation, and using deep networks in data analysis and modeling."
+
+  - name: "Jen Holmberg"
+    title: "Neuroscience Graduate Student"
+    image: "people/Jen.Holmberg.webp"
+    description: "Areas of interest include brain mechanisms mediating the psychedelic experience."
+
+  - name: "Sunjae Shim"
+    title: "Neuroscience Graduate Student"
+    image: "people/Sunjae.Shim.webp"
+    description: "Areas of interest include learning in complex tasks."
+
+  - name: "Yuerou Tang"
+    title: "Lab RA"
+    image: "people/Yuerou.Tang.webp"
+    description: ""
+
+alumni:
+  - name: "Natalia Bilenko, PhD"
+    title: "Former Graduate Student"
+    image: "people/Natalia.Bilenko.webp"
+    description: "Dr. Bilenko is now in the technology industry."
+
+  - name: "Catherine Chen, PhD"
+    title: "Former EECS Graduate Student"
+    image: "people/Catherine.Chen.webp"
+    description: "Dr. Chen is now in the technology industry."
+
+  - name: "Tolga Cukur, PhD"
+    title: "Former Postdoc"
+    image: "people/Tolga.Cukur.webp"
+    description: "Dr. Cukur is now a Professor at Bilkent University in Turkey. (Lab web site <a href='https://www.icon.bilkent.edu.tr/'>here</a>.)"
+
+  - name: "Stephen David, PhD"
+    title: "Former Postdoc"
+    image: "people/Stephen.David.webp"
+    description: "Dr. David is now a Professor at Oregon Health & Science University. (Lab web site <a href='https://hearingbrain.org/'>here</a>.)"
+
+  - name: "Fatma Deniz, PhD"
+    title: "Former Postdoc"
+    image: "people/Fatma.Deniz.webp"
+    description: "Dr. Deniz is now a Professor at the Technical University of Berlin. (Lab web site <a href='https://denizenslab.github.io/'>here</a>.)"
+
+  - name: "Tom Dupré la Tour, PhD"
+    title: "Former Postdoc"
+    image: "people/Tom.DuprelaTour.webp"
+    description: "Dr. Dupré la Tour is now in the technology industry."
+
+  - name: "Michael Eickenberg, PhD"
+    title: "Former Postdoc"
+    image: "people/Michael.Eickenberg.webp"
+    description: "Dr. Eickenberg is now a staff scientist at the Flatiron Institute."
+
+  - name: "James Gao, PhD"
+    title: "Former Graduate Student"
+    image: "people/James.Gao.webp"
+    description: "Dr. Gao is now in the technology industry."
+
+  - name: "Lily Xue Gong, PhD"
+    title: "Former Neuroscience Graduate Student"
+    image: "people/Lily.Gong.webp"
+    description: "Dr. Gong is now a staff scientist with Prof. Edward Chang at UCSF."
+
+  - name: "Robert Gibboni, PhD"
+    title: "Former Postdoc"
+    image: "people/Robert.Gibboni.webp"
+    description: "Dr. Gibboni is now in the technology industry."
+
+  - name: "Kate Gustavsen, PhD"
+    title: "Former Neuroscience Graduate Student"
+    image: "people/Kate.Gustavsen.webp"
+    description: "Following her PhD, Dr. Gustavsen obtained her DVM and is now a veterinarian at the Lincoln Park Zoo in Chicago."
+
+  - name: "Kathleen Hansen, PhD"
+    title: "Former Graduate Student"
+    image: "people/Kathleen.Hansen.webp"
+    description: "Dr. Hansen is now a teacher."
+
+  - name: "Ben Hayden, PhD"
+    title: "Former Postdoc"
+    image: "people/Ben.Hayden.webp"
+    description: "Dr. Hayden is now a Professor at Baylor University. (Lab web site <a href='https://www.haydenlab.com/'>here</a>.)"
+
+  - name: "Alexander Huth, PhD"
+    title: "Former Neuroscience Graduate Student and Postdoc"
+    image: "people/Alexander.Huth.webp"
+    description: "Dr. Huth is now a Professor at UC Berkeley. (Lab web site <a href='https://huthlab.github.io/'>here</a>.)"
+
+  - name: "Kendrick Kay, PhD"
+    title: "Former Psychology Graduate Student"
+    image: "people/Kendrick.Kay.webp"
+    description: "Dr. Kay is now a Professor at the University of Minnesota. (Lab web site <a href='http://cvnlab.net/'>here</a>.)"
+
+  - name: "Mark Lescroart, PhD"
+    title: "Former Postdoc"
+    image: "people/Mark.Lescroart.webp"
+    description: "Dr. Lescroart is now a Professor at the University of Nevada. (Lab web site <a href='http://piecesofmind.psyc.unr.edu/'>here</a>.)"
+
+  - name: "Lydia Majure, PhD"
+    title: "Former Graduate Student"
+    image: "people/Lydia.Majure.webp"
+    description: "Dr. Majure is now an organizer for the UC postdoc union."
+
+  - name: "James Mazer, PhD"
+    title: "Former Postdoc"
+    image: "people/James.Mazer.webp"
+    description: "After a long academic career as a Professor at Yale and MSU, Dr. Mazer has now moved to the technology industry."
+
+  - name: "Thomas Naselaris, PhD"
+    title: "Former Postdoc"
+    image: "people/Thomas.Naselaris.webp"
+    description: "Dr. Naselaris is now a Professor at the University of Minnesota. (Lab web site <a href='http://www.naselarislab.net/'>here</a>.)"
+
+  - name: "Shinji Nishimoto, PhD"
+    title: "Former Postdoc"
+    image: "people/Shinji.Nishimoto.webp"
+    description: "Dr. Nishimoto is now a Professor at Osaka University. (Lab web site <a href='https://nishimotolab.org/'>here</a>.)"
+
+  - name: "Anwar Nunez-Elizalde, PhD"
+    title: "Former Graduate Student"
+    image: "people/Anwar.Nunez-Elizalde.webp"
+    description: "Dr. Nunez-Elizalde is now in the technology industry."
+
+  - name: "Michael Oliver, PhD"
+    title: "Former Vision Science Graduate Student"
+    image: "people/Michael.Oliver.webp"
+    description: "Dr. Oliver is now in the technology industry."
+
+  - name: "Sara Popham, PhD"
+    title: "Former Neuroscience Graduate Student"
+    image: "people/Sara.Popham.webp"
+    description: "Dr. Popham is now in the technology industry."
+
+  - name: "Ryan Prenger, PhD"
+    title: "Former Graduate Student"
+    image: "people/Ryan.Prenger.webp"
+    description: "Dr. Prenger is now in the technology industry."
+
+  - name: "Storm Slivkoff, PhD"
+    title: "Former Graduate Student"
+    image: "people/Storm.Slivkoff.webp"
+    description: "Dr. Slivkoff is now in the technology industry."
+
+  - name: "Dustin Stansbury, PhD"
+    title: "Former Bioengineering Graduate Student"
+    image: "people/Dustin.Stansbury.webp"
+    description: "Dr. Stansbury is now in the technology industry."
+
+  - name: "Christine Tseng, PhD"
+    title: "Former Neuroscience Graduate Student and Postdoc"
+    image: "people/Christine.Tseng.webp"
+    description: "Dr. Tseng is now doing a postdoc with Prof. Fatma Deniz at the Technical University of Berlin."
+
+  - name: "Bill Vinje, PhD"
+    title: "Former Graduate Student"
+    image: "people/Bill.Vinje.webp"
+    description: "Dr. Vinje is now in the technology industry."
+
+  - name: "An Vu, PhD"
+    title: "Former Graduate Student"
+    image: "people/An.Vu.webp"
+    description: "Dr. Vu is now a Professor at UCSF. (Lab web site <a href='https://profiles.ucsf.edu/an.vu'>here</a>.)"
+
+  - name: "Leila Wehbe, PhD"
+    title: "Former Postdoc"
+    image: "people/Leila.Wehbe.webp"
+    description: "Dr. Wehbe is now a Professor at Carnegie Mellon University. (Lab web site <a href='https://www.cs.cmu.edu/~lwehbe/'>here</a>.)"
+
+  - name: "Ben Willmore, PhD"
+    title: "Former Postdoc"
+    image: "people/Ben.Willmore.webp"
+    description: "Dr. Willmore is now a Lecturer at Oxford University. (Lab web site <a href='https://www.dpag.ox.ac.uk/team/benjamin-willmore'>here</a>.)"
+
+  - name: "Michele Winter, PhD"
+    title: "Former Vision Science Graduate Student"
+    image: "people/Michele.Winter.webp"
+    description: "Dr. Winter is now in the technology industry."
+
+  - name: "Michael Wu, PhD"
+    title: "Former Graduate Student"
+    image: "people/Michael.Wu.webp"
+    description: "Dr. Wu is now in the technology industry."

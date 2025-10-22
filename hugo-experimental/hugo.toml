@@ -1,0 +1,12 @@
+baseURL = 'http://localhost:4001/'
+languageCode = 'en-us'
+title = 'Gallant Lab'
+theme = 'ananke'
+
+[params]
+  description = "Neuroscience Research at UC Berkeley"
+  author = "Jack Gallant"
+  favicon = ""
+  site_logo = ""
+  background_color_class = "bg-black"
+  recent_posts_number = 3

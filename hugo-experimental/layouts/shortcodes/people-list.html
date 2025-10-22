@@ -1,0 +1,20 @@
+{{ $section := .Get "section" }}
+{{ $people := index .Site.Data.people $section }}
+
+<div class="people-grid">
+  {{ range $people }}
+  <div class="person-card card fade-in">
+    <div class="person-image">
+      {{ if .alt_image }}
+      <img src="/img/{{ .alt_image }}" alt="{{ .name }}" class="person-img-hover">
+      {{ end }}
+      <img src="/img/{{ .image }}" alt="{{ .name }}" class="person-img-main">
+    </div>
+    <div class="person-info">
+      <h3 class="person-name">{{ .name }}</h3>
+      <p class="person-title">{{ .title }}</p>
+      <div class="person-description">{{ .description | safeHTML }}</div>
+    </div>
+  </div>
+  {{ end }}
+</div>
