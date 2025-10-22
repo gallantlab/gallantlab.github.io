@@ -17,7 +17,7 @@ content_items:
     image: "/assets/img/other/learn.vm.webp"
     alt: "Voxelwise Encoding Model tutorials"
     first_sentence_with_link: true
-    remaining_description: "These Python tutorials show to fit, evaluate, and interpret voxelwise encoding models on one of our public available datasets. We are providing these online tutorials here as a service to the fMRI community."
+    remaining_description: "These Python tutorials show how to fit, evaluate, and interpret voxelwise encoding models on one of our public available datasets. We are providing these online tutorials here as a service to the fMRI community."
 
   - title: "Voxelwise Encoding Model workshop video"
     url: "https://www.youtube.com/watch?v=jobQmEJpbhY"
