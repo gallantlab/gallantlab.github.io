@@ -776,6 +776,52 @@ Searched for legacy HTML patterns that should be Jekylized:
 - **Level 11** (Session 14): Maximum Jekyll features, optimization, performance
 - **Level 12** (Session 20): DRY compliance, SCSS architecture perfection, zero code duplication
 
+### Session 21: Add Robert Gibboni to Alumni (2025-10-21)
+
+**Alumni Addition**:
+
+Added Robert Gibboni to the alumni section:
+
+- **Image Processing**: Converted `Robert.Gibboni.jpg` to WebP format using cwebp (6.3 KB, 85% quality)
+- **File Location**: Moved to `assets/img/people/Robert.Gibboni.webp`
+- **Alumni Entry**: Added to `_data/people.yml` in alphabetical order (between Gong and Gustavsen)
+- **Position**: Former Postdoc
+- **Description**: "Dr. Gibboni is now in the technology industry."
+
+**Alumni Count**: 34 total (up from 33)
+
+**Technical Implementation**:
+
+**Image Conversion Workflow**:
+
+```bash
+cwebp -q 85 Robert.Gibboni.jpg -o Robert.Gibboni.webp
+mv Robert.Gibboni.webp assets/img/people/
+rm Robert.Gibboni.jpg
+```
+
+**YAML Structure**:
+
+```yaml
+- name: "Robert Gibboni, PhD"
+  title: "Former Postdoc"
+  image: "people/Robert.Gibboni.webp"
+  description: "Dr. Gibboni is now in the technology industry."
+```
+
+**Quality Assurance**:
+
+- Prettier formatting applied to all files
+- Jekyll server with LiveReload used for verification
+- Proper alphabetical placement confirmed
+- All image references working correctly
+
+**Deployment**:
+
+- Commit: `8a1623a9` - "Add Robert Gibboni to alumni as Former Postdoc"
+- Successfully pushed to GitHub main branch
+- Changes live on gallantlab.github.io
+
 **Architecture Benefits**:
 
 - **Maintainability**: Single source of truth for card styling
@@ -790,3 +836,71 @@ Searched for legacy HTML patterns that should be Jekylized:
 - Consider extracting common grid patterns to mixins
 - Evaluate opportunities for layout include consolidation
 - Maintain Level 12 Jekyll excellence standard
+
+### Session 22: Team Update and Theme Exploration (2025-10-21)
+
+**Team Member Removal**:
+
+Removed Carolyn Irving from current lab members:
+
+- **Reason**: No longer in the lab
+- **File Updated**: `_data/people.yml` - removed from current_members section
+- **Lab Size**: Current members reduced from 10 to 9 active members
+- **Code Quality**: Prettier formatting applied
+- **Git Workflow**: Committed and pushed to GitHub
+
+**Current Lab Roster** (9 members):
+
+- 4 Postdocs: Matteo Visconti di Oleggio Castello, Tianjiao Zhang, Evi Hendrikx, Emily Meschke
+- 4 Graduate Students: Amanda LeBel, Alicia Zeng, Cheol Jun Cho, Jen Holmberg, Sunjae Shim
+- 1 Lab RA: Yuerou Tang
+
+**Alumni Count**: Remains at 34
+
+**Deployment**:
+
+- Commit: `5748c886` - "Remove Carolyn Irving from current lab members"
+- Successfully pushed to GitHub main branch
+- Changes live on gallantlab.github.io
+
+**Theme Exploration**:
+
+User exploring alternatives to current al-folio theme with preference for more high-tech, modern aesthetic.
+
+**Top Theme Recommendations Identified**:
+
+1. **Chirpy** - Dark-first minimal design with PWA, math/diagram support, technical focus
+   - Demo: https://cotes2020.github.io/chirpy-demo/
+   - GitHub: https://github.com/cotes2020/jekyll-theme-chirpy (20K+ stars)
+
+2. **Neumorphism** - Futuristic soft UI with animated particles, single-page portfolio focus
+   - Demo: https://longpdo.github.io/neumorphism/
+   - GitHub: https://github.com/longpdo/neumorphism
+
+3. **Jekflix** - Netflix-style panels with dark interface, live search, modern UI
+   - Demo: https://jekflix.rossener.com/
+   - GitHub: https://github.com/thiagorossener/jekflix-template
+
+4. **TeXt** - Six responsive skins with math/diagram support, academic-friendly
+   - Demo: https://kitian616.github.io/jekyll-TeXt-theme/
+   - GitHub: https://github.com/kitian616/jekyll-TeXt-theme
+
+**Theme Migration Considerations**:
+
+Current site has Level 12 Jekyll architecture requiring careful migration:
+- 34 alumni in structured YAML
+- BibTeX publication system with Jekyll-Scholar
+- WebP-optimized image pipeline
+- Shared SCSS mixins (DRY compliance)
+- News collections system
+- Custom people pages and brain viewers
+
+Theme switch would require significant adaptation of data structures and custom features.
+
+**Typo Fix**:
+
+Fixed grammar error on learn page:
+- **Error**: "These Python tutorials show to fit..."
+- **Correction**: "These Python tutorials show how to fit..."
+- **File**: `_pages/learn.md` line 20
+- **Deployment**: Commit `8a436bdf` - pushed to GitHub

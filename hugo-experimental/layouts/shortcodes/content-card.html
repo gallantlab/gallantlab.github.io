@@ -1,0 +1,19 @@
+{{ $title := .Get "title" }}
+{{ $url := .Get "url" }}
+{{ $image := .Get "image" }}
+{{ $alt := .Get "alt" }}
+{{ $description := .Get "description" }}
+
+<div class="publication-card card fade-in">
+  <div class="publication-image">
+    <a href="{{ $url }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ $image }}" alt="{{ $alt }}">
+    </a>
+  </div>
+  <div class="publication-info">
+    <h3 class="publication-title">
+      <a href="{{ $url }}" target="_blank" rel="noopener noreferrer">{{ $title }}</a>
+    </h3>
+    <div class="publication-description">{{ $description | safeHTML }}</div>
+  </div>
+</div>

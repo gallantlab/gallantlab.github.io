@@ -1,0 +1,54 @@
+---
+title: "Data"
+description: "Open datasets from the Gallant Lab for neuroscience research"
+menu: "main"
+weight: 7
+---
+
+{{< content-card
+  title="Natural Short Clips 3T fMRI Data"
+  url="https://doi.gin.g-node.org/10.12751/g-node.vy1zjd/"
+  image="/img/datasets/Popham.etal.2021.webp"
+  alt="Gallant Lab Natural Short Clips fMRI Dataset"
+  description="This dataset contains BOLD fMRI responses from 5 human subjects viewing natural short video clips across 3 sessions over 3 separate days for each subject. This dataset has been used in multiple publications studying visual processing and semantic representation. If you publish work that uses these data please cite the following paper: <a href='https://doi.org/10.1038/s41593-021-00921-6'>Popham, S. F., Huth, A. G., Bilenko, N. Y., Deniz, F., Gao, J. S., Nunez-Elizalde, A. O., & Gallant, J. L. (2021). Visual and linguistic semantic representations are aligned at the border of human visual cortex. Nature Neuroscience, 24(11), 1628-1636.</a>"
+>}}
+
+{{< content-card
+  title="Naturalistic fMRI Data (vim-4)"
+  url="http://crcns.org/data-sets/vc/vim-4/about-vim-4"
+  image="/img/datasets/Zhang.etal.2021.webp"
+  alt="Gallant Lab Naturalistic fMRI Dataset"
+  description="This dataset contains whole-brain BOLD fMRI responses from human subjects performing two tasks: a visual attention task (passive movie watching with attention directed to humans or vehicles) and a video game task (open-ended Counterstrike gameplay). This dataset enables analysis of task-related cognitive states in naturalistic experimental conditions. If you publish work that uses these data please cite the following paper: <a href='https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2020.565976/full'>Zhang, T., Gao, J. S., Çukur, T., & Gallant, J. L. (2021). Voxel-based state space modeling recovers task-related cognitive states in naturalistic fmri experiments. Frontiers in neuroscience, 14, 565976.</a>"
+>}}
+
+{{< content-card
+  title="Semantic Listening vs Reading fMRI Data"
+  url="https://gin.g-node.org/denizenslab/narratives_reading_listening_fmri/src/master/chen2024_timescales"
+  image="/img/datasets/Deniz.etal.2019.webp"
+  alt="Gallant Lab Semantic Listening vs Reading fMRI Dataset"
+  description="This dataset contains BOLD fMRI responses from human subjects during listening and reading tasks, demonstrating that semantic information representation across cerebral cortex remains invariant to stimulus modality. This dataset enables investigation of cross-modal semantic processing in the brain. If you publish work that uses these data please cite the following paper: <a href='https://www.jneurosci.org/content/39/39/7722'>Deniz, F., Nunez-Elizalde, A. O., Huth, A. G., & Gallant, J. L. (2019). The representation of semantic information across human cerebral cortex during listening versus reading is invariant to stimulus modality. Journal of Neuroscience, 39(39), 7722-7736.</a>"
+>}}
+
+{{< content-card
+  title="Story Listening fMRI Data"
+  url="https://gin.g-node.org/gallantlab/story_listening"
+  image="/img/papers/Huth.A.2016.webp"
+  alt="Gallant Lab Story Listening fMRI Dataset"
+  description="This dataset contains BOLD fMRI responses from human subjects listening to natural narrative stories. This dataset was used to map semantic representations across the human cerebral cortex and create detailed semantic atlases of language processing. If you publish work that uses these data please cite the following paper: <a href='https://www.nature.com/articles/nature17637'>Huth, A. G., De Heer, W. A., Griffiths, T. L., Theunissen, F. E., & Gallant, J. L. (2016). Natural speech reveals the semantic maps that tile human cerebral cortex. Nature, 532(7600), 453-458.</a>"
+>}}
+
+{{< content-card
+  title="Natural Movie 4T fMRI Data (vim-2)"
+  url="https://crcns.org/data-sets/vc/vim-2/about-vim-2"
+  image="/img/datasets/Nishimoto.etal.2011.webp"
+  alt="Gallant Lab Natural Movie fMRI Dataset"
+  description="This dataset contains BOLD fMRI responses from 3 subjects viewing natural movies, collected across 3 sessions on separate days. This dataset was used in the landmark study reconstructing visual experiences from brain activity. If you publish work that uses these data please cite the following paper: <a href='https://www.sciencedirect.com/science/article/pii/S0960982211009377'>Nishimoto, S., Vu, A. T., Naselaris, T., Benjamini, Y., Yu, B., & Gallant, J. L. (2011). Reconstructing visual experiences from brain activity evoked by natural movies. Current Biology, 21(19), 1641-1646.</a>"
+>}}
+
+{{< content-card
+  title="Natural Images fMRI Data (vim-1)"
+  url="http://crcns.org/data-sets/vc/vim-1/about-vim-1"
+  image="/img/datasets/Kay.etal.2008.webp"
+  alt="Gallant Lab Natural Images fMRI Dataset"
+  description="This dataset contains BOLD fMRI responses from 2 subjects viewing natural images across 70 experimental runs collected over 5 separate days. This dataset demonstrated the ability to identify which images a subject was viewing from brain activity using Bayesian reconstruction techniques. If you publish work that uses these data please cite the following paper: <a href='https://www.nature.com/articles/nature06713'>Kay, K. N., Naselaris, T., Prenger, R. J., & Gallant, J. L. (2008). Identifying natural images from human brain activity. Nature, 452(7185), 352-355.</a>"
+>}}
