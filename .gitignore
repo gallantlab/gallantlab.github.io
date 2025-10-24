@@ -11,3 +11,8 @@ assets/libs/
 node_modules/
 vendor
 .idea
+
+# Hugo
+public/
+resources/
+.hugo_build.lock
