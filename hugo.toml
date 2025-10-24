@@ -1,0 +1,11 @@
+baseURL = 'https://gallantlab.org/'
+languageCode = 'en-us'
+title = 'Gallant Lab'
+theme = 'ananke'
+
+[params]
+  description = "Neuroscience Research at UC Berkeley"
+  favicon = ""
+  site_logo = ""
+  background_color_class = "bg-black"
+  recent_posts_number = 3

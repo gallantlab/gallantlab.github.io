@@ -1,0 +1,36 @@
+---
+title: "Join Us"
+description: "Join the Gallant Lab"
+menu: "main"
+weight: 8
+---
+
+# General guidance on recruitment
+
+Our laboratory is very interdisciplinary, and we are always on the lookout for good postdocs and graduate students with a strong desire to break new ground in cognitive, systems and computational neuroscience. Prior areas of training are not particularly important; training in neuroscience, neuroimaging, and data science tailored for neuroscience are typically part of graduate and postdoctoral training in the lab. That said, strong quantitative and computational skills are an asset.
+
+## Potential postdocs
+
+At this time we are actively seeking new postdocs. If you are interested please contact Jack Gallant directly.
+
+## Potential graduate students
+
+We are always looking for great graduate students. However, we do not accept graduate students directly into the lab. Potential graduate students must first be admitted to a UC Berkeley graduate program, and then they must complete a first-year rotation in our laboratory.
+
+We accept graduate students through the following graduate programs at Berkeley:
+
+- Neuroscience
+- Bioengineering
+- Biophysics
+- Vision Science
+- Electrical Engineering and Computer Science
+
+Unfortunately, we receive too many inquiries about graduate positions to respond to each one individually. However, once you have been accepted into a graduate program at Berkeley, please contact Jack Gallant directly and we will be happy to set up a first-year rotation for you.
+
+## Undergraduates
+
+UC Berkeley undergraduates who are interested in working in the lab should fill out the form at [this link](https://docs.google.com/forms/d/e/1FAIpQLSc1YN-UDi8m1NQbCj4zaThVnVlPyvzmuYa8NVRBCq7oAsi8PQ/viewform?usp=header). We will get back to you if there are any opportunities.
+
+## Others interested in the lab
+
+Due to time and resource constraints, at this time we are not considering research requests for undergraduates at other institutions, or from high school students.

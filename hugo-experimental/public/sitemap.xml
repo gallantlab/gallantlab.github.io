@@ -2,11 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:4001/</loc>
+    <lastmod>2025-09-17T12:00:00-08:00</lastmod>
+  </url><url>
     <loc>http://localhost:4001/people/</loc>
   </url><url>
-    <loc>http://localhost:4001/categories/</loc>
+    <loc>http://localhost:4001/publications/</loc>
   </url><url>
-    <loc>http://localhost:4001/</loc>
+    <loc>http://localhost:4001/brain-viewers/</loc>
+  </url><url>
+    <loc>http://localhost:4001/learn/</loc>
+  </url><url>
+    <loc>http://localhost:4001/code/</loc>
+  </url><url>
+    <loc>http://localhost:4001/data/</loc>
+  </url><url>
+    <loc>http://localhost:4001/joinus/</loc>
+  </url><url>
+    <loc>http://localhost:4001/blog/</loc>
+  </url><url>
+    <loc>http://localhost:4001/news/2025-09-17-vem-framework-paper/</loc>
+    <lastmod>2025-09-17T12:00:00-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4001/news/</loc>
+    <lastmod>2025-09-17T12:00:00-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4001/news/2025-09-15-group-shortclip-brain-viewer/</loc>
+    <lastmod>2025-09-15T12:00:00-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4001/news/2025-09-05-group-brain-viewer/</loc>
+    <lastmod>2025-09-05T12:00:00-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4001/news/2025-08-23-visconti-bioarxiv/</loc>
+    <lastmod>2025-08-23T12:00:00-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4001/news/2025-05-15-emily-meschke-phd/</loc>
+    <lastmod>2025-05-15T12:00:00-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4001/news/2025-05-09-voxelwise-encoding-tutorial/</loc>
+    <lastmod>2025-05-09T12:00:00-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4001/news/2024-11-01-evi-hendrikx-joins/</loc>
+    <lastmod>2024-11-01T12:00:00-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4001/news/2024-08-15-deniz-context-paper/</loc>
+    <lastmod>2024-08-15T12:00:00-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4001/news/2024-07-01-gong-phonemic-paper/</loc>
+    <lastmod>2024-07-01T12:00:00-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4001/news/2024-05-15-catherine-chen-phd/</loc>
+    <lastmod>2024-05-15T12:00:00-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4001/news/2024-04-01-fatma-professor-position/</loc>
+    <lastmod>2024-04-01T12:00:00-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4001/news/2023-06-01-meschke-preprint/</loc>
+    <lastmod>2023-06-01T12:00:00-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4001/news/2022-08-01-dupre-banded-ridge/</loc>
+    <lastmod>2022-08-01T12:00:00-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4001/news/2022-05-01-christine-tseng-phd/</loc>
+    <lastmod>2022-05-01T12:00:00-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4001/news/2021-11-20-popham-nature-neuroscience/</loc>
+    <lastmod>2021-11-20T12:00:00-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4001/categories/</loc>
   </url><url>
     <loc>http://localhost:4001/tags/</loc>
   </url>

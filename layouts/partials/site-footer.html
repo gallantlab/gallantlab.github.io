@@ -1,0 +1,13 @@
+<footer class="{{ .Site.Params.background_color_class | compare.Default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-center">
+    <div class="f6 fw4 white-70 tc pv2 ph3">
+      &copy; Copyright {{ now.Format "2006" }} Jack Gallant.
+      And also by the Regents of the University of California, our benevolent overlords.
+      Powered by <a href="https://gohugo.io/" target="_blank" class="white-70 hover-white">Hugo</a>.
+      Hosted by <a href="https://pages.github.com/" target="_blank" class="white-70 hover-white">GitHub Pages</a>.
+      {{ if site.Params.last_updated }}
+      Last updated: {{ now.Format "January 2, 2006" }}.
+      {{ end }}
+    </div>
+  </div>
+</footer>
