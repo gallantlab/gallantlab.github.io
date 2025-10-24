@@ -3,6 +3,8 @@ title: "Code"
 description: "Open source code from Gallant Lab"
 menu: "main"
 weight: 6
+aliases:
+  - /opencode/
 ---
 
 {{< content-card title="GitHub repository" url="https://github.com/gallantlab" image="/img/other/github.webp" alt="github" description="Our github repository contains lots of open code that may be useful for scientific computing in general, or for fitting encoding models to fMRI or neurophysiology data sets." >}}

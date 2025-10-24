@@ -12,10 +12,7 @@
   --border-color: #334155;
 }
 
-/* Smooth transitions for everything */
-* {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
+/* Remove global transitions - too aggressive and causes image loading issues */
 
 /* Modern typography */
 body {
@@ -222,123 +219,7 @@ code {
   font-family: "Fira Code", "Monaco", "Courier New", monospace;
 }
 
-/* Staggered entrance animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px) scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.fade-in {
-  animation: fadeInUp 0.6s ease-out backwards;
-}
-
-/* Staggered delays for all cards */
-.person-card:nth-child(1),
-.publication-card:nth-child(1),
-.news-item:nth-child(1) {
-  animation-delay: 0.05s;
-}
-
-.person-card:nth-child(2),
-.publication-card:nth-child(2),
-.news-item:nth-child(2) {
-  animation-delay: 0.1s;
-}
-
-.person-card:nth-child(3),
-.publication-card:nth-child(3),
-.news-item:nth-child(3) {
-  animation-delay: 0.15s;
-}
-
-.person-card:nth-child(4),
-.publication-card:nth-child(4),
-.news-item:nth-child(4) {
-  animation-delay: 0.2s;
-}
-
-.person-card:nth-child(5),
-.publication-card:nth-child(5),
-.news-item:nth-child(5) {
-  animation-delay: 0.25s;
-}
-
-.person-card:nth-child(6),
-.publication-card:nth-child(6),
-.news-item:nth-child(6) {
-  animation-delay: 0.3s;
-}
-
-.person-card:nth-child(7),
-.publication-card:nth-child(7),
-.news-item:nth-child(7) {
-  animation-delay: 0.35s;
-}
-
-.person-card:nth-child(8),
-.publication-card:nth-child(8),
-.news-item:nth-child(8) {
-  animation-delay: 0.4s;
-}
-
-.person-card:nth-child(9),
-.publication-card:nth-child(9),
-.news-item:nth-child(9) {
-  animation-delay: 0.45s;
-}
-
-.person-card:nth-child(10),
-.publication-card:nth-child(10),
-.news-item:nth-child(10) {
-  animation-delay: 0.5s;
-}
-
-.person-card:nth-child(11),
-.publication-card:nth-child(11),
-.news-item:nth-child(11) {
-  animation-delay: 0.55s;
-}
-
-.person-card:nth-child(12),
-.publication-card:nth-child(12),
-.news-item:nth-child(12) {
-  animation-delay: 0.6s;
-}
-
-.person-card:nth-child(13),
-.publication-card:nth-child(13),
-.news-item:nth-child(13) {
-  animation-delay: 0.65s;
-}
-
-.person-card:nth-child(14),
-.publication-card:nth-child(14),
-.news-item:nth-child(14) {
-  animation-delay: 0.7s;
-}
-
-.person-card:nth-child(15),
-.publication-card:nth-child(15),
-.news-item:nth-child(15) {
-  animation-delay: 0.75s;
-}
+/* Removed staggered entrance animations - they were causing images to not load initially */
 
 /* Glassmorphism effect for containers */
 .container,
@@ -489,7 +370,7 @@ nav a {
 }
 
 .publication-card:hover .publication-image img {
-  transform: scale(1.08) rotateY(5deg) rotateZ(-2deg);
+  transform: scale(1.03);
   border-color: var(--accent-color);
   box-shadow:
     0 8px 40px rgba(37, 99, 235, 0.4),
