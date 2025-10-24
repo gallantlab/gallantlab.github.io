@@ -1,8 +1,0 @@
-# Hugo build artifacts
-public/
-resources/
-hugo.log
-*.log
-
-# OS files
-.DS_Store

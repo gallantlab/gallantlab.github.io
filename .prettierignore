@@ -2,6 +2,9 @@
 layouts/**/*.html
 themes/**/*.html
 
+# Hugo content files with shortcodes (Prettier corrupts Hugo shortcode syntax)
+content/**/*.md
+
 # Hugo build output
 public/
 resources/
