@@ -1,7 +1,6 @@
 ---
 title: "About"
 description: "Cognitive, Systems and Computational Neuroscience at the Leading Edge"
-featured_image: "/assets/img/other/sulcigyri.webp"
 menu: "main"
 weight: 1
 ---

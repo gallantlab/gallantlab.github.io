@@ -5,7 +5,9 @@ menu: "main"
 weight: 8
 ---
 
-# General guidance on recruitment
+## Join the Gallant Lab
+
+### General guidance on recruitment
 
 Our laboratory is very interdisciplinary, and we are always on the lookout for good postdocs and graduate students with a strong desire to break new ground in cognitive, systems and computational neuroscience. Prior areas of training are not particularly important; training in neuroscience, neuroimaging, and data science tailored for neuroscience are typically part of graduate and postdoctoral training in the lab. That said, strong quantitative and computational skills are an asset.
 

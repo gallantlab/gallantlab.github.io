@@ -7,6 +7,8 @@ aliases:
   - /opencode/
 ---
 
+## Open Source Code
+
 {{< content-card title="GitHub repository" url="https://github.com/gallantlab" image="/img/other/github.webp" alt="github" description="Our github repository contains lots of open code that may be useful for scientific computing in general, or for fitting encoding models to fMRI or neurophysiology data sets." >}}
 
 {{< content-card title="Himalaya" url="https://github.com/gallantlab/himalaya" image="/img/other/himalaya.webp" alt="himalaya" description="Himalaya implements machine learning linear(ized) models in Python, focusing on computational efficiency for large numbers of targets. Himalaya efficiently estimates linear(ized) models on large numbers of targets (for example, thousands of voxels in an fMRI experiment), it runs on both CPU and GPU hardware, and it provides estimators that are compatible with scikit-learn's API. Himalaya is routinely used in our lab to fit voxelwise encoding models to very large fMRI data sets. A paper describing Himalaya can be found <a href='https://www.sciencedirect.com/science/article/pii/S1053811922008497'>here</a>." >}}

@@ -1,4 +1,9 @@
-{{ $title := .Get "title" }} {{ $url := .Get "url" }} {{ $image := .Get "image" }} {{ $alt := .Get "alt" }} {{ $description := .Get "description" }}
+{{- $title := .Get "title" -}}
+{{- $url := .Get "url" -}}
+{{- $image := .Get "image" -}}
+{{- $alt := .Get "alt" -}}
+{{- $description := .Get "description" -}}
+{{- $date := .Get "date" -}}
 
 <div class="publication-card card fade-in">
   <div class="publication-image">
@@ -10,6 +15,9 @@
     <h3 class="publication-title">
       <a href="{{ $url }}" target="_blank" rel="noopener noreferrer">{{ $title }}</a>
     </h3>
+    {{- if $date }}
+    <p class="publication-date">{{ $date }}</p>
+    {{- end }}
     <div class="publication-description">{{ $description | safeHTML }}</div>
   </div>
 </div>

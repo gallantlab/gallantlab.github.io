@@ -14,6 +14,10 @@ weight: 2
 
 {{< people-list section="current_members" >}}
 
+## Current Visitors
+
+{{< people-list section="current_visitors" >}}
+
 ## Alumni
 
 {{< people-list section="alumni" >}}

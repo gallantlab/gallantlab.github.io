@@ -5,6 +5,8 @@ menu: "main"
 weight: 4
 ---
 
+## Brain Viewers
+
 This page collects public brain viewers that you can use to interact with the data and results from many of our published studies. To reach the brain viewer for any topic, just click on the highlighted hyperlink. Please note that these brain viewers do not run well on cell phones, you will have the best experience with a computer or a tablet.
 
 {{< content-card title="Bilingual language processing relies on shared semantic representations that are modulated by each language (Chen et al., bioRxiv preprint, 2024)" url="https://blsemc.github.io/viewer/" image="/img/papers/Chen.etal.2024.2.webp" alt="Chen bilingual 2024" description="Billions of people throughout the world are bilingual and can extract meaning from multiple languages. To determine how semantic representations in the brains of bilinguals can support both shared and distinct processing for different languages, we performed fMRI scans of participants who are fluent in both English and Chinese while they read natural narratives in each language. This brain viewer allows you to explore, compare and contrast English and Chinese semantic representations in one bilingual participant." >}}

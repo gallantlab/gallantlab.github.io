@@ -1,15 +1,32 @@
 /* Modern High-Tech CSS for Gallant Lab */
 
-/* Modern Color Scheme - Dark theme with blue accents */
+/* Light theme (default) */
 :root {
   --primary-color: #2563eb;
   --secondary-color: #3b82f6;
+  --accent-color: #1d4ed8;
+  --bg-light: #ffffff;
+  --bg-lighter: #f8fafc;
+  --text-dark: #1e293b;
+  --text-gray: #64748b;
+  --border-color: #e2e8f0;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --card-border: #e2e8f0;
+}
+
+/* Dark theme */
+.bg-black,
+body.dark-mode {
+  --primary-color: #2563eb;
+  --secondary-color: #3b82f6;
   --accent-color: #60a5fa;
-  --bg-dark: #0f172a;
-  --bg-darker: #020617;
-  --text-light: #f1f5f9;
+  --bg-light: #0f172a;
+  --bg-lighter: #020617;
+  --text-dark: #f1f5f9;
   --text-gray: #cbd5e1;
   --border-color: #334155;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: #334155;
 }
 
 /* Remove global transitions - too aggressive and causes image loading issues */
@@ -17,17 +34,10 @@
 /* Modern typography */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", sans-serif;
-  background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-dark) 100%);
-  color: var(--text-light);
+  background: var(--bg-lighter);
+  color: var(--text-dark);
   line-height: 1.7;
-}
-
-/* Fix dark text that's hard to read */
-.mid-gray,
-.gray,
-.dark-gray,
-.nested-copy-line-height {
-  color: var(--text-light) !important;
+  font-size: 18px; /* Increased from default 16px */
 }
 
 /* Ensure all text is readable */
@@ -36,12 +46,7 @@ div,
 span,
 li,
 td {
-  color: var(--text-light);
-}
-
-/* Fix any remaining dark text */
-.serif {
-  color: var(--text-light) !important;
+  color: var(--text-dark);
 }
 
 /* Fix Ananke theme layout constraints - more specific selectors */
@@ -126,14 +131,12 @@ a:hover::after {
 /* Modern card styling with 3D effects */
 .card,
 .post-preview {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--card-bg);
   backdrop-filter: blur(10px);
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--card-border);
   border-radius: 12px;
   padding: 2rem;
-  box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.3),
-    0 0 0 1px rgba(96, 165, 250, 0);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   transform-style: preserve-3d;
@@ -177,11 +180,61 @@ a:hover::after {
   border-color: var(--primary-color);
 }
 
-/* Animated gradient background for header */
+/* Header styling - Option 1: Modern Gradient with Integrated Nav */
 header {
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.95));
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%) !important;
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: none;
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Override featured image background */
+header.cover {
+  background-image: none !important;
+}
+
+/* Ensure gradient applies to entire header including nav bar and featured image overlay */
+header > div,
+header .pb3-m,
+header .pb6-l,
+header .bg-black,
+header .bg-black-60 {
+  background: transparent !important;
+  padding-bottom: 0 !important;
+}
+
+/* Hide page titles in main content area */
+article > header {
+  display: none !important;
+}
+
+/* Page title styling in header */
+header h1,
+header .f2,
+header .f3 {
+  color: white !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: none !important;
+  -webkit-text-fill-color: white !important;
+}
+
+/* Navigation links in header - ensure white on all pages */
+header nav a,
+header nav a[class*="link"],
+header a[class*="link"] {
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+header nav a:hover,
+header nav a[class*="link"]:hover,
+header a[class*="link"]:hover {
+  color: white !important;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transform: translateY(-1px);
 }
 
 /* Modern button styling */
@@ -236,7 +289,7 @@ nav a {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 /* People grid styling */
@@ -247,6 +300,11 @@ nav a {
   margin: 2rem 0;
 }
 
+/* Direct children of people-grid (all person-card divs) participate in grid */
+.people-grid > * {
+  min-width: 0; /* Prevent grid blowout */
+}
+
 .person-card {
   display: flex;
   flex-direction: column;
@@ -254,10 +312,30 @@ nav a {
   text-align: center;
   padding: 1.5rem;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative; /* For absolute positioned overlay link */
 }
 
 .person-card:hover {
   transform: translateY(-4px);
+}
+
+/* Clickable overlay link that covers the entire card */
+.person-card-overlay-link {
+  position: absolute;
+  inset: 0; /* Cover entire card */
+  z-index: 10; /* Above card content */
+  cursor: pointer;
+}
+
+/* Remove the underline effect from overlay links */
+.person-card-overlay-link::after {
+  display: none;
+}
+
+/* Make links in description clickable above the overlay */
+.person-description a {
+  position: relative;
+  z-index: 11; /* Above overlay link */
 }
 
 .person-image {
@@ -311,12 +389,12 @@ nav a {
 
 .person-title {
   color: var(--text-gray);
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin: 0.25rem 0 0.75rem 0;
 }
 
 .person-description {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   line-height: 1.6;
   color: var(--text-gray);
 }
@@ -382,7 +460,7 @@ nav a {
 }
 
 .publication-title {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   margin: 0 0 0.5rem 0;
   line-height: 1.4;
 }
@@ -398,13 +476,13 @@ nav a {
 
 .publication-date {
   color: var(--text-gray);
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   margin: 0 0 1rem 0;
   font-style: italic;
 }
 
 .publication-description {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   line-height: 1.6;
   color: var(--text-gray);
 }
