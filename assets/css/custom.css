@@ -556,12 +556,17 @@ nav a {
 
   .publication-card {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0 !important;
+    margin: 1rem 0 !important;
   }
 
   .publication-image {
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .publication-title {
+    margin-top: 0;
   }
 
   /* Mobile news card layout - minimal spacing */
