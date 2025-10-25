@@ -1,28 +1,28 @@
 {{ define "main" }}
-<article class="cf ph3 ph5-l pv3 pv4-l f4 center lh-copy nested-links nested-copy-line-height" style="max-width: 1400px">
+<article class="cf ph3 ph5-l pv3 pv4-l f4 center lh-copy nested-links nested-copy-line-height main-content">
   {{ .Content }}
 
   <h2>Latest News</h2>
 
   {{ range (where .Site.RegularPages "Section" "news").ByDate.Reverse | first 7 }}
-  <div class="news-item card fade-in" style="margin: 1.5rem 0">
+  <div class="news-item card fade-in">
     {{ if .Params.image }}
-    <div class="news-card-content" style="display: flex; gap: 1.5rem; align-items: start">
-      <div style="flex-shrink: 0; width: 120px">
-        <img src="{{ .Params.image }}" alt="{{ .Params.alt }}" style="width: 100%; height: auto; border-radius: 8px" />
+    <div class="news-card-content">
+      <div class="news-card-image">
+        <img src="{{ .Params.image }}" alt="{{ .Params.alt }}" />
       </div>
-      <div style="flex: 1">
-        <p style="color: var(--text-gray); font-size: 0.85rem; margin: 0 0 0.5rem 0">{{ .Date.Format "January 2, 2006" }}</p>
-        <div>
+      <div class="news-card-text">
+        <p class="news-date">{{ .Date.Format "January 2, 2006" }}</p>
+        <div class="news-description">
           {{ if .Params.first_sentence }} {{ .Params.first_sentence | safeHTML }} {{ end }} {{ if .Params.remaining_description }} {{
           .Params.remaining_description | safeHTML }} {{ end }}
         </div>
       </div>
     </div>
     {{ else }}
-    <div>
-      <p style="color: var(--text-gray); font-size: 0.85rem; margin: 0 0 0.5rem 0">{{ .Date.Format "January 2, 2006" }}</p>
-      <div>
+    <div class="news-card-no-image">
+      <p class="news-date">{{ .Date.Format "January 2, 2006" }}</p>
+      <div class="news-description">
         {{ if .Params.first_sentence }} {{ .Params.first_sentence | safeHTML }} {{ end }} {{ if .Params.remaining_description }} {{
         .Params.remaining_description | safeHTML }} {{ end }}
       </div>

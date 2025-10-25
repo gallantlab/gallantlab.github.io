@@ -491,9 +491,14 @@ nav a {
   color: var(--secondary-color);
 }
 
+/* Main content styling */
+.main-content {
+  max-width: 1400px;
+}
+
 /* News items styling */
 .news-item {
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -501,16 +506,36 @@ nav a {
   transform: translateX(8px);
 }
 
-.news-item .publication-card {
-  margin: 0;
+.news-card-content {
+  display: flex;
+  gap: 1.5rem;
+  align-items: start;
 }
 
-.news-item .publication-image {
-  width: 150px;
+.news-card-image {
+  flex-shrink: 0;
+  width: 120px;
 }
 
-.news-item .publication-image img {
+.news-card-image img {
+  width: 100%;
+  height: auto;
   border-radius: 8px;
+}
+
+.news-card-text {
+  flex: 1;
+}
+
+.news-date {
+  color: var(--text-gray);
+  font-size: 0.85rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.news-description {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 /* Responsive adjustments */
@@ -536,22 +561,13 @@ nav a {
     width: 100%;
   }
 
-  .news-item .publication-card {
-    flex-direction: column;
-  }
-
-  .news-item .publication-image {
-    width: 100%;
-  }
-
-  /* Reduce gap on mobile for news items */
+  /* Mobile news card layout */
   .news-card-content {
-    gap: 0.75rem !important;
-    flex-direction: column !important;
+    flex-direction: column;
+    gap: 0.75rem;
   }
 
-  /* Make images full width on mobile */
-  .news-card-content > div[style*="width: 120px"] {
-    width: 100% !important;
+  .news-card-image {
+    width: 100%;
   }
 }
