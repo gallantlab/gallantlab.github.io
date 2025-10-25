@@ -53,22 +53,22 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
  &lt;h3 class="publication-title">
  &lt;a href="https://www.psyarxiv.com/nt2jq" target="_blank" rel="noopener noreferrer">Encoding models in functional magnetic resonance imaging: the Voxelwise Encoding Model framework (Visconti di Oleggio Castello, Deniz, et al., PsyArXiv preprint)&lt;/a>
  &lt;/h3>
- &lt;p class="publication-date">2025-09-17&lt;/p>
+ &lt;p class="publication-date">September 17, 2025&lt;/p>
  &lt;div class="publication-description">This paper provides the first comprehensive guide for creating encoding models with fMRI data, and complements our VEM tutorials. The Voxelwise Encoding Model (VEM) framework extracts features from stimuli or tasks and uses them in encoding models to predict brain activity. When models successfully predict activity in brain regions, we can conclude that information represented in the features is also encoded in those regions. This comprehensive guide makes this powerful methodology accessible to researchers at all levels.&lt;/div>
  &lt;/div>
 &lt;/div>
 
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
- &lt;a href="https://www.biorxiv.org/content/biorxiv/early/2024/11/21/2024.06.24.600505.full.pdf" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/Chen.etal.2024.2.webp" alt="Chen bilingual 2024" />
+ &lt;a href="https://www.biorxiv.org/content/10.1101/2025.08.22.671848v1" target="_blank" rel="noopener noreferrer">
+ &lt;img src="https://gallantlab.org/img/papers/ViscontiDoC.2025.webp" alt="Visconti di Oleggio Castello 2025" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
  &lt;h3 class="publication-title">
- &lt;a href="https://www.biorxiv.org/content/biorxiv/early/2024/11/21/2024.06.24.600505.full.pdf" target="_blank" rel="noopener noreferrer">Bilingual language processing relies on shared semantic representations that are modulated by each language (Chen et al., bioRxiv preprint)&lt;/a>
+ &lt;a href="https://www.biorxiv.org/content/10.1101/2025.08.22.671848v1" target="_blank" rel="noopener noreferrer">Individual differences shape conceptual representation in the brain (Visconti di Oleggio Castello et al., bioRxiv preprint)&lt;/a>
  &lt;/h3>
- &lt;p class="publication-date">2024-11-21&lt;/p></description></item><item><title>Brain Viewers</title><link>https://gallantlab.org/brain-viewers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/brain-viewers/</guid><description>&lt;h2 id="brain-viewers">Brain Viewers&lt;/h2>
+ &lt;p class="publication-date">August 22, 2025&lt;/p></description></item><item><title>Brain Viewers</title><link>https://gallantlab.org/brain-viewers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/brain-viewers/</guid><description>&lt;h2 id="brain-viewers">Brain Viewers&lt;/h2>
 &lt;p>This page collects public brain viewers that you can use to interact with the data and results from many of our published studies. To reach the brain viewer for any topic, just click on the highlighted hyperlink. Please note that these brain viewers do not run well on cell phones, you will have the best experience with a computer or a tablet.&lt;/p>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
