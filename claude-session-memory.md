@@ -325,3 +325,95 @@ Corrected order (newest first):
 - Monitor user feedback on gray navbar vs blue
 - Evaluate accessibility contrast ratios
 - Consider hover states for additional interactivity cues
+
+---
+
+## Session: People Photo Display Update (2025-10-25)
+
+### Overview
+Changed people page photo display from circular crops to full photos with rounded rectangles for better portrait presentation.
+
+### Changes Made
+
+**Problem**: Profile photos were displayed as circular crops (150px × 150px circles), which cut off parts of people's faces and forced an unnatural aspect ratio.
+
+**Solution**: Updated CSS to display full photos with modern rounded corners.
+
+**CSS Updates in `/assets/css/custom.css`**:
+
+1. **`.person-image` Container** (lines 338-348):
+   - Changed `border-radius: 50%` → `border-radius: 12px`
+   - Changed `width: 150px; height: 150px;` → `width: 200px; height: auto;`
+   - Allows natural aspect ratio display
+
+2. **`.person-image img`** (lines 358-364):
+   - Changed `height: 100%` → `height: auto`
+   - Changed `object-fit: cover` → `object-fit: contain`
+   - Added `display: block`
+   - Prevents cropping and inline spacing issues
+
+**Visual Results**:
+- Photos now display full portraits at natural aspect ratio
+- Modern rounded rectangle appearance (12px border-radius)
+- Larger display size (200px width vs 150px)
+- No cropping of faces or important details
+- Maintains hover effects and card interactivity
+
+### Technical Details
+
+**Image Display Properties**:
+```css
+.person-image {
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.person-image img {
+  object-fit: contain; /* Shows full image */
+  height: auto;
+  display: block;
+}
+```
+
+**Advantages of New Design**:
+- Full portraits visible without cropping
+- Natural photo proportions preserved
+- More professional appearance for academic site
+- Better showcases team member photos
+- Consistent with modern web design patterns
+
+### Deployment
+
+**Hugo Server**: Local development server running on port 4000 with live reload
+**Commit**: `5930551d` - "Change people photos from circular crops to full rounded rectangles"
+**Status**: Successfully pushed to GitHub main branch
+**Live Site**: Auto-deployment via GitHub Actions to gallantlab.github.io
+
+### User Feedback
+User confirmed preference for full photo display over circular crops.
+
+---
+
+### Font Size Standardization (2025-10-25)
+
+**Problem**: Text size was inconsistent across the site. News items and other content sections had smaller text than the landing page introduction.
+
+**Solution**: Standardized all body text to match landing page font size for visual consistency.
+
+**CSS Updates in `/assets/css/custom.css`**:
+
+1. **`.person-description`** - Changed from `1.05rem` to `1.125rem`
+2. **`.publication-description`** - Changed from `1.05rem` to `1.125rem`
+3. **`.news-description`** - Changed from `1rem` to `1.125rem`
+
+**Results**:
+- All body text now uses consistent `1.125rem` (~20px) font size
+- Matches landing page "This site provides..." section text size
+- Better readability and visual consistency
+- Metadata and dates kept at smaller sizes for proper hierarchy
+
+**Deployment**:
+- **Commit**: `d7f2d70b` - "Standardize body text font size across all site sections"
+- **Status**: Successfully pushed to GitHub main branch
+- **Hugo Server**: Changes visible immediately with live reload
