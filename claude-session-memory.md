@@ -184,9 +184,144 @@ To force mobile view for testing (temporary):
 Remember to revert before deploying!
 
 ## Commit History (Recent)
+- `ec2c12c4` - Fix publication date order and format dates as human-readable (Session: 2025-10-25)
+- `ff046531` - Change navbar to gray gradient and make non-link titles black (Session: 2025-10-25)
+- `05ad4533` - Add Hugo session log and backup Jekyll session log
 - `701332c9` - Fix mobile spacing with vertical-align bottom, zero margins, force flex-direction column
 - `1cfacfd5` - Remove all top/bottom padding from publication cards on mobile
 - `8c6ea264` - Use negative margin to eliminate spacing between image and text on mobile
 - `230ee457` - Further reduce mobile spacing: 0.5rem card padding, 0.125rem info margin
 - `fde4a4ca` - Fix mobile spacing by eliminating inline image spacing with line-height: 0 and display: block
 - `91e95917` - Remove pseudo-element shadow that extended beyond image bounds
+
+---
+
+## Session: UI Refinements and Publication Fixes (2025-10-25)
+
+### Overview
+Enhanced site visual design with improved color hierarchy and fixed publication date ordering and formatting.
+
+### Part 1: Color Scheme and Visual Hierarchy
+
+**Navbar Gradient Update**
+- Changed from blue gradient (`#1e3a8a → #2563eb → #3b82f6`) to gray gradient (`#4b5563 → #6b7280 → #9ca3af`)
+- Updated box-shadow to match gray tones
+- Provides more professional, neutral appearance
+
+**Heading Color Standardization**
+- Removed blue gradient effect from all h1-h6 headings
+- Changed to solid black text (`color: var(--text-dark)`)
+- Eliminates confusion between static titles and interactive links
+
+**Smart Link Indicators on People Page**
+- Person names default to black for non-clickable cards
+- Person names turn blue when card has a link (clickable)
+- Uses CSS `:has()` selector to detect `.person-card-overlay-link`
+- Creates clear affordance for interactivity
+
+**Publication Title Colors**
+- Publication titles now black by default
+- Links within titles remain blue
+- Maintains clear distinction between text and interactive elements
+
+**Design Principle Applied**: Blue = interactive/clickable, Black = static text, Gray = metadata
+
+**Files Modified**:
+- `assets/css/custom.css` (lines 94-104, 185-188, 389-391, 448)
+
+**Commit**: `ff046531`
+
+### Part 2: Publication Date Order and Formatting
+
+**Problem Identified**
+- Publications were out of chronological order
+- Dates displayed in ISO format (YYYY-MM-DD) instead of human-readable format
+
+**Chronological Order Correction**
+Original incorrect order:
+1. 2025-09-17 (correct)
+2. 2024-11-21 (should be 4th)
+3. 2025-08-22 (should be 2nd)
+4. 2025-05-09 (should be 3rd)
+
+Corrected order (newest first):
+1. September 17, 2025 - VEM framework
+2. August 22, 2025 - Individual differences
+3. May 9, 2025 - VEM tutorial
+4. November 21, 2024 - Bilingual study
+5. July 1, 2024 - Timescales
+6. [remaining publications in correct order]
+
+**Date Formatting Enhancement**
+- Updated `layouts/shortcodes/content-card.html` shortcode
+- Added Hugo time parsing and formatting
+- Format: `{{ $parsedDate.Format "January 2, 2006" }}`
+- Before: `2025-09-17`
+- After: `September 17, 2025`
+
+**Implementation Details**
+```go
+{{- if $date }}
+{{- $parsedDate := time $date }}
+<p class="publication-date">{{ $parsedDate.Format "January 2, 2006" }}</p>
+{{- end }}
+```
+
+**Files Modified**:
+- `content/publications.md` (reordered first 4 entries)
+- `layouts/shortcodes/content-card.html` (date formatting)
+
+**Commit**: `ec2c12c4`
+
+### Testing and Deployment
+
+**Local Testing**
+- Hugo server running on port 4000 (`hugo server --port 4000`)
+- Live reload enabled for rapid iteration
+- Verified color changes across all pages
+- Confirmed publication order and date formatting
+
+**Git Workflow**
+- Two separate commits for logical separation of concerns
+- Descriptive commit messages with implementation details
+- Claude Code co-authorship attribution
+- Successfully pushed to GitHub main branch
+
+**Deployment Status**
+- Auto-deployed via GitHub Actions
+- Changes live on gallantlab.github.io
+
+### User Experience Improvements
+
+**Visual Clarity**
+- Clear distinction between interactive and static elements
+- Gray navbar less visually competing with content
+- Consistent color semantics throughout site
+
+**Content Presentation**
+- Publications properly ordered by date (newest first)
+- Readable date format improves scanning
+- Professional appearance for academic audience
+
+**Accessibility**
+- Better affordance through color-coded interactivity
+- Consistent patterns across all pages
+- Clearer information hierarchy
+
+### Technical Notes
+
+**CSS Techniques Used**
+- CSS custom properties for theme consistency
+- `:has()` pseudo-class for conditional styling
+- Maintained backward compatibility with existing styles
+
+**Hugo Features Leveraged**
+- Built-in `time` function for date parsing
+- Date formatting with Go's reference date format
+- Shortcode system for reusable components
+
+### Future Considerations
+- Consider adding date sorting automation for future publications
+- Monitor user feedback on gray navbar vs blue
+- Evaluate accessibility contrast ratios
+- Consider hover states for additional interactivity cues
