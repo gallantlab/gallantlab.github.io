@@ -547,14 +547,21 @@ nav a {
   .publication-image {
     width: 100%;
     margin: 0 !important;
+    line-height: 0;
+  }
+
+  .publication-image a {
+    display: block;
+    line-height: 0;
   }
 
   .publication-image img {
     box-shadow: none !important;
+    display: block;
   }
 
   .publication-info {
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
   }
 
   .publication-title {
