@@ -544,35 +544,39 @@ nav a {
   }
 
   .publication-card {
-    flex-direction: column;
+    flex-direction: column !important;
     gap: 0 !important;
     margin: 1rem 0 !important;
   }
 
   .publication-image {
     width: 100%;
-    margin: 0 0 -0.5rem 0 !important; /* Negative margin to pull text up */
+    margin: 0 !important;
     padding: 0 !important;
-    line-height: 0;
+    line-height: 0 !important;
   }
 
   .publication-image a {
-    display: block;
-    line-height: 0;
-    margin: 0;
-    padding: 0;
+    display: block !important;
+    line-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .publication-image img {
     box-shadow: none !important;
-    display: block;
-    margin: 0;
-    padding: 0;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 0 !important;
+    vertical-align: bottom !important;
+    width: 100%;
+    height: auto;
   }
 
   .publication-info {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .publication-title {
