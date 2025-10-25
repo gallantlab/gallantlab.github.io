@@ -16,7 +16,8 @@
       <a href="{{ $url }}" target="_blank" rel="noopener noreferrer">{{ $title }}</a>
     </h3>
     {{- if $date }}
-    <p class="publication-date">{{ $date }}</p>
+    {{- $parsedDate := time $date }}
+    <p class="publication-date">{{ $parsedDate.Format "January 2, 2006" }}</p>
     {{- end }}
     <div class="publication-description">{{ $description | safeHTML }}</div>
   </div>
