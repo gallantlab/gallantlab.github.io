@@ -534,6 +534,11 @@ nav a {
     padding: 0.75rem !important;
   }
 
+  /* Remove padding from publication cards on mobile */
+  .publication-card.card {
+    padding: 0.5rem !important;
+  }
+
   .people-grid {
     grid-template-columns: 1fr;
   }
@@ -547,21 +552,27 @@ nav a {
   .publication-image {
     width: 100%;
     margin: 0 !important;
+    padding: 0 !important;
     line-height: 0;
   }
 
   .publication-image a {
     display: block;
     line-height: 0;
+    margin: 0;
+    padding: 0;
   }
 
   .publication-image img {
     box-shadow: none !important;
     display: block;
+    margin: 0;
+    padding: 0;
   }
 
   .publication-info {
-    margin-top: 0.25rem;
+    margin-top: 0.125rem;
+    padding-top: 0;
   }
 
   .publication-title {
