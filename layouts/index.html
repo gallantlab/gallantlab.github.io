@@ -7,7 +7,7 @@
   {{ range (where .Site.RegularPages "Section" "news").ByDate.Reverse | first 7 }}
   <div class="news-item card fade-in" style="margin: 1.5rem 0">
     {{ if .Params.image }}
-    <div style="display: flex; gap: 1.5rem; align-items: start">
+    <div class="news-card-content" style="display: flex; gap: 1.5rem; align-items: start">
       <div style="flex-shrink: 0; width: 120px">
         <img src="{{ .Params.image }}" alt="{{ .Params.alt }}" style="width: 100%; height: auto; border-radius: 8px" />
       </div>

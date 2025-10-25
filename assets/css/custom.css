@@ -545,7 +545,13 @@ nav a {
   }
 
   /* Reduce gap on mobile for news items */
-  .news-item > div[style*="display: flex"] {
+  .news-card-content {
     gap: 0.75rem !important;
+    flex-direction: column !important;
+  }
+
+  /* Make images full width on mobile */
+  .news-card-content > div[style*="width: 120px"] {
+    width: 100% !important;
   }
 }
