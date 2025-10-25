@@ -544,9 +544,10 @@ nav a {
     font-size: 2rem;
   }
 
+  /* Drastically reduce card padding on mobile */
   .card,
   .post-preview {
-    padding: 1.5rem;
+    padding: 0.75rem !important;
   }
 
   .people-grid {
@@ -555,16 +556,18 @@ nav a {
 
   .publication-card {
     flex-direction: column;
+    gap: 0.5rem;
   }
 
   .publication-image {
     width: 100%;
+    margin-bottom: 0;
   }
 
-  /* Mobile news card layout */
+  /* Mobile news card layout - minimal spacing */
   .news-card-content {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.25rem;
   }
 
   .news-card-image {
@@ -573,10 +576,10 @@ nav a {
   }
 
   .news-item {
-    margin: 1rem 0;
+    margin: 0.75rem 0;
   }
 
-  .card {
-    padding: 1rem;
+  .news-date {
+    margin: 0 0 0.25rem 0;
   }
 }
