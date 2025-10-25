@@ -562,11 +562,24 @@ nav a {
 
   .publication-image {
     width: 100%;
-    margin-bottom: 0.5rem;
+    margin: 0 !important;
+  }
+
+  .publication-image img {
+    box-shadow: none !important;
+  }
+
+  .publication-info {
+    margin-top: 0.5rem;
   }
 
   .publication-title {
-    margin-top: 0;
+    margin: 0 0 0.25rem 0 !important;
+    font-size: 1.1rem;
+  }
+
+  .publication-date {
+    margin: 0 0 0.5rem 0 !important;
   }
 
   /* Mobile news card layout - minimal spacing */
