@@ -534,9 +534,9 @@ nav a {
     padding: 0.75rem !important;
   }
 
-  /* Minimal padding for publication cards on mobile - just enough for card border */
+  /* Zero top/bottom padding for publication cards on mobile */
   .publication-card.card {
-    padding: 0.5rem 0.5rem 0.75rem 0.5rem !important;
+    padding: 0 0.5rem !important;
   }
 
   .people-grid {
