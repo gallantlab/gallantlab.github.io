@@ -91,17 +91,14 @@ header nav li {
   padding: 0 !important;
 }
 
-/* Headings with gradient effect */
+/* Headings - black text, no gradient */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-dark);
   font-weight: 700;
   letter-spacing: -0.02em;
 }
@@ -182,10 +179,10 @@ a:hover::after {
 
 /* Header styling - Option 1: Modern Gradient with Integrated Nav */
 header {
-  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%) !important;
+  background: linear-gradient(135deg, #4b5563 0%, #6b7280 50%, #9ca3af 100%) !important;
   backdrop-filter: blur(20px);
   border-bottom: none;
-  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 4px 20px rgba(75, 85, 99, 0.3);
   padding: 0 !important;
   margin: 0 !important;
 }
@@ -385,6 +382,12 @@ nav a {
 .person-name {
   font-size: 1.25rem;
   margin: 0.5rem 0;
+  color: var(--text-dark);
+}
+
+/* Make person name blue when card is clickable/has a link */
+.person-card:has(.person-card-overlay-link) .person-name {
+  color: var(--secondary-color);
 }
 
 .person-title {
@@ -447,6 +450,7 @@ nav a {
   font-size: 1.25rem;
   margin: 0 0 0.5rem 0;
   line-height: 1.4;
+  color: var(--text-dark);
 }
 
 .publication-title a {
