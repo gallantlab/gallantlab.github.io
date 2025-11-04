@@ -25,11 +25,6 @@ current_members:
     image: "people/Evi.Hendrikx.webp"
     description: "Areas of interest include the representation of number, space, and time."
 
-  - name: "Emily Meschke, PhD"
-    title: "Postdoc"
-    image: "people/Emily.Meschke.webp"
-    description: "Areas of interest include development of new methods for recovering and interpreting brain networks."
-
   - name: "Amanda LeBel"
     title: "Neuroscience Graduate Student"
     image: "people/Amanda.LeBel.webp"
@@ -111,6 +106,11 @@ alumni:
     title: "Former Postdoc"
     image: "people/Michael.Eickenberg.webp"
     description: "Dr. Eickenberg is now a staff scientist at the Flatiron Institute."
+
+  - name: "Emily Meschke, PhD"
+    title: "Former Neuroscience Graduate Student"
+    image: "people/Emily.Meschke.webp"
+    description: "Dr. Meschke is now a postdoc in the lab of Prof. Christopher Baldassano at Columbia University."
 
   - name: "James Gao, PhD"
     title: "Former Graduate Student"
