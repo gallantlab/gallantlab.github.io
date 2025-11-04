@@ -589,6 +589,72 @@ Completely rewrote documentation to reflect Hugo architecture:
 
 **Current Team**:
 - 1 Principal Investigator
-- 9 Current Lab Members
+- 8 Current Lab Members
 - 3 Current Visitors (including new: Jiwoong Park)
+- 35 Alumni
+
+---
+
+## Session: Team Update - Emily Meschke to Alumni (2025-11-04)
+
+### Overview
+Moved Emily Meschke from current lab members to alumni section with updated position information.
+
+### Changes Made
+
+**Emily Meschke Status Update**:
+- **Moved from**: `current_members` section
+- **Moved to**: `alumni` section (alphabetically between Michael Eickenberg and James Gao)
+- **Previous title**: "Postdoc"
+- **New title**: "Former Neuroscience Graduate Student"
+- **Previous description**: "Areas of interest include development of new methods for recovering and interpreting brain networks."
+- **New description**: "Dr. Meschke is now a postdoc in the lab of Prof. Christopher Baldassano at Columbia University."
+
+### File Modified
+- `data/people.yml` - Updated Emily Meschke's entry
+
+### Technical Details
+
+**YAML Structure Change**:
+```yaml
+# Removed from current_members:
+- name: "Emily Meschke, PhD"
+  title: "Postdoc"
+  image: "people/Emily.Meschke.webp"
+  description: "Areas of interest include development of new methods for recovering and interpreting brain networks."
+
+# Added to alumni:
+- name: "Emily Meschke, PhD"
+  title: "Former Neuroscience Graduate Student"
+  image: "people/Emily.Meschke.webp"
+  description: "Dr. Meschke is now a postdoc in the lab of Prof. Christopher Baldassano at Columbia University."
+```
+
+### Deployment
+
+**Commit**: `2049340f` - "Move Emily Meschke to alumni section"
+
+**Changes Summary**:
+- 1 file changed
+- 5 insertions, 5 deletions
+- Net change: updated position and description
+
+**Successfully Pushed**: Changes deployed to GitHub main branch
+
+**Auto-Deployment**: GitHub Actions builds and deploys to gallantlab.org
+
+### Updated Team Count
+
+**Before**:
+- 9 Current Lab Members
 - 34 Alumni
+
+**After**:
+- 8 Current Lab Members
+- 35 Alumni
+
+### Site Status
+
+**Hugo Server**: Running at http://localhost:4000/
+
+**Verification**: Emily Meschke now appears in the alumni section with updated title and position at Columbia University.
