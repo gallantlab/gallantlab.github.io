@@ -417,3 +417,178 @@ User confirmed preference for full photo display over circular crops.
 - **Commit**: `d7f2d70b` - "Standardize body text font size across all site sections"
 - **Status**: Successfully pushed to GitHub main branch
 - **Hugo Server**: Changes visible immediately with live reload
+
+---
+
+## Session: Landing Page Update and Repository Cleanup (2025-11-03)
+
+### Overview
+Enhanced landing page with VEM framework links, added new visitor Jiwoong Park, and performed comprehensive cleanup removing all Jekyll remnants from the repository.
+
+### Part 1: Landing Page VEM Framework Link
+
+**Change**: Updated landing page to reference both VEM review paper and tutorial.
+
+**Before**:
+```markdown
+check this recent [tutorial](https://github.com/gallantlab/voxelwise_tutorials)
+```
+
+**After**:
+```markdown
+check out this recent [review paper](https://www.psyarxiv.com/nt2jq) and this [tutorial](https://github.com/gallantlab/voxelwise_tutorials)
+```
+
+**File Modified**: `content/_index.md` (line 10)
+
+**Deployment**:
+- **Commit**: `d9cca7fb` - "Add review paper link to landing page VEM framework description"
+- Successfully pushed to GitHub main branch
+
+### Part 2: New Visitor Addition - Jiwoong Park
+
+**Added**: Jiwoong Park to Current Visitors section
+
+**Details**:
+- **Position**: Graduate Student at Sungkyunkwan University in Korea
+- **Research Interests**: Studies of the human navigation system, fMRI studies in VR
+- **Image Processing**: Converted JPG to WebP (26 KB, 85% quality)
+
+**Technical Discovery**:
+- Initial error: Placed image in `assets/img/people/` (Jekyll location)
+- Correct location: `static/img/people/` (Hugo serves static files from `static/`)
+- Hugo templates reference images as `/img/people/name.webp` which maps to `static/img/`
+
+**Files Modified**:
+- `data/people.yml` - Added Jiwoong Park to `current_visitors` section
+- `static/img/people/Jiwoong.Park.webp` - New visitor photo
+
+### Part 3: Complete Jekyll Remnants Removal
+
+**Problem**: Repository contained duplicate images and Jekyll-specific files from the Jekyll-to-Hugo migration, causing confusion about correct file locations.
+
+**Solution**: Comprehensive cleanup removing all Jekyll and al-folio theme files.
+
+**Files Removed** (122 total):
+
+**Image Directories** (84 files):
+- `assets/img/people/` - All 48 people photos (duplicates of `static/img/people/`)
+- `assets/img/papers/` - All 15 paper images (duplicates of `static/assets/img/papers/`)
+- `assets/img/datasets/` - 5 dataset images
+- `assets/img/other/` - 16 miscellaneous images
+
+**Al-folio Theme Files**:
+- `lighthouse_results/` - Performance testing results
+- `readme_preview/` - 14 preview screenshots
+- Documentation: `FAQ.md`, `INSTALL.md`, `CUSTOMIZE.md`, `CONTRIBUTING.md`, `README.md`, `DOCKER.md`
+
+**Docker Configuration**:
+- `Dockerfile`
+- `docker-compose.yml`
+- `docker-compose-slim.yml`
+- `docker-run.sh`
+
+**Jekyll Config Files**:
+- `.all-contributorsrc`
+- `.dockerignore`
+- `.git-blame-ignore-revs`
+- `.lycheeignore`
+- `.pre-commit-config.yaml`
+- `requirements.txt`
+- `claude-session-memory-jekyll-backup.md`
+
+**CLAUDE.md Rewrite**:
+
+Completely rewrote documentation to reflect Hugo architecture:
+
+**New Sections**:
+- Hugo Site Structure (not Jekyll)
+- Image Management - **Images belong in `static/`**, NOT `assets/`
+- People Data management in `data/people.yml`
+- Hugo vs Jekyll comparison for clarity
+- Common tasks with Hugo-specific workflows
+
+**Key Documentation Points**:
+- Clarifies that images must go in `static/img/` for Hugo
+- Documents YAML data structure for people
+- Explains Hugo directory structure vs Jekyll
+- Provides correct workflows for adding team members, news items, styling updates
+
+### Repository Impact
+
+**Before Cleanup**:
+- Mixed Jekyll and Hugo files causing confusion
+- Duplicate images in two locations (assets/ and static/)
+- 122 unnecessary files
+- Misleading documentation for Jekyll instead of Hugo
+
+**After Cleanup**:
+- Pure Hugo repository structure
+- Single source of truth for images (`static/`)
+- Correct documentation in CLAUDE.md
+- Net change: -3,093 lines removed, +110 lines added
+
+### Technical Discoveries
+
+**Hugo Static File Serving**:
+- Files in `static/` are served at the root URL path
+- `static/img/people/name.webp` → `/img/people/name.webp`
+- Templates use `/img/...` paths, not `/assets/img/...`
+
+**Image Location Confusion**:
+- Jekyll used `assets/img/`
+- Hugo uses `static/` for all static files
+- Having both caused errors when adding new images
+- Cleanup eliminates future confusion
+
+### Deployment
+
+**Commit**: `1ccdda17` - "Remove all Jekyll remnants and add Jiwoong Park as visitor"
+
+**Changes Summary**:
+- 122 files changed
+- 1 file created (`static/img/people/Jiwoong.Park.webp`)
+- 121 files deleted
+- 2 files modified (`data/people.yml`, `CLAUDE.md`)
+
+**Successfully Pushed**: All changes deployed to GitHub main branch
+
+**Auto-Deployment**: GitHub Actions builds and deploys to gallantlab.org
+
+### Benefits
+
+**For Future Development**:
+- Clear, accurate documentation of Hugo structure
+- No confusion about where to place images
+- Cleaner repository for faster navigation
+- Correct mental model for future contributors
+
+**Performance**:
+- Removed 84 unused duplicate images
+- Smaller repository size
+- Faster git operations
+
+**Maintainability**:
+- Single source of truth for all assets
+- Hugo-specific documentation
+- Clear separation between Hugo site and theme files
+
+### Current Site Status
+
+**Hugo Site Running**:
+- Local development server: http://localhost:4000/
+- Live site: gallantlab.org (auto-deployed via GitHub Actions)
+
+**Site Features Working**:
+- ✅ People photos display as full rounded rectangles
+- ✅ Consistent font sizes across all sections (1.125rem)
+- ✅ Landing page links to both VEM review paper and tutorial
+- ✅ Jiwoong Park visible in Current Visitors section
+- ✅ All images loading correctly from `static/`
+- ✅ Clean repository with only Hugo-relevant files
+
+**Current Team**:
+- 1 Principal Investigator
+- 9 Current Lab Members
+- 3 Current Visitors (including new: Jiwoong Park)
+- 34 Alumni
