@@ -55,6 +55,11 @@ current_members:
     image: "people/Yuerou.Tang.webp"
     description: ""
 
+  - name: "Shio Chiba"
+    title: "Undergraduate Student"
+    image: "people/Shio.Chiba.webp"
+    description: "Shio is assisting in attention studies."
+
 current_visitors:
   - name: "Jaeyoung Jeon"
     title: "Graduate Student at Sungkyunkwan University in Korea"
