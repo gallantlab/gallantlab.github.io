@@ -772,3 +772,47 @@ Added Shio Chiba as an undergraduate student to the People page.
 **Live Site**: http://localhost:4000/people/
 
 **Verification**: Shio Chiba now appears on People page after Yuerou Tang with undergraduate student designation.
+
+---
+
+## Session: Landing Page Navigation Update (2025-11-05 Continued)
+
+### Overview
+Updated landing page to replace inline VEM framework resource links with a hyperlink to the Learn page, improving site navigation flow.
+
+### Changes Made
+
+**Landing Page Text Modification**:
+- **Location**: `content/_index.md` (line 10)
+- **Previous text**: "If you would like to know more about our cutting-edge fMRI data analysis and modeling framework, voxelwise encoding models, check out this recent [review paper](https://www.psyarxiv.com/nt2jq) and this [tutorial](https://github.com/gallantlab/voxelwise_tutorials)."
+- **Updated text**: "If you would like to know more about our cutting-edge fMRI data analysis and modeling framework, voxelwise encoding models, please navigate to the [Learn page](/learn/)."
+
+**Rationale**:
+- Consolidates learning resources in one dedicated location (Learn page)
+- Simplifies landing page by removing multiple inline links
+- Creates clearer navigation flow for visitors seeking VEM framework information
+- Learn page already contains the review paper, tutorial, workshop video, and theory paper
+
+### File Modified
+- `content/_index.md` - Updated VEM framework reference with Learn page hyperlink
+
+### Deployment
+
+**Commit**: `71f310fa` - "Update landing page to link to Learn page for VEM framework info"
+
+**Changes Summary**:
+- 1 file changed
+- 1 insertion, 1 deletion
+- Improved navigation UX
+
+**Successfully Pushed**: Changes deployed to GitHub main branch
+
+**Auto-Deployment**: GitHub Actions builds and deploys to gallantlab.org
+
+### Site Status
+
+**Hugo Server**: Running at http://localhost:4000/
+
+**Live Site**: http://localhost:4000/
+
+**Verification**: Landing page now directs visitors to Learn page for VEM framework information via hyperlink.
