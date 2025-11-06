@@ -658,3 +658,61 @@ Moved Emily Meschke from current lab members to alumni section with updated posi
 **Hugo Server**: Running at http://localhost:4000/
 
 **Verification**: Emily Meschke now appears in the alumni section with updated title and position at Columbia University.
+
+---
+
+## Session: Learn Page Enhancement - Banded Ridge Regression Paper (2025-11-05)
+
+### Overview
+Added the Dupré la Tour et al. (2022) paper on feature-space selection with banded ridge regression to the Learn page.
+
+### Changes Made
+
+**Paper Addition to Learn Page**:
+- **Source**: Copied from Publications page (content/publications.md:24)
+- **Destination**: Learn page (content/learn.md:16)
+- **Position**: Fourth item on Learn page, after workshop video
+
+**Content Updates**:
+- **Title**: Changed from "Feature-space selection with banded ridge regression (Dupré la Tour et al., Neuroimage)" to "Theory paper focusing on feature space selection and banded ridge regression."
+- **Description**: Added inline citation "(Dupre la tour et al., Neuroimage, 2022)" after "This paper"
+- **Purpose**: Provides theoretical foundation and computational methods for the VEM framework
+
+**Paper Details**:
+- **Authors**: Dupré la Tour et al.
+- **Journal**: Neuroimage, 2022
+- **Topic**: Banded ridge regression for feature-space selection in encoding models
+- **Implementation**: Open-source Python package called Himalaya
+- **Image**: /img/papers/DuprelaTour.T.2022.webp
+
+### File Modified
+- `content/learn.md` - Added paper entry with updated title and description
+
+### Deployment
+
+**Commit**: `8488daeb` - "Add banded ridge regression paper to Learn page"
+
+**Changes Summary**:
+- 1 file changed
+- 2 insertions
+- Added theoretical paper to complement practical tutorials
+
+**Successfully Pushed**: Changes deployed to GitHub main branch
+
+**Auto-Deployment**: GitHub Actions builds and deploys to gallantlab.org
+
+### Learn Page Content Structure
+
+The Learn page now contains four resources in this order:
+1. VEM review paper (Visconti di Oleggio Castello, Deniz, et al., 2025)
+2. VEM tutorials (interactive Python notebooks)
+3. VEM workshop video (CCN 2021)
+4. Theory paper on banded ridge regression (Dupré la Tour et al., 2022)
+
+### Site Status
+
+**Hugo Server**: Running at http://localhost:4000/
+
+**Live Site**: http://localhost:4000/learn/
+
+**Verification**: Banded ridge regression paper now appears on Learn page with updated title and inline citation.
