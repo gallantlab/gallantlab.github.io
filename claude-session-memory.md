@@ -716,3 +716,59 @@ The Learn page now contains four resources in this order:
 **Live Site**: http://localhost:4000/learn/
 
 **Verification**: Banded ridge regression paper now appears on Learn page with updated title and inline citation.
+
+---
+
+## Session: Team Update - Add Shio Chiba (2025-11-05 Continued)
+
+### Overview
+Added Shio Chiba as an undergraduate student to the People page.
+
+### Changes Made
+
+**New Team Member Addition**:
+- **Name**: Shio Chiba
+- **Title**: "Undergraduate Student"
+- **Description**: "Shio is assisting in attention studies."
+- **Position**: Added after Yuerou Tang in current_members section
+
+**Image Processing**:
+- **Source**: Shio.Chiba.jpeg in repository root
+- **Converted**: Used cwebp -q 85 to convert to WebP format
+- **Output**: 144,492 bytes (0.33 bpp), dimensions 1534 x 2302
+- **Destination**: static/img/people/Shio.Chiba.webp
+- **Cleanup**: Removed original JPEG file
+
+### Files Modified
+- `data/people.yml` - Added Shio Chiba entry after Yuerou Tang (lines 58-61)
+- `static/img/people/Shio.Chiba.webp` - New team member photo
+
+### Deployment
+
+**Commit**: `cbdab08c` - "Add Shio Chiba as undergraduate student to People page"
+
+**Changes Summary**:
+- 2 files changed
+- 5 insertions
+- 1 new WebP image created
+
+**Hugo Live Reload**: Changes detected and rebuilt in 36ms
+
+**Successfully Pushed**: Changes deployed to GitHub main branch
+
+**Auto-Deployment**: GitHub Actions builds and deploys to gallantlab.org
+
+### Updated Team Count
+
+**Current Lab Members**: 9 (up from 8)
+- 7 Graduate Students and Postdocs
+- 1 Lab RA (Yuerou Tang)
+- 1 Undergraduate Student (Shio Chiba)
+
+### Site Status
+
+**Hugo Server**: Running at http://localhost:4000/
+
+**Live Site**: http://localhost:4000/people/
+
+**Verification**: Shio Chiba now appears on People page after Yuerou Tang with undergraduate student designation.
