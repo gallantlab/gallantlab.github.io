@@ -249,7 +249,19 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
  &lt;/h3>
  &lt;div class="publication-description">At the 2021 CCN meeting we held a keynote and tutorials session on the Voxelwise Encoding Model framework. You can find a video recording of the workshop here.&lt;/div>
  &lt;/div>
-&lt;/div></description></item><item><title>Code</title><link>https://gallantlab.org/code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/code/</guid><description>&lt;h2 id="open-source-code">Open Source Code&lt;/h2>
+&lt;/div>
+
+&lt;div class="publication-card card fade-in">
+ &lt;div class="publication-image">
+ &lt;a href="https://www.sciencedirect.com/science/article/pii/S1053811922008497" target="_blank" rel="noopener noreferrer">
+ &lt;img src="https://gallantlab.org/img/papers/DuprelaTour.T.2022.webp" alt="Dupre 2022" />
+ &lt;/a>
+ &lt;/div>
+ &lt;div class="publication-info">
+ &lt;h3 class="publication-title">
+ &lt;a href="https://www.sciencedirect.com/science/article/pii/S1053811922008497" target="_blank" rel="noopener noreferrer">Theory paper focusing on feature space selection and banded ridge regression.&lt;/a>
+ &lt;/h3>
+ &lt;p class="publication-date">December 1, 2022&lt;/p></description></item><item><title>Code</title><link>https://gallantlab.org/code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/code/</guid><description>&lt;h2 id="open-source-code">Open Source Code&lt;/h2>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://github.com/gallantlab" target="_blank" rel="noopener noreferrer">
