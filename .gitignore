@@ -9,5 +9,10 @@ public/
 resources/
 .hugo_build.lock
 
+# Build cache (Jekyll legacy)
+.jekyll-cache/
+.tweet-cache/
+
 # IDE
 .idea
+.vscode/.claude/
