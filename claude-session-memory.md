@@ -816,3 +816,165 @@ Updated landing page to replace inline VEM framework resource links with a hyper
 **Live Site**: http://localhost:4000/
 
 **Verification**: Landing page now directs visitors to Learn page for VEM framework information via hyperlink.
+
+---
+
+## Session: NeurIPS Publication, News Updates, and Site Cleanup (2025-11-13)
+
+### Overview
+Added new NeurIPS 2025 publication, created news item, enhanced people linking across news entries, updated team photo, and performed comprehensive Hugo compliance audit and cleanup.
+
+### Publications Added
+
+**New Publication**:
+- **Title**: "Disentangling Superpositions: Interpretable Brain Encoding Model with Sparse Concept Atoms (Zeng and Gallant, NeurIPS)"
+- **Date**: November 13, 2025
+- **URL**: https://openreview.net/forum?id=3aNvX9TQTo
+- **Image**: az.webp (converted from az.png, reduced from 1.2MB to 170KB)
+- **Location**: Added to top of `content/publications.md` as most recent publication
+- **Description**: Introduces Sparse Concept Encoding Model for interpretable brain encoding, matching dense model performance while enhancing interpretability
+
+**Image Processing**:
+- **Source**: az.png (1,214,399 bytes, 954x1228)
+- **Converted**: cwebp -q 85 to WebP format
+- **Output**: 169,620 bytes (1.16 bpp)
+- **Destination**: static/img/papers/az.webp
+
+### News Items
+
+**New News Entry**:
+- **File**: `content/news/2025-11-13-zeng-neurips.md`
+- **Date**: November 13, 2025
+- **Content**: "This [new NeurIPS paper](https://openreview.net/forum?id=3aNvX9TQTo) from [Alicia Zeng](/people#alicia-zeng) presents an important new method for improving interpretation of neuroimaging experiments that use word embeddings as features."
+- **Image**: /img/papers/az.webp
+- **People linking**: Alicia Zeng linked to her People page entry via anchor
+
+### News Entry Enhancements
+
+**People Page Anchor Links Added**:
+- Updated `layouts/shortcodes/people-list.html` to add `id="{{ anchorize .name }}"` to all person cards
+- Enables direct linking to specific people on People page (e.g., `/people#alicia-zeng`)
+
+**News Entries Updated** (6 files):
+1. **2025-09-17** (VEM framework): Changed "Visconti di Oleggio Castello, Deniz, et al." to "[Matteo Visconti di Oleggio Castello](/people#matteo-visconti-di-oleggio-castello-phd) and [Fatma Deniz](/people#fatma-deniz-phd)"
+2. **2025-08-23** (Individual differences): Changed "Visconti di Oleggio Castello et al." to "[Matteo Visconti di Oleggio Castello](/people#matteo-visconti-di-oleggio-castello-phd)", removed "et al.", moved bioRxiv link to "Here is an amazing new paper"
+3. **2025-05-09** (Tutorial): Changed "Dupré la Tour et al." to "[Tom Dupré la Tour](/people#tom-dupré-la-tour-phd)", moved Imaging Neuroscience link to "new tutorial paper"
+4. **2025-05-15** (PhD): Linked "[Emily Meschke](/people#emily-meschke-phd)"
+
+### Team Photo Update
+
+**Jen Holmberg Photo Replacement**:
+- **Source**: Jen.Holmberg.jpg (5,087,423 bytes, 6720x4480)
+- **Processing**: Cropped to portrait orientation (2987x4480, 1:1.5 ratio) centered on subject
+- **Converted**: cwebp to WebP format
+- **Output**: 862,220 bytes (reduced 83%)
+- **Destination**: static/img/people/Jen.Holmberg.webp
+- **Result**: Portrait orientation photo with Jen centered, edges removed
+
+### Hugo Compliance Audit and Cleanup
+
+**Jekyll Remnants Removed**:
+- Removed `layout: post` from all 16 news files (Jekyll-specific front matter)
+- Removed duplicate `static/assets/` directory (Jekyll leftover)
+- No other Jekyll-specific files found (_site, .jekyll-cache, Gemfile, etc.)
+
+**Image Path Corrections**:
+- Fixed all `/assets/img/` references to `/img/` in news files (16 files updated)
+- All images now correctly reference `static/img/` directory
+- Verified no broken image references
+
+**File Cleanup**:
+- Deleted all `.DS_Store` files throughout project
+- Updated `.gitignore`: removed Jekyll-specific entries, organized by category (macOS, Node, Hugo, IDE)
+- Removed duplicate image directory structure
+
+**Hugo Compliance Verification**:
+- Templates follow Hugo best practices
+- No deprecated Hugo syntax found
+- Configuration (hugo.toml) is clean and minimal
+- Directory structure correct: content/, layouts/, static/, data/, themes/
+- Front matter uses Hugo conventions (date, title, description, etc.)
+- Menu items properly weighted (1-10)
+
+### Files Modified
+
+**Content**:
+- `content/publications.md` - Added Zeng & Gallant NeurIPS publication
+- `content/news/2025-11-13-zeng-neurips.md` - New news item (created)
+- `content/news/2025-09-17-vem-framework-paper.md` - Updated people links, removed /assets/img/
+- `content/news/2025-08-23-visconti-bioarxiv.md` - Updated people links, moved bioRxiv link, removed /assets/img/
+- `content/news/2025-05-09-voxelwise-encoding-tutorial.md` - Updated people link, moved journal link, removed /assets/img/
+- `content/news/2025-05-15-emily-meschke-phd.md` - Added people link, removed /assets/img/
+- 10 additional news files - Removed `layout: post` and fixed `/assets/img/` paths
+
+**Layouts**:
+- `layouts/shortcodes/people-list.html` - Added anchor IDs to person cards
+
+**Images**:
+- `static/img/papers/az.webp` - New publication image
+- `static/img/people/Jen.Holmberg.webp` - Updated team photo
+
+**Configuration**:
+- `.gitignore` - Cleaned up, removed Jekyll entries, organized by category
+
+**Cleanup**:
+- Removed `static/assets/` directory (duplicate structure)
+- Deleted all `.DS_Store` files
+
+### Deployment
+
+**Commit**: "Add NeurIPS publication, update news with people links, update Jen photo, and site cleanup"
+
+**Changes Summary**:
+- 20+ files changed
+- Jekyll remnants removed
+- Image paths corrected
+- People linking enhanced across news
+- 1 new publication
+- 1 new news item
+- 2 images added/updated
+- Duplicate directory removed
+
+**Hugo Server**: Rebuilt successfully in 144ms after cleanup
+
+**Site Status**: Fully Hugo-compliant, no Jekyll leftovers, all images loading correctly
+
+### Technical Improvements
+
+**SEO and Navigation**:
+- People names in news now link directly to their People page profiles
+- Anchor links enable direct navigation to specific people
+- Improved internal linking structure
+
+**Performance**:
+- Removed duplicate static/assets/ directory
+- All images in WebP format for optimal file sizes
+- Clean directory structure improves build times
+
+**Code Quality**:
+- No deprecated Hugo syntax
+- Clean, organized configuration
+- Proper Hugo front matter conventions
+- Templates follow Hugo best practices
+
+**Maintainability**:
+- Clean .gitignore with logical organization
+- No system junk files (.DS_Store)
+- Single source of truth for images (static/img/)
+- Consistent image path references (/img/)
+
+### Verification
+
+**Hugo Server**: Running at http://localhost:4000/
+
+**Pages Verified**:
+- ✅ Homepage displays new news item with linked names
+- ✅ Publications page shows Zeng & Gallant paper at top
+- ✅ People page anchor links work correctly
+- ✅ News entries link to People page profiles
+- ✅ Jen Holmberg's updated photo displays correctly
+- ✅ No broken image references
+- ✅ All images loading from /img/ paths
+
+**Build Status**: Clean build, 41 pages, 262 static files, no errors
+

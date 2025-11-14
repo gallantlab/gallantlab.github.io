@@ -9,7 +9,7 @@
       {{- $url = replaceRE "<a href=['\"]([^'\"]+)['\"].*" "$1" (index $matches 0) -}}
     {{- end -}}
   {{- end -}}
-  <div class="person-card card fade-in">
+  <div class="person-card card fade-in" id="{{ anchorize .name }}">
     {{- if $url }}
     <a href="{{ $url }}" target="_blank" rel="noopener noreferrer" class="person-card-overlay-link"></a>
     {{- end }}
