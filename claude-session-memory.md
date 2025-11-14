@@ -1504,3 +1504,112 @@ Lazy loading provides 80% of performance benefit with 20% of effort. Other enhan
 
 ---
 
+## Session: Add Yashaswini as Current Visitor (2025-11-14 Continued)
+
+### Overview
+Added new current visitor Yashaswini to the People page.
+
+### New Team Member Details
+
+**Person Information:**
+- **Name:** Yashaswini (single name, no surname)
+- **Title:** EECS Graduate Student
+- **Description:** "Areas of interest include clinical applications of functional imaging."
+- **Section:** Current Visitors
+
+### Image Processing
+
+**Source Photo:**
+- File: yashaswini.jpg (in repository root)
+- Original size: 152KB
+- Dimensions: 1287x1453 pixels
+
+**Conversion Process:**
+```bash
+cwebp -q 85 yashaswini.jpg -o static/img/people/Yashaswini.webp
+```
+
+**Output:**
+- File: static/img/people/Yashaswini.webp
+- Optimized size: 94KB (96,380 bytes)
+- Reduction: 38% smaller than original
+- Dimensions: 1287x1453 (preserved)
+- Quality: 85% WebP compression
+- PSNR: 46.92 dB (excellent quality retention)
+
+**Cleanup:**
+- Removed original yashaswini.jpg from repository root
+
+### Files Modified
+
+**data/people.yml:**
+Added entry to `current_visitors` section after Jiwoong Park:
+```yaml
+- name: "Yashaswini"
+  title: "EECS Graduate Student"
+  image: "people/Yashaswini.webp"
+  description: "Areas of interest include clinical applications of functional imaging."
+```
+
+**static/img/people/Yashaswini.webp:**
+- New file created
+- Optimized WebP format
+- Ready for web display
+
+### Updated Team Count
+
+**Before:**
+- Current Visitors: 3 (Jaeyoung Jeon, Anuja Negi, Jiwoong Park)
+
+**After:**
+- Current Visitors: 4 (Jaeyoung Jeon, Anuja Negi, Jiwoong Park, Yashaswini)
+
+**Full Lab Count:**
+- 1 Principal Investigator
+- 9 Current Lab Members
+- 4 Current Visitors ← Updated
+- 35 Alumni
+
+**Total Active Members:** 14 (PI + 9 members + 4 visitors)
+
+### Deployment
+
+**Commit:** `02554255` - "Add Yashaswini as current visitor to People page"
+
+**Changes Summary:**
+- 2 files changed
+- 5 insertions
+- 1 new WebP image created
+
+**Hugo Server:** Rebuilt successfully in 29ms
+
+**Successfully Pushed:** Changes deployed to GitHub main branch
+
+**Auto-Deployment:** GitHub Actions builds and deploys to gallantlab.org
+
+### Verification
+
+**Local Testing:**
+- Hugo server running at http://localhost:4000/
+- People page: http://localhost:4000/people/
+- Yashaswini visible in Current Visitors section
+- Photo displays correctly with optimized WebP
+
+**Live Site:**
+- Deploying to gallantlab.org via GitHub Actions
+- Yashaswini appears in Current Visitors section
+
+### Notes
+
+**Single Name:**
+- Yashaswini uses only one name (no surname)
+- Displayed as "Yashaswini" throughout site
+- Consistent with cultural naming conventions
+
+**Image Optimization:**
+- Photo automatically benefits from lazy loading implementation
+- Will be lazy loaded as 4th visitor (index 3, after first 3)
+- Contributes to overall site performance
+
+---
+
