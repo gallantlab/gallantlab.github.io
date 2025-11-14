@@ -76,6 +76,11 @@ current_visitors:
     image: "people/Jiwoong.Park.webp"
     description: "Areas of interest include studies of the human navigation system, and fMRI studies in VR."
 
+  - name: "Yashaswini"
+    title: "EECS Graduate Student"
+    image: "people/Yashaswini.webp"
+    description: "Areas of interest include clinical applications of functional imaging."
+
 alumni:
   - name: "Natalia Bilenko, PhD"
     title: "Former Graduate Student"
