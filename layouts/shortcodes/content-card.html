@@ -4,11 +4,16 @@
 {{- $alt := .Get "alt" -}}
 {{- $description := .Get "description" -}}
 {{- $date := .Get "date" -}}
+{{- $lazy := .Get "lazy" | default "true" -}}
 
 <div class="publication-card card fade-in">
   <div class="publication-image">
     <a href="{{ $url }}" target="_blank" rel="noopener noreferrer">
+      {{- if eq $lazy "true" }}
+      <img src="{{ $image }}" alt="{{ $alt }}" loading="lazy" />
+      {{- else }}
       <img src="{{ $image }}" alt="{{ $alt }}" />
+      {{- end }}
     </a>
   </div>
   <div class="publication-info">

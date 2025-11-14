@@ -4,27 +4,31 @@
 
   <h2>Latest News</h2>
 
-  {{ range (where .Site.RegularPages "Section" "news").ByDate.Reverse | first 7 }}
+  {{ range $index, $page := (where .Site.RegularPages "Section" "news").ByDate.Reverse | first 7 }}
   <div class="news-item card fade-in">
-    {{ if .Params.image }}
+    {{ if $page.Params.image }}
     <div class="news-card-content">
       <div class="news-card-image">
-        <img src="{{ .Params.image }}" alt="{{ .Params.alt }}" />
+        {{ if gt $index 0 }}
+        <img src="{{ $page.Params.image }}" alt="{{ $page.Params.alt }}" loading="lazy" />
+        {{ else }}
+        <img src="{{ $page.Params.image }}" alt="{{ $page.Params.alt }}" />
+        {{ end }}
       </div>
       <div class="news-card-text">
-        <p class="news-date">{{ .Date.Format "January 2, 2006" }}</p>
+        <p class="news-date">{{ $page.Date.Format "January 2, 2006" }}</p>
         <div class="news-description">
-          {{ if .Params.first_sentence }} {{ .Params.first_sentence | safeHTML }} {{ end }} {{ if .Params.remaining_description }} {{
-          .Params.remaining_description | safeHTML }} {{ end }}
+          {{ if $page.Params.first_sentence }} {{ $page.Params.first_sentence | safeHTML }} {{ end }} {{ if $page.Params.remaining_description }} {{
+          $page.Params.remaining_description | safeHTML }} {{ end }}
         </div>
       </div>
     </div>
     {{ else }}
     <div class="news-card-no-image">
-      <p class="news-date">{{ .Date.Format "January 2, 2006" }}</p>
+      <p class="news-date">{{ $page.Date.Format "January 2, 2006" }}</p>
       <div class="news-description">
-        {{ if .Params.first_sentence }} {{ .Params.first_sentence | safeHTML }} {{ end }} {{ if .Params.remaining_description }} {{
-        .Params.remaining_description | safeHTML }} {{ end }}
+        {{ if $page.Params.first_sentence }} {{ $page.Params.first_sentence | safeHTML }} {{ end }} {{ if $page.Params.remaining_description }} {{
+        $page.Params.remaining_description | safeHTML }} {{ end }}
       </div>
     </div>
     {{ end }}

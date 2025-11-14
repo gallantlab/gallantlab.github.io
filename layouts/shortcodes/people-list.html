@@ -1,28 +1,29 @@
 {{- $section := .Get "section" -}}
 {{- $people := index .Site.Data.people $section -}}
 <div class="people-grid">
-{{- range $people -}}
+{{- range $index, $person := $people -}}
   {{- $url := "" -}}
-  {{- if .description -}}
-    {{- $matches := findRE "<a href=['\"]https?://[^'\"]+['\"]" .description 1 -}}
+  {{- if $person.description -}}
+    {{- $matches := findRE "<a href=['\"]https?://[^'\"]+['\"]" $person.description 1 -}}
     {{- if $matches -}}
       {{- $url = replaceRE "<a href=['\"]([^'\"]+)['\"].*" "$1" (index $matches 0) -}}
     {{- end -}}
   {{- end -}}
-  <div class="person-card card fade-in" id="{{ anchorize .name }}">
+  {{- $lazyLoad := gt $index 2 -}}
+  <div class="person-card card fade-in" id="{{ anchorize $person.name }}">
     {{- if $url }}
     <a href="{{ $url }}" target="_blank" rel="noopener noreferrer" class="person-card-overlay-link"></a>
     {{- end }}
     <div class="person-image">
-      {{- if .alt_image }}
-      <img src="/img/{{ .alt_image }}" alt="{{ .name }}" class="person-img-hover" />
+      {{- if $person.alt_image }}
+      <img src="/img/{{ $person.alt_image }}" alt="{{ $person.name }}" class="person-img-hover" {{- if $lazyLoad }} loading="lazy"{{- end }} />
       {{- end }}
-      <img src="/img/{{ .image }}" alt="{{ .name }}" class="person-img-main" />
+      <img src="/img/{{ $person.image }}" alt="{{ $person.name }}" class="person-img-main" {{- if $lazyLoad }} loading="lazy"{{- end }} />
     </div>
     <div class="person-info">
-      <h3 class="person-name">{{ .name }}</h3>
-      <p class="person-title">{{ .title }}</p>
-      <div class="person-description">{{ .description | safeHTML }}</div>
+      <h3 class="person-name">{{ $person.name }}</h3>
+      <p class="person-title">{{ $person.title }}</p>
+      <div class="person-description">{{ $person.description | safeHTML }}</div>
     </div>
   </div>
 {{- end }}
