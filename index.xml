@@ -46,7 +46,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://openreview.net/forum?id=3aNvX9TQTo" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/az.webp" alt="Disentangling Superpositions 2025" />
+ &lt;img src="https://gallantlab.org/img/papers/az.webp" alt="Disentangling Superpositions 2025" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -61,7 +61,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://www.psyarxiv.com/nt2jq" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/ViscontidOC.Deniz.2025.webp" alt="Visconti di Oleggio Castello et al. 2025 VEM framework" />
+ &lt;img src="https://gallantlab.org/img/papers/ViscontidOC.Deniz.2025.webp" alt="Visconti di Oleggio Castello et al. 2025 VEM framework" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -73,7 +73,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://blsemc.github.io/viewer/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/Chen.etal.2024.2.webp" alt="Chen bilingual 2024" />
+ &lt;img src="https://gallantlab.org/img/papers/Chen.etal.2024.2.webp" alt="Chen bilingual 2024" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -87,7 +87,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://gallantlab.org/viewer-chen-2024/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/Chen.etal.2024.webp" alt="Chen 2024" />
+ &lt;img src="https://gallantlab.org/img/papers/Chen.etal.2024.webp" alt="Chen 2024" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -101,7 +101,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://gallantlab.org/viewer-deniz-2019/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/Deniz.F.2019.webp" alt="Deniz 2019" />
+ &lt;img src="https://gallantlab.org/img/papers/Deniz.F.2019.webp" alt="Deniz 2019" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -115,7 +115,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://gallantlab.org/viewer-lescroart-2018/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/Lescroart.M.2019.webp" alt="Lescroart 2019" />
+ &lt;img src="https://gallantlab.org/img/papers/Lescroart.M.2019.webp" alt="Lescroart 2019" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -129,7 +129,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://gallantlab.org/viewer-huth-2016/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/Huth.A.2016.webp" alt="Huth 2016" />
+ &lt;img src="https://gallantlab.org/img/papers/Huth.A.2016.webp" alt="Huth 2016" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -143,7 +143,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://gallantlab.org/viewer-cukur-2013/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/Cukur.T.2013.webp" alt="Cukur 2013" />
+ &lt;img src="https://gallantlab.org/img/papers/Cukur.T.2013.webp" alt="Cukur 2013" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -157,7 +157,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://gallantlab.org/viewer-stories-group/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/Huth.A.2016.webp" alt="Group semantic maps" />
+ &lt;img src="https://gallantlab.org/img/papers/Huth.A.2016.webp" alt="Group semantic maps" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -171,7 +171,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://gallantlab.org/viewer-shortclips-group/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/other/viewer.Huth.A.2012.webp" alt="Group short movie clip semantic maps" />
+ &lt;img src="https://gallantlab.org/img/other/viewer.Huth.A.2012.webp" alt="Group short movie clip semantic maps" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -185,7 +185,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://gallantlab.org/viewer-cortical-anatomy/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/other/sulcigyri.webp" alt="Sulci and Gyri" />
+ &lt;img src="https://gallantlab.org/img/other/sulcigyri.webp" alt="Sulci and Gyri" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -199,7 +199,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://gallantlab.org/viewer-retinotopy-demo/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/other/retinotopy.webp" alt="Retinotopy" />
+ &lt;img src="https://gallantlab.org/img/other/retinotopy.webp" alt="Retinotopy" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -212,7 +212,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://www.psyarxiv.com/nt2jq" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/ViscontidOC.Deniz.2025.webp" alt="Voxelwise Encoding Model guide" />
+ &lt;img src="https://gallantlab.org/img/papers/ViscontidOC.Deniz.2025.webp" alt="Voxelwise Encoding Model guide" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -226,7 +226,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://gallantlab.org/voxelwise_tutorials" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/other/learn.vm.webp" alt="Voxelwise Encoding Model tutorials" />
+ &lt;img src="https://gallantlab.org/img/other/learn.vm.webp" alt="Voxelwise Encoding Model tutorials" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -240,7 +240,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://www.youtube.com/watch?v=jobQmEJpbhY" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/other/learn.workshop.webp" alt="Voxelwise Encoding Model CCN workshop" />
+ &lt;img src="https://gallantlab.org/img/other/learn.workshop.webp" alt="Voxelwise Encoding Model CCN workshop" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -254,7 +254,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://www.sciencedirect.com/science/article/pii/S1053811922008497" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/DuprelaTour.T.2022.webp" alt="Dupre 2022" />
+ &lt;img src="https://gallantlab.org/img/papers/DuprelaTour.T.2022.webp" alt="Dupre 2022" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -265,7 +265,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://github.com/gallantlab" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/other/github.webp" alt="github" />
+ &lt;img src="https://gallantlab.org/img/other/github.webp" alt="github" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -279,7 +279,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://github.com/gallantlab/himalaya" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/other/himalaya.webp" alt="himalaya" />
+ &lt;img src="https://gallantlab.org/img/other/himalaya.webp" alt="himalaya" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -293,7 +293,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://github.com/gallantlab/pycortex" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/other/pycortex.webp" alt="pycortex" />
+ &lt;img src="https://gallantlab.org/img/other/pycortex.webp" alt="pycortex" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -307,7 +307,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://github.com/gallantlab/cottoncandy" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/other/cottoncandy.webp" alt="cottoncandy" />
+ &lt;img src="https://gallantlab.org/img/other/cottoncandy.webp" alt="cottoncandy" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -320,7 +320,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://doi.gin.g-node.org/10.12751/g-node.vy1zjd/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/datasets/Popham.etal.2021.webp" alt="Gallant Lab Natural Short Clips fMRI Dataset" />
+ &lt;img src="https://gallantlab.org/img/datasets/Popham.etal.2021.webp" alt="Gallant Lab Natural Short Clips fMRI Dataset" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -334,7 +334,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="http://crcns.org/data-sets/vc/vim-4/about-vim-4" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/datasets/Zhang.etal.2021.webp" alt="Gallant Lab Naturalistic fMRI Dataset" />
+ &lt;img src="https://gallantlab.org/img/datasets/Zhang.etal.2021.webp" alt="Gallant Lab Naturalistic fMRI Dataset" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -348,7 +348,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://gin.g-node.org/denizenslab/narratives_reading_listening_fmri/src/master/chen2024_timescales" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/datasets/Deniz.etal.2019.webp" alt="Gallant Lab Semantic Listening vs Reading fMRI Dataset" />
+ &lt;img src="https://gallantlab.org/img/datasets/Deniz.etal.2019.webp" alt="Gallant Lab Semantic Listening vs Reading fMRI Dataset" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -362,7 +362,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://gin.g-node.org/gallantlab/story_listening" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/Huth.A.2016.webp" alt="Gallant Lab Story Listening fMRI Dataset" />
+ &lt;img src="https://gallantlab.org/img/papers/Huth.A.2016.webp" alt="Gallant Lab Story Listening fMRI Dataset" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -376,7 +376,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="https://crcns.org/data-sets/vc/vim-2/about-vim-2" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/datasets/Nishimoto.etal.2011.webp" alt="Gallant Lab Natural Movie fMRI Dataset" />
+ &lt;img src="https://gallantlab.org/img/datasets/Nishimoto.etal.2011.webp" alt="Gallant Lab Natural Movie fMRI Dataset" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
@@ -390,7 +390,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
 &lt;div class="publication-card card fade-in">
  &lt;div class="publication-image">
  &lt;a href="http://crcns.org/data-sets/vc/vim-1/about-vim-1" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/datasets/Kay.etal.2008.webp" alt="Gallant Lab Natural Images fMRI Dataset" />
+ &lt;img src="https://gallantlab.org/img/datasets/Kay.etal.2008.webp" alt="Gallant Lab Natural Images fMRI Dataset" loading="lazy" />
  &lt;/a>
  &lt;/div>
  &lt;div class="publication-info">
