@@ -548,14 +548,46 @@ nav a {
     grid-template-columns: 1fr;
   }
 
+  .person-card {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    gap: 1rem;
+    padding: 1rem !important;
+  }
+
+  .person-image {
+    width: 100px !important;
+    min-width: 100px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .person-info {
+    flex: 1;
+  }
+
+  .person-name {
+    text-align: left !important;
+  }
+
+  .person-title {
+    text-align: left !important;
+  }
+
+  .person-description {
+    text-align: left !important;
+  }
+
   .publication-card {
-    flex-direction: column !important;
-    gap: 0 !important;
+    flex-direction: row !important;
+    gap: 1rem !important;
     margin: 1rem 0 !important;
+    align-items: flex-start !important;
   }
 
   .publication-image {
-    width: 100%;
+    width: 120px !important;
+    min-width: 120px !important;
     margin: 0 !important;
     padding: 0 !important;
     line-height: 0 !important;
@@ -580,6 +612,7 @@ nav a {
   }
 
   .publication-info {
+    flex: 1 !important;
     margin: 0 !important;
     padding: 0 !important;
   }
@@ -593,15 +626,22 @@ nav a {
     margin: 0 0 0.5rem 0 !important;
   }
 
-  /* Mobile news card layout - minimal spacing */
+  /* Mobile news card layout - keep side-by-side like desktop */
   .news-card-content {
-    flex-direction: column;
-    gap: 0.25rem;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-start;
   }
 
   .news-card-image {
+    width: 120px;
+    min-width: 120px;
+    margin: 0;
+  }
+
+  .news-card-image img {
     width: 100%;
-    margin-bottom: 0;
+    height: auto;
   }
 
   .news-item {
