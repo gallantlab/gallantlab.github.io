@@ -1,37 +1,37 @@
 {{ define "main" }}
-<article class="cf ph3 ph5-l pv3 pv4-l f4 center lh-copy nested-links nested-copy-line-height" style="max-width: 1400px">
+<article class="cf ph3 ph5-l pv3 pv4-l f4 center lh-copy nested-links nested-copy-line-height blog-list-container">
   {{ .Content }}
 
   {{- $paginator := .Paginate (where .Site.RegularPages "Section" "blog") -}}
   {{- range $paginator.Pages -}}
-  <div class="post-preview card fade-in" style="margin: 2rem 0">
+  <div class="post-preview card fade-in blog-post-preview">
     {{- if .Params.featured_image -}}
-    <div style="margin-bottom: 1.5rem">
+    <div class="blog-featured-image-container">
       <a href="{{ .Permalink }}">
-        <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px" />
+        <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" class="blog-featured-image" />
       </a>
     </div>
     {{- end -}}
-    <h2 style="margin-top: 0">
+    <h2 class="blog-post-title">
       <a href="{{ .Permalink }}">{{ .Title }}</a>
     </h2>
-    <p style="color: var(--text-gray); font-size: 0.95rem; margin: 0 0 1rem 0">{{ .Date.Format "January 2, 2006" }}</p>
-    <div style="color: var(--text-gray); line-height: 1.7">
+    <p class="blog-meta">{{ .Date.Format "January 2, 2006" }}</p>
+    <div class="blog-summary">
       {{ .Summary }}
     </div>
-    <p style="margin-top: 1rem">
-      <a href="{{ .Permalink }}" style="color: var(--secondary-color); font-weight: 600">Read more →</a>
+    <p class="blog-read-more">
+      <a href="{{ .Permalink }}" class="blog-read-more-link">Read more →</a>
     </p>
   </div>
   {{- end -}}
 
   {{- if gt $paginator.TotalPages 1 -}}
-  <nav style="margin: 3rem 0; text-align: center">
+  <nav class="blog-paginator">
     {{- if $paginator.HasPrev -}}
-    <a href="{{ $paginator.Prev.URL }}" style="margin: 0 1rem">← Newer Posts</a>
+    <a href="{{ $paginator.Prev.URL }}" class="blog-paginator-link">← Newer Posts</a>
     {{- end -}}
     {{- if $paginator.HasNext -}}
-    <a href="{{ $paginator.Next.URL }}" style="margin: 0 1rem">Older Posts →</a>
+    <a href="{{ $paginator.Next.URL }}" class="blog-paginator-link">Older Posts →</a>
     {{- end -}}
   </nav>
   {{- end -}}

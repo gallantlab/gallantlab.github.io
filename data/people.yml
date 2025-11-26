@@ -1,8 +1,8 @@
 principal_investigator:
   - name: "Jack Gallant, PhD"
     title: "Head of Lab"
-    image: "people/Regression.Jack.webp"
-    alt_image: "people/Gallant.Headshot.1.5x1.webp"
+    image: "people/Gallant.Headshot.1.5x1.webp"
+    alt_image: "people/Regression.Jack.webp"
     description: |
       Neuroscience Department<br>
       1 Barker Hall<br>

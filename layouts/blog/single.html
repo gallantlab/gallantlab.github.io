@@ -1,14 +1,14 @@
 {{ define "main" }}
-<article class="cf ph3 ph5-l pv3 pv4-l f4 center lh-copy nested-links nested-copy-line-height" style="max-width: 1400px">
+<article class="cf ph3 ph5-l pv3 pv4-l f4 center lh-copy nested-links nested-copy-line-height blog-list-container">
   {{- if .Params.featured_image -}}
-  <div style="margin-bottom: 2rem">
-    <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" style="width: 100%; max-height: 500px; object-fit: cover; border-radius: 8px" />
+  <div class="blog-featured-image-container">
+    <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" class="blog-single-featured-image" />
   </div>
   {{- end -}}
 
-  <header style="margin-bottom: 2rem">
-    <h1>{{ .Title }}</h1>
-    <p style="color: var(--text-gray); font-size: 0.95rem">
+  <header>
+    <h1 class="blog-single-title">{{ .Title }}</h1>
+    <p class="blog-single-meta">
       {{ .Date.Format "January 2, 2006" }}
       {{- if .Params.author -}}
       &nbsp;by {{ .Params.author }}
@@ -21,15 +21,15 @@
   </div>
 
   {{- if .Params.tags -}}
-  <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color)">
-    <p style="color: var(--text-gray); margin-bottom: 0.5rem">Tags:</p>
+  <div class="blog-tags-container">
+    <p>Tags:</p>
     {{- range .Params.tags -}}
-    <a href="/tags/{{ . | urlize }}" style="display: inline-block; margin: 0.25rem 0.5rem 0.25rem 0; padding: 0.25rem 0.75rem; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 4px; font-size: 0.9rem">{{ . }}</a>
+    <a href="/tags/{{ . | urlize }}" class="blog-tag">{{ . }}</a>
     {{- end -}}
   </div>
   {{- end -}}
 
-  <nav style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between">
+  <nav class="blog-single-navigation">
     <div>
       {{- with .PrevInSection -}}
       <a href="{{ .Permalink }}">← {{ .Title }}</a>
