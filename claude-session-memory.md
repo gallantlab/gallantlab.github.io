@@ -1613,3 +1613,65 @@ Added entry to `current_visitors` section after Jiwoong Park:
 
 ---
 
+## Session: Hugo Compliance & Image Fixes (2025-11-24)
+
+### Overview
+This session focused on a comprehensive audit and cleanup of the Hugo site, ensuring 100% Hugo compliance, removing all Jekyll remnants, refactoring inline styles, and fixing a specific image display issue.
+
+### Changes Made
+
+**1. Removed Jekyll Remnants:**
+- Deleted obsolete CSS files: `assets/css/jekyll-pygments-themes-github.css` and `assets/css/jekyll-pygments-themes-native.css`.
+- Removed legacy Jekyll cache entries (`.jekyll-cache/`, `.tweet-cache/`) from `.gitignore`.
+
+**2. Configured Hugo Syntax Highlighting:**
+- Added `[markup.highlight]` configuration to `hugo.toml` to enable Hugo's built-in Chroma syntax highlighter with the `github` style.
+
+**3. Refactored Inline Styles:**
+- Moved various inline `style` attributes from `layouts/blog/list.html` and `layouts/blog/single.html` into new, semantic CSS classes within `assets/css/custom.css`. This improves maintainability and separation of concerns.
+
+**4. Fixed Jack Gallant Profile Image Hover Issue:**
+- **Problem:** The hover image for Jack Gallant was being cut off due to differing aspect ratios and container `overflow: hidden`.
+- **Solution:** Swapped `image` and `alt_image` values for Jack Gallant in `data/people.yml`. The `alt_image` (`static/img/people/Regression.Jack.webp`) was then precisely resized and padded using ImageMagick to match the exact dimensions (480x640) of the main image (`static/img/people/Gallant.Headshot.1.5x1.webp`). This ensures the hover image fits perfectly within the existing container without clipping.
+- Reverted a previous attempt to remove `overflow: hidden` which caused the image to break out of the bounding box.
+
+**5. Comprehensive Final Audit:**
+- Performed a final scan for Jekyll Liquid syntax (none found).
+- Searched for Jekyll-specific files/directories (none found).
+- Audited for `.DS_Store` files (none found).
+- Reviewed `.gitignore` for Hugo best practices, removing the final Jekyll-related entries.
+
+### Technical Discoveries & Resolutions
+
+- Encountered and resolved an issue with the `hugo server` failing silently when run in the background. This was successfully addressed by using the `nohup` command, which correctly detaches the process and redirects its output to `nohup.out`.
+
+### Files Modified
+- `.gitignore`
+- `assets/css/custom.css`
+- `data/people.yml`
+- `hugo.toml`
+- `layouts/blog/list.html`
+- `layouts/blog/single.html`
+- `static/img/people/Regression.Jack.webp` (resized)
+- `assets/css/jekyll-pygments-themes-github.css` (deleted)
+- `assets/css/jekyll-pygments-themes-native.css` (deleted)
+
+### Commit
+- **Hash:** `66bf7644` (from previous output)
+- **Message:**
+```
+feat: Hugo site cleanup and image fix
+
+This commit addresses several improvements and fixes to ensure the Hugo site is 100% compliant and well-maintained:
+
+- **Removed Jekyll Remnants:** Deleted obsolete Jekyll CSS files (`jekyll-pygments-themes-github.css`, `jekyll-pygments-themes-native.css`) and removed legacy Jekyll cache entries from `.gitignore`.
+- **Configured Hugo Syntax Highlighting:** Enabled Hugo's built-in Chroma syntax highlighter in `hugo.toml` with the 'github' style.
+- **Refactored Inline Styles:** Moved inline CSS from blog list and single post templates (`layouts/blog/list.html`, `layouts/blog/single.html`) into `assets/css/custom.css`.
+- **Fixed Jack Gallant Profile Image:** Swapped the main and alt images for Jack Gallant in `data/people.yml` and precisely resized the hover image (`Regression.Jack.webp`) to match the main image's dimensions (480x640) to prevent clipping.
+- **General Clean-up:** Ensured no `.DS_Store` files are present and `nohup.out` is ignored.
+```
+
+### Site Status
+- The site is now 100% Hugo-compliant with no lingering Jekyll artifacts.
+- All CSS and image display issues addressed in this session are resolved.
+- Hugo server can be reliably run in the background using `nohup`.
