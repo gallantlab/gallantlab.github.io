@@ -18,7 +18,8 @@
       <div class="news-card-text">
         <p class="news-date">{{ $page.Date.Format "January 2, 2006" }}</p>
         <div class="news-description">
-          {{ $page.Content }}
+          {{ if $page.Params.first_sentence }} {{ $page.Params.first_sentence | safeHTML }} {{ end }} {{ if $page.Params.remaining_description }} {{
+          $page.Params.remaining_description | safeHTML }} {{ end }}
         </div>
       </div>
     </div>
