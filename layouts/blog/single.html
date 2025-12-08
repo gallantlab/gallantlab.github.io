@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article class="cf ph3 ph5-l pv3 pv4-l f4 center lh-copy nested-links nested-copy-line-height blog-list-container">
+<article class="cf ph3 ph5-l f4 center lh-copy nested-links nested-copy-line-height blog-list-container">
   {{- if .Params.featured_image -}}
   <div class="blog-featured-image-container">
     <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" class="blog-single-featured-image" />
@@ -42,7 +42,7 @@
     </div>
   </nav>
 
-  <p style="margin-top: 2rem; text-align: center">
+  <p class="blog-back-link">
     <a href="/blog/">← Back to all blog posts</a>
   </p>
 </article>

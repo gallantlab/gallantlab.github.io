@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article class="cf ph3 ph5-l pv3 pv4-l f4 center lh-copy nested-links nested-copy-line-height blog-list-container">
+<article class="cf ph3 ph5-l f4 center lh-copy nested-links nested-copy-line-height blog-list-container">
   {{ .Content }}
 
   {{- $paginator := .Paginate (where .Site.RegularPages "Section" "blog") -}}

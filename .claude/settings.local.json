@@ -5,7 +5,8 @@
       "Bash(cwebp:*)",
       "Bash(find:*)",
       "Bash(cp:*)",
-      "Bash(mv:*)"
+      "Bash(mv:*)",
+      "Bash(git checkout:*)"
     ],
     "deny": [],
     "ask": []

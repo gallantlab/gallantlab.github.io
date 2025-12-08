@@ -202,6 +202,16 @@ header .bg-black-60 {
   padding-bottom: 0 !important;
 }
 
+/* Override excessive Tachyons padding on main and article elements */
+main.pb7 {
+  padding-bottom: 2rem;
+}
+
+article {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 /* Hide page titles in main content area */
 article > header {
   display: none !important;
@@ -746,4 +756,14 @@ nav a {
   margin-top: 3rem;
   padding-top: 2rem;
   border-top: 1px solid var(--border-color);
+}
+
+.blog-back-link {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Site navigation - logo spacing */
+nav .site-logo {
+  margin-right: 2rem;
 }
