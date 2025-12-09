@@ -2,6 +2,7 @@ baseURL = 'https://gallantlab.org/'
 languageCode = 'en-us'
 title = 'Gallant Lab'
 theme = 'ananke'
+timeZone = 'America/Los_Angeles'
 
 [params]
   description = "Neuroscience Research at UC Berkeley"
