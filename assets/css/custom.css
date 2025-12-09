@@ -38,6 +38,7 @@ body {
   color: var(--text-dark);
   line-height: 1.7;
   font-size: 18px; /* Increased from default 16px */
+  font-weight: 500; /* Medium weight for better readability */
 }
 
 /* Ensure all text is readable */
