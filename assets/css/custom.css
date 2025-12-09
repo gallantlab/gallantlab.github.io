@@ -202,9 +202,18 @@ header .bg-black-60 {
   padding-bottom: 0 !important;
 }
 
-/* Override excessive Tachyons padding on main and article elements */
-main.pb7 {
+/* Override excessive Tachyons padding on main element - all responsive variants */
+main.pb7,
+main.pb7-ns,
+main.pb7-m,
+main.pb7-l {
   padding-bottom: 2rem;
+}
+
+/* Override excessive margin on content divs and asides */
+article .mt6.instapaper_ignoref,
+article aside.mt6-l {
+  margin-top: 2rem;
 }
 
 article {
