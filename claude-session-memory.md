@@ -1909,3 +1909,157 @@ Properly used CSS specificity to override theme styles without `!important`:
 
 ---
 
+## Session: Footer Date and Page Margin Fixes (2025-12-08 Continued)
+
+### Overview
+Fixed footer date display to show correct Pacific Time instead of UTC, and resolved inconsistent page margins across the site.
+
+### Part 1: Footer Date Timezone Issue
+
+**Problem:**
+Footer displayed "December 9, 2025" on live site (gallantlab.org) while local date was December 8, 2025.
+
+**Root Cause:**
+GitHub Actions builds in UTC timezone where it was already December 9, but Pacific Time was still December 8.
+
+**Solution:**
+Added timezone configuration to `hugo.toml` to force Hugo to use Pacific Time when displaying dates.
+
+**Changes Made:**
+```toml
+baseURL = 'https://gallantlab.org/'
+languageCode = 'en-us'
+title = 'Gallant Lab'
+theme = 'ananke'
+timeZone = 'America/Los_Angeles'  # Added
+```
+
+**Footer Template:**
+```html
+Last updated: {{ now.Format "January 2, 2006" }}.
+```
+
+**How It Works:**
+- `{{ now }}` returns current time in configured timezone
+- `timeZone = 'America/Los_Angeles'` forces Pacific Time
+- GitHub Actions now respects this timezone setting
+- Displays correct local date regardless of build server timezone
+
+**File Modified:**
+- `hugo.toml` - Added timeZone parameter
+
+**Commit:** `4c384edb` - "Set Hugo timezone to America/Los_Angeles for correct date display"
+
+### Part 2: Inconsistent Page Margins
+
+**Problem:**
+Different pages had inconsistent top margins:
+- Homepage (About): 2rem top spacing
+- Publications, Code, Data, Learn pages: 4rem top spacing (2rem article padding + 2rem header margin)
+
+**Root Cause:**
+The `layouts/_default/single.html` template added `mt4` class to the header, creating 2rem extra margin on pages using this template.
+
+```html
+<!-- Before -->
+<article class="flex-l mw8 center ph3 flex-wrap justify-between">
+  <header class="mt4 w-100">  <!-- mt4 = 2rem margin-top -->
+```
+
+**Solution:**
+Removed the `mt4` class from the header to match other templates.
+
+```html
+<!-- After -->
+<article class="flex-l mw8 center ph3 flex-wrap justify-between">
+  <header class="w-100">  <!-- No mt4 -->
+```
+
+**Why This Works:**
+- All pages now use article padding only (2rem from article CSS)
+- No additional header margin
+- Consistent spacing across all content pages
+- Clean, maintainable solution
+
+**CSS Article Padding (Already in place):**
+```css
+article {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+```
+
+**Pages Affected:**
+- Publications
+- Code
+- Data
+- Learn
+- Join Us
+- Brain Viewers
+- Any other pages using `_default/single.html` template
+
+**File Modified:**
+- `layouts/_default/single.html` - Removed `mt4` class from header element
+
+**Commit:** `384e9f41` - "Remove mt4 class from default template header for consistent page margins"
+
+### Deployment
+
+**Both Commits Pushed:**
+1. `4c384edb` - Timezone fix
+2. `384e9f41` - Margin consistency fix
+
+**GitHub Actions Status:**
+- Timezone fix build: ✅ Completed successfully
+- Margin fix build: ✅ Completed successfully
+
+**Live Site:**
+- Footer now displays correct Pacific Time date
+- All pages have consistent 2rem top/bottom spacing
+- Visual consistency across entire site
+
+### Results
+
+**Footer Date Display:**
+- ✅ Shows December 8, 2025 on Pacific Time (not December 9 UTC)
+- ✅ Automatically updates with correct timezone
+- ✅ Future-proof for all build times
+
+**Page Margin Consistency:**
+- ✅ Homepage: 2rem spacing
+- ✅ Publications: 2rem spacing (was 4rem)
+- ✅ Learn: 2rem spacing (was 4rem)
+- ✅ Code: 2rem spacing (was 4rem)
+- ✅ All pages: uniform spacing
+
+**Build Status:**
+- Zero warnings
+- Zero errors
+- Fast build times (~80ms)
+
+### Technical Notes
+
+**Hugo Timezone Configuration:**
+Hugo supports timezone configuration via the `timeZone` parameter in `hugo.toml`. This affects all time-based functions including `{{ now }}`, `{{ .Date }}`, and time comparisons. Valid values are IANA timezone names (e.g., "America/Los_Angeles", "UTC", "Europe/London").
+
+**CSS Specificity:**
+No additional CSS changes were needed for the margin fix. The existing `article { padding: 2rem; }` rule provides consistent spacing once the extra `mt4` margin was removed from templates.
+
+**Template Standardization:**
+Different templates can create inconsistent layouts. This fix standardized spacing by ensuring all templates use the same article padding without additional header margins.
+
+### Site Status
+
+**All Features Working:**
+- ✅ Correct timezone display in footer
+- ✅ Consistent page margins site-wide
+- ✅ Clean Hugo compliance maintained
+- ✅ No CSS hacks or !important declarations needed
+- ✅ Fast build times
+- ✅ All images optimized and lazy-loaded
+- ✅ Mobile responsive design intact
+
+**Current Team Count:** 14 active members (unchanged)
+
+---
+
