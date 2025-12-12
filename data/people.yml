@@ -77,11 +77,6 @@ current_visitors:
     description: "Areas of interest include clinical applications of functional imaging."
 
 alumni:
-  - name: "Amanda LeBel, PhD"
-    title: "Former Neuroscience Graduate Student"
-    image: "people/Amanda.LeBel.webp"
-    description: "Dr. LeBel is now doing a postdoc at the University of Texas."
-
   - name: "Natalia Bilenko, PhD"
     title: "Former Graduate Student"
     image: "people/Natalia.Bilenko.webp"
@@ -161,6 +156,11 @@ alumni:
     title: "Former Psychology Graduate Student"
     image: "people/Kendrick.Kay.webp"
     description: "Dr. Kay is now a Professor at the University of Minnesota. (Lab web site <a href='http://cvnlab.net/'>here</a>.)"
+
+  - name: "Amanda LeBel, PhD"
+    title: "Former Neuroscience Graduate Student"
+    image: "people/Amanda.LeBel.webp"
+    description: "Dr. LeBel is now doing a postdoc at the University of Texas."
 
   - name: "Mark Lescroart, PhD"
     title: "Former Postdoc"
