@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "News"
 description: "Cognitive, Systems and Computational Neuroscience at the Leading Edge"
 menu: "main"
 weight: 1
