@@ -25,11 +25,6 @@ current_members:
     image: "people/Evi.Hendrikx.webp"
     description: "Areas of interest include the representation of number, space, and time."
 
-  - name: "Amanda LeBel"
-    title: "Neuroscience Graduate Student"
-    image: "people/Amanda.LeBel.webp"
-    description: "Areas of interest include functional imaging of the cerebellum, and autism."
-
   - name: "Alicia Zeng"
     title: "Biophysics Graduate Student"
     image: "people/Alicia.Zeng.webp"
@@ -82,6 +77,11 @@ current_visitors:
     description: "Areas of interest include clinical applications of functional imaging."
 
 alumni:
+  - name: "Amanda LeBel, PhD"
+    title: "Former Neuroscience Graduate Student"
+    image: "people/Amanda.LeBel.webp"
+    description: "Dr. LeBel is now doing a postdoc at the University of Texas."
+
   - name: "Natalia Bilenko, PhD"
     title: "Former Graduate Student"
     image: "people/Natalia.Bilenko.webp"

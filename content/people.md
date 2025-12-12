@@ -7,17 +7,10 @@ weight: 2
 ---
 
 ## Principal Investigator
-
 {{< people-list section="principal_investigator" >}}
-
 ## Current Lab Members
-
 {{< people-list section="current_members" >}}
-
 ## Current Visitors
-
 {{< people-list section="current_visitors" >}}
-
 ## Alumni
-
 {{< people-list section="alumni" >}}
