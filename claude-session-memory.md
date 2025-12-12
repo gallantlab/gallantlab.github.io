@@ -2063,3 +2063,220 @@ Different templates can create inconsistent layouts. This fix standardized spaci
 
 ---
 
+## Session: Amanda LeBel PhD News Item and People Page Updates (2025-12-12)
+
+### Overview
+Created news item for Amanda LeBel receiving her PhD, moved her to alumni section, and attempted to fix people page section spacing.
+
+### Part 1: Amanda LeBel News Item
+
+**Task:**
+Create news item announcing Amanda LeBel received her PhD and will be starting a postdoc.
+
+**Created File:**
+- `content/news/2025-12-08-amanda-lebel-phd.md`
+
+**Initial Content:**
+```yaml
+---
+title: "Amanda LeBel Receives PhD"
+date: 2025-12-08
+image: "/img/people/Amanda.LeBel.webp"
+alt: "Amanda LeBel"
+first_sentence: '<a href="/people#amanda-lebel">Amanda LeBel</a> has received her PhD! Congratulations Dr. LeBel! Amanda will be moving to the University of Texas early next year to begin a postdoc.'
+remaining_description: ""
+---
+```
+
+**Updated Content (after user feedback):**
+Changed to specify Prof. Anila D'Mello's lab at UT Southwestern and UT Dallas:
+```yaml
+first_sentence: '<a href="/people#amanda-lebel">Amanda LeBel</a> has received her PhD! Congratulations Dr. LeBel! Amanda will be starting a postdoc in the lab of Prof. Anila D''Mello at UT Southwestern and UT Dallas early next year.'
+```
+
+**Why This Works:**
+- News items use `first_sentence` front matter field, not markdown body
+- Link to her People page profile using anchor: `/people#amanda-lebel`
+- Image uses her existing profile photo from `static/img/people/`
+
+### Part 2: Move Amanda to Alumni Section
+
+**Changes to `data/people.yml`:**
+
+1. **Removed from `current_members`:**
+```yaml
+# Removed this entry
+- name: "Amanda LeBel"
+  title: "Neuroscience Graduate Student"
+  image: "people/Amanda.LeBel.webp"
+  description: "Areas of interest include functional imaging of the cerebellum, and autism."
+```
+
+2. **Added to `alumni` (initially at top, then moved for alphabetical order):**
+```yaml
+- name: "Amanda LeBel, PhD"
+  title: "Former Neuroscience Graduate Student"
+  image: "people/Amanda.LeBel.webp"
+  description: "Dr. LeBel is now doing a postdoc in the lab of Prof. Anila D'Mello at UT Southwestern and UT Dallas."
+```
+
+**Alphabetical Order Fix:**
+User caught that Amanda was initially placed at the top of alumni (before Bilenko). Fixed by moving her between:
+- Kendrick Kay, PhD
+- **Amanda LeBel, PhD** ← correct position
+- Mark Lescroart, PhD
+
+**Why This Matters:**
+Alumni section is alphabetized by last name for easy browsing.
+
+### Part 3: People Page Section Spacing (Attempted)
+
+**Problem:**
+Large spacing between section headers (h2) and people grids on People page.
+
+**Root Cause:**
+- `.people-grid` CSS had `margin: 2rem 0;` (top and bottom margins)
+- h2 elements had default top margins from theme
+- Combined created 4rem+ spacing between sections
+
+**Attempted Fixes (All Failed):**
+
+1. **Changed people.md to remove blank lines:**
+```markdown
+## Principal Investigator
+{{< people-list section="principal_investigator" >}}
+## Current Lab Members
+{{< people-list section="current_members" >}}
+```
+Result: No effect
+
+2. **CSS: Changed `.people-grid` margin:**
+```css
+/* Changed from margin: 2rem 0; */
+.people-grid {
+  margin-bottom: 2rem;
+}
+```
+Result: No effect
+
+3. **CSS: Adjacent sibling selector:**
+```css
+.people-grid + h2 {
+  margin-top: 0;
+}
+```
+Result: No effect
+
+4. **CSS: Higher specificity with parent class:**
+```css
+.nested-copy-line-height .people-grid + h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+```
+Result: No effect
+
+5. **CSS: Used !important (rejected by user):**
+```css
+article h2#alumni {
+  margin-top: 0 !important;  /* REJECTED - this is a hack */
+}
+```
+
+**Why All Attempts Failed:**
+Unable to identify the actual CSS rule creating the spacing. The issue likely stems from:
+- Theme CSS with higher specificity
+- Tachyons utility classes being applied
+- HTML structure wrapping that wasn't accounted for
+- Browser caching (though we did clean rebuilds)
+
+**Decision:**
+Rolled back ALL CSS changes. User requested complete rearchitecture of people page from scratch (pending).
+
+### Part 4: Clean Up and Commits
+
+**Rollback:**
+```bash
+git checkout assets/css/custom.css  # Reverted all attempted CSS fixes
+```
+
+**Final Commits:**
+
+1. **Commit `3c9d6644`** - "Add news item for Amanda LeBel PhD and move to alumni"
+   - Created news item
+   - Moved Amanda to alumni
+   - Removed blank lines from people.md
+
+2. **Commit `e4812cff`** - "Fix alphabetical order: move Amanda LeBel between Kay and Lescroart"
+   - Corrected alumni section alphabetization
+
+3. **Commit `0c1b5367`** - "Update Amanda LeBel postdoc details"
+   - Updated both news item and alumni entry
+   - Specified Prof. Anila D'Mello's lab at UT Southwestern and UT Dallas
+
+### Technical Notes
+
+**Hugo People Page Structure:**
+```
+content/people.md (markdown with h2 + shortcodes)
+  ↓ renders via
+layouts/shortcodes/people-list.html (loops through data)
+  ↓ uses data from
+data/people.yml (YAML sections: principal_investigator, current_members, current_visitors, alumni)
+  ↓ wrapped by
+layouts/_default/single.html (default template)
+  ↓ styled by
+Ananke theme CSS + assets/css/custom.css
+```
+
+**CSS Specificity Challenge:**
+The people page HTML structure:
+```html
+<div class="nested-copy-line-height lh-copy serif f4...">
+  <h2 id="principal-investigator">Principal Investigator</h2>
+  <div class="people-grid">...</div>
+  <h2 id="current-lab-members">Current Lab Members</h2>
+  <div class="people-grid">...</div>
+</div>
+```
+
+Despite targeting with:
+- `.nested-copy-line-height .people-grid + h2`
+- `article h2#alumni`
+- Multiple clean rebuilds
+- Browser cache clearing
+
+None of the CSS rules successfully removed the spacing. This suggests a more fundamental issue with the template architecture or theme CSS cascade.
+
+**Lesson Learned:**
+When CSS changes don't work after multiple attempts with increasing specificity, the problem is likely architectural, not CSS-specific. Better to rearchitect the template than fight the CSS cascade.
+
+### Results
+
+**Completed:**
+- ✅ News item created and published
+- ✅ Amanda moved to alumni section
+- ✅ Alumni alphabetical ordering corrected
+- ✅ Postdoc details updated (Prof. D'Mello's lab)
+- ✅ All changes deployed to live site
+
+**Incomplete:**
+- ❌ People page section spacing (pending rearchitecture)
+
+**Files Modified:**
+- `content/news/2025-12-08-amanda-lebel-phd.md` (created)
+- `data/people.yml` (moved Amanda, updated description)
+- `content/people.md` (removed blank lines)
+- `assets/css/custom.css` (attempted fixes, then reverted)
+
+**Current Team Count:** 13 active members (down from 14, Amanda graduated)
+
+### Next Steps
+
+User requested complete rearchitecture of people page to properly handle section spacing. Options to consider:
+1. Custom `layouts/people/single.html` template
+2. Restructure shortcode approach
+3. Use different Hugo features (page bundles, custom sections)
+
+---
+
