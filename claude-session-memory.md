@@ -2363,3 +2363,47 @@ The news item created earlier today (`content/news/2025-12-08-amanda-lebel-phd.m
 
 ---
 
+## Session: Remove Anuja Negi from Current Visitors (2025-12-12 Continued)
+
+### Overview
+Removed Anuja Negi from the current_visitors section as her visit has ended.
+
+### Changes Made
+
+**Anuja Negi Removal:**
+- **Removed from**: `current_visitors` section
+- **Entry removed**:
+  ```yaml
+  - name: "Anuja Negi"
+    title: "Graduate Student at the Technical University of Berlin"
+    image: "people/Anuja.Negi.webp"
+    description: "Areas of interest include language processing and bilingualism."
+  ```
+
+### File Modified
+- `data/people.yml` - Removed Anuja Negi from current_visitors section
+
+### Updated Team Count
+
+**Before:**
+- Current Visitors: 4 (Jaeyoung Jeon, Anuja Negi, Jiwoong Park, Yashaswini)
+
+**After:**
+- Current Visitors: 3 (Jaeyoung Jeon, Jiwoong Park, Yashaswini)
+
+**Full Lab Count:**
+- 1 Principal Investigator
+- 10 Current Lab Members
+- 3 Current Visitors ← Updated (down from 4)
+- 35 Alumni
+
+**Total Active Members:** 14 (PI + 10 members + 3 visitors)
+
+### Deployment
+
+**Commit**: Pending - "Remove Anuja Negi from current visitors"
+
+**Hugo Server:** Auto-reload will detect changes
+
+---
+

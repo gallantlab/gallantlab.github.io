@@ -66,11 +66,6 @@ current_visitors:
     image: "people/Jaeyoung.Jeon.webp"
     description: "Areas of interest include studies of foraging and decision making, using fMRI and VR."
 
-  - name: "Anuja Negi"
-    title: "Graduate Student at the Technical University of Berlin"
-    image: "people/Anuja.Negi.webp"
-    description: "Areas of interest include language processing and bilingualism."
-
   - name: "Jiwoong Park"
     title: "Graduate Student at Sungkyunkwan University in Korea"
     image: "people/Jiwoong.Park.webp"
