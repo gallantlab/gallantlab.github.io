@@ -2810,3 +2810,145 @@ Always crawl rendered HTML output to verify CSS class usage. Don't trust assumpt
 
 ---
 
+
+## Session: 2025-12-13 - Alignment Fix and Final Optimization
+
+### Date
+December 13, 2025
+
+### Overview
+Fixed navigation and content alignment issues across all pages by removing Tachyons padding conflicts and implementing consistent CSS-controlled layout. Completed comprehensive audit to verify no hacks or bad practices remain.
+
+### Problem
+Navigation bar and page content had inconsistent left margins - content appeared shifted left relative to the navigation on news and blog pages.
+
+### Root Causes Identified
+
+**Tachyons Padding Conflicts:**
+- Theme templates had hardcoded Tachyons classes (ph3, ph4-ns, ph5-l, pa3, pa4-ns)
+- These were overriding custom.css padding rules
+- Different pages had different combinations causing misalignment
+
+**Measure-Wide Constraint:**
+- News list page used `measure-wide` class (34em max-width)
+- This prevented content from matching navigation width (1400px)
+- Created visual misalignment
+
+### Implementation
+
+**Template Changes:**
+1. `layouts/partials/site-navigation.html` - removed ph3 ph4-ns
+2. `layouts/index.html` - removed ph3 ph5-l  
+3. `layouts/blog/list.html` - removed ph3 ph5-l
+4. `layouts/blog/single.html` - removed ph3 ph5-l
+5. `layouts/_default/single.html` - removed ph3 and mw8
+6. `layouts/_default/list.html` - created new override, removed pa3 pa4-ns ph3 ph5-l and measure-wide
+
+**CSS Changes (custom.css):**
+```css
+article {
+  padding: var(--spacing-xl) 0;
+}
+
+article.cf {
+  padding: 0 var(--spacing-xl);
+}
+```
+
+**Layout Strategy:**
+- All content uses consistent max-width: 1400px
+- All content uses consistent horizontal padding: 2rem (--spacing-xl)
+- Navigation uses same max-width and padding
+- Result: Perfect alignment across all page types
+
+### Files Modified
+- `layouts/partials/site-navigation.html`
+- `layouts/index.html`
+- `layouts/blog/list.html`
+- `layouts/blog/single.html`
+- `layouts/_default/single.html`
+- `layouts/_default/list.html` (new file)
+- `assets/css/custom.css`
+
+### Comprehensive Audit Results
+
+**CSS Analysis (592 lines):**
+- ✅ 25 !important declarations - all legitimate theme overrides
+- ✅ No TODO/HACK/FIXME comments
+- ✅ No redundant selectors
+- ✅ Proper CSS custom properties usage
+- ✅ Clean mobile-responsive design
+
+**Template Analysis:**
+- ✅ No inline styles
+- ✅ No TODO/HACK/FIXME comments
+- ✅ Clean semantic HTML
+- ✅ Only site-footer.html retains ph3 (isolated in footer)
+
+**!important Breakdown:**
+All 25 declarations serve legitimate purposes:
+- Layout overrides (11): Lines 66-68, 74-75, 79-81, 86, 90-91, 95-96
+- Article header hiding (1): Line 120
+- Header styling (13): Lines 200, 204-205, 209, 217-218, 224, 226-227, 233, 241
+
+These override Ananke theme defaults without modifying theme files - the correct Hugo approach.
+
+### Testing Verification
+
+**Pages Tested:**
+- ✅ Homepage alignment correct
+- ✅ People page alignment correct
+- ✅ Publications page alignment correct
+- ✅ Blog list page alignment correct
+- ✅ Blog single page alignment correct
+- ✅ News list page alignment correct (was problematic)
+- ✅ News single page alignment correct
+
+**All pages now have:**
+- Consistent max-width: 1400px
+- Consistent horizontal padding: 2rem
+- Perfect alignment with navigation bar
+
+### Deployment
+
+**Commit:** "Fix navigation and content alignment across all pages"
+
+**Hugo Server:** Running at http://localhost:4000/
+
+**Status:** Ready for production deployment
+
+### Best Practices Confirmed
+
+**Hugo Theme Customization:**
+- Override theme CSS with custom.css, don't modify theme files
+- Use !important declarations for necessary theme overrides
+- Create layout overrides in /layouts to replace theme templates
+- Keep theme files pristine for easy updates
+
+**CSS Strategy:**
+- Custom properties for maintainable theming
+- Semantic class names over utility classes in custom code
+- Consistent spacing via CSS variables
+- Mobile-first responsive design
+
+**Code Quality:**
+- No inline styles in templates
+- No redundant CSS selectors
+- Documented necessary !important uses
+- Clean, readable, maintainable code
+
+### Final Metrics
+
+**CSS Optimization:**
+- Original: 779 lines (start of session)
+- Optimized: 588 lines (after deep dives)
+- Current: 592 lines (after alignment fix)
+- **Net reduction: 24% from original**
+
+**Code Quality:**
+- Zero hacks or workarounds
+- All !important declarations justified
+- Best practices throughout
+- Production-ready
+
+---
