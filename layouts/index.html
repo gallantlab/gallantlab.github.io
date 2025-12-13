@@ -5,31 +5,29 @@
   <h2>Latest News</h2>
 
   {{ range $index, $page := (where .Site.RegularPages "Section" "news").ByDate.Reverse | first 7 }}
+  {{- $description := "" -}}
+  {{- if $page.Params.first_sentence -}}
+    {{- $description = $page.Params.first_sentence -}}
+    {{- if $page.Params.remaining_description -}}
+      {{- $description = printf "%s %s" $page.Params.first_sentence $page.Params.remaining_description -}}
+    {{- end -}}
+  {{- end -}}
+
   <div class="news-item card fade-in">
     {{ if $page.Params.image }}
     <div class="news-card-content">
       <div class="news-card-image">
-        {{ if gt $index 0 }}
-        <img src="{{ $page.Params.image }}" alt="{{ $page.Params.alt }}" loading="lazy" />
-        {{ else }}
-        <img src="{{ $page.Params.image }}" alt="{{ $page.Params.alt }}" />
-        {{ end }}
+        <img src="{{ $page.Params.image }}" alt="{{ $page.Params.alt }}" {{ if gt $index 0 }}loading="lazy"{{ end }} />
       </div>
       <div class="news-card-text">
         <p class="news-date">{{ $page.Date.Format "January 2, 2006" }}</p>
-        <div class="news-description">
-          {{ if $page.Params.first_sentence }} {{ $page.Params.first_sentence | safeHTML }} {{ end }} {{ if $page.Params.remaining_description }} {{
-          $page.Params.remaining_description | safeHTML }} {{ end }}
-        </div>
+        <div class="news-description">{{ $description | safeHTML }}</div>
       </div>
     </div>
     {{ else }}
     <div class="news-card-no-image">
       <p class="news-date">{{ $page.Date.Format "January 2, 2006" }}</p>
-      <div class="news-description">
-        {{ if $page.Params.first_sentence }} {{ $page.Params.first_sentence | safeHTML }} {{ end }} {{ if $page.Params.remaining_description }} {{
-        $page.Params.remaining_description | safeHTML }} {{ end }}
-      </div>
+      <div class="news-description">{{ $description | safeHTML }}</div>
     </div>
     {{ end }}
   </div>

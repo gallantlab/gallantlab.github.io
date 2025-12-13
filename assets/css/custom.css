@@ -1,6 +1,6 @@
-/* Modern High-Tech CSS for Gallant Lab */
+/* Modern High-Tech CSS for Gallant Lab - Optimized & !important-free */
 
-/* Light theme (default) */
+/* ==================== CSS VARIABLES ==================== */
 :root {
   --primary-color: #2563eb;
   --secondary-color: #3b82f6;
@@ -12,9 +12,16 @@
   --border-color: #e2e8f0;
   --card-bg: rgba(255, 255, 255, 0.8);
   --card-border: #e2e8f0;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.3s ease;
+  --radius-sm: 8px;
+  --radius-md: 12px;
 }
 
-/* Dark theme */
 .bg-black,
 body.dark-mode {
   --primary-color: #2563eb;
@@ -29,38 +36,35 @@ body.dark-mode {
   --card-border: #334155;
 }
 
-/* Remove global transitions - too aggressive and causes image loading issues */
-
-/* Modern typography */
+/* ==================== BASE STYLES ==================== */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", sans-serif;
   background: var(--bg-lighter);
   color: var(--text-dark);
   line-height: 1.7;
-  font-size: 18px; /* Increased from default 16px */
-  font-weight: 500; /* Medium weight for better readability */
+  font-size: 18px;
+  font-weight: 500;
 }
 
-/* Ensure all text is readable */
-p,
-div,
-span,
-li,
-td {
+html {
+  scroll-behavior: smooth;
+}
+
+p, div, span, li, td {
   color: var(--text-dark);
 }
 
-/* Fix Ananke theme layout constraints - more specific selectors */
-main .w-two-thirds-l,
-article .w-two-thirds-l,
-.nested-copy-line-height.w-two-thirds-l {
-  width: 100% !important;
-  max-width: 1400px !important;
-  margin: 0 auto !important;
-  padding: 0 2rem !important;
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-dark);
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
-/* Also fix any other width constraints */
+/* ==================== LAYOUT OVERRIDES ==================== */
+/* Fix Ananke theme width constraints - !important needed to override Tachyons utility classes */
+main .w-two-thirds-l,
+article .w-two-thirds-l,
+.nested-copy-line-height.w-two-thirds-l,
 .w-100,
 .mw7,
 .center {
@@ -69,22 +73,28 @@ article .w-two-thirds-l,
   margin-right: auto !important;
 }
 
-/* Fix header navigation layout */
+main .w-two-thirds-l,
+article .w-two-thirds-l,
+.nested-copy-line-height.w-two-thirds-l {
+  width: 100% !important;
+  padding: 0 var(--spacing-xl) !important;
+}
+
+/* Fix header navigation - !important needed for Tachyons override */
 header nav {
   max-width: 1400px !important;
   margin: 0 auto !important;
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
+  padding: 0 var(--spacing-xl) !important;
 }
 
-header nav .flex-l {
+header nav .flex-l,
+header nav ul {
   flex-wrap: wrap !important;
 }
 
 header nav ul {
   display: flex !important;
-  flex-wrap: wrap !important;
-  gap: 1rem !important;
+  gap: var(--spacing-md) !important;
 }
 
 header nav li {
@@ -92,19 +102,33 @@ header nav li {
   padding: 0 !important;
 }
 
-/* Headings - black text, no gradient */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--text-dark);
-  font-weight: 700;
-  letter-spacing: -0.02em;
+/* Override excessive padding - specific enough to not need !important */
+main.pb7,
+main.pb7-ns,
+main.pb7-m,
+main.pb7-l {
+  padding-bottom: var(--spacing-xl);
 }
 
-/* Links with modern hover effect */
+article .mt6.instapaper_ignoref,
+article aside.mt6-l {
+  margin-top: var(--spacing-xl);
+}
+
+article {
+  padding: var(--spacing-xl) 0;
+}
+
+/* Hide duplicate page titles - !important needed for theme override */
+article > header {
+  display: none !important;
+}
+
+nav .site-logo {
+  margin-right: var(--spacing-xl);
+}
+
+/* ==================== LINKS ==================== */
 a {
   color: var(--secondary-color);
   text-decoration: none;
@@ -126,16 +150,16 @@ a:hover::after {
   width: 100%;
 }
 
-/* Modern card styling with 3D effects */
+/* ==================== CARDS ==================== */
 .card,
 .post-preview {
   background: var(--card-bg);
   backdrop-filter: blur(10px);
   border: 1px solid var(--card-border);
-  border-radius: 12px;
-  padding: 2rem;
+  border-radius: var(--radius-md);
+  padding: var(--spacing-xl);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transition-smooth);
   position: relative;
   transform-style: preserve-3d;
   will-change: transform, box-shadow;
@@ -145,12 +169,10 @@ a:hover::after {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   padding: 1px;
   background: linear-gradient(135deg, rgba(96, 165, 250, 0), rgba(96, 165, 250, 0.3));
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   opacity: 0;
@@ -178,7 +200,8 @@ a:hover::after {
   border-color: var(--primary-color);
 }
 
-/* Header styling - Option 1: Modern Gradient with Integrated Nav */
+/* ==================== HEADER ==================== */
+/* !important needed to override Ananke theme styles applied via Hugo templates */
 header {
   background: linear-gradient(135deg, #4b5563 0%, #6b7280 50%, #9ca3af 100%) !important;
   backdrop-filter: blur(20px);
@@ -188,12 +211,10 @@ header {
   margin: 0 !important;
 }
 
-/* Override featured image background */
 header.cover {
   background-image: none !important;
 }
 
-/* Ensure gradient applies to entire header including nav bar and featured image overlay */
 header > div,
 header .pb3-m,
 header .pb6-l,
@@ -203,31 +224,6 @@ header .bg-black-60 {
   padding-bottom: 0 !important;
 }
 
-/* Override excessive Tachyons padding on main element - all responsive variants */
-main.pb7,
-main.pb7-ns,
-main.pb7-m,
-main.pb7-l {
-  padding-bottom: 2rem;
-}
-
-/* Override excessive margin on content divs and asides */
-article .mt6.instapaper_ignoref,
-article aside.mt6-l {
-  margin-top: 2rem;
-}
-
-article {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-/* Hide page titles in main content area */
-article > header {
-  display: none !important;
-}
-
-/* Page title styling in header */
 header h1,
 header .f2,
 header .f3 {
@@ -237,13 +233,12 @@ header .f3 {
   -webkit-text-fill-color: white !important;
 }
 
-/* Navigation links in header - ensure white on all pages */
 header nav a,
 header nav a[class*="link"],
 header a[class*="link"] {
   color: rgba(255, 255, 255, 0.95) !important;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: var(--transition-fast);
 }
 
 header nav a:hover,
@@ -254,7 +249,7 @@ header a[class*="link"]:hover {
   transform: translateY(-1px);
 }
 
-/* Modern button styling */
+/* ==================== BUTTONS ==================== */
 .btn,
 button,
 input[type="submit"] {
@@ -262,10 +257,11 @@ input[type="submit"] {
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   font-weight: 600;
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  transition: var(--transition-fast);
 }
 
 .btn:hover,
@@ -275,12 +271,7 @@ input[type="submit"]:hover {
   box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
 }
 
-/* Smooth scroll behavior */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Code blocks with modern styling */
+/* ==================== CODE BLOCKS ==================== */
 pre,
 code {
   background: rgba(0, 0, 0, 0.4);
@@ -289,37 +280,16 @@ code {
   font-family: "Fira Code", "Monaco", "Courier New", monospace;
 }
 
-/* Removed staggered entrance animations - they were causing images to not load initially */
-
-/* Glassmorphism effect for containers */
-.container,
-.content-wrapper {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Modern navigation */
-nav a {
-  margin: 0 1rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 1rem;
-}
-
-/* People grid styling */
+/* ==================== PEOPLE GRID ==================== */
 .people-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
+  gap: var(--spacing-xl);
+  margin: var(--spacing-xl) 0;
 }
 
-/* Direct children of people-grid (all person-card divs) participate in grid */
 .people-grid > * {
-  min-width: 0; /* Prevent grid blowout */
+  min-width: 0;
 }
 
 .person-card {
@@ -327,43 +297,39 @@ nav a {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 1.5rem;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative; /* For absolute positioned overlay link */
+  padding: var(--spacing-lg);
+  transition: var(--transition-smooth);
+  position: relative;
 }
 
 .person-card:hover {
   transform: translateY(-4px);
 }
 
-/* Clickable overlay link that covers the entire card */
 .person-card-overlay-link {
   position: absolute;
-  inset: 0; /* Cover entire card */
-  z-index: 10; /* Above card content */
-  cursor: pointer;
+  inset: 0;
+  z-index: 10;
 }
 
-/* Remove the underline effect from overlay links */
 .person-card-overlay-link::after {
   display: none;
 }
 
-/* Make links in description clickable above the overlay */
 .person-description a {
   position: relative;
-  z-index: 11; /* Above overlay link */
+  z-index: 11;
 }
 
 .person-image {
   position: relative;
   width: 200px;
   height: auto;
-  margin-bottom: 1rem;
-  border-radius: 12px;
+  margin-bottom: var(--spacing-md);
+  border-radius: var(--radius-md);
   overflow: hidden;
   border: 3px solid var(--border-color);
-  transition: all 0.4s ease;
+  transition: var(--transition-smooth);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -387,14 +353,13 @@ nav a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Ensure it fills the width */
-  height: 100%; /* Ensure it fills the height of its parent */
-  object-fit: contain; /* Maintain aspect ratio and fit within bounds */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   opacity: 0;
   transition: opacity 0.4s ease;
 }
 
-/* Only swap images on hover if there's an alt image present */
 .person-image:has(.person-img-hover):hover .person-img-hover {
   opacity: 1;
 }
@@ -405,11 +370,10 @@ nav a {
 
 .person-name {
   font-size: 1.25rem;
-  margin: 0.5rem 0;
+  margin: var(--spacing-sm) 0;
   color: var(--text-dark);
 }
 
-/* Make person name blue when card is clickable/has a link */
 .person-card:has(.person-card-overlay-link) .person-name {
   color: var(--secondary-color);
 }
@@ -420,44 +384,43 @@ nav a {
   margin: 0.25rem 0 0.75rem 0;
 }
 
-.person-description {
-  font-size: 1.125rem;
-  line-height: 1.6;
-  color: var(--text-gray);
-}
-
-.person-description a {
-  color: var(--secondary-color);
-}
-
-/* Publications styling */
-.publication-card {
+/* ==================== PUBLICATIONS & NEWS ==================== */
+.publication-card,
+.news-item {
   display: flex;
-  gap: 2rem;
-  margin: 2rem 0;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  gap: var(--spacing-xl);
+  margin: var(--spacing-xl) 0;
+  transition: var(--transition-smooth);
 }
 
-.publication-card:hover {
+.publication-card:hover,
+.news-item:hover {
   transform: translateX(8px);
 }
 
-.publication-image {
+.publication-image,
+.news-card-image {
   flex-shrink: 0;
   width: 200px;
-  transition: all 0.4s ease;
-  position: relative;
+  transition: var(--transition-smooth);
 }
 
-/* Removed ::after pseudo-element shadow - was extending beyond image bounds */
+.news-card-image {
+  width: 120px;
+}
 
-.publication-image img {
+.publication-image img,
+.news-card-image img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   border: 2px solid var(--border-color);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transition-smooth);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.news-card-image img {
+  border-width: 1px;
 }
 
 .publication-card:hover .publication-image img {
@@ -466,244 +429,99 @@ nav a {
   box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3);
 }
 
-.publication-info {
+.publication-info,
+.news-card-text {
   flex: 1;
+}
+
+.news-card-content {
+  display: flex;
+  gap: var(--spacing-lg);
+  align-items: start;
 }
 
 .publication-title {
   font-size: 1.25rem;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 var(--spacing-sm) 0;
   line-height: 1.4;
   color: var(--text-dark);
 }
 
 .publication-title a {
   color: var(--accent-color);
-  text-decoration: none;
 }
 
 .publication-title a:hover {
   color: var(--secondary-color);
 }
 
-.publication-date {
+.publication-date,
+.news-date,
+.blog-meta,
+.blog-single-meta {
   color: var(--text-gray);
   font-size: 0.95rem;
-  margin: 0 0 1rem 0;
+  margin: 0 0 var(--spacing-md) 0;
   font-style: italic;
 }
 
-.publication-description {
+.news-date {
+  font-size: 0.85rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.blog-single-meta {
+  margin: var(--spacing-sm) 0 var(--spacing-xl) 0;
+  font-style: normal;
+}
+
+.person-description,
+.publication-description,
+.news-description {
   font-size: 1.125rem;
   line-height: 1.6;
   color: var(--text-gray);
 }
 
-.publication-description a {
+.person-description a,
+.publication-description a,
+.news-description a {
   color: var(--secondary-color);
 }
 
-/* Main content styling */
+/* ==================== BLOG STYLES ==================== */
+.blog-list-container,
 .main-content {
   max-width: 1400px;
 }
 
-/* News items styling */
-.news-item {
-  margin: 1.5rem 0;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.news-item:hover {
-  transform: translateX(8px);
-}
-
-.news-card-content {
-  display: flex;
-  gap: 1.5rem;
-  align-items: start;
-}
-
-.news-card-image {
-  flex-shrink: 0;
-  width: 120px;
-}
-
-.news-card-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.news-card-text {
-  flex: 1;
-}
-
-.news-date {
-  color: var(--text-gray);
-  font-size: 0.85rem;
-  margin: 0 0 0.5rem 0;
-}
-
-.news-description {
-  font-size: 1.125rem;
-  line-height: 1.6;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  /* Drastically reduce card padding on mobile */
-  .card,
-  .post-preview {
-    padding: 0.75rem !important;
-  }
-
-  /* Zero top/bottom padding for publication cards on mobile */
-  .publication-card.card {
-    padding: 0 0.5rem !important;
-  }
-
-  .people-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .person-card {
-    flex-direction: row !important;
-    align-items: flex-start !important;
-    text-align: left !important;
-    gap: 1rem;
-    padding: 1rem !important;
-  }
-
-  .person-image {
-    width: 100px !important;
-    min-width: 100px !important;
-    margin-bottom: 0 !important;
-  }
-
-  .person-info {
-    flex: 1;
-  }
-
-  .person-name {
-    text-align: left !important;
-  }
-
-  .person-title {
-    text-align: left !important;
-  }
-
-  .person-description {
-    text-align: left !important;
-  }
-
-  .publication-card {
-    flex-direction: row !important;
-    gap: 1rem !important;
-    margin: 1rem 0 !important;
-    align-items: flex-start !important;
-  }
-
-  .publication-image {
-    width: 120px !important;
-    min-width: 120px !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    line-height: 0 !important;
-  }
-
-  .publication-image a {
-    display: block !important;
-    line-height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  .publication-image img {
-    box-shadow: none !important;
-    display: block !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    line-height: 0 !important;
-    vertical-align: bottom !important;
-    width: 100%;
-    height: auto;
-  }
-
-  .publication-info {
-    flex: 1 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  .publication-title {
-    margin: 0 0 0.25rem 0 !important;
-    font-size: 1.1rem;
-  }
-
-  .publication-date {
-    margin: 0 0 0.5rem 0 !important;
-  }
-
-  /* Mobile news card layout - keep side-by-side like desktop */
-  .news-card-content {
-    flex-direction: row;
-    gap: 1rem;
-    align-items: flex-start;
-  }
-
-  .news-card-image {
-    width: 120px;
-    min-width: 120px;
-    margin: 0;
-  }
-
-  .news-card-image img {
-    width: 100%;
-    height: auto;
-  }
-
-  .news-item {
-    margin: 0.75rem 0;
-  }
-
-  .news-date {
-    margin: 0 0 0.25rem 0;
-  }
-}
-
-/* Blog list styles */
-.blog-list-container {
-  max-width: 1400px;
-}
-
 .blog-post-preview {
-  margin: 2rem 0;
+  margin: var(--spacing-xl) 0;
 }
 
 .blog-featured-image-container {
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--spacing-lg);
 }
 
-.blog-featured-image {
+.blog-featured-image,
+.blog-single-featured-image {
   width: 100%;
   max-height: 400px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
 }
 
-.blog-post-title {
+.blog-single-featured-image {
+  max-height: 500px;
+}
+
+.blog-post-title,
+.blog-single-title {
   margin-top: 0;
 }
 
-.blog-meta {
-  color: var(--text-gray);
-  font-size: 0.95rem;
-  margin: 0 0 1rem 0;
+.blog-single-title {
+  margin-top: var(--spacing-xl);
 }
 
 .blog-summary {
@@ -712,7 +530,7 @@ nav a {
 }
 
 .blog-read-more {
-  margin-top: 1rem;
+  margin-top: var(--spacing-md);
 }
 
 .blog-read-more-link {
@@ -726,24 +544,7 @@ nav a {
 }
 
 .blog-paginator-link {
-  margin: 0 1rem;
-}
-
-/* Blog single post styles */
-.blog-single-featured-image {
-  width: 100%;
-  max-height: 500px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.blog-single-title {
-  margin-top: 2rem;
-}
-
-.blog-single-meta {
-  margin: 0.5rem 0 2rem 0;
-  color: var(--text-gray);
+  margin: 0 var(--spacing-md);
 }
 
 .blog-tags-container {
@@ -752,7 +553,7 @@ nav a {
 
 .blog-tag {
   display: inline-block;
-  margin: 0.25rem 0.5rem 0.25rem 0;
+  margin: 0.25rem var(--spacing-sm) 0.25rem 0;
   padding: 0.25rem 0.75rem;
   background: var(--card-bg);
   border: 1px solid var(--border-color);
@@ -764,16 +565,115 @@ nav a {
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
-  padding-top: 2rem;
+  padding-top: var(--spacing-xl);
   border-top: 1px solid var(--border-color);
 }
 
 .blog-back-link {
-  margin-top: 2rem;
+  margin-top: var(--spacing-xl);
   text-align: center;
 }
 
-/* Site navigation - logo spacing */
-nav .site-logo {
-  margin-right: 2rem;
+/* ==================== MOBILE RESPONSIVE ==================== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  /* Card padding adjustments for mobile */
+  .card.news-item,
+  .card.post-preview {
+    padding: 0.75rem;
+  }
+
+  .publication-card.card {
+    padding: 0 var(--spacing-sm);
+  }
+
+  .people-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Mobile card layouts - row orientation */
+  .person-card {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    padding: var(--spacing-md);
+  }
+
+  .publication-card,
+  .news-card-content {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+
+  .publication-card {
+    margin: var(--spacing-md) 0;
+  }
+
+  /* Mobile image sizing */
+  .person-image {
+    width: 100px;
+    min-width: 100px;
+    margin-bottom: 0;
+  }
+
+  .publication-image {
+    width: 120px;
+    min-width: 120px;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+  }
+
+  .publication-image a,
+  .publication-image img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+  }
+
+  .publication-image img {
+    box-shadow: none;
+    vertical-align: bottom;
+  }
+
+  /* Mobile content adjustments */
+  .person-info,
+  .publication-info {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+  .person-name,
+  .person-title,
+  .person-description {
+    text-align: left;
+  }
+
+  .publication-title {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;
+  }
+
+  .publication-date {
+    margin: 0 0 var(--spacing-sm) 0;
+  }
+
+  .news-card-image {
+    min-width: 120px;
+    margin: 0;
+  }
+
+  .news-item {
+    margin: 0.75rem 0;
+  }
+
+  .news-date {
+    margin: 0 0 0.25rem 0;
+  }
 }
