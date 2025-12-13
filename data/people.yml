@@ -25,6 +25,11 @@ current_members:
     image: "people/Evi.Hendrikx.webp"
     description: "Areas of interest include the representation of number, space, and time."
 
+  - name: "Amanda LeBel"
+    title: "Neuroscience Graduate Student"
+    image: "people/Amanda.LeBel.webp"
+    description: "Areas of interest include functional imaging of the cerebellum, and autism."
+
   - name: "Alicia Zeng"
     title: "Biophysics Graduate Student"
     image: "people/Alicia.Zeng.webp"
@@ -156,11 +161,6 @@ alumni:
     title: "Former Psychology Graduate Student"
     image: "people/Kendrick.Kay.webp"
     description: "Dr. Kay is now a Professor at the University of Minnesota. (Lab web site <a href='http://cvnlab.net/'>here</a>.)"
-
-  - name: "Amanda LeBel, PhD"
-    title: "Former Neuroscience Graduate Student"
-    image: "people/Amanda.LeBel.webp"
-    description: "Dr. LeBel is now doing a postdoc in the lab of Prof. Anila D'Mello at UT Southwestern and UT Dallas."
 
   - name: "Mark Lescroart, PhD"
     title: "Former Postdoc"

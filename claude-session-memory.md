@@ -2280,3 +2280,86 @@ User requested complete rearchitecture of people page to properly handle section
 
 ---
 
+## Session: Move Amanda LeBel Back to Current Lab Members (2025-12-12 Continued)
+
+### Overview
+Moved Amanda LeBel from alumni section back to current lab members in alphabetical order.
+
+### Changes Made
+
+**Amanda LeBel Status Update:**
+- **Moved from**: `alumni` section
+- **Moved to**: `current_members` section
+- **Position**: After Evi Hendrikx, before Alicia Zeng (alphabetical order among graduate students)
+- **Title**: "Neuroscience Graduate Student" (restored original)
+- **Description**: "Areas of interest include functional imaging of the cerebellum, and autism." (restored original)
+
+### Data Recovery
+
+**Original Entry Restored:**
+Used session log entry from 2025-12-12 (earlier today) which documented the move TO alumni and preserved the original current_members data:
+
+```yaml
+# Restored to current_members:
+- name: "Amanda LeBel"
+  title: "Neuroscience Graduate Student"
+  image: "people/Amanda.LeBel.webp"
+  description: "Areas of interest include functional imaging of the cerebellum, and autism."
+
+# Removed from alumni:
+- name: "Amanda LeBel, PhD"
+  title: "Former Neuroscience Graduate Student"
+  description: "Dr. LeBel is now doing a postdoc in the lab of Prof. Anila D'Mello at UT Southwestern and UT Dallas."
+```
+
+### File Modified
+- `data/people.yml` - Moved Amanda from alumni to current_members section
+
+### Updated Team Count
+
+**Before:**
+- Current Lab Members: 9
+- Alumni: 36
+
+**After:**
+- Current Lab Members: 10 ← Updated
+- Alumni: 35
+
+**Full Lab Count:**
+- 1 Principal Investigator
+- 10 Current Lab Members ← Updated
+- 4 Current Visitors
+- 35 Alumni ← Updated
+
+**Total Active Members:** 15 (PI + 10 members + 4 visitors)
+
+### Alphabetical Ordering
+
+Amanda is correctly positioned in the current_members section:
+1. Matteo Visconti di Oleggio Castello, PhD (Senior Postdoc)
+2. Tianjiao Zhang, PhD (Postdoc)
+3. Evi Hendrikx, PhD (Postdoc)
+4. **Amanda LeBel** (Neuroscience Graduate Student) ← Alphabetical position
+5. Alicia Zeng (Biophysics Graduate Student)
+6. Cheol Jun Cho (EECS Graduate Student)
+7. Jen Holmberg (Neuroscience Graduate Student)
+8. Sunjae Shim (Neuroscience Graduate Student)
+9. Yuerou Tang (Lab RA)
+10. Shio Chiba (Undergraduate Student)
+
+### Deployment
+
+**Commit**: `86d71746` - "Update session log: Amanda LeBel news item and people page updates"
+
+**Hugo Server:** Auto-reload detected changes, page updated immediately
+
+### Notes
+
+**Session Log Value:**
+This change demonstrates the importance of detailed session logging. The original bio data was easily recovered from the session log entry documenting the previous move to alumni, without needing to search through git history.
+
+**News Item Status:**
+The news item created earlier today (`content/news/2025-12-08-amanda-lebel-phd.md`) about Amanda receiving her PhD remains published, as it's still factually accurate even though she's back in the current members section.
+
+---
+
