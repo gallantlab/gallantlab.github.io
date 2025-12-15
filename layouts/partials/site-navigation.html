@@ -1,9 +1,6 @@
 <nav class="pv3" role="navigation">
   <div class="flex-l center items-center justify-between">
     <div class="flex-l items-center w-100">
-      <a href="/" class="f3 fw7 hover-white white no-underline site-logo">
-        {{ .Site.Title }}
-      </a>
       {{ partials.Include "i18nlist.html" . }}
       {{ if .Site.Menus.main }}
         <ul class="{{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">

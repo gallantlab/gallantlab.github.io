@@ -2952,3 +2952,140 @@ These override Ananke theme defaults without modifying theme files - the correct
 - Production-ready
 
 ---
+
+## Session: 2025-12-15 - Header Banner Implementation
+
+### Date
+December 15, 2025
+
+### Overview
+Added animated header banner with brain visualization gif, refined navigation styling, and cleaned up blog featured images for a more focused presentation.
+
+### Header Banner Implementation
+
+**Final Design:**
+- Full-width black banner (200px max-height)
+- Animated brain gif (167px height, centered)
+- "Gallant Lab" text on left (two lines)
+- "at UC Berkeley" text on right (two lines)
+- Thin white separator line between banner and navigation
+- Respects 1400px max-width and 2rem padding of content below
+
+**Files Created:**
+- `layouts/_default/baseof.html` - Theme override with header banner
+- `static/img/header-brain.gif` - 29MB animated brain visualization (1024×312, 221 frames)
+
+**CSS Implementation:**
+```css
+.site-header-banner {
+  width: 100%;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+
+.site-header-banner-content {
+  width: 100%;
+  max-width: 1400px;
+  max-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 var(--spacing-xl);
+}
+
+.banner-left-text,
+.banner-right-text {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.header-banner-image {
+  height: 167px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+}
+```
+
+**Responsive Design:**
+- Desktop: 167px gif, 2rem text
+- Mobile: 100px gif, 1.25rem text
+
+### Navigation Styling Updates
+
+**Changed menu bar styling:**
+- Removed gray gradient
+- Applied solid dark gray: #2d3238
+- Matches new header banner aesthetic
+- Maintains white text for contrast
+
+**Removed redundant site logo:**
+- Deleted "Gallant Lab" from navigation bar
+- Now displayed in header banner instead
+- Cleaner navigation layout
+
+### Blog Cleanup
+
+**Removed featured images:**
+- Deleted from individual blog posts (`layouts/blog/single.html`)
+- Deleted from blog preview cards (`layouts/blog/list.html`)
+- Text-focused, cleaner presentation
+
+### Technical Decisions
+
+**Why HTML for banner image vs CSS background:**
+- Semantic: image is content, not decoration
+- Accessibility: allows alt text
+- Performance: can add loading attributes
+- Responsive: easier control with object-fit
+
+**Layout approach:**
+- `justify-content: space-evenly` distributes items with equal spacing
+- Text positioned optimally between gif and content margins
+- Maintains alignment with content max-width below
+
+**Why !important declarations remain:**
+- Required to override Ananke theme defaults
+- Standard Hugo theme customization pattern
+- Alternative (modifying theme files) breaks on updates
+
+### Code Quality Audit
+
+**Verified clean implementation:**
+- No inline styles
+- No hacks or workarounds
+- Semantic HTML markup
+- Proper CSS hierarchy
+- Hugo best practices followed
+- Consolidated redundant CSS (removed duplicate flex declarations)
+
+**Final metrics:**
+- CSS: 637 lines (added 45 for header banner)
+- !important: 25 (unchanged, all documented)
+- Code quality: Production-ready
+
+### Files Modified
+
+**New files:**
+- `layouts/_default/baseof.html`
+- `static/img/header-brain.gif`
+
+**Modified files:**
+- `assets/css/custom.css` - Header banner styles, navigation color update
+- `layouts/partials/site-navigation.html` - Removed site logo
+- `layouts/blog/single.html` - Removed featured image
+- `layouts/blog/list.html` - Removed featured images from cards
+
+### Deployment
+
+**Status:** Ready for production
+**Commit:** "Add animated header banner and refine navigation styling"
+**Testing:** Verified on localhost:4000 - all pages render correctly
+
+---

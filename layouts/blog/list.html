@@ -5,13 +5,6 @@
   {{- $paginator := .Paginate (where .Site.RegularPages "Section" "blog") -}}
   {{- range $paginator.Pages -}}
   <div class="post-preview card fade-in blog-post-preview">
-    {{- if .Params.featured_image -}}
-    <div class="blog-featured-image-container">
-      <a href="{{ .Permalink }}">
-        <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" class="blog-featured-image" />
-      </a>
-    </div>
-    {{- end -}}
     <h2 class="blog-post-title">
       <a href="{{ .Permalink }}">{{ .Title }}</a>
     </h2>

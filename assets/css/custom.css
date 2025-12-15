@@ -56,6 +56,42 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.02em;
 }
 
+/* ==================== HEADER BANNER ==================== */
+.site-header-banner {
+  width: 100%;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+
+.site-header-banner-content {
+  width: 100%;
+  max-width: 1400px;
+  max-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 var(--spacing-xl);
+}
+
+.banner-left-text,
+.banner-right-text {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.header-banner-image {
+  height: 167px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
 /* ==================== LAYOUT OVERRIDES ==================== */
 main .w-two-thirds-l,
 article .w-two-thirds-l,
@@ -118,10 +154,6 @@ article.cf {
 
 article > header {
   display: none !important;
-}
-
-nav .site-logo {
-  margin-right: var(--spacing-xl);
 }
 
 /* ==================== LINKS ==================== */
@@ -197,10 +229,10 @@ a:hover::after {
 
 /* ==================== HEADER ==================== */
 header {
-  background: linear-gradient(135deg, #4b5563 0%, #6b7280 50%, #9ca3af 100%) !important;
+  background: #2d3238 !important;
   backdrop-filter: blur(20px);
   border-bottom: none;
-  box-shadow: 0 4px 20px rgba(75, 85, 99, 0.3);
+  box-shadow: none;
   padding: 0 !important;
   margin: 0 !important;
 }
@@ -488,6 +520,19 @@ header a[class*="link"]:hover {
 
 /* ==================== MOBILE RESPONSIVE ==================== */
 @media (max-width: 768px) {
+  .site-header-banner-content {
+    padding: 0 var(--spacing-md);
+  }
+
+  .header-banner-image {
+    height: 100px;
+  }
+
+  .banner-left-text,
+  .banner-right-text {
+    font-size: 1.25rem;
+  }
+
   h1 {
     font-size: 2rem;
   }
