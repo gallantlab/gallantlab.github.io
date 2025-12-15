@@ -11,6 +11,6 @@ weight: 2
 ## Current Lab Members
 {{< people-list section="current_members" >}}
 ## Current Visitors
-{{< people-list section="current_visitors" >}}
+{{< people-list section="current_visitors" lazy="true" >}}
 ## Alumni
-{{< people-list section="alumni" >}}
+{{< people-list section="alumni" lazy="true" >}}

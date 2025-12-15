@@ -1,5 +1,6 @@
 {{- $section := .Get "section" -}}
 {{- $people := index .Site.Data.people $section -}}
+{{- $alwaysLazy := .Get "lazy" | default "false" -}}
 <div class="people-grid">
 {{- range $index, $person := $people -}}
   {{- $url := "" -}}
@@ -9,7 +10,7 @@
       {{- $url = replaceRE "<a href=['\"]([^'\"]+)['\"].*" "$1" (index $matches 0) -}}
     {{- end -}}
   {{- end -}}
-  {{- $lazyLoad := gt $index 2 -}}
+  {{- $lazyLoad := or (eq $alwaysLazy "true") (gt $index 2) -}}
   <div class="person-card card fade-in" id="{{ anchorize $person.name }}">
     {{- if $url }}
     <a href="{{ $url }}" target="_blank" rel="noopener noreferrer" class="person-card-overlay-link"></a>
