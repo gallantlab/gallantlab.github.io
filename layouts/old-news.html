@@ -1,10 +1,11 @@
 {{ define "main" }}
 <article class="cf f4 center lh-copy nested-links nested-copy-line-height main-content">
-  {{ .Content }}
+  <h1>{{ .Title }}</h1>
 
-  <h2>Latest News</h2>
+  {{ $allNews := (where .Site.RegularPages "Section" "news").ByDate.Reverse }}
+  {{ $oldNews := after 7 $allNews }}
 
-  {{ range $index, $page := (where .Site.RegularPages "Section" "news").ByDate.Reverse | first 7 }}
+  {{ range $index, $page := $oldNews }}
   {{- $description := "" -}}
   {{- if $page.Params.first_sentence -}}
     {{- $description = $page.Params.first_sentence -}}
@@ -17,7 +18,7 @@
     {{ if $page.Params.image }}
     <div class="news-card-content">
       <div class="news-card-image">
-        <img src="{{ $page.Params.image }}" alt="{{ $page.Params.alt }}" {{ if gt $index 0 }}loading="lazy"{{ end }} />
+        <img src="{{ $page.Params.image }}" alt="{{ $page.Params.alt }}" loading="lazy" />
       </div>
       <div class="news-card-text">
         <p class="news-date">{{ $page.Date.Format "January 2, 2006" }}</p>
@@ -32,9 +33,5 @@
     {{ end }}
   </div>
   {{ end }}
-
-  <p class="old-news-link">
-    Find older news items <a href="/old-news/">here</a>.
-  </p>
 </article>
 {{ end }}

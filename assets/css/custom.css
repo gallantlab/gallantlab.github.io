@@ -518,6 +518,12 @@ header a[class*="link"]:hover {
   font-weight: 600;
 }
 
+.old-news-link {
+  margin-top: var(--spacing-xl);
+  text-align: center;
+  color: var(--text-gray);
+}
+
 /* ==================== MOBILE RESPONSIVE ==================== */
 @media (max-width: 768px) {
   .site-header-banner-content {
