@@ -8,17 +8,25 @@
 
 <div class="publication-card card fade-in">
   <div class="publication-image">
+    {{- if $url }}
     <a href="{{ $url }}" target="_blank" rel="noopener noreferrer">
+    {{- end }}
       {{- if eq $lazy "true" }}
       <img src="{{ $image }}" alt="{{ $alt }}" loading="lazy" />
       {{- else }}
       <img src="{{ $image }}" alt="{{ $alt }}" />
       {{- end }}
+    {{- if $url }}
     </a>
+    {{- end }}
   </div>
   <div class="publication-info">
     <h3 class="publication-title">
+      {{- if $url }}
       <a href="{{ $url }}" target="_blank" rel="noopener noreferrer">{{ $title }}</a>
+      {{- else }}
+      <strong>{{ $title }}</strong>
+      {{- end }}
     </h3>
     {{- if $date }}
     {{- $parsedDate := time $date }}
