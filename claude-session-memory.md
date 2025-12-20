@@ -2244,3 +2244,42 @@ User requested comprehensive audit: "run a full audit of the site to make sure t
 - Build warnings: 0
 
 ---
+
+## 2025-12-20: Update Autoflatten Links to Documentation Site
+
+### Request
+
+User requested updating Autoflatten links from GitHub repository to new documentation site at https://gallantlab.org/autoflatten/
+
+### Understanding GitHub Pages Organization Structure
+
+**Question from user:** "that documentation site has a gallantlab.org head address, but it isn't in our git repository? how does that work?"
+
+**Answer:** GitHub Pages for organizations supports multiple sites:
+- **Main site:** `gallantlab/gallantlab.github.io` → `gallantlab.org`
+- **Project sites:** `gallantlab/<repo-name>` → `gallantlab.org/<repo-name>/`
+
+Each repository can have its own GitHub Pages enabled (gh-pages branch or /docs folder). When a custom domain is configured for the organization, all project sites automatically inherit it. This allows multiple documentation sites (autoflatten, pycortex, himalaya, voxelwise_tutorials, etc.) to exist under `gallantlab.org/<project>` without being in the main website repository.
+
+### Changes Made
+
+**Files modified:**
+1. `content/news/2025-12-15-autoflatten-release.md`
+   - Changed link from `https://github.com/gallantlab/autoflatten`
+   - To: `https://gallantlab.org/autoflatten/`
+   - Location: first_sentence field in frontmatter
+
+2. `content/code.md`
+   - Changed Autoflatten content-card URL
+   - From: `https://github.com/gallantlab/autoflatten`
+   - To: `https://gallantlab.org/autoflatten/`
+
+**Commits:**
+- b09b7051 - "Update Autoflatten link to documentation site" (news item)
+- 467c5152 - "Update Autoflatten link on Code page to documentation site"
+
+### Result
+
+Both the news item and code page now link to the Autoflatten documentation site instead of the GitHub repository, providing users with direct access to documentation rather than source code.
+
+---
