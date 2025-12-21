@@ -2283,3 +2283,121 @@ Each repository can have its own GitHub Pages enabled (gh-pages branch or /docs 
 Both the news item and code page now link to the Autoflatten documentation site instead of the GitHub repository, providing users with direct access to documentation rather than source code.
 
 ---
+
+## 2025-12-20: Create VEM Guide Blog Post
+
+### Request
+
+User requested creating a new blog post from a text file about Voxelwise Encoding Models. The file contained markers like `*text*` that needed to be converted to links, with the user providing each link URL.
+
+### Blog Post Content
+
+Created comprehensive blog post: "Learning and implementing Voxelwise Encoding Models: A guide to reviews, tutorials, and software"
+
+**Structure:**
+- Background papers (4 entries)
+- Tutorials (1 entry)
+- Software (3 entries: Himalaya, Pycortex, Autoflatten)
+- Acknowledgments with links to lab members
+
+**Links gathered:**
+1. Internal site links: Learn, Code, brain viewers pages
+2. External paper links: OSF, ResearchGate, ScienceDirect, MIT Press
+3. Software documentation: Himalaya, Pycortex, Autoflatten (all at gallantlab.org)
+4. People profiles: Dr. Matteo Visconti di Oleggio Castello, Dr. James Gao, Prof. Alex Huth, Dr. Tom Dupre la Tour, Dr. Anwar Nunez-Elizalde, Prof. Fatma Deniz
+
+### Technical Challenges and Fixes
+
+**Issue 1: Title not displaying**
+- Root cause: CSS rule `article > header { display: none !important; }` was hiding ALL article headers
+- Solution: Changed to `article.main-content > header` to only hide headers on regular pages, not blog posts
+
+**Issue 2: Title had black background with white text**
+- Root cause: Generic `header` CSS selectors applied to both site navigation AND blog post headers
+- Solution: Changed all header selectors to `body > header` to only target site navigation
+
+**Issue 3: Missing CSS classes**
+- Template used classes without CSS definitions: blog-content, blog-tags-container, blog-tag, blog-single-navigation, blog-back-link
+- Solution: Added complete CSS for all blog elements with proper spacing, borders, hover effects
+
+**Issue 4: Removed Tachyons f4 class**
+- The `f4` class (font-size: 1.25rem) was overriding blog title styles
+- Removed from article element in layouts/blog/single.html
+
+### Files Created
+
+**content/blog/2025-12-20-vem-guide.md**
+- Full blog post in markdown format
+- All links in proper markdown syntax `[text](url)`
+- Lab member links point to people page anchors
+- Fixed typo: "explaines" → "explains"
+
+### Files Modified
+
+**layouts/blog/single.html**
+- Changed class `blog-single-title` → `blog-post-title` (to match CSS)
+- Changed class `blog-single-meta` → `blog-meta` (to match CSS)
+- Removed `f4` Tachyons class from article element
+
+**assets/css/custom.css**
+- Fixed `article > header` selector to `article.main-content > header` (line 155)
+- Fixed all `header` selectors to `body > header` (lines 231-276)
+- Added `.blog-post-title` styling: 2.5rem font, bold, proper color
+- Added `.blog-content` styling
+- Added `.blog-tags-container` styling: flex layout, border separator
+- Added `.blog-tag` styling: pill design with hover effects
+- Added `.blog-single-navigation` styling: flexbox layout for prev/next links
+- Added `.blog-back-link` styling
+- Added mobile responsive styles for all blog elements (lines 720-741)
+
+### Hugo Best Practices Applied
+
+**Content:**
+- Title only in frontmatter (not duplicated in content)
+- Clean markdown with no HTML tags
+- Proper heading hierarchy (## for sections, not #)
+- All links in markdown format `[text](url)`
+
+**Templates:**
+- Proper use of Hugo template functions
+- Correct conditional rendering
+- No inline styles
+
+**CSS:**
+- All styling in dedicated CSS file
+- Proper use of CSS variables
+- Consistent naming conventions
+- Mobile-first responsive design
+- No new !important flags
+
+### Deep Dive Audit Results
+
+**Issues Found and Fixed:**
+1. Typo: "explaines" → "explains" ✓
+2. Missing CSS for 5 template classes ✓
+3. Header display conflict ✓
+4. Header styling conflict ✓
+
+**Final Regression Test:**
+- Homepage ✓
+- People page ✓
+- Publications page ✓
+- Old-news archive (13 items) ✓
+- Blog list page ✓
+- Old blog post (2024-01-15) ✓
+- New blog post (2025-12-20) ✓
+- Learn page ✓
+
+**Final Status:**
+- Hugo Compliance: EXCELLENT ✓
+- Code Quality: EXCELLENT ✓
+- Content Quality: EXCELLENT ✓
+- Consistency: EXCELLENT ✓
+- Mobile Responsive: COMPLETE ✓
+- No Regressions ✓
+
+### Cleanup
+
+Removed temporary file: `BLOG.VEM.12-25.txt`
+
+---

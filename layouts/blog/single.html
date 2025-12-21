@@ -1,8 +1,8 @@
 {{ define "main" }}
-<article class="cf f4 center lh-copy nested-links nested-copy-line-height blog-list-container">
+<article class="cf center lh-copy nested-links nested-copy-line-height blog-list-container">
   <header>
-    <h1 class="blog-single-title">{{ .Title }}</h1>
-    <p class="blog-single-meta">
+    <h1 class="blog-post-title">{{ .Title }}</h1>
+    <p class="blog-meta">
       {{ .Date.Format "January 2, 2006" }}
       {{- if .Params.author -}}
       &nbsp;by {{ .Params.author }}

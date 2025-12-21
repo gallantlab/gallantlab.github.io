@@ -9,7 +9,9 @@
       "Bash(git checkout:*)",
       "Bash(curl:*)",
       "Bash(git add:*)",
-      "Bash(gh run:*)"
+      "Bash(gh run:*)",
+      "Bash(pkill:*)",
+      "Bash(hugo server:*)"
     ],
     "deny": [],
     "ask": []
