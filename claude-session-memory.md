@@ -2401,3 +2401,86 @@ Created comprehensive blog post: "Learning and implementing Voxelwise Encoding M
 Removed temporary file: `BLOG.VEM.12-25.txt`
 
 ---
+
+## Session: January 6, 2026 - Move Amanda LeBel to Alumni and Fix Alphabetical Order
+
+### Date
+January 6, 2026
+
+### Overview
+Moved Amanda LeBel from current lab members to alumni section and corrected alphabetical ordering in the alumni section.
+
+### Changes Made
+
+**1. Amanda LeBel Moved to Alumni**
+- Moved from `current_members` to `alumni` section
+- Position: Between Kendrick Kay and Mark Lescroart (alphabetical order by last name)
+- Updated entry:
+  ```yaml
+  - name: "Amanda LeBel, PhD"
+    title: "Former Neuroscience Graduate Student"
+    image: "people/Amanda.LeBel.webp"
+    description: "Dr. LeBel is now a postdoc with Prof. Anila D'Mello at UT Southwestern and UT Dallas."
+  ```
+
+**2. Alumni Section Alphabetical Order Fixes**
+- **Issue 1:** Meschke was misplaced after Eickenberg
+  - Fixed: Moved to correct position after Mazer
+- **Issue 2:** G names were out of order (Gao, Gong, Gibboni)
+  - Fixed: Reordered as Gao, Gibboni, Gong (alphabetical)
+
+**Corrected order:**
+- Eickenberg
+- **Gao** (moved up from position after Eickenberg)
+- **Gibboni** (moved up from position after Gong)
+- Gong
+- Gustavsen
+- Hansen
+- Hayden
+- Huth
+- Kay
+- **LeBel** (newly added)
+- Lescroart
+- Majure
+- Mazer
+- **Meschke** (moved down to correct alphabetical position)
+- Naselaris
+- [continues...]
+
+### Files Modified
+
+**Modified:**
+- `data/people.yml` - Moved Amanda LeBel to alumni, fixed alphabetical ordering
+
+### Updated Team Count
+
+**Before:**
+- Current Lab Members: 10
+- Alumni: 35
+
+**After:**
+- Current Lab Members: 9 (Amanda graduated)
+- Alumni: 36 (Amanda added)
+
+**Full Lab Count:**
+- 1 Principal Investigator
+- 9 Current Lab Members
+- 3 Current Visitors
+- 36 Alumni
+
+**Total Active Members:** 13 (PI + 9 members + 3 visitors)
+
+### Deployment
+
+**Status:** Ready for deployment
+**Hugo Server:** Auto-reload detected changes
+
+### Notes
+
+**News Item Status:**
+The news item created on 2025-12-08 (`content/news/2025-12-08-amanda-lebel-phd.md`) about Amanda receiving her PhD remains accurate and published. It properly announces her graduation and new postdoc position.
+
+**Data Quality:**
+Alumni section now maintains strict alphabetical order by last name, making it easier to locate specific individuals.
+
+---

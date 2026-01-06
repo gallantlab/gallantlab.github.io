@@ -25,11 +25,6 @@ current_members:
     image: "people/Evi.Hendrikx.webp"
     description: "Areas of interest include the representation of number, space, and time."
 
-  - name: "Amanda LeBel"
-    title: "Neuroscience Graduate Student"
-    image: "people/Amanda.LeBel.webp"
-    description: "Areas of interest include functional imaging of the cerebellum, and autism."
-
   - name: "Alicia Zeng"
     title: "Biophysics Graduate Student"
     image: "people/Alicia.Zeng.webp"
@@ -112,25 +107,20 @@ alumni:
     image: "people/Michael.Eickenberg.webp"
     description: "Dr. Eickenberg is now a staff scientist at the Flatiron Institute."
 
-  - name: "Emily Meschke, PhD"
-    title: "Former Neuroscience Graduate Student"
-    image: "people/Emily.Meschke.webp"
-    description: "Dr. Meschke is now a postdoc in the lab of Prof. Christopher Baldassano at Columbia University."
-
   - name: "James Gao, PhD"
     title: "Former Graduate Student"
     image: "people/James.Gao.webp"
     description: "Dr. Gao is now in the technology industry."
 
-  - name: "Lily Xue Gong, PhD"
-    title: "Former Neuroscience Graduate Student"
-    image: "people/Lily.Gong.webp"
-    description: "Dr. Gong is now a staff scientist with Prof. Edward Chang at UCSF."
-
   - name: "Robert Gibboni, PhD"
     title: "Former Postdoc"
     image: "people/Robert.Gibboni.webp"
     description: "Dr. Gibboni is now in the technology industry."
+
+  - name: "Lily Xue Gong, PhD"
+    title: "Former Neuroscience Graduate Student"
+    image: "people/Lily.Gong.webp"
+    description: "Dr. Gong is now a staff scientist with Prof. Edward Chang at UCSF."
 
   - name: "Kate Gustavsen, PhD"
     title: "Former Neuroscience Graduate Student"
@@ -157,6 +147,11 @@ alumni:
     image: "people/Kendrick.Kay.webp"
     description: "Dr. Kay is now a Professor at the University of Minnesota. (Lab web site <a href='http://cvnlab.net/'>here</a>.)"
 
+  - name: "Amanda LeBel, PhD"
+    title: "Former Neuroscience Graduate Student"
+    image: "people/Amanda.LeBel.webp"
+    description: "Dr. LeBel is now a postdoc with Prof. Anila D'Mello at UT Southwestern and UT Dallas."
+
   - name: "Mark Lescroart, PhD"
     title: "Former Postdoc"
     image: "people/Mark.Lescroart.webp"
@@ -171,6 +166,11 @@ alumni:
     title: "Former Postdoc"
     image: "people/James.Mazer.webp"
     description: "After a long academic career as a Professor at Yale and MSU, Dr. Mazer has now moved to the technology industry."
+
+  - name: "Emily Meschke, PhD"
+    title: "Former Neuroscience Graduate Student"
+    image: "people/Emily.Meschke.webp"
+    description: "Dr. Meschke is now a postdoc in the lab of Prof. Christopher Baldassano at Columbia University."
 
   - name: "Thomas Naselaris, PhD"
     title: "Former Postdoc"
