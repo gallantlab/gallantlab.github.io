@@ -348,3 +348,86 @@ After comprehensive audit, the site has:
 The site represents exemplary Hugo development practices and is ready for long-term maintenance.
 
 ---
+
+## Session: January 9, 2026 (continued) - Fix Hugo Version Mismatch
+
+### Problem Discovered
+
+After deploying the page header removal changes, the deployed site (gallantlab.org) showed different behavior than the local site:
+- **Local site (localhost:4000)**: Headers properly hidden, looked correct
+- **Deployed site (gallantlab.org)**: Headers still showing despite identical code
+
+This was NOT a caching issue - confirmed in fresh browser.
+
+### Root Cause Analysis
+
+**Hugo Version Mismatch:**
+- **Local environment**: Hugo v0.152.2 (via Homebrew)
+- **GitHub Actions**: Hugo v0.139.3 (configured in workflow)
+- **Latest Hugo**: v0.154.3
+
+The older Hugo version (0.139.3) in GitHub Actions was not properly handling the conditional rendering syntax `{{ if not .Params.hide_title }}`, causing the headers to still render despite the parameter being set.
+
+### Solution
+
+Upgraded both environments to use the latest Hugo version (v0.154.3):
+
+**1. Updated GitHub Actions Workflow**
+- Modified `.github/workflows/hugo-deploy.yml`
+- Changed `hugo-version: '0.139.3'` → `hugo-version: '0.154.3'`
+
+**2. Upgraded Local Hugo**
+- Ran `brew upgrade hugo`
+- Updated from v0.152.2 → v0.154.3
+
+**3. Tested Locally**
+- Restarted Hugo server with new version
+- Verified all pages build correctly
+- Confirmed no errors or warnings
+- Build time: 40ms for 57 pages
+
+### Files Modified
+
+**Modified:**
+- `.github/workflows/hugo-deploy.yml` - Updated Hugo version
+
+### Deployment
+
+**Commits:**
+- "Update Hugo version to 0.154.3 for consistency"
+  - Synchronized Hugo versions between local and deployed environments
+  - Tested successfully with new version
+
+**Status:** Deployed to production
+
+**Build Results:**
+- Hugo build: 20 seconds
+- Pages deployment: 25 seconds
+- Status: Success ✅
+
+### Verification
+
+Confirmed on gallantlab.org:
+- ✅ People page - no redundant header
+- ✅ Publications page - no redundant header
+- ✅ Brain Viewers, Learn, Code, Data, Join Us - no redundant headers
+- ✅ Active menu highlighting working correctly
+- ✅ Blog posts still show titles (as intended)
+- ✅ All other pages working correctly
+
+### Lesson Learned
+
+**Always synchronize Hugo versions between environments:**
+- Hugo syntax and behavior can vary between versions
+- Testing locally with a different version than production can cause deployment surprises
+- Best practice: Pin both environments to the same (latest stable) version
+- Update regularly to avoid version drift
+
+### Environment Status
+
+**Current Hugo Versions:**
+- Local development: v0.154.3
+- GitHub Actions: v0.154.3
+- Status: ✅ Synchronized
+
+---
