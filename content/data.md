@@ -3,6 +3,7 @@ title: "Data"
 description: "Open datasets from the Gallant Lab for neuroscience research"
 menu: "main"
 weight: 7
+hide_title: true
 ---
 
 ## Open Data

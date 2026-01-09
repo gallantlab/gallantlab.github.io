@@ -152,10 +152,6 @@ article.cf {
   padding: 0 var(--spacing-xl);
 }
 
-article.main-content > header {
-  display: none !important;
-}
-
 /* ==================== LINKS ==================== */
 a {
   color: var(--secondary-color);
@@ -273,6 +269,13 @@ body > header a[class*="link"]:hover {
   color: white !important;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   transform: translateY(-1px);
+}
+
+body > header nav a.active {
+  color: white !important;
+  font-weight: 700;
+  border-bottom: 2px solid white;
+  padding-bottom: 2px;
 }
 
 /* ==================== PEOPLE GRID ==================== */

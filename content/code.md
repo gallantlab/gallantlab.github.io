@@ -3,6 +3,7 @@ title: "Code"
 description: "Open source code from Gallant Lab"
 menu: "main"
 weight: 6
+hide_title: true
 aliases:
   - /opencode/
 ---

@@ -3,6 +3,7 @@ title: "Learn"
 description: "Voxelwise Encoding Model tutorials and resources"
 menu: "main"
 weight: 5
+hide_title: true
 ---
 
 ## Learn About Voxelwise Encoding Models

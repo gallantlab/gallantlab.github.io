@@ -3,6 +3,7 @@ title: "Publications"
 description: "Gallant Lab Publications"
 menu: "main"
 weight: 3
+hide_title: true
 ---
 
 ## Selected Publications

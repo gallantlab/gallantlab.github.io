@@ -4,6 +4,7 @@ description: "Gallant Lab Team Members"
 featured_image: ""
 menu: "main"
 weight: 2
+hide_title: true
 ---
 
 ## Principal Investigator

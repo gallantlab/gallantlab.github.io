@@ -3,6 +3,7 @@ title: "Brain Viewers"
 description: "Interactive brain viewers from Gallant Lab publications"
 menu: "main"
 weight: 4
+hide_title: true
 ---
 
 ## Brain Viewers

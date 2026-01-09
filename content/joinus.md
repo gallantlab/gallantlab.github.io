@@ -3,6 +3,7 @@ title: "Join Us"
 description: "Join the Gallant Lab"
 menu: "main"
 weight: 8
+hide_title: true
 ---
 
 ## Join the Gallant Lab
