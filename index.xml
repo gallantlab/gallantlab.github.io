@@ -1,428 +1,428 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>News on Gallant Lab</title><link>https://gallantlab.org/</link><description>Recent content in News on Gallant Lab</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 20 Dec 2025 00:00:00 -0800</lastBuildDate><atom:link href="https://gallantlab.org/index.xml" rel="self" type="application/rss+xml"/><item><title>People</title><link>https://gallantlab.org/people/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/people/</guid><description>&lt;h2 id="principal-investigator">Principal Investigator&lt;/h2>
-&lt;div class="people-grid">&lt;div class="person-card card fade-in" id="jack-gallant-phd">
- &lt;div class="person-image">
- &lt;img src="https://gallantlab.org/img/people/Regression.Jack.webp" alt="Jack Gallant, PhD" class="person-img-hover" />
- &lt;img src="https://gallantlab.org/img/people/Gallant.Headshot.1.5x1.webp" alt="Jack Gallant, PhD" class="person-img-main" />
- &lt;/div>
- &lt;div class="person-info">
- &lt;h3 class="person-name">Jack Gallant, PhD&lt;/h3>
- &lt;p class="person-title">Head of Lab&lt;/p>
- &lt;div class="person-description">Neuroscience Department&lt;br>
-1 Barker Hall&lt;br>
-Berkeley, CA 94720-3990&lt;br>
-Email: &lt;a href="mailto:gallant@berkeley.edu">gallant@berkeley.edu&lt;/a>
-&lt;/div>
- &lt;/div>
- &lt;/div>
-&lt;/div>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>News on Gallant Lab</title><link>https://gallantlab.org/</link><description>Recent content in News on Gallant Lab</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 20 Dec 2025 00:00:00 -0800</lastBuildDate><atom:link href="https://gallantlab.org/index.xml" rel="self" type="application/rss+xml"/><item><title>People</title><link>https://gallantlab.org/people/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/people/</guid><description>&lt;h2 id="principal-investigator"&gt;Principal Investigator&lt;/h2&gt;
+&lt;div class="people-grid"&gt;&lt;div class="person-card card fade-in" id="jack-gallant-phd"&gt;
+ &lt;div class="person-image"&gt;
+ &lt;img src="https://gallantlab.org/img/people/Regression.Jack.webp" alt="Jack Gallant, PhD" class="person-img-hover" /&gt;
+ &lt;img src="https://gallantlab.org/img/people/Gallant.Headshot.1.5x1.webp" alt="Jack Gallant, PhD" class="person-img-main" /&gt;
+ &lt;/div&gt;
+ &lt;div class="person-info"&gt;
+ &lt;h3 class="person-name"&gt;Jack Gallant, PhD&lt;/h3&gt;
+ &lt;p class="person-title"&gt;Head of Lab&lt;/p&gt;
+ &lt;div class="person-description"&gt;Neuroscience Department&lt;br&gt;
+1 Barker Hall&lt;br&gt;
+Berkeley, CA 94720-3990&lt;br&gt;
+Email: &lt;a href="mailto:gallant@berkeley.edu"&gt;gallant@berkeley.edu&lt;/a&gt;
+&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h2 id="current-lab-members">Current Lab Members&lt;/h2>
-&lt;div class="people-grid">&lt;div class="person-card card fade-in" id="matteo-visconti-di-oleggio-castello-phd">
- &lt;a href="https://matteovisconti.com/" target="_blank" rel="noopener noreferrer" class="person-card-overlay-link">&lt;/a>
- &lt;div class="person-image">
- &lt;img src="https://gallantlab.org/img/people/Matteo.ViscontidOC.webp" alt="Matteo Visconti di Oleggio Castello, PhD" class="person-img-main" />
- &lt;/div>
- &lt;div class="person-info">
- &lt;h3 class="person-name">Matteo Visconti di Oleggio Castello, PhD&lt;/h3>
- &lt;p class="person-title">Senior Postdoc&lt;/p>
- &lt;div class="person-description">Areas of interest include individual differences, clinical applications of functional imaging, and fMRI methods development. (Personal web site &lt;a href='https://matteovisconti.com/'>here&lt;/a>.)&lt;/div>
- &lt;/div>
- &lt;/div>&lt;div class="person-card card fade-in" id="tianjiao-zhang-phd">
- &lt;div class="person-image">
- &lt;img src="https://gallantlab.org/img/people/Tianjiao.Zhang.webp" alt="Tianjiao Zhang, PhD" class="person-img-main" />
- &lt;/div>
- &lt;div class="person-info">
- &lt;h3 class="person-name">Tianjiao Zhang, PhD&lt;/h3>
- &lt;p class="person-title">Postdoc&lt;/p>
- &lt;div class="person-description">Areas of interest include studies of the human navigation system, and fMRI studies in VR.&lt;/div>
- &lt;/div>
- &lt;/div>&lt;div class="person-card card fade-in" id="evi-hendrikx-phd">
- &lt;div class="person-image">
- &lt;img src="https://gallantlab.org/img/people/Evi.Hendrikx.webp" alt="Evi Hendrikx, PhD" class="person-img-main" />
- &lt;/div>
- &lt;div class="person-info">
- &lt;h3 class="person-name">Evi Hendrikx, PhD&lt;/h3>
- &lt;p class="person-title">Postdoc&lt;/p></description></item><item><title>Publications</title><link>https://gallantlab.org/publications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/publications/</guid><description>&lt;h2 id="selected-publications">Selected Publications&lt;/h2>
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://www.biorxiv.org/content/10.64898/2025.12.16.694742v1" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/Zhang.T.navigation.webp" alt="Zhang et al. Naturalistic Navigation fMRI study" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://www.biorxiv.org/content/10.64898/2025.12.16.694742v1" target="_blank" rel="noopener noreferrer">A map of the cortical functional network mediating naturalistic navigation (Zhang, Meschke, Gallant, bioRxiv preprint)&lt;/a>
- &lt;/h3>
- &lt;p class="publication-date">December 17, 2025&lt;/p>
- &lt;div class="publication-description">Natural navigation requires close coordination of perception, planning, and motor actions. To recover the full brain network mediating navigation, we used fMRI to record brain activity from participants performing a taxi driver task in VR. Banded ridge regression was used to fit high-dimensional voxelwise encoding models (38 feature spaces, 28,134 features) to the data. We find that navigation is supported by a network of 11 functionally distinct cortical regions that transform perceptual inputs through decision-making processes to produce action outputs. These results provide a unified description of the functional properties and organization of the cortical network that mediates naturalistic navigation.&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;h2 id="current-lab-members"&gt;Current Lab Members&lt;/h2&gt;
+&lt;div class="people-grid"&gt;&lt;div class="person-card card fade-in" id="matteo-visconti-di-oleggio-castello-phd"&gt;
+ &lt;a href="https://matteovisconti.com/" target="_blank" rel="noopener noreferrer" class="person-card-overlay-link"&gt;&lt;/a&gt;
+ &lt;div class="person-image"&gt;
+ &lt;img src="https://gallantlab.org/img/people/Matteo.ViscontidOC.webp" alt="Matteo Visconti di Oleggio Castello, PhD" class="person-img-main" /&gt;
+ &lt;/div&gt;
+ &lt;div class="person-info"&gt;
+ &lt;h3 class="person-name"&gt;Matteo Visconti di Oleggio Castello, PhD&lt;/h3&gt;
+ &lt;p class="person-title"&gt;Senior Postdoc&lt;/p&gt;
+ &lt;div class="person-description"&gt;Areas of interest include individual differences, clinical applications of functional imaging, and fMRI methods development. (Personal web site &lt;a href='https://matteovisconti.com/'&gt;here&lt;/a&gt;.)&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;div class="person-card card fade-in" id="tianjiao-zhang-phd"&gt;
+ &lt;div class="person-image"&gt;
+ &lt;img src="https://gallantlab.org/img/people/Tianjiao.Zhang.webp" alt="Tianjiao Zhang, PhD" class="person-img-main" /&gt;
+ &lt;/div&gt;
+ &lt;div class="person-info"&gt;
+ &lt;h3 class="person-name"&gt;Tianjiao Zhang, PhD&lt;/h3&gt;
+ &lt;p class="person-title"&gt;Postdoc&lt;/p&gt;
+ &lt;div class="person-description"&gt;Areas of interest include studies of the human navigation system, and fMRI studies in VR.&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;&lt;div class="person-card card fade-in" id="evi-hendrikx-phd"&gt;
+ &lt;div class="person-image"&gt;
+ &lt;img src="https://gallantlab.org/img/people/Evi.Hendrikx.webp" alt="Evi Hendrikx, PhD" class="person-img-main" /&gt;
+ &lt;/div&gt;
+ &lt;div class="person-info"&gt;
+ &lt;h3 class="person-name"&gt;Evi Hendrikx, PhD&lt;/h3&gt;
+ &lt;p class="person-title"&gt;Postdoc&lt;/p&gt;</description></item><item><title>Publications</title><link>https://gallantlab.org/publications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/publications/</guid><description>&lt;h2 id="selected-publications"&gt;Selected Publications&lt;/h2&gt;
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://www.biorxiv.org/content/10.64898/2025.12.16.694742v1" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/papers/Zhang.T.navigation.webp" alt="Zhang et al. Naturalistic Navigation fMRI study" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://www.biorxiv.org/content/10.64898/2025.12.16.694742v1" target="_blank" rel="noopener noreferrer"&gt;A map of the cortical functional network mediating naturalistic navigation (Zhang, Meschke, Gallant, bioRxiv preprint)&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;p class="publication-date"&gt;December 17, 2025&lt;/p&gt;
+ &lt;div class="publication-description"&gt;Natural navigation requires close coordination of perception, planning, and motor actions. To recover the full brain network mediating navigation, we used fMRI to record brain activity from participants performing a taxi driver task in VR. Banded ridge regression was used to fit high-dimensional voxelwise encoding models (38 feature spaces, 28,134 features) to the data. We find that navigation is supported by a network of 11 functionally distinct cortical regions that transform perceptual inputs through decision-making processes to produce action outputs. These results provide a unified description of the functional properties and organization of the cortical network that mediates naturalistic navigation.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://openreview.net/forum?id=3aNvX9TQTo" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/az.webp" alt="Disentangling Superpositions 2025" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://openreview.net/forum?id=3aNvX9TQTo" target="_blank" rel="noopener noreferrer">Disentangling Superpositions: Interpretable Brain Encoding Model with Sparse Concept Atoms (Zeng and Gallant, NeurIPS)&lt;/a>
- &lt;/h3>
- &lt;p class="publication-date">November 13, 2025&lt;/p></description></item><item><title>Brain Viewers</title><link>https://gallantlab.org/brain-viewers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/brain-viewers/</guid><description>&lt;h2 id="brain-viewers">Brain Viewers&lt;/h2>
-&lt;p>This page collects public brain viewers that you can use to interact with the data and results from many of our published studies. To reach the brain viewer for any topic, just click on the highlighted hyperlink. Please note that these brain viewers do not run well on cell phones, you will have the best experience with a computer or a tablet.&lt;/p>
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://blsemc.github.io/viewer/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/Chen.etal.2024.2.webp" alt="Chen bilingual 2024" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://blsemc.github.io/viewer/" target="_blank" rel="noopener noreferrer">Bilingual language processing relies on shared semantic representations that are modulated by each language (Chen et al., bioRxiv preprint, 2024)&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">Billions of people throughout the world are bilingual and can extract meaning from multiple languages. To determine how semantic representations in the brains of bilinguals can support both shared and distinct processing for different languages, we performed fMRI scans of participants who are fluent in both English and Chinese while they read natural narratives in each language. This brain viewer allows you to explore, compare and contrast English and Chinese semantic representations in one bilingual participant.&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://openreview.net/forum?id=3aNvX9TQTo" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/papers/az.webp" alt="Disentangling Superpositions 2025" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://openreview.net/forum?id=3aNvX9TQTo" target="_blank" rel="noopener noreferrer"&gt;Disentangling Superpositions: Interpretable Brain Encoding Model with Sparse Concept Atoms (Zeng and Gallant, NeurIPS)&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;p class="publication-date"&gt;November 13, 2025&lt;/p&gt;</description></item><item><title>Brain Viewers</title><link>https://gallantlab.org/brain-viewers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/brain-viewers/</guid><description>&lt;h2 id="brain-viewers"&gt;Brain Viewers&lt;/h2&gt;
+&lt;p&gt;This page collects public brain viewers that you can use to interact with the data and results from many of our published studies. To reach the brain viewer for any topic, just click on the highlighted hyperlink. Please note that these brain viewers do not run well on cell phones, you will have the best experience with a computer or a tablet.&lt;/p&gt;
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://blsemc.github.io/viewer/" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/papers/Chen.etal.2024.2.webp" alt="Chen bilingual 2024" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://blsemc.github.io/viewer/" target="_blank" rel="noopener noreferrer"&gt;Bilingual language processing relies on shared semantic representations that are modulated by each language (Chen et al., bioRxiv preprint, 2024)&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;Billions of people throughout the world are bilingual and can extract meaning from multiple languages. To determine how semantic representations in the brains of bilinguals can support both shared and distinct processing for different languages, we performed fMRI scans of participants who are fluent in both English and Chinese while they read natural narratives in each language. This brain viewer allows you to explore, compare and contrast English and Chinese semantic representations in one bilingual participant.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://gallantlab.org/viewer-chen-2024/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/Chen.etal.2024.webp" alt="Chen 2024" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://gallantlab.org/viewer-chen-2024/" target="_blank" rel="noopener noreferrer">The cortical representation of language timescales is shared between reading and listening (Chen et al., Communications Biology, 2024)&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">Language comprehension involves integrating low-level sensory inputs into a hierarchy of increasingly high-level features. To recover this hierarchy we mapped the intrinsic timescale of language representation across the cerebral cortex during listening and reading. We find that the timescale of representation is organized similarly for the two modalities. The interactive brain viewer shows how the timescales of language representation change systematically across the cortical surface. The colors on the cortical map indicate the context length for language representation.&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://gallantlab.org/viewer-chen-2024/" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/papers/Chen.etal.2024.webp" alt="Chen 2024" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://gallantlab.org/viewer-chen-2024/" target="_blank" rel="noopener noreferrer"&gt;The cortical representation of language timescales is shared between reading and listening (Chen et al., Communications Biology, 2024)&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;Language comprehension involves integrating low-level sensory inputs into a hierarchy of increasingly high-level features. To recover this hierarchy we mapped the intrinsic timescale of language representation across the cerebral cortex during listening and reading. We find that the timescale of representation is organized similarly for the two modalities. The interactive brain viewer shows how the timescales of language representation change systematically across the cortical surface. The colors on the cortical map indicate the context length for language representation.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://gallantlab.org/viewer-deniz-2019/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/Deniz.F.2019.webp" alt="Deniz 2019" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://gallantlab.org/viewer-deniz-2019/" target="_blank" rel="noopener noreferrer">The representation of semantic information across human cerebral cortex during listening versus reading is invariant to stimulus modality (Deniz et al., J. Neuroscience, 2019)&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">In this experiment, people listened to and read stories from the Moth Radio Hour while brain activity was recorded. Voxelwise modeling was used to determine how each individual brain location responded to semantic concepts in the stories during listening and reading, separately. The interactive brain viewer shows how these concepts are mapped across the cortical surface for both modalities (listening and reading). The colors on the cortical map indicate the semantic concepts that will elicit brain activity at that location during listening and reading.&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://gallantlab.org/viewer-deniz-2019/" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/papers/Deniz.F.2019.webp" alt="Deniz 2019" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://gallantlab.org/viewer-deniz-2019/" target="_blank" rel="noopener noreferrer"&gt;The representation of semantic information across human cerebral cortex during listening versus reading is invariant to stimulus modality (Deniz et al., J. Neuroscience, 2019)&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;In this experiment, people listened to and read stories from the Moth Radio Hour while brain activity was recorded. Voxelwise modeling was used to determine how each individual brain location responded to semantic concepts in the stories during listening and reading, separately. The interactive brain viewer shows how these concepts are mapped across the cortical surface for both modalities (listening and reading). The colors on the cortical map indicate the semantic concepts that will elicit brain activity at that location during listening and reading.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://gallantlab.org/viewer-lescroart-2018/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/Lescroart.M.2019.webp" alt="Lescroart 2019" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://gallantlab.org/viewer-lescroart-2018/" target="_blank" rel="noopener noreferrer">Human scene-selective areas represent the 3D configuration of surfaces (Lescroart et al., Neuron, 2018)&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">In this experiment people viewed rendered animations depicting objects placed in scenes. The MRI data were analyzed by voxelwise modeling to recover the cortical representation of low-level features and 3D structure. This demo shows how surface position, distance and orientation are mapped across the cortical surface.&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://gallantlab.org/viewer-lescroart-2018/" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/papers/Lescroart.M.2019.webp" alt="Lescroart 2019" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://gallantlab.org/viewer-lescroart-2018/" target="_blank" rel="noopener noreferrer"&gt;Human scene-selective areas represent the 3D configuration of surfaces (Lescroart et al., Neuron, 2018)&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;In this experiment people viewed rendered animations depicting objects placed in scenes. The MRI data were analyzed by voxelwise modeling to recover the cortical representation of low-level features and 3D structure. This demo shows how surface position, distance and orientation are mapped across the cortical surface.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://gallantlab.org/viewer-huth-2016/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/Huth.A.2016.webp" alt="Huth 2016" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://gallantlab.org/viewer-huth-2016/" target="_blank" rel="noopener noreferrer">Natural speech reveals the semantic maps that tile human cerebral cortex (Huth et al., Nature, 2016)&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">In this experiment people passively listened to stories from the Moth Radio Hour while brain activity was recorded. Voxelwise modeling was used to determine how each individual brain location responded to 985 distinct semantic concepts in the stories. The demo shows how these concepts are mapped across the cortical surface. The colors on the cortical map show indicate the semantic concepts that will elicit brain activity at that location. The word cloud at right shows words that the model predicts would evoke the largest brain response at the indicated location. Follow the tutorial at upper right to find out more about this tool.&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://gallantlab.org/viewer-huth-2016/" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/papers/Huth.A.2016.webp" alt="Huth 2016" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://gallantlab.org/viewer-huth-2016/" target="_blank" rel="noopener noreferrer"&gt;Natural speech reveals the semantic maps that tile human cerebral cortex (Huth et al., Nature, 2016)&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;In this experiment people passively listened to stories from the Moth Radio Hour while brain activity was recorded. Voxelwise modeling was used to determine how each individual brain location responded to 985 distinct semantic concepts in the stories. The demo shows how these concepts are mapped across the cortical surface. The colors on the cortical map show indicate the semantic concepts that will elicit brain activity at that location. The word cloud at right shows words that the model predicts would evoke the largest brain response at the indicated location. Follow the tutorial at upper right to find out more about this tool.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://gallantlab.org/viewer-cukur-2013/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/Cukur.T.2013.webp" alt="Cukur 2013" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://gallantlab.org/viewer-cukur-2013/" target="_blank" rel="noopener noreferrer">Attention during natural vision warps semantic representations across the human brain (Cukur et al., Nature Neuroscience, 2013)&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">In this experiment people passively watched movies while monitoring for the presence of either "humans" or "vehicles", and in a neutral condition. Voxelwise modeling was used to determine how each brain location responded to 985 distinct categories of objects and actions in the movies, and how these responses were modulated by attention. This brain viewer allows you to view data collected under the three different conditions (left click "Passive Viewing", "Attending to Humans" or "Attending to Vehicles"). By selecting single brain locations (left click on the brain) or single categories (left click on the WordNet tree), you can see how tuning changes under different states of attention.&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://gallantlab.org/viewer-cukur-2013/" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/papers/Cukur.T.2013.webp" alt="Cukur 2013" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://gallantlab.org/viewer-cukur-2013/" target="_blank" rel="noopener noreferrer"&gt;Attention during natural vision warps semantic representations across the human brain (Cukur et al., Nature Neuroscience, 2013)&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;In this experiment people passively watched movies while monitoring for the presence of either "humans" or "vehicles", and in a neutral condition. Voxelwise modeling was used to determine how each brain location responded to 985 distinct categories of objects and actions in the movies, and how these responses were modulated by attention. This brain viewer allows you to view data collected under the three different conditions (left click "Passive Viewing", "Attending to Humans" or "Attending to Vehicles"). By selecting single brain locations (left click on the brain) or single categories (left click on the WordNet tree), you can see how tuning changes under different states of attention.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://gallantlab.org/viewer-stories-group/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/Huth.A.2016.webp" alt="Group semantic maps" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://gallantlab.org/viewer-stories-group/" target="_blank" rel="noopener noreferrer">Group-based language comprehension semantic map viewer&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">In 2016 we &lt;a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4852309/'>published a paper&lt;/a> that used fMRI, a language comprehension experiment, and voxelwise encoding models to map lexical semantic concepts across the cortical surface. We released brain viewer for that study (see above on this page), but that viewer only showed data from one participant. This viewer provides a way to inspect cortical lexical-semantic conceptual maps at the group level, vertex-by-vertex. The data for this viewer were generated by pooling lexical semantic maps from 24 separate participants who listened to several hours of natural narrative stories. Based on the results that we reported in &lt;a href='https://www.biorxiv.org/content/10.1101/2025.08.22.671848v1'>another recent paper&lt;/a>, this viewer should account for about 80% of the variance in lexical semantic conceptual maps in any individual. &lt;em>Please note that although this viewer is usable, it is still in development. In the coming weeks the viewer interface will improve and more documentation will be provided.&lt;/em>&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://gallantlab.org/viewer-stories-group/" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/papers/Huth.A.2016.webp" alt="Group semantic maps" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://gallantlab.org/viewer-stories-group/" target="_blank" rel="noopener noreferrer"&gt;Group-based language comprehension semantic map viewer&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;In 2016 we &lt;a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4852309/'&gt;published a paper&lt;/a&gt; that used fMRI, a language comprehension experiment, and voxelwise encoding models to map lexical semantic concepts across the cortical surface. We released brain viewer for that study (see above on this page), but that viewer only showed data from one participant. This viewer provides a way to inspect cortical lexical-semantic conceptual maps at the group level, vertex-by-vertex. The data for this viewer were generated by pooling lexical semantic maps from 24 separate participants who listened to several hours of natural narrative stories. Based on the results that we reported in &lt;a href='https://www.biorxiv.org/content/10.1101/2025.08.22.671848v1'&gt;another recent paper&lt;/a&gt;, this viewer should account for about 80% of the variance in lexical semantic conceptual maps in any individual. &lt;em&gt;Please note that although this viewer is usable, it is still in development. In the coming weeks the viewer interface will improve and more documentation will be provided.&lt;/em&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://gallantlab.org/viewer-shortclips-group/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/other/viewer.Huth.A.2012.webp" alt="Group short movie clip semantic maps" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://gallantlab.org/viewer-shortclips-group/" target="_blank" rel="noopener noreferrer">Group-based short movie clip semantic map viewer&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">In 2012 we &lt;a href='https://www.cell.com/neuron/fulltext/S0896-6273(12)00934-8'>published a paper&lt;/a> that used fMRI, a short movie clip viewing experiment, and voxelwise encoding models to map visual semantic concepts across the cortical surface. We released brain viewer for that study (see above on this page), but that viewer only showed data from one participant. This viewer provides a way to inspect cortical visual-semantic conceptual maps at the group level, vertex-by-vertex. The data for this viewer were generated by pooling visual semantic maps from 15 separate participants who watched several hours of short movie clips. &lt;em>Please note that although this viewer is usable, it is still in development. In the coming weeks the viewer interface will improve and more documentation will be provided.&lt;/em>&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://gallantlab.org/viewer-shortclips-group/" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/other/viewer.Huth.A.2012.webp" alt="Group short movie clip semantic maps" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://gallantlab.org/viewer-shortclips-group/" target="_blank" rel="noopener noreferrer"&gt;Group-based short movie clip semantic map viewer&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;In 2012 we &lt;a href='https://www.cell.com/neuron/fulltext/S0896-6273(12)00934-8'&gt;published a paper&lt;/a&gt; that used fMRI, a short movie clip viewing experiment, and voxelwise encoding models to map visual semantic concepts across the cortical surface. We released brain viewer for that study (see above on this page), but that viewer only showed data from one participant. This viewer provides a way to inspect cortical visual-semantic conceptual maps at the group level, vertex-by-vertex. The data for this viewer were generated by pooling visual semantic maps from 15 separate participants who watched several hours of short movie clips. &lt;em&gt;Please note that although this viewer is usable, it is still in development. In the coming weeks the viewer interface will improve and more documentation will be provided.&lt;/em&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://gallantlab.org/viewer-cortical-anatomy/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/other/sulcigyri.webp" alt="Sulci and Gyri" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://gallantlab.org/viewer-cortical-anatomy/" target="_blank" rel="noopener noreferrer">Cortical anatomy viewer&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">In order to be able to visualize the complete cortical surface, neuroscientists often work with inflated or flattened cortical maps. However, it can be difficult to orient oneself correctly when inspecting these maps. This viewer provides labels for many of the most commonly referenced sulci and gyri. By switching between folded, inflated and flattened views one can get a good sense of how important cortical landmarks vary across these different views.&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://gallantlab.org/viewer-cortical-anatomy/" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/other/sulcigyri.webp" alt="Sulci and Gyri" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://gallantlab.org/viewer-cortical-anatomy/" target="_blank" rel="noopener noreferrer"&gt;Cortical anatomy viewer&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;In order to be able to visualize the complete cortical surface, neuroscientists often work with inflated or flattened cortical maps. However, it can be difficult to orient oneself correctly when inspecting these maps. This viewer provides labels for many of the most commonly referenced sulci and gyri. By switching between folded, inflated and flattened views one can get a good sense of how important cortical landmarks vary across these different views.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://gallantlab.org/viewer-retinotopy-demo/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/other/retinotopy.webp" alt="Retinotopy" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://gallantlab.org/viewer-retinotopy-demo/" target="_blank" rel="noopener noreferrer">Retinotopy viewer&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">The human brain contains many different retinotopic maps, and these maps are one of the primary tools used to parcellate the visual system. Given the large number of maps and their complicated spatial relationships to one another, it is often difficult for students to fully understand how the maps are related. This viewer shows real-time functional activity evoked in a retinal mapping experiment. By identifying the angular and eccentricity functional maps one can gain a good understanding of retinotopic organization.&lt;/div>
- &lt;/div>
-&lt;/div></description></item><item><title>Learn</title><link>https://gallantlab.org/learn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/learn/</guid><description>&lt;h2 id="learn-about-voxelwise-encoding-models">Learn About Voxelwise Encoding Models&lt;/h2>
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://www.psyarxiv.com/nt2jq" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/ViscontidOC.Deniz.2025.webp" alt="Voxelwise Encoding Model guide" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://www.psyarxiv.com/nt2jq" target="_blank" rel="noopener noreferrer">Voxelwise Encoding Model review paper&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">This review paper provides the first comprehensive guide to the Voxelwise Encoding Model (VEM) framework. The VEM framework is a framework for fitting encoding models to fMRI data. This framework is currently the most sensitive and powerful approach available for modeling fMRI data. It can be used to fit dozens of distinct models simultaneously, each model having up to several thousand distinct features. The Voxelwise Encoding Model framework also conforms to all best practices in data science, which maximizes sensitivity, reliability and generalizability of the resulting models.&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://gallantlab.org/viewer-retinotopy-demo/" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/other/retinotopy.webp" alt="Retinotopy" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://gallantlab.org/viewer-retinotopy-demo/" target="_blank" rel="noopener noreferrer"&gt;Retinotopy viewer&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;The human brain contains many different retinotopic maps, and these maps are one of the primary tools used to parcellate the visual system. Given the large number of maps and their complicated spatial relationships to one another, it is often difficult for students to fully understand how the maps are related. This viewer shows real-time functional activity evoked in a retinal mapping experiment. By identifying the angular and eccentricity functional maps one can gain a good understanding of retinotopic organization.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Learn</title><link>https://gallantlab.org/learn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/learn/</guid><description>&lt;h2 id="learn-about-voxelwise-encoding-models"&gt;Learn About Voxelwise Encoding Models&lt;/h2&gt;
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://www.psyarxiv.com/nt2jq" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/papers/ViscontidOC.Deniz.2025.webp" alt="Voxelwise Encoding Model guide" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://www.psyarxiv.com/nt2jq" target="_blank" rel="noopener noreferrer"&gt;Voxelwise Encoding Model review paper&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;This review paper provides the first comprehensive guide to the Voxelwise Encoding Model (VEM) framework. The VEM framework is a framework for fitting encoding models to fMRI data. This framework is currently the most sensitive and powerful approach available for modeling fMRI data. It can be used to fit dozens of distinct models simultaneously, each model having up to several thousand distinct features. The Voxelwise Encoding Model framework also conforms to all best practices in data science, which maximizes sensitivity, reliability and generalizability of the resulting models.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://gallantlab.org/voxelwise_tutorials" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/other/learn.vm.webp" alt="Voxelwise Encoding Model tutorials" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://gallantlab.org/voxelwise_tutorials" target="_blank" rel="noopener noreferrer">Voxelwise Encoding Model tutorials&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">These Python tutorials show how to fit, evaluate, and interpret voxelwise encoding models on one of our public available datasets. We are providing these online tutorials here as a service to the fMRI community.&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://gallantlab.org/voxelwise_tutorials" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/other/learn.vm.webp" alt="Voxelwise Encoding Model tutorials" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://gallantlab.org/voxelwise_tutorials" target="_blank" rel="noopener noreferrer"&gt;Voxelwise Encoding Model tutorials&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;These Python tutorials show how to fit, evaluate, and interpret voxelwise encoding models on one of our public available datasets. We are providing these online tutorials here as a service to the fMRI community.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://www.youtube.com/watch?v=jobQmEJpbhY" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/other/learn.workshop.webp" alt="Voxelwise Encoding Model CCN workshop" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://www.youtube.com/watch?v=jobQmEJpbhY" target="_blank" rel="noopener noreferrer">Voxelwise Encoding Model workshop video&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">At the 2021 CCN meeting we held a keynote and tutorials session on the Voxelwise Encoding Model framework. You can find a video recording of the workshop here.&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://www.youtube.com/watch?v=jobQmEJpbhY" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/other/learn.workshop.webp" alt="Voxelwise Encoding Model CCN workshop" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://www.youtube.com/watch?v=jobQmEJpbhY" target="_blank" rel="noopener noreferrer"&gt;Voxelwise Encoding Model workshop video&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;At the 2021 CCN meeting we held a keynote and tutorials session on the Voxelwise Encoding Model framework. You can find a video recording of the workshop here.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://www.sciencedirect.com/science/article/pii/S1053811922008497" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/DuprelaTour.T.2022.webp" alt="Dupré la Tour 2022" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://www.sciencedirect.com/science/article/pii/S1053811922008497" target="_blank" rel="noopener noreferrer">Theory paper focusing on feature space selection and banded ridge regression.&lt;/a>
- &lt;/h3>
- &lt;p class="publication-date">December 1, 2022&lt;/p></description></item><item><title>Code</title><link>https://gallantlab.org/code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/code/</guid><description>&lt;h2 id="open-source-code">Open Source Code&lt;/h2>
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://github.com/gallantlab" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/other/github.webp" alt="github" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://github.com/gallantlab" target="_blank" rel="noopener noreferrer">GitHub repository&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">Our github repository contains lots of open code that may be useful for scientific computing in general, or for fitting encoding models to fMRI or neurophysiology data sets.&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://www.sciencedirect.com/science/article/pii/S1053811922008497" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/papers/DuprelaTour.T.2022.webp" alt="Dupré la Tour 2022" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://www.sciencedirect.com/science/article/pii/S1053811922008497" target="_blank" rel="noopener noreferrer"&gt;Theory paper focusing on feature space selection and banded ridge regression.&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;p class="publication-date"&gt;December 1, 2022&lt;/p&gt;</description></item><item><title>Code</title><link>https://gallantlab.org/code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/code/</guid><description>&lt;h2 id="open-source-code"&gt;Open Source Code&lt;/h2&gt;
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://github.com/gallantlab" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/other/github.webp" alt="github" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://github.com/gallantlab" target="_blank" rel="noopener noreferrer"&gt;GitHub repository&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;Our github repository contains lots of open code that may be useful for scientific computing in general, or for fitting encoding models to fMRI or neurophysiology data sets.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://github.com/gallantlab/himalaya" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/other/himalaya.webp" alt="himalaya" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://github.com/gallantlab/himalaya" target="_blank" rel="noopener noreferrer">Himalaya&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">Himalaya implements machine learning linear(ized) models in Python, focusing on computational efficiency for large numbers of targets. Himalaya efficiently estimates linear(ized) models on large numbers of targets (for example, thousands of voxels in an fMRI experiment), it runs on both CPU and GPU hardware, and it provides estimators that are compatible with scikit-learn's API. Himalaya is routinely used in our lab to fit voxelwise encoding models to very large fMRI data sets. A paper describing Himalaya can be found &lt;a href='https://www.sciencedirect.com/science/article/pii/S1053811922008497'>here&lt;/a>.&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://github.com/gallantlab/himalaya" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/other/himalaya.webp" alt="himalaya" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://github.com/gallantlab/himalaya" target="_blank" rel="noopener noreferrer"&gt;Himalaya&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;Himalaya implements machine learning linear(ized) models in Python, focusing on computational efficiency for large numbers of targets. Himalaya efficiently estimates linear(ized) models on large numbers of targets (for example, thousands of voxels in an fMRI experiment), it runs on both CPU and GPU hardware, and it provides estimators that are compatible with scikit-learn's API. Himalaya is routinely used in our lab to fit voxelwise encoding models to very large fMRI data sets. A paper describing Himalaya can be found &lt;a href='https://www.sciencedirect.com/science/article/pii/S1053811922008497'&gt;here&lt;/a&gt;.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://gallantlab.org/autoflatten/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/other/autoflatten.webp" alt="autoflatten" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://gallantlab.org/autoflatten/" target="_blank" rel="noopener noreferrer">Autoflatten&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">Autoflatten is a Python pipeline for automatically flattening cortical surfaces generated by FreeSurfer. Prior to the development of this pipeline flattening was done largely by hand, an incredibly time-consuming and frustrating process. This new pipeline automates most of the work.&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://gallantlab.org/autoflatten/" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/other/autoflatten.webp" alt="autoflatten" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://gallantlab.org/autoflatten/" target="_blank" rel="noopener noreferrer"&gt;Autoflatten&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;Autoflatten is a Python pipeline for automatically flattening cortical surfaces generated by FreeSurfer. Prior to the development of this pipeline flattening was done largely by hand, an incredibly time-consuming and frustrating process. This new pipeline automates most of the work.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://github.com/gallantlab/pycortex" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/other/pycortex.webp" alt="pycortex" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://github.com/gallantlab/pycortex" target="_blank" rel="noopener noreferrer">Pycortex&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">Pycortex is a python-based toolkit for surface visualization of fMRI data. (It can also be used to visualize other types of volumetric brain data.) The brain viewers on this site were all generated using Pycortex. The 2015 publication describing Pycortex can be found &lt;a href='https://www.frontiersin.org/articles/10.3389/fninf.2015.00023/full'>here&lt;/a>. Documentation for Pycortex can be found &lt;a href='https://gallantlab.github.io/pycortex/'>here&lt;/a>.&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://github.com/gallantlab/pycortex" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/other/pycortex.webp" alt="pycortex" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://github.com/gallantlab/pycortex" target="_blank" rel="noopener noreferrer"&gt;Pycortex&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;Pycortex is a python-based toolkit for surface visualization of fMRI data. (It can also be used to visualize other types of volumetric brain data.) The brain viewers on this site were all generated using Pycortex. The 2015 publication describing Pycortex can be found &lt;a href='https://www.frontiersin.org/articles/10.3389/fninf.2015.00023/full'&gt;here&lt;/a&gt;. Documentation for Pycortex can be found &lt;a href='https://gallantlab.github.io/pycortex/'&gt;here&lt;/a&gt;.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://github.com/gallantlab/cottoncandy" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/other/cottoncandy.webp" alt="cottoncandy" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://github.com/gallantlab/cottoncandy" target="_blank" rel="noopener noreferrer">CottonCandy&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">CottonCandy is a scientific library for storing and accessing numpy array data on an S3-compatible cloud storage instance. This is achieved by reading arrays from memory and downloading arrays directly into memory. This means that you don't have to download your array to disk, and then load it from disk into your python session. A paper describing CottonCandy can be found &lt;a href='https://joss.theoj.org/papers/10.21105/joss.00890.pdf'>here&lt;/a>.&lt;/div>
- &lt;/div>
-&lt;/div></description></item><item><title>Data</title><link>https://gallantlab.org/data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/data/</guid><description>&lt;h2 id="open-data">Open Data&lt;/h2>
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://doi.gin.g-node.org/10.12751/g-node.vy1zjd/" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/datasets/Popham.etal.2021.webp" alt="Gallant Lab Natural Short Clips fMRI Dataset" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://doi.gin.g-node.org/10.12751/g-node.vy1zjd/" target="_blank" rel="noopener noreferrer">Natural Short Clips 3T fMRI Data&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">This dataset contains BOLD fMRI responses from 5 human subjects viewing natural short video clips across 3 sessions over 3 separate days for each subject. This dataset has been used in multiple publications studying visual processing and semantic representation. If you publish work that uses these data please cite the following paper: &lt;a href='https://doi.org/10.1038/s41593-021-00921-6'>Popham, S. F., Huth, A. G., Bilenko, N. Y., Deniz, F., Gao, J. S., Nunez-Elizalde, A. O., &amp; Gallant, J. L. (2021). Visual and linguistic semantic representations are aligned at the border of human visual cortex. Nature Neuroscience, 24(11), 1628-1636.&lt;/a>&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://github.com/gallantlab/cottoncandy" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/other/cottoncandy.webp" alt="cottoncandy" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://github.com/gallantlab/cottoncandy" target="_blank" rel="noopener noreferrer"&gt;CottonCandy&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;CottonCandy is a scientific library for storing and accessing numpy array data on an S3-compatible cloud storage instance. This is achieved by reading arrays from memory and downloading arrays directly into memory. This means that you don't have to download your array to disk, and then load it from disk into your python session. A paper describing CottonCandy can be found &lt;a href='https://joss.theoj.org/papers/10.21105/joss.00890.pdf'&gt;here&lt;/a&gt;.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Data</title><link>https://gallantlab.org/data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/data/</guid><description>&lt;h2 id="open-data"&gt;Open Data&lt;/h2&gt;
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://doi.gin.g-node.org/10.12751/g-node.vy1zjd/" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/datasets/Popham.etal.2021.webp" alt="Gallant Lab Natural Short Clips fMRI Dataset" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://doi.gin.g-node.org/10.12751/g-node.vy1zjd/" target="_blank" rel="noopener noreferrer"&gt;Natural Short Clips 3T fMRI Data&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;This dataset contains BOLD fMRI responses from 5 human subjects viewing natural short video clips across 3 sessions over 3 separate days for each subject. This dataset has been used in multiple publications studying visual processing and semantic representation. If you publish work that uses these data please cite the following paper: &lt;a href='https://doi.org/10.1038/s41593-021-00921-6'&gt;Popham, S. F., Huth, A. G., Bilenko, N. Y., Deniz, F., Gao, J. S., Nunez-Elizalde, A. O., &amp; Gallant, J. L. (2021). Visual and linguistic semantic representations are aligned at the border of human visual cortex. Nature Neuroscience, 24(11), 1628-1636.&lt;/a&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="http://crcns.org/data-sets/vc/vim-4/about-vim-4" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/datasets/Zhang.etal.2021.webp" alt="Gallant Lab Naturalistic fMRI Dataset" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="http://crcns.org/data-sets/vc/vim-4/about-vim-4" target="_blank" rel="noopener noreferrer">Naturalistic fMRI Data (vim-4)&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">This dataset contains whole-brain BOLD fMRI responses from human subjects performing two tasks: a visual attention task (passive movie watching with attention directed to humans or vehicles) and a video game task (open-ended Counterstrike gameplay). This dataset enables analysis of task-related cognitive states in naturalistic experimental conditions. If you publish work that uses these data please cite the following paper: &lt;a href='https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2020.565976/full'>Zhang, T., Gao, J. S., Çukur, T., &amp; Gallant, J. L. (2021). Voxel-based state space modeling recovers task-related cognitive states in naturalistic fmri experiments. Frontiers in neuroscience, 14, 565976.&lt;/a>&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="http://crcns.org/data-sets/vc/vim-4/about-vim-4" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/datasets/Zhang.etal.2021.webp" alt="Gallant Lab Naturalistic fMRI Dataset" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="http://crcns.org/data-sets/vc/vim-4/about-vim-4" target="_blank" rel="noopener noreferrer"&gt;Naturalistic fMRI Data (vim-4)&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;This dataset contains whole-brain BOLD fMRI responses from human subjects performing two tasks: a visual attention task (passive movie watching with attention directed to humans or vehicles) and a video game task (open-ended Counterstrike gameplay). This dataset enables analysis of task-related cognitive states in naturalistic experimental conditions. If you publish work that uses these data please cite the following paper: &lt;a href='https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2020.565976/full'&gt;Zhang, T., Gao, J. S., Çukur, T., &amp; Gallant, J. L. (2021). Voxel-based state space modeling recovers task-related cognitive states in naturalistic fmri experiments. Frontiers in neuroscience, 14, 565976.&lt;/a&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://gin.g-node.org/denizenslab/narratives_reading_listening_fmri/src/master/chen2024_timescales" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/datasets/Deniz.etal.2019.webp" alt="Gallant Lab Semantic Listening vs Reading fMRI Dataset" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://gin.g-node.org/denizenslab/narratives_reading_listening_fmri/src/master/chen2024_timescales" target="_blank" rel="noopener noreferrer">Semantic Listening vs Reading fMRI Data&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">This dataset contains BOLD fMRI responses from human subjects during listening and reading tasks, demonstrating that semantic information representation across cerebral cortex remains invariant to stimulus modality. This dataset enables investigation of cross-modal semantic processing in the brain. If you publish work that uses these data please cite the following paper: &lt;a href='https://www.jneurosci.org/content/39/39/7722'>Deniz, F., Nunez-Elizalde, A. O., Huth, A. G., &amp; Gallant, J. L. (2019). The representation of semantic information across human cerebral cortex during listening versus reading is invariant to stimulus modality. Journal of Neuroscience, 39(39), 7722-7736.&lt;/a>&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://gin.g-node.org/denizenslab/narratives_reading_listening_fmri/src/master/chen2024_timescales" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/datasets/Deniz.etal.2019.webp" alt="Gallant Lab Semantic Listening vs Reading fMRI Dataset" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://gin.g-node.org/denizenslab/narratives_reading_listening_fmri/src/master/chen2024_timescales" target="_blank" rel="noopener noreferrer"&gt;Semantic Listening vs Reading fMRI Data&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;This dataset contains BOLD fMRI responses from human subjects during listening and reading tasks, demonstrating that semantic information representation across cerebral cortex remains invariant to stimulus modality. This dataset enables investigation of cross-modal semantic processing in the brain. If you publish work that uses these data please cite the following paper: &lt;a href='https://www.jneurosci.org/content/39/39/7722'&gt;Deniz, F., Nunez-Elizalde, A. O., Huth, A. G., &amp; Gallant, J. L. (2019). The representation of semantic information across human cerebral cortex during listening versus reading is invariant to stimulus modality. Journal of Neuroscience, 39(39), 7722-7736.&lt;/a&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://gin.g-node.org/gallantlab/story_listening" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/papers/Huth.A.2016.webp" alt="Gallant Lab Story Listening fMRI Dataset" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://gin.g-node.org/gallantlab/story_listening" target="_blank" rel="noopener noreferrer">Story Listening fMRI Data&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">This dataset contains BOLD fMRI responses from human subjects listening to natural narrative stories. This dataset was used to map semantic representations across the human cerebral cortex and create detailed semantic atlases of language processing. If you publish work that uses these data please cite the following paper: &lt;a href='https://www.nature.com/articles/nature17637'>Huth, A. G., De Heer, W. A., Griffiths, T. L., Theunissen, F. E., &amp; Gallant, J. L. (2016). Natural speech reveals the semantic maps that tile human cerebral cortex. Nature, 532(7600), 453-458.&lt;/a>&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://gin.g-node.org/gallantlab/story_listening" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/papers/Huth.A.2016.webp" alt="Gallant Lab Story Listening fMRI Dataset" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://gin.g-node.org/gallantlab/story_listening" target="_blank" rel="noopener noreferrer"&gt;Story Listening fMRI Data&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;This dataset contains BOLD fMRI responses from human subjects listening to natural narrative stories. This dataset was used to map semantic representations across the human cerebral cortex and create detailed semantic atlases of language processing. If you publish work that uses these data please cite the following paper: &lt;a href='https://www.nature.com/articles/nature17637'&gt;Huth, A. G., De Heer, W. A., Griffiths, T. L., Theunissen, F. E., &amp; Gallant, J. L. (2016). Natural speech reveals the semantic maps that tile human cerebral cortex. Nature, 532(7600), 453-458.&lt;/a&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="https://crcns.org/data-sets/vc/vim-2/about-vim-2" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/datasets/Nishimoto.etal.2011.webp" alt="Gallant Lab Natural Movie fMRI Dataset" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="https://crcns.org/data-sets/vc/vim-2/about-vim-2" target="_blank" rel="noopener noreferrer">Natural Movie 4T fMRI Data (vim-2)&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">This dataset contains BOLD fMRI responses from 3 subjects viewing natural movies, collected across 3 sessions on separate days. This dataset was used in the landmark study reconstructing visual experiences from brain activity. If you publish work that uses these data please cite the following paper: &lt;a href='https://www.sciencedirect.com/science/article/pii/S0960982211009377'>Nishimoto, S., Vu, A. T., Naselaris, T., Benjamini, Y., Yu, B., &amp; Gallant, J. L. (2011). Reconstructing visual experiences from brain activity evoked by natural movies. Current Biology, 21(19), 1641-1646.&lt;/a>&lt;/div>
- &lt;/div>
-&lt;/div>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="https://crcns.org/data-sets/vc/vim-2/about-vim-2" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/datasets/Nishimoto.etal.2011.webp" alt="Gallant Lab Natural Movie fMRI Dataset" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="https://crcns.org/data-sets/vc/vim-2/about-vim-2" target="_blank" rel="noopener noreferrer"&gt;Natural Movie 4T fMRI Data (vim-2)&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;This dataset contains BOLD fMRI responses from 3 subjects viewing natural movies, collected across 3 sessions on separate days. This dataset was used in the landmark study reconstructing visual experiences from brain activity. If you publish work that uses these data please cite the following paper: &lt;a href='https://www.sciencedirect.com/science/article/pii/S0960982211009377'&gt;Nishimoto, S., Vu, A. T., Naselaris, T., Benjamini, Y., Yu, B., &amp; Gallant, J. L. (2011). Reconstructing visual experiences from brain activity evoked by natural movies. Current Biology, 21(19), 1641-1646.&lt;/a&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class="publication-card card fade-in">
- &lt;div class="publication-image">
- &lt;a href="http://crcns.org/data-sets/vc/vim-1/about-vim-1" target="_blank" rel="noopener noreferrer">
- &lt;img src="https://gallantlab.org/img/datasets/Kay.etal.2008.webp" alt="Gallant Lab Natural Images fMRI Dataset" loading="lazy" />
- &lt;/a>
- &lt;/div>
- &lt;div class="publication-info">
- &lt;h3 class="publication-title">
- &lt;a href="http://crcns.org/data-sets/vc/vim-1/about-vim-1" target="_blank" rel="noopener noreferrer">Natural Images fMRI Data (vim-1)&lt;/a>
- &lt;/h3>
- &lt;div class="publication-description">This dataset contains BOLD fMRI responses from 2 subjects viewing natural images across 70 experimental runs collected over 5 separate days. This dataset demonstrated the ability to identify which images a subject was viewing from brain activity using Bayesian reconstruction techniques. If you publish work that uses these data please cite the following paper: &lt;a href='https://www.nature.com/articles/nature06713'>Kay, K. N., Naselaris, T., Prenger, R. J., &amp; Gallant, J. L. (2008). Identifying natural images from human brain activity. Nature, 452(7185), 352-355.&lt;/a>&lt;/div>
- &lt;/div>
-&lt;/div></description></item><item><title>Join Us</title><link>https://gallantlab.org/joinus/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/joinus/</guid><description>&lt;h2 id="join-the-gallant-lab">Join the Gallant Lab&lt;/h2>
-&lt;h3 id="general-guidance-on-recruitment">General guidance on recruitment&lt;/h3>
-&lt;p>Our laboratory is very interdisciplinary, and we are always on the lookout for good postdocs and graduate students with a strong desire to break new ground in cognitive, systems and computational neuroscience. Prior areas of training are not particularly important; training in neuroscience, neuroimaging, and data science tailored for neuroscience are typically part of graduate and postdoctoral training in the lab. That said, strong quantitative and computational skills are an asset.&lt;/p></description></item><item><title>Learning and implementing Voxelwise Encoding Models: A guide to reviews, tutorials, and software</title><link>https://gallantlab.org/blog/2025-12-20-vem-guide/</link><pubDate>Sat, 20 Dec 2025 00:00:00 -0800</pubDate><guid>https://gallantlab.org/blog/2025-12-20-vem-guide/</guid><description>&lt;p>Voxelwise Encoding Models (VEMs) are one of the most sensitive methods available for modeling and decoding functional brain activity. In the VEM framework, features are extracted from the stimulus (or task) and used in an encoding model to predict brain activity. If the encoding model is able to predict brain activity in some part of the brain, then one may conclude that some information represented in the features is also represented in the brain.&lt;/p></description></item><item><title/><link>https://gallantlab.org/news/2025-12-17-tianjiao-navigation-biorxiv/</link><pubDate>Wed, 17 Dec 2025 00:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-12-17-tianjiao-navigation-biorxiv/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2025-12-15-autoflatten-release/</link><pubDate>Mon, 15 Dec 2025 00:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-12-15-autoflatten-release/</guid><description/></item><item><title>Alicia Zeng Receives PhD</title><link>https://gallantlab.org/news/2025-12-14-alicia-zeng-phd/</link><pubDate>Sun, 14 Dec 2025 00:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-12-14-alicia-zeng-phd/</guid><description/></item><item><title>Amanda LeBel Receives PhD</title><link>https://gallantlab.org/news/2025-12-08-amanda-lebel-phd/</link><pubDate>Mon, 08 Dec 2025 00:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-12-08-amanda-lebel-phd/</guid><description/></item><item><title>Fatma Deniz Elected President of Technical University of Berlin</title><link>https://gallantlab.org/news/2025-12-03-fatma-deniz-president/</link><pubDate>Wed, 03 Dec 2025 00:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-12-03-fatma-deniz-president/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2025-11-13-zeng-neurips/</link><pubDate>Thu, 13 Nov 2025 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-11-13-zeng-neurips/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2025-09-17-vem-framework-paper/</link><pubDate>Wed, 17 Sep 2025 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-09-17-vem-framework-paper/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2025-09-15-group-shortclip-brain-viewer/</link><pubDate>Mon, 15 Sep 2025 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-09-15-group-shortclip-brain-viewer/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2025-09-05-group-brain-viewer/</link><pubDate>Fri, 05 Sep 2025 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-09-05-group-brain-viewer/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2025-08-23-visconti-bioarxiv/</link><pubDate>Sat, 23 Aug 2025 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-08-23-visconti-bioarxiv/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2025-05-15-emily-meschke-phd/</link><pubDate>Thu, 15 May 2025 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-05-15-emily-meschke-phd/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2025-05-09-voxelwise-encoding-tutorial/</link><pubDate>Fri, 09 May 2025 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-05-09-voxelwise-encoding-tutorial/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2024-11-01-evi-hendrikx-joins/</link><pubDate>Fri, 01 Nov 2024 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2024-11-01-evi-hendrikx-joins/</guid><description/></item><item><title>New paper from Deniz et al. on how semantic representations during language production are affected by context, published in J. Neuroscience</title><link>https://gallantlab.org/news/2024-08-15-deniz-context-paper/</link><pubDate>Thu, 15 Aug 2024 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2024-08-15-deniz-context-paper/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2024-07-01-gong-phonemic-paper/</link><pubDate>Mon, 01 Jul 2024 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2024-07-01-gong-phonemic-paper/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2024-05-15-catherine-chen-phd/</link><pubDate>Wed, 15 May 2024 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2024-05-15-catherine-chen-phd/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2024-04-01-fatma-professor-position/</link><pubDate>Mon, 01 Apr 2024 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2024-04-01-fatma-professor-position/</guid><description/></item><item><title>Welcome to the Gallant Lab Blog</title><link>https://gallantlab.org/blog/2024-01-15-welcome-to-our-blog/</link><pubDate>Mon, 15 Jan 2024 00:00:00 -0800</pubDate><guid>https://gallantlab.org/blog/2024-01-15-welcome-to-our-blog/</guid><description>&lt;p>Welcome to the official Gallant Lab blog! This is a space where we&amp;rsquo;ll share longer-form articles about our research, insights into cognitive neuroscience, and updates from our lab at UC Berkeley.&lt;/p>
-&lt;h2 id="what-to-expect">What to Expect&lt;/h2>
-&lt;p>In this blog, you&amp;rsquo;ll find:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Deep dives into our research&lt;/strong>: Detailed explanations of our latest findings and methodologies&lt;/li>
-&lt;li>&lt;strong>Behind-the-scenes looks&lt;/strong>: How we design experiments and analyze complex fMRI data&lt;/li>
-&lt;li>&lt;strong>Perspectives on neuroscience&lt;/strong>: Thoughts on the field of cognitive, systems and computational neuroscience&lt;/li>
-&lt;li>&lt;strong>Lab life&lt;/strong>: Stories from our team members and their research journeys&lt;/li>
-&lt;/ul>
-&lt;h2 id="our-research-focus">Our Research Focus&lt;/h2>
-&lt;p>The Gallant Lab focuses on understanding how the human brain represents complex information during natural tasks. We use cutting-edge fMRI techniques and computational modeling to map semantic representations, visual processing, and language comprehension across the cerebral cortex.&lt;/p></description></item><item><title/><link>https://gallantlab.org/news/2023-06-01-meschke-preprint/</link><pubDate>Thu, 01 Jun 2023 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2023-06-01-meschke-preprint/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2022-08-01-dupre-banded-ridge/</link><pubDate>Mon, 01 Aug 2022 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2022-08-01-dupre-banded-ridge/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2022-05-01-christine-tseng-phd/</link><pubDate>Sun, 01 May 2022 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2022-05-01-christine-tseng-phd/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2021-11-20-popham-nature-neuroscience/</link><pubDate>Sat, 20 Nov 2021 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2021-11-20-popham-nature-neuroscience/</guid><description/></item><item><title>News Archive</title><link>https://gallantlab.org/old-news/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/old-news/</guid><description/></item></channel></rss>
+&lt;div class="publication-card card fade-in"&gt;
+ &lt;div class="publication-image"&gt;
+ &lt;a href="http://crcns.org/data-sets/vc/vim-1/about-vim-1" target="_blank" rel="noopener noreferrer"&gt;
+ &lt;img src="https://gallantlab.org/img/datasets/Kay.etal.2008.webp" alt="Gallant Lab Natural Images fMRI Dataset" loading="lazy" /&gt;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class="publication-info"&gt;
+ &lt;h3 class="publication-title"&gt;
+ &lt;a href="http://crcns.org/data-sets/vc/vim-1/about-vim-1" target="_blank" rel="noopener noreferrer"&gt;Natural Images fMRI Data (vim-1)&lt;/a&gt;
+ &lt;/h3&gt;
+ &lt;div class="publication-description"&gt;This dataset contains BOLD fMRI responses from 2 subjects viewing natural images across 70 experimental runs collected over 5 separate days. This dataset demonstrated the ability to identify which images a subject was viewing from brain activity using Bayesian reconstruction techniques. If you publish work that uses these data please cite the following paper: &lt;a href='https://www.nature.com/articles/nature06713'&gt;Kay, K. N., Naselaris, T., Prenger, R. J., &amp; Gallant, J. L. (2008). Identifying natural images from human brain activity. Nature, 452(7185), 352-355.&lt;/a&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Join Us</title><link>https://gallantlab.org/joinus/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/joinus/</guid><description>&lt;h2 id="join-the-gallant-lab"&gt;Join the Gallant Lab&lt;/h2&gt;
+&lt;h3 id="general-guidance-on-recruitment"&gt;General guidance on recruitment&lt;/h3&gt;
+&lt;p&gt;Our laboratory is very interdisciplinary, and we are always on the lookout for good postdocs and graduate students with a strong desire to break new ground in cognitive, systems and computational neuroscience. Prior areas of training are not particularly important; training in neuroscience, neuroimaging, and data science tailored for neuroscience are typically part of graduate and postdoctoral training in the lab. That said, strong quantitative and computational skills are an asset.&lt;/p&gt;</description></item><item><title>Learning and implementing Voxelwise Encoding Models: A guide to reviews, tutorials, and software</title><link>https://gallantlab.org/blog/2025-12-20-vem-guide/</link><pubDate>Sat, 20 Dec 2025 00:00:00 -0800</pubDate><guid>https://gallantlab.org/blog/2025-12-20-vem-guide/</guid><description>&lt;p&gt;Voxelwise Encoding Models (VEMs) are one of the most sensitive methods available for modeling and decoding functional brain activity. In the VEM framework, features are extracted from the stimulus (or task) and used in an encoding model to predict brain activity. If the encoding model is able to predict brain activity in some part of the brain, then one may conclude that some information represented in the features is also represented in the brain.&lt;/p&gt;</description></item><item><title/><link>https://gallantlab.org/news/2025-12-17-tianjiao-navigation-biorxiv/</link><pubDate>Wed, 17 Dec 2025 00:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-12-17-tianjiao-navigation-biorxiv/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2025-12-15-autoflatten-release/</link><pubDate>Mon, 15 Dec 2025 00:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-12-15-autoflatten-release/</guid><description/></item><item><title>Alicia Zeng Receives PhD</title><link>https://gallantlab.org/news/2025-12-14-alicia-zeng-phd/</link><pubDate>Sun, 14 Dec 2025 00:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-12-14-alicia-zeng-phd/</guid><description/></item><item><title>Amanda LeBel Receives PhD</title><link>https://gallantlab.org/news/2025-12-08-amanda-lebel-phd/</link><pubDate>Mon, 08 Dec 2025 00:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-12-08-amanda-lebel-phd/</guid><description/></item><item><title>Fatma Deniz Elected President of Technical University of Berlin</title><link>https://gallantlab.org/news/2025-12-03-fatma-deniz-president/</link><pubDate>Wed, 03 Dec 2025 00:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-12-03-fatma-deniz-president/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2025-11-13-zeng-neurips/</link><pubDate>Thu, 13 Nov 2025 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-11-13-zeng-neurips/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2025-09-17-vem-framework-paper/</link><pubDate>Wed, 17 Sep 2025 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-09-17-vem-framework-paper/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2025-09-15-group-shortclip-brain-viewer/</link><pubDate>Mon, 15 Sep 2025 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-09-15-group-shortclip-brain-viewer/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2025-09-05-group-brain-viewer/</link><pubDate>Fri, 05 Sep 2025 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-09-05-group-brain-viewer/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2025-08-23-visconti-bioarxiv/</link><pubDate>Sat, 23 Aug 2025 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-08-23-visconti-bioarxiv/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2025-05-15-emily-meschke-phd/</link><pubDate>Thu, 15 May 2025 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-05-15-emily-meschke-phd/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2025-05-09-voxelwise-encoding-tutorial/</link><pubDate>Fri, 09 May 2025 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2025-05-09-voxelwise-encoding-tutorial/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2024-11-01-evi-hendrikx-joins/</link><pubDate>Fri, 01 Nov 2024 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2024-11-01-evi-hendrikx-joins/</guid><description/></item><item><title>New paper from Deniz et al. on how semantic representations during language production are affected by context, published in J. Neuroscience</title><link>https://gallantlab.org/news/2024-08-15-deniz-context-paper/</link><pubDate>Thu, 15 Aug 2024 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2024-08-15-deniz-context-paper/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2024-07-01-gong-phonemic-paper/</link><pubDate>Mon, 01 Jul 2024 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2024-07-01-gong-phonemic-paper/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2024-05-15-catherine-chen-phd/</link><pubDate>Wed, 15 May 2024 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2024-05-15-catherine-chen-phd/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2024-04-01-fatma-professor-position/</link><pubDate>Mon, 01 Apr 2024 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2024-04-01-fatma-professor-position/</guid><description/></item><item><title>Welcome to the Gallant Lab Blog</title><link>https://gallantlab.org/blog/2024-01-15-welcome-to-our-blog/</link><pubDate>Mon, 15 Jan 2024 00:00:00 -0800</pubDate><guid>https://gallantlab.org/blog/2024-01-15-welcome-to-our-blog/</guid><description>&lt;p&gt;Welcome to the official Gallant Lab blog! This is a space where we&amp;rsquo;ll share longer-form articles about our research, insights into cognitive neuroscience, and updates from our lab at UC Berkeley.&lt;/p&gt;
+&lt;h2 id="what-to-expect"&gt;What to Expect&lt;/h2&gt;
+&lt;p&gt;In this blog, you&amp;rsquo;ll find:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Deep dives into our research&lt;/strong&gt;: Detailed explanations of our latest findings and methodologies&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Behind-the-scenes looks&lt;/strong&gt;: How we design experiments and analyze complex fMRI data&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Perspectives on neuroscience&lt;/strong&gt;: Thoughts on the field of cognitive, systems and computational neuroscience&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lab life&lt;/strong&gt;: Stories from our team members and their research journeys&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="our-research-focus"&gt;Our Research Focus&lt;/h2&gt;
+&lt;p&gt;The Gallant Lab focuses on understanding how the human brain represents complex information during natural tasks. We use cutting-edge fMRI techniques and computational modeling to map semantic representations, visual processing, and language comprehension across the cerebral cortex.&lt;/p&gt;</description></item><item><title/><link>https://gallantlab.org/news/2023-06-01-meschke-preprint/</link><pubDate>Thu, 01 Jun 2023 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2023-06-01-meschke-preprint/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2022-08-01-dupre-banded-ridge/</link><pubDate>Mon, 01 Aug 2022 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2022-08-01-dupre-banded-ridge/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2022-05-01-christine-tseng-phd/</link><pubDate>Sun, 01 May 2022 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2022-05-01-christine-tseng-phd/</guid><description/></item><item><title/><link>https://gallantlab.org/news/2021-11-20-popham-nature-neuroscience/</link><pubDate>Sat, 20 Nov 2021 12:00:00 -0800</pubDate><guid>https://gallantlab.org/news/2021-11-20-popham-nature-neuroscience/</guid><description/></item><item><title>News Archive</title><link>https://gallantlab.org/old-news/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/old-news/</guid><description/></item></channel></rss>
