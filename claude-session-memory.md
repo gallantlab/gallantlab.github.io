@@ -480,6 +480,9 @@ Moved Yashaswini from the current_visitors section to the current_members sectio
    - Created new news item announcing Yashaswini joining the lab
    - Updated Alicia Zeng news to mention postdoc plans
 
+3. "Remove postdoc recruitment notice from landing page"
+   - Deleted "We are recruiting postdocs!" section from homepage
+
 **Status:** Deployed to production via GitHub Actions
 
 **Testing:** Verified locally on Hugo server (localhost:4000) before deployment
@@ -497,5 +500,12 @@ Moved Yashaswini from the current_visitors section to the current_members sectio
   - Added information about Alicia doing a short postdoc in the lab
   - Continuing work started as graduate student
   - Date unchanged (2025-12-14)
+
+### Landing Page Update
+
+**Modified:**
+- `content/_index.md`
+  - Removed "We are recruiting postdocs!" section
+  - Removed postdoc recruitment notice
 
 ---
