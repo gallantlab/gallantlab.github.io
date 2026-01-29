@@ -45,6 +45,11 @@ current_members:
     image: "people/Sunjae.Shim.webp"
     description: "Areas of interest include learning in complex tasks."
 
+  - name: "Yashaswini"
+    title: "EECS Graduate Student"
+    image: "people/Yashaswini.webp"
+    description: "Areas of interest include clinical applications of functional imaging."
+
   - name: "Yuerou Tang"
     title: "Lab RA"
     image: "people/Yuerou.Tang.webp"
@@ -65,11 +70,6 @@ current_visitors:
     title: "Graduate Student at Sungkyunkwan University in Korea"
     image: "people/Jiwoong.Park.webp"
     description: "Areas of interest include studies of the human navigation system, and fMRI studies in VR."
-
-  - name: "Yashaswini"
-    title: "EECS Graduate Student"
-    image: "people/Yashaswini.webp"
-    description: "Areas of interest include clinical applications of functional imaging."
 
 alumni:
   - name: "Natalia Bilenko, PhD"
