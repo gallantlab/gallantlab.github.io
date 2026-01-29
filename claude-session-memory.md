@@ -508,4 +508,16 @@ Moved Yashaswini from the current_visitors section to the current_members sectio
   - Removed "We are recruiting postdocs!" section
   - Removed postdoc recruitment notice
 
+### Footer Timezone Fix
+
+**Problem:**
+The "Last updated" date in the footer was showing one day ahead (January 29 instead of January 28) because it used `{{ now }}` which returns UTC time. When GitHub Actions built the site in UTC timezone, it was already the next day even though it was still the current day in PST.
+
+**Solution:**
+Changed `{{ now.Format "January 2, 2006" }}` to `{{ .Site.Lastmod.Format "January 2, 2006" }}` in the footer template. This uses the most recent content modification date and respects the configured timezone (America/Los_Angeles) instead of the build time in UTC.
+
+**Modified:**
+- `layouts/partials/site-footer.html`
+  - Changed from `now` to `.Site.Lastmod` for timezone-aware date display
+
 ---
