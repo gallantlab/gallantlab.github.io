@@ -28,8 +28,8 @@
 
 ### Current Team Count
 - 1 Principal Investigator
-- 9 Current Lab Members
-- 3 Current Visitors
+- 10 Current Lab Members
+- 2 Current Visitors
 - 36 Alumni
 - **Total Active Members:** 13
 
@@ -429,5 +429,73 @@ Confirmed on gallantlab.org:
 - Local development: v0.154.3
 - GitHub Actions: v0.154.3
 - Status: ✅ Synchronized
+
+---
+
+## Session: January 28, 2026 - Move Yashaswini to Current Lab Members
+
+### Date
+January 28, 2026
+
+### Overview
+Moved Yashaswini from the current_visitors section to the current_members section, positioned between Sunjae Shim and Yuerou Tang.
+
+### Changes Made
+
+**Team Reorganization:**
+- Moved Yashaswini from `current_visitors` to `current_members`
+- Position: Between Sunjae Shim and Yuerou Tang
+- No changes to her profile data (title, image, description remain the same)
+
+### Files Modified
+
+**Modified:**
+- `data/people.yml` - Moved Yashaswini entry from visitors to current members
+
+### Updated Team Count
+
+**Before:**
+- Current Lab Members: 9
+- Current Visitors: 3
+
+**After:**
+- Current Lab Members: 10
+- Current Visitors: 2
+
+**Full Lab Count:**
+- 1 Principal Investigator
+- 10 Current Lab Members
+- 2 Current Visitors
+- 36 Alumni
+
+**Total Active Members:** 13 (unchanged)
+
+### Deployment
+
+**Commits:**
+1. "Move Yashaswini from visitors to current lab members"
+   - Moved Yashaswini entry in people.yml
+
+2. "Add news item for Yashaswini joining lab and update Alicia Zeng news"
+   - Created new news item announcing Yashaswini joining the lab
+   - Updated Alicia Zeng news to mention postdoc plans
+
+**Status:** Deployed to production via GitHub Actions
+
+**Testing:** Verified locally on Hugo server (localhost:4000) before deployment
+
+### News Items
+
+**Created:**
+- `content/news/2026-01-28-yashaswini-joins-lab.md`
+  - Announces Yashaswini joining as EECS graduate student
+  - Notes co-advisement with Prof. Gopala Anumanchipalli
+  - Uses Yashaswini's photo from people page
+
+**Updated:**
+- `content/news/2025-12-14-alicia-zeng-phd.md`
+  - Added information about Alicia doing a short postdoc in the lab
+  - Continuing work started as graduate student
+  - Date unchanged (2025-12-14)
 
 ---
