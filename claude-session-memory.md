@@ -432,6 +432,82 @@ Confirmed on gallantlab.org:
 
 ---
 
+## Session: January 29, 2026 - NEU 290 Paper Voting Page
+
+### Date
+January 29, 2026
+
+### Overview
+Created a hidden voting page for NEU 290 students to select their 12 favorite papers from a list of 47 papers across 10 categories. The page collects votes and displays live aggregated results.
+
+### Features
+- 47 papers organized into 10 categories (attentional warping, mixed selectivity, representational drift, motor learning)
+- Papers sorted by year within each category
+- Clickable DOI links for each paper
+- Checkbox selection requiring exactly 12 papers
+- Vote storage via kvdb.io (free key-value store with CORS support)
+- Live results showing vote counts and top 12 papers
+- One vote per browser (tracked via localStorage)
+- Hidden from site navigation and sitemap
+
+### URL
+**https://gallantlab.org/neu290-vote/**
+
+### Files Created
+
+**Content:**
+- `content/neu290-vote.md` - Page content file with frontmatter
+
+**Layout:**
+- `layouts/page/neu290-vote.html` - Complete page template with embedded CSS and JavaScript
+
+### External Dependencies
+
+**Vote Storage:**
+- Service: kvdb.io
+- Bucket ID: `Uuf1wVP35u2JUHYPXMBHhg`
+- API URL: `https://kvdb.io/Uuf1wVP35u2JUHYPXMBHhg/votes`
+- Raw votes viewable at: https://kvdb.io/Uuf1wVP35u2JUHYPXMBHhg/votes
+
+### Source Document
+- `NEU.290.S26.List.For.Form.odt` - Original paper list (NOT committed to repo)
+
+### How to Remove This Page Later
+
+**To completely remove the voting page:**
+
+1. Delete the content file:
+   ```bash
+   rm content/neu290-vote.md
+   ```
+
+2. Delete the layout file:
+   ```bash
+   rm layouts/page/neu290-vote.html
+   ```
+
+3. Commit and push:
+   ```bash
+   git add -A && git commit -m "Remove NEU 290 voting page" && git push
+   ```
+
+**That's it.** These two files are completely self-contained and don't affect any other part of the site. No CSS, config, or other files were modified for this feature.
+
+**Optional cleanup:**
+- The kvdb.io bucket will continue to exist but costs nothing and can be ignored
+- The ODT source file (`NEU.290.S26.List.For.Form.odt`) is not in the repo
+
+### Deployment
+
+**Commits:**
+1. "Add hidden NEU 290 paper voting page"
+2. "Fix voting storage with pre-created JSONBlob" (didn't work)
+3. "Switch to kvdb.io for vote storage" (working solution)
+
+**Status:** Deployed and functional at gallantlab.org/neu290-vote/
+
+---
+
 ## Session: January 28, 2026 - Move Yashaswini to Current Lab Members
 
 ### Date
