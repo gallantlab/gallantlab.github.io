@@ -838,8 +838,8 @@ const PAPERS_DATA = [
   }
 ];
 
-// JSONBlob configuration - will be set after creating the blob
-let JSONBLOB_ID = localStorage.getItem('neu290_blob_id') || null;
+// JSONBlob configuration - using pre-created blob for all users
+const JSONBLOB_ID = '019c0c84-4f43-75d7-8f31-d33435e230f8';
 const JSONBLOB_API = 'https://jsonblob.com/api/jsonBlob';
 
 let selectedPapers = new Set();
@@ -849,7 +849,6 @@ let hasVoted = localStorage.getItem('neu290_voted') === 'true';
 // Initialize the page
 document.addEventListener('DOMContentLoaded', async () => {
   renderPapers();
-  await initializeStorage();
   await loadVotes();
   updateUI();
 
@@ -859,34 +858,18 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 });
 
-async function initializeStorage() {
-  if (!JSONBLOB_ID) {
-    try {
-      const response = await fetch(JSONBLOB_API, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ votes: [], paperCounts: {} })
-      });
-      if (response.ok) {
-        const blobUrl = response.headers.get('Location') || response.headers.get('X-Jsonblob');
-        if (blobUrl) {
-          JSONBLOB_ID = blobUrl.split('/').pop();
-          localStorage.setItem('neu290_blob_id', JSONBLOB_ID);
-        }
-      }
-    } catch (e) {
-      console.error('Failed to initialize storage:', e);
-    }
-  }
-}
-
 async function loadVotes() {
-  if (!JSONBLOB_ID) return;
-
   try {
-    const response = await fetch(`${JSONBLOB_API}/${JSONBLOB_ID}`);
+    const response = await fetch(`${JSONBLOB_API}/${JSONBLOB_ID}`, {
+      method: 'GET',
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
     if (response.ok) {
       votesData = await response.json();
+    } else {
+      console.error('Failed to load votes:', response.status);
     }
   } catch (e) {
     console.error('Failed to load votes:', e);
@@ -896,22 +879,19 @@ async function loadVotes() {
 }
 
 async function saveVotes() {
-  if (!JSONBLOB_ID) {
-    await initializeStorage();
-  }
-
-  if (!JSONBLOB_ID) {
-    throw new Error('Could not initialize storage');
-  }
-
   const response = await fetch(`${JSONBLOB_API}/${JSONBLOB_ID}`, {
     method: 'PUT',
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    },
     body: JSON.stringify(votesData)
   });
 
   if (!response.ok) {
-    throw new Error('Failed to save votes');
+    const errorText = await response.text();
+    console.error('Save failed:', response.status, errorText);
+    throw new Error(`Failed to save votes: ${response.status}`);
   }
 }
 
