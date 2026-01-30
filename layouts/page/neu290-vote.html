@@ -838,9 +838,9 @@ const PAPERS_DATA = [
   }
 ];
 
-// JSONBlob configuration - using pre-created blob for all users
-const JSONBLOB_ID = '019c0c84-4f43-75d7-8f31-d33435e230f8';
-const JSONBLOB_API = 'https://jsonblob.com/api/jsonBlob';
+// KVdb.io configuration - simple key-value store with CORS support
+const KVDB_BUCKET = 'Uuf1wVP35u2JUHYPXMBHhg';
+const KVDB_API = `https://kvdb.io/${KVDB_BUCKET}/votes`;
 
 let selectedPapers = new Set();
 let votesData = { votes: [], paperCounts: {} };
@@ -860,14 +860,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 async function loadVotes() {
   try {
-    const response = await fetch(`${JSONBLOB_API}/${JSONBLOB_ID}`, {
-      method: 'GET',
-      headers: {
-        'Accept': 'application/json'
-      }
-    });
+    const response = await fetch(KVDB_API);
     if (response.ok) {
-      votesData = await response.json();
+      const text = await response.text();
+      if (text) {
+        votesData = JSON.parse(text);
+      }
     } else {
       console.error('Failed to load votes:', response.status);
     }
@@ -879,11 +877,10 @@ async function loadVotes() {
 }
 
 async function saveVotes() {
-  const response = await fetch(`${JSONBLOB_API}/${JSONBLOB_ID}`, {
-    method: 'PUT',
+  const response = await fetch(KVDB_API, {
+    method: 'POST',
     headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json'
+      'Content-Type': 'application/json'
     },
     body: JSON.stringify(votesData)
   });
