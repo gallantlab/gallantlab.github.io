@@ -28,10 +28,9 @@
 
 ### Current Team Count
 - 1 Principal Investigator
-- 10 Current Lab Members
-- 2 Current Visitors
+- 11 Current Lab Members
 - 36 Alumni
-- **Total Active Members:** 13
+- **Total Active Members:** 12
 
 ---
 
@@ -595,5 +594,69 @@ Changed `{{ now.Format "January 2, 2006" }}` to `{{ .Site.Lastmod.Format "Januar
 **Modified:**
 - `layouts/partials/site-footer.html`
   - Changed from `now` to `.Site.Lastmod` for timezone-aware date display
+
+---
+
+## Session: February 4, 2026 - Add Dr. Jiwoong Park as Postdoc
+
+### Date
+February 4, 2026
+
+### Overview
+Promoted Jiwoong Park from visitor to current lab member as a new Postdoc, removed the visitors section entirely, and added a news item announcing his arrival.
+
+### Changes Made
+
+**1. Team Reorganization**
+- Moved Jiwoong Park from `current_visitors` to `current_members`
+- Positioned after Jen Holmberg (alphabetical by last name)
+- Updated his entry:
+  - Name: "Jiwoong Park" → "Jiwoong Park, PhD"
+  - Title: "Graduate Student at Sungkyunkwan University in Korea" → "Postdoc"
+
+**2. Removed Visitors Section**
+- Deleted Jaeyoung Jeon from the site
+- Removed `current_visitors` section from `data/people.yml`
+- Removed "Current Visitors" heading and shortcode from `content/people.md`
+
+**3. News Item Created**
+- File: `content/news/2026-02-04-jiwoong-park-joins-lab.md`
+- Announces Dr. Jiwoong Park joining as Postdoc
+- Links his name to his entry on the people page
+- Uses his photo from the people page
+- Mentions his PhD from SungKyunKwan University and work with Prof. Won-Mok Shim
+
+### Files Modified
+
+**Modified:**
+- `data/people.yml` - Moved Jiwoong to current members, updated title, removed visitors section
+- `content/people.md` - Removed Current Visitors section
+
+**Created:**
+- `content/news/2026-02-04-jiwoong-park-joins-lab.md`
+
+### Updated Team Count
+
+**Before:**
+- Current Lab Members: 10
+- Current Visitors: 2 (Jaeyoung Jeon, Jiwoong Park)
+
+**After:**
+- Current Lab Members: 11 (added Jiwoong Park)
+- Current Visitors: 0 (section removed)
+
+**Full Lab Count:**
+- 1 Principal Investigator
+- 11 Current Lab Members
+- 0 Current Visitors
+- 36 Alumni
+
+**Total Active Members:** 12
+
+### Deployment
+
+**Commit:** "Add Dr. Jiwoong Park as postdoc and remove visitors section"
+
+**Status:** Pushed to main, deployed via GitHub Actions
 
 ---
