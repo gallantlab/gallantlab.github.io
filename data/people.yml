@@ -40,6 +40,11 @@ current_members:
     image: "people/Jen.Holmberg.webp"
     description: "Areas of interest include brain mechanisms mediating the psychedelic experience."
 
+  - name: "Jiwoong Park, PhD"
+    title: "Postdoc"
+    image: "people/Jiwoong.Park.webp"
+    description: "Areas of interest include studies of the human navigation system, and fMRI studies in VR."
+
   - name: "Sunjae Shim"
     title: "Neuroscience Graduate Student"
     image: "people/Sunjae.Shim.webp"
@@ -59,17 +64,6 @@ current_members:
     title: "Undergraduate Student"
     image: "people/Shio.Chiba.webp"
     description: "Shio is assisting in attention studies."
-
-current_visitors:
-  - name: "Jaeyoung Jeon"
-    title: "Graduate Student at Sungkyunkwan University in Korea"
-    image: "people/Jaeyoung.Jeon.webp"
-    description: "Areas of interest include studies of foraging and decision making, using fMRI and VR."
-
-  - name: "Jiwoong Park"
-    title: "Graduate Student at Sungkyunkwan University in Korea"
-    image: "people/Jiwoong.Park.webp"
-    description: "Areas of interest include studies of the human navigation system, and fMRI studies in VR."
 
 alumni:
   - name: "Natalia Bilenko, PhD"

@@ -11,7 +11,5 @@ hide_title: true
 {{< people-list section="principal_investigator" >}}
 ## Current Lab Members
 {{< people-list section="current_members" >}}
-## Current Visitors
-{{< people-list section="current_visitors" lazy="true" >}}
 ## Alumni
 {{< people-list section="alumni" lazy="true" >}}
