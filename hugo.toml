@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'Gallant Lab'
 theme = 'ananke'
 timeZone = 'America/Los_Angeles'
+enableGitInfo = true
 
 [params]
   description = "Neuroscience Research at UC Berkeley"
