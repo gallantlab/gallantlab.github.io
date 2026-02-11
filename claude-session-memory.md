@@ -660,3 +660,48 @@ Promoted Jiwoong Park from visitor to current lab member as a new Postdoc, remov
 **Status:** Pushed to main, deployed via GitHub Actions
 
 ---
+
+## Session: February 11, 2026 - Add Wu, David & Gallant 2006 to Learn Page
+
+### Date
+February 11, 2026
+
+### Overview
+Added the foundational system identification review paper (Wu, David & Gallant, 2006) to the Learn page, including a figure extracted from the paper and a summary description.
+
+### Paper Details
+- **Title:** Complete Functional Characterization of Sensory Neurons by System Identification
+- **Authors:** Michael C.-K. Wu, Stephen V. David, Jack L. Gallant
+- **Journal:** Annual Review of Neuroscience, 2006, 29:477-505
+- **DOI:** 10.1146/annurev.neuro.29.051605.113024
+
+### Changes Made
+
+**1. Figure Extracted**
+- Downloaded paper PDF from hearingbrain.org
+- Extracted Figure 1: General overview of system identification in the MAP framework
+- Shows full pipeline: raw stimulus → preprocessing → model estimation (with prior, model class, noise distribution) → regularization → MAP objective → cross-validation → prediction accuracy
+- Cropped from rendered PDF page, converted to WebP (106KB)
+- Saved as `static/img/papers/Wu.David.Gallant.2006.webp`
+
+**2. Learn Page Updated**
+- Added new content-card entry at the bottom of `content/learn.md`
+- Title: "System identification review for sensory neuroscience"
+- Links to paper via DOI URL
+- Summary describes: MAP estimation framework, unification of algorithms as single statistical inference problem, practical issues (stimulus selection, regularization, visualization, validation), and its role as theoretical foundation for the Gallant Lab encoding model framework
+
+### Files Modified
+
+**Modified:**
+- `content/learn.md` - Added content-card for Wu, David & Gallant 2006
+
+**Created:**
+- `static/img/papers/Wu.David.Gallant.2006.webp` - Figure 1 from the paper
+
+### Deployment
+
+**Commit:** "Add Wu, David & Gallant 2006 system identification review to Learn page"
+
+**Status:** Pushed to main, deployed via GitHub Actions
+
+---
