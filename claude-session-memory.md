@@ -705,3 +705,59 @@ Added the foundational system identification review paper (Wu, David & Gallant, 
 **Status:** Pushed to main, deployed via GitHub Actions
 
 ---
+
+## Session: February 11, 2026 (continued) - Enable gitInfo and Update Publications Page
+
+### Overview
+Enabled Hugo's `enableGitInfo` to fix the "Last updated" footer date, then added three new papers to the Publications page with figures and summaries, updated all existing entries with publication years, condensed descriptions, and replaced four figures with provided source images.
+
+### Changes Made
+
+**1. enableGitInfo (hugo.toml)**
+- Added `enableGitInfo = true` so `.Site.Lastmod` uses git commit timestamps
+- Footer "Last updated" date now reflects any site change, not just frontmatter dates
+
+**2. Three New Papers Added to Publications Page**
+
+- **Nunez-Elizalde, Huth & Gallant, NeuroImage, 2019** — Banded ridge regression / non-spherical priors. Placed between Deniz 2019 and Lescroart 2019.
+
+- **Nishimoto, Huth, Bilenko & Gallant, Journal of Vision, 2017** — Eye movement-invariant representations. Placed between Lescroart 2019 and de Heer 2017.
+
+- **de Heer, Huth, Griffiths, Gallant & Theunissen, J. Neurosci., 2017** — Hierarchical speech processing. Placed between Nishimoto 2017 and Huth 2016.
+
+**3. Publication Years Added**
+- Added year to all 18 paper titles in format "(Authors, Journal, Year)"
+
+**4. Descriptions Condensed**
+- All paper descriptions shortened to ~3-4 sentences
+- Visconti di Oleggio Castello 2025 preprint description replaced with Learn page version
+
+**5. Figures Replaced from Provided Source PNGs**
+- `FIG.nunez.2019.png` → `static/img/papers/Nunez-Elizalde.A.2019.webp`
+- `FIG.lescroart.2019.png` → `static/img/papers/Lescroart.M.2019.webp`
+- `FIG.nishimoto.2017.png` → `static/img/papers/Nishimoto.S.2017.webp`
+- `FIG.deheer.2017.png` → `static/img/papers/deHeer.W.2017.webp`
+
+### Files Modified
+- `hugo.toml` — Added `enableGitInfo = true`
+- `content/publications.md` — 3 new papers, years added, descriptions condensed
+- `static/img/papers/Lescroart.M.2019.webp` — Replaced with provided source
+
+### Files Created
+- `static/img/papers/Nunez-Elizalde.A.2019.webp`
+- `static/img/papers/Nishimoto.S.2017.webp`
+- `static/img/papers/deHeer.W.2017.webp`
+
+### Paper Source
+- PDFs found via `LABPUBS` symlink → `/Users/gallant/PAPERS/LAB.PUBS/`
+- Figure source PNGs provided as `FIG.*.png` in project root (not committed)
+
+### Deployment
+
+**Commits:**
+1. "Enable gitInfo so Last Updated date reflects any site change"
+2. "Add 3 papers to Publications page and update all entries"
+
+**Status:** Pushed to main, deployed via GitHub Actions
+
+---
