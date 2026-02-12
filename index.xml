@@ -51,10 +51,10 @@ Email: &lt;a href="mailto:gallant@berkeley.edu"&gt;gallant@berkeley.edu&lt;/a&gt
  &lt;/div&gt;
  &lt;div class="publication-info"&gt;
  &lt;h3 class="publication-title"&gt;
- &lt;a href="https://www.biorxiv.org/content/10.64898/2025.12.16.694742v1" target="_blank" rel="noopener noreferrer"&gt;A map of the cortical functional network mediating naturalistic navigation (Zhang, Meschke, Gallant, bioRxiv preprint)&lt;/a&gt;
+ &lt;a href="https://www.biorxiv.org/content/10.64898/2025.12.16.694742v1" target="_blank" rel="noopener noreferrer"&gt;A map of the cortical functional network mediating naturalistic navigation (Zhang, Meschke, Gallant, bioRxiv preprint, 2025)&lt;/a&gt;
  &lt;/h3&gt;
  &lt;p class="publication-date"&gt;December 17, 2025&lt;/p&gt;
- &lt;div class="publication-description"&gt;Natural navigation requires close coordination of perception, planning, and motor actions. To recover the full brain network mediating navigation, we used fMRI to record brain activity from participants performing a taxi driver task in VR. Banded ridge regression was used to fit high-dimensional voxelwise encoding models (38 feature spaces, 28,134 features) to the data. We find that navigation is supported by a network of 11 functionally distinct cortical regions that transform perceptual inputs through decision-making processes to produce action outputs. These results provide a unified description of the functional properties and organization of the cortical network that mediates naturalistic navigation.&lt;/div&gt;
+ &lt;div class="publication-description"&gt;Natural navigation requires close coordination of perception, planning, and motor actions. We used fMRI to record brain activity while participants performed a taxi driver task in VR, then fit high-dimensional voxelwise encoding models to the data. Navigation is supported by a network of 11 functionally distinct cortical regions that transform perceptual inputs through decision-making processes to produce action outputs.&lt;/div&gt;
  &lt;/div&gt;
 &lt;/div&gt;
 
@@ -66,7 +66,7 @@ Email: &lt;a href="mailto:gallant@berkeley.edu"&gt;gallant@berkeley.edu&lt;/a&gt
  &lt;/div&gt;
  &lt;div class="publication-info"&gt;
  &lt;h3 class="publication-title"&gt;
- &lt;a href="https://openreview.net/forum?id=3aNvX9TQTo" target="_blank" rel="noopener noreferrer"&gt;Disentangling Superpositions: Interpretable Brain Encoding Model with Sparse Concept Atoms (Zeng and Gallant, NeurIPS)&lt;/a&gt;
+ &lt;a href="https://openreview.net/forum?id=3aNvX9TQTo" target="_blank" rel="noopener noreferrer"&gt;Disentangling Superpositions: Interpretable Brain Encoding Model with Sparse Concept Atoms (Zeng and Gallant, NeurIPS, 2025)&lt;/a&gt;
  &lt;/h3&gt;
  &lt;p class="publication-date"&gt;November 13, 2025&lt;/p&gt;</description></item><item><title>Brain Viewers</title><link>https://gallantlab.org/brain-viewers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gallantlab.org/brain-viewers/</guid><description>&lt;h2 id="brain-viewers"&gt;Brain Viewers&lt;/h2&gt;
 &lt;p&gt;This page collects public brain viewers that you can use to interact with the data and results from many of our published studies. To reach the brain viewer for any topic, just click on the highlighted hyperlink. Please note that these brain viewers do not run well on cell phones, you will have the best experience with a computer or a tablet.&lt;/p&gt;
