@@ -761,3 +761,72 @@ Enabled Hugo's `enableGitInfo` to fix the "Last updated" footer date, then added
 **Status:** Pushed to main, deployed via GitHub Actions
 
 ---
+
+## Session: February 20, 2026 - Add Chen et al. 2026 and Zhang & Gallant 2026 to Publications Page
+
+### Date
+February 20, 2026
+
+### Overview
+Added two new 2026 bioRxiv preprints to the Publications page, each with a figure converted from a provided PNG source and a summary description written from the paper.
+
+### Papers Added
+
+**1. Chen et al. 2026 — Semantic relations**
+- **Title:** Representations of semantic relations in the human cerebral cortex
+- **Authors:** Catherine Chen, Xue L. Gong, Fatma Deniz, Daniel L. Klein, Jack L. Gallant
+- **Venue:** bioRxiv preprint, 2026
+- **DOI:** https://doi.org/10.64898/2026.02.19.706815
+- **Figure source:** `FIG.chen.2026.png` → `static/img/papers/Chen.C.2026.webp`
+- **Position:** Top of Publications page (newest)
+
+**2. Zhang & Gallant 2026 — Semantic tuning shifts**
+- **Title:** Visual semantic tuning across the cortex shifts between tasks
+- **Authors:** Tianjiao Zhang, Jack L. Gallant
+- **Venue:** bioRxiv preprint, 2026
+- **DOI:** https://doi.org/10.64898/2026.02.19.706797
+- **Figure source:** `FIG.zhang.2026.png` → `static/img/papers/Zhang.T.2026.webp`
+- **Position:** Second entry (after Chen 2026, before Zhang 2025 navigation paper)
+
+### Files Modified
+- `content/publications.md` — Two new content-card entries added at top
+
+### Files Created
+- `static/img/papers/Chen.C.2026.webp` (229 KB, converted from PNG at 85% quality)
+- `static/img/papers/Zhang.T.2026.webp` (105 KB, converted from PNG at 85% quality)
+
+### Deployment
+**Commits:**
+1. "Add Chen et al. 2026 and Zhang & Gallant 2026 preprints to Publications page"
+2. "Shorten Chen 2026 and Zhang 2026 blurbs to match page style" — trimmed both from 4 sentences to 3 to match the length of other entries
+3. "Fix broken link for Zhang & Gallant 2026 paper" — replaced DOI URL with working biorxiv URL: https://www.biorxiv.org/content/10.64898/2026.02.19.706797v1
+
+**Status:** Pushed to main, deployed via GitHub Actions
+
+---
+
+## Session: February 22, 2026 - Add News Items for Chen 2026 and Zhang 2026 Preprints
+
+### Date
+February 22, 2026
+
+### Overview
+Added two news items announcing the Chen et al. 2026 and Zhang & Gallant 2026 bioRxiv preprints, reusing figures from the Publications page.
+
+### News Items Created
+
+**1. Zhang & Gallant 2026 — Semantic tuning shifts**
+- File: `content/news/2026-02-22-zhang-attention-biorxiv.md`
+- Figure: `/img/papers/Zhang.T.2026.webp` (reused from Publications page)
+- Links: Dr. Tianjiao Zhang → `/people#tianjiao-zhang-phd`; paper → `https://www.biorxiv.org/content/10.64898/2026.02.19.706797v1`
+
+**2. Chen et al. 2026 — Semantic relations**
+- File: `content/news/2026-02-22-chen-semantic-relations-biorxiv.md`
+- Figure: `/img/papers/Chen.C.2026.webp` (reused from Publications page)
+- Links: Dr. Catherine Chen → `/people#catherine-chen-phd`; paper → `https://doi.org/10.64898/2026.02.19.706815`
+
+### Deployment
+**Commit:** "Add news items for Chen et al. 2026 and Zhang & Gallant 2026 preprints"
+**Status:** Pushed to main, deployed via GitHub Actions
+
+---
