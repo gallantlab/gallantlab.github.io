@@ -6,6 +6,10 @@ weight: 5
 hide_title: true
 ---
 
+## Learn About the Lab Philosophy
+
+If you would like to know more about the general philosophy of the lab, please listen to this [Freakonomics podcast interview with Jack Gallant](https://freakonomics.com/podcast/this-is-your-brain-on-podcasts/) or to these OHBM discussions between Peter Bandettini and Jack Gallant ([discussion 1](https://www.youtube.com/watch?v=cKmGF3REyuA&list=PLEJ899jsgdRoMWrUhwBsP7-R_DsfIkRFk&index=5), [discussion 2](https://www.youtube.com/watch?v=skX7tzWxwFk)).
+
 ## Learn About Voxelwise Encoding Models
 
 {{< content-card title="Voxelwise Encoding Model review paper" url="https://www.psyarxiv.com/nt2jq" image="/img/papers/ViscontidOC.Deniz.2025.webp" alt="Voxelwise Encoding Model guide" description="This review paper provides the first comprehensive guide to the Voxelwise Encoding Model (VEM) framework. The VEM framework is a framework for fitting encoding models to fMRI data. This framework is currently the most sensitive and powerful approach available for modeling fMRI data. It can be used to fit dozens of distinct models simultaneously, each model having up to several thousand distinct features. The Voxelwise Encoding Model framework also conforms to all best practices in data science, which maximizes sensitivity, reliability and generalizability of the resulting models." >}}
