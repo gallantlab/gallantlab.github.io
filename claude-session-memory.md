@@ -29,6 +29,7 @@
 ### Current Team Count
 - 1 Principal Investigator
 - 11 Current Lab Members
+- 0 Current Visitors
 - 36 Alumni
 - **Total Active Members:** 12
 
@@ -36,566 +37,13 @@
 
 ## Archive Information
 
-**2025 Sessions Archive:** All sessions from 2025 (October-December) are available in `claude-session-memory-archive-2025.md`
+**2025 Sessions (Oct–Nov):** `claude-session-memory-archive-2025-oct-nov.md`
+**2025 Sessions (full year):** `claude-session-memory-archive-2025.md`
+**2026 January Sessions:** `claude-session-memory-archive-2026-jan.md`
 
 ---
 
-# 2026 Sessions
-
-## Session: January 6, 2026 - Move Amanda LeBel to Alumni and Fix Alphabetical Order
-
-### Date
-January 6, 2026
-
-### Overview
-Moved Amanda LeBel from current lab members to alumni section and corrected alphabetical ordering in the alumni section.
-
-### Changes Made
-
-**1. Amanda LeBel Moved to Alumni**
-- Moved from `current_members` to `alumni` section
-- Position: Between Kendrick Kay and Mark Lescroart (alphabetical order by last name)
-- Updated entry:
-  ```yaml
-  - name: "Amanda LeBel, PhD"
-    title: "Former Neuroscience Graduate Student"
-    image: "people/Amanda.LeBel.webp"
-    description: "Dr. LeBel is now a postdoc with Prof. Anila D'Mello at UT Southwestern and UT Dallas."
-  ```
-
-**2. Alumni Section Alphabetical Order Fixes**
-- **Issue 1:** Meschke was misplaced after Eickenberg
-  - Fixed: Moved to correct position after Mazer
-- **Issue 2:** G names were out of order (Gao, Gong, Gibboni)
-  - Fixed: Reordered as Gao, Gibboni, Gong (alphabetical)
-
-**Corrected order:**
-- Eickenberg
-- **Gao** (moved up from position after Eickenberg)
-- **Gibboni** (moved up from position after Gong)
-- Gong
-- Gustavsen
-- Hansen
-- Hayden
-- Huth
-- Kay
-- **LeBel** (newly added)
-- Lescroart
-- Majure
-- Mazer
-- **Meschke** (moved down to correct alphabetical position)
-- Naselaris
-- [continues...]
-
-### Files Modified
-
-**Modified:**
-- `data/people.yml` - Moved Amanda LeBel to alumni, fixed alphabetical ordering
-
-### Updated Team Count
-
-**Before:**
-- Current Lab Members: 10
-- Alumni: 35
-
-**After:**
-- Current Lab Members: 9 (Amanda graduated)
-- Alumni: 36 (Amanda added)
-
-**Full Lab Count:**
-- 1 Principal Investigator
-- 9 Current Lab Members
-- 3 Current Visitors
-- 36 Alumni
-
-**Total Active Members:** 13 (PI + 9 members + 3 visitors)
-
-### Deployment
-
-**Status:** Ready for deployment
-**Hugo Server:** Auto-reload detected changes
-
-### Notes
-
-**News Item Status:**
-The news item created on 2025-12-08 (`content/news/2025-12-08-amanda-lebel-phd.md`) about Amanda receiving her PhD remains accurate and published. It properly announces her graduation and new postdoc position.
-
-**Data Quality:**
-Alumni section now maintains strict alphabetical order by last name, making it easier to locate specific individuals.
-
----
-
-## Session: January 9, 2026 - Remove Redundant Page Headers and Add Active Menu Highlighting
-
-### Date
-January 9, 2026
-
-### Overview
-Removed redundant page title headers from content pages (where titles duplicated menu items) and added active menu highlighting to show users which page they're on. Implemented using Hugo best practices with conditional rendering and built-in menu functions. Also conducted comprehensive site audit to verify no hacks or shortcuts remain.
-
-### Problem Statement
-Seven pages had h1 titles that duplicated the menu bar text (People, Publications, Brain Viewers, Learn, Code, Data, Join Us). This created visual redundancy. Additionally, there was no visual indication in the menu bar showing which page the user was currently viewing.
-
-### Implementation (Hugo Best Practices)
-
-**1. Conditional Header Rendering**
-- Modified `layouts/_default/single.html` to conditionally render page header based on `hide_title` frontmatter parameter
-- Uses Hugo's `{{ if not .Params.hide_title }}` conditional - proper Hugo pattern
-- No HTML rendered for hidden headers (clean, efficient)
-- Avoided CSS hacks (no `display: none` tricks)
-
-**2. Frontmatter Updates**
-Added `hide_title: true` parameter to 7 content pages:
-- `content/people.md`
-- `content/publications.md`
-- `content/brain-viewers.md`
-- `content/learn.md`
-- `content/code.md`
-- `content/data.md`
-- `content/joinus.md`
-
-**3. Active Menu Highlighting**
-- Updated `layouts/partials/site-navigation.html` to use Hugo's built-in menu detection functions:
-  - `.IsMenuCurrent` - detects if current page matches menu item
-  - `.HasMenuCurrent` - detects if current page is descendant of menu item
-- Adds `active` class to current menu item dynamically
-- No JavaScript required - pure Hugo template logic
-
-**4. Active Menu Styling**
-Added CSS for active menu items in `assets/css/custom.css`:
-```css
-body > header nav a.active {
-  color: white !important;
-  font-weight: 700;
-  border-bottom: 2px solid white;
-  padding-bottom: 2px;
-}
-```
-
-**5. Cleanup**
-- Removed old CSS hack that attempted to hide headers with `display: none`
-- This was leftover from previous implementation attempt
-
-### Files Modified
-
-**Templates:**
-- `layouts/_default/single.html` - Added conditional header rendering
-- `layouts/partials/site-navigation.html` - Added active state detection
-
-**CSS:**
-- `assets/css/custom.css` - Added active menu styling, removed old CSS hack
-
-**Content (7 files):**
-- `content/people.md`
-- `content/publications.md`
-- `content/brain-viewers.md`
-- `content/learn.md`
-- `content/code.md`
-- `content/data.md`
-- `content/joinus.md`
-
-### Technical Approach: Why This is Correct
-
-**Hugo Best Practices:**
-✅ Conditional rendering (not CSS hiding)
-✅ Built-in menu functions (`.IsMenuCurrent`, `.HasMenuCurrent`)
-✅ Frontmatter parameters for page configuration
-✅ No inline styles
-✅ No JavaScript for basic functionality
-✅ Semantic HTML maintained
-
-**Avoided Bad Patterns:**
-❌ CSS `display: none` to hide rendered HTML
-❌ JavaScript for menu state detection
-❌ Hardcoded active states
-❌ Inline styles
-❌ Theme file modifications
-
-### Comprehensive Site Audit
-
-Conducted full audit to identify any remaining hacks or shortcuts:
-
-**Audit Scope:**
-- 14 layout template files
-- 745 lines of custom CSS
-- 2 custom shortcodes
-- Configuration files
-- Data files
-
-**Findings:**
-
-✅ **Templates & Layouts: EXCELLENT**
-- Zero inline styles
-- No deprecated Hugo functions
-- Proper template inheritance
-- Theme files untouched (correct approach)
-- Clean conditional rendering throughout
-- No TODO/HACK/FIXME markers
-
-✅ **CSS: EXCELLENT**
-- 25 `!important` declarations - all legitimate and necessary
-  - 14 for layout overrides (Tachyons utility classes)
-  - 11 for header styling (theme defaults)
-  - This is the CORRECT Hugo approach for theme customization
-- CSS custom properties used throughout
-- Clean organization with section headers
-- Mobile-first responsive design
-- No magic numbers (uses variables)
-
-✅ **Hugo Compliance: EXCELLENT**
-- Modern Hugo syntax throughout
-- Proper use of built-in functions
-- No deprecated patterns
-- Configuration clean and minimal
-
-✅ **Code Quality: EXCELLENT**
-- Separation of concerns (HTML, CSS, data)
-- Semantic naming conventions
-- Well-documented via session log
-- Production-ready
-
-**Why `!important` Declarations Are NOT Hacks:**
-
-The 25 `!important` declarations are the **standard Hugo pattern** for theme customization:
-
-- **Correct approach** (what site uses):
-  - Override theme CSS with custom.css using `!important`
-  - Keeps theme files pristine for updates
-  - All customizations in one place
-  - Standard pattern for utility-class-based themes (Tachyons)
-
-- **Wrong approach** (what site avoids):
-  - Modifying theme files directly
-  - Forking the theme
-  - Using inline styles
-  - JavaScript workarounds
-
-### User Experience Impact
-
-**Before:**
-- Redundant "People" title above "People" menu item
-- No indication which page user is viewing
-- Visual clutter
-
-**After:**
-- Clean page layout without duplicate titles
-- Active menu item clearly highlighted (white, bold, underlined)
-- Better visual hierarchy
-- Improved navigation UX
-
-### Testing Verification
-
-Tested all affected pages on localhost:4000:
-- ✅ People - no title header, clean layout
-- ✅ Publications - no title header, clean layout
-- ✅ Brain Viewers - no title header, clean layout
-- ✅ Learn - no title header, clean layout
-- ✅ Code - no title header, clean layout
-- ✅ Data - no title header, clean layout
-- ✅ Join Us - no title header, clean layout
-- ✅ Blog pages - titles still show (as intended)
-- ✅ Homepage - working correctly
-- ✅ Active menu highlighting works on all pages
-
-### Code Quality Metrics
-
-| Metric | Result | Status |
-|--------|--------|--------|
-| Inline styles | 0 | ✅ Perfect |
-| Deprecated Hugo syntax | 0 | ✅ Current |
-| Theme modifications | 0 | ✅ Using overrides |
-| TODO/HACK markers | 0 | ✅ Clean |
-| Hugo best practices | 100% | ✅ Compliant |
-| CSS organization | Excellent | ✅ Clear structure |
-| Template structure | Excellent | ✅ Proper inheritance |
-
-### Deployment
-
-**Commits:**
-- "Remove redundant page headers and add active menu highlighting"
-  - Implemented conditional header rendering
-  - Added active menu state detection
-  - Updated 10 files following Hugo best practices
-  - Comprehensive site audit completed
-
-**Status:** Deployed to production
-
-**Hugo Server:** Verified on localhost:4000 before deployment
-
-**GitHub Actions:** Auto-deployment to gallantlab.org
-
-### Session Log Maintenance
-
-**Archive Created:** All 2025 sessions archived to `claude-session-memory-archive-2025.md`
-- Previous log: 2,702 lines / 88 KB
-- Archived: First 2,404 lines (all 2025 sessions)
-- Current log: Clean start for 2026 sessions
-
-### Final Verdict
-
-**Site Assessment: A+ Production Code** 🌟
-
-After comprehensive audit, the site has:
-- Zero technical debt
-- Zero hacks or shortcuts
-- 100% Hugo compliance
-- Excellent code organization
-- Proper theme customization patterns
-- Clean separation of concerns
-- Future-proof architecture
-
-The site represents exemplary Hugo development practices and is ready for long-term maintenance.
-
----
-
-## Session: January 9, 2026 (continued) - Fix Hugo Version Mismatch
-
-### Problem Discovered
-
-After deploying the page header removal changes, the deployed site (gallantlab.org) showed different behavior than the local site:
-- **Local site (localhost:4000)**: Headers properly hidden, looked correct
-- **Deployed site (gallantlab.org)**: Headers still showing despite identical code
-
-This was NOT a caching issue - confirmed in fresh browser.
-
-### Root Cause Analysis
-
-**Hugo Version Mismatch:**
-- **Local environment**: Hugo v0.152.2 (via Homebrew)
-- **GitHub Actions**: Hugo v0.139.3 (configured in workflow)
-- **Latest Hugo**: v0.154.3
-
-The older Hugo version (0.139.3) in GitHub Actions was not properly handling the conditional rendering syntax `{{ if not .Params.hide_title }}`, causing the headers to still render despite the parameter being set.
-
-### Solution
-
-Upgraded both environments to use the latest Hugo version (v0.154.3):
-
-**1. Updated GitHub Actions Workflow**
-- Modified `.github/workflows/hugo-deploy.yml`
-- Changed `hugo-version: '0.139.3'` → `hugo-version: '0.154.3'`
-
-**2. Upgraded Local Hugo**
-- Ran `brew upgrade hugo`
-- Updated from v0.152.2 → v0.154.3
-
-**3. Tested Locally**
-- Restarted Hugo server with new version
-- Verified all pages build correctly
-- Confirmed no errors or warnings
-- Build time: 40ms for 57 pages
-
-### Files Modified
-
-**Modified:**
-- `.github/workflows/hugo-deploy.yml` - Updated Hugo version
-
-### Deployment
-
-**Commits:**
-- "Update Hugo version to 0.154.3 for consistency"
-  - Synchronized Hugo versions between local and deployed environments
-  - Tested successfully with new version
-
-**Status:** Deployed to production
-
-**Build Results:**
-- Hugo build: 20 seconds
-- Pages deployment: 25 seconds
-- Status: Success ✅
-
-### Verification
-
-Confirmed on gallantlab.org:
-- ✅ People page - no redundant header
-- ✅ Publications page - no redundant header
-- ✅ Brain Viewers, Learn, Code, Data, Join Us - no redundant headers
-- ✅ Active menu highlighting working correctly
-- ✅ Blog posts still show titles (as intended)
-- ✅ All other pages working correctly
-
-### Lesson Learned
-
-**Always synchronize Hugo versions between environments:**
-- Hugo syntax and behavior can vary between versions
-- Testing locally with a different version than production can cause deployment surprises
-- Best practice: Pin both environments to the same (latest stable) version
-- Update regularly to avoid version drift
-
-### Environment Status
-
-**Current Hugo Versions:**
-- Local development: v0.154.3
-- GitHub Actions: v0.154.3
-- Status: ✅ Synchronized
-
----
-
-## Session: January 29, 2026 - NEU 290 Paper Voting Page
-
-### Date
-January 29, 2026
-
-### Overview
-Created a hidden voting page for NEU 290 students to select their 12 favorite papers from a list of 47 papers across 10 categories. The page collects votes and displays live aggregated results.
-
-### Features
-- 47 papers organized into 10 categories (attentional warping, mixed selectivity, representational drift, motor learning)
-- Papers sorted by year within each category
-- Clickable DOI links for each paper
-- Checkbox selection requiring exactly 12 papers
-- Vote storage via kvdb.io (free key-value store with CORS support)
-- Live results showing vote counts and top 12 papers
-- One vote per browser (tracked via localStorage)
-- Hidden from site navigation and sitemap
-
-### URL
-**https://gallantlab.org/neu290-vote/**
-
-### Files Created
-
-**Content:**
-- `content/neu290-vote.md` - Page content file with frontmatter
-
-**Layout:**
-- `layouts/page/neu290-vote.html` - Complete page template with embedded CSS and JavaScript
-
-### External Dependencies
-
-**Vote Storage:**
-- Service: kvdb.io
-- Bucket ID: `Uuf1wVP35u2JUHYPXMBHhg`
-- API URL: `https://kvdb.io/Uuf1wVP35u2JUHYPXMBHhg/votes`
-- Raw votes viewable at: https://kvdb.io/Uuf1wVP35u2JUHYPXMBHhg/votes
-
-### Source Document
-- `NEU.290.S26.List.For.Form.odt` - Original paper list (NOT committed to repo)
-
-### How to Remove This Page Later
-
-**To completely remove the voting page:**
-
-1. Delete the content file:
-   ```bash
-   rm content/neu290-vote.md
-   ```
-
-2. Delete the layout file:
-   ```bash
-   rm layouts/page/neu290-vote.html
-   ```
-
-3. Commit and push:
-   ```bash
-   git add -A && git commit -m "Remove NEU 290 voting page" && git push
-   ```
-
-**That's it.** These two files are completely self-contained and don't affect any other part of the site. No CSS, config, or other files were modified for this feature.
-
-**Optional cleanup:**
-- The kvdb.io bucket will continue to exist but costs nothing and can be ignored
-- The ODT source file (`NEU.290.S26.List.For.Form.odt`) is not in the repo
-
-### Deployment
-
-**Commits:**
-1. "Add hidden NEU 290 paper voting page"
-2. "Fix voting storage with pre-created JSONBlob" (didn't work)
-3. "Switch to kvdb.io for vote storage" (working solution)
-
-**Status:** Deployed and functional at gallantlab.org/neu290-vote/
-
----
-
-## Session: January 28, 2026 - Move Yashaswini to Current Lab Members
-
-### Date
-January 28, 2026
-
-### Overview
-Moved Yashaswini from the current_visitors section to the current_members section, positioned between Sunjae Shim and Yuerou Tang.
-
-### Changes Made
-
-**Team Reorganization:**
-- Moved Yashaswini from `current_visitors` to `current_members`
-- Position: Between Sunjae Shim and Yuerou Tang
-- No changes to her profile data (title, image, description remain the same)
-
-### Files Modified
-
-**Modified:**
-- `data/people.yml` - Moved Yashaswini entry from visitors to current members
-
-### Updated Team Count
-
-**Before:**
-- Current Lab Members: 9
-- Current Visitors: 3
-
-**After:**
-- Current Lab Members: 10
-- Current Visitors: 2
-
-**Full Lab Count:**
-- 1 Principal Investigator
-- 10 Current Lab Members
-- 2 Current Visitors
-- 36 Alumni
-
-**Total Active Members:** 13 (unchanged)
-
-### Deployment
-
-**Commits:**
-1. "Move Yashaswini from visitors to current lab members"
-   - Moved Yashaswini entry in people.yml
-
-2. "Add news item for Yashaswini joining lab and update Alicia Zeng news"
-   - Created new news item announcing Yashaswini joining the lab
-   - Updated Alicia Zeng news to mention postdoc plans
-
-3. "Remove postdoc recruitment notice from landing page"
-   - Deleted "We are recruiting postdocs!" section from homepage
-
-**Status:** Deployed to production via GitHub Actions
-
-**Testing:** Verified locally on Hugo server (localhost:4000) before deployment
-
-### News Items
-
-**Created:**
-- `content/news/2026-01-28-yashaswini-joins-lab.md`
-  - Announces Yashaswini joining as EECS graduate student
-  - Notes co-advisement with Prof. Gopala Anumanchipalli
-  - Uses Yashaswini's photo from people page
-
-**Updated:**
-- `content/news/2025-12-14-alicia-zeng-phd.md`
-  - Added information about Alicia doing a short postdoc in the lab
-  - Continuing work started as graduate student
-  - Date unchanged (2025-12-14)
-
-### Landing Page Update
-
-**Modified:**
-- `content/_index.md`
-  - Removed "We are recruiting postdocs!" section
-  - Removed postdoc recruitment notice
-
-### Footer Timezone Fix
-
-**Problem:**
-The "Last updated" date in the footer was showing one day ahead (January 29 instead of January 28) because it used `{{ now }}` which returns UTC time. When GitHub Actions built the site in UTC timezone, it was already the next day even though it was still the current day in PST.
-
-**Solution:**
-Changed `{{ now.Format "January 2, 2006" }}` to `{{ .Site.Lastmod.Format "January 2, 2006" }}` in the footer template. This uses the most recent content modification date and respects the configured timezone (America/Los_Angeles) instead of the build time in UTC.
-
-**Modified:**
-- `layouts/partials/site-footer.html`
-  - Changed from `now` to `.Site.Lastmod` for timezone-aware date display
-
----
+# 2026 Sessions (February onward)
 
 ## Session: February 4, 2026 - Add Dr. Jiwoong Park as Postdoc
 
@@ -827,6 +275,62 @@ Added two news items announcing the Chen et al. 2026 and Zhang & Gallant 2026 bi
 
 ### Deployment
 **Commit:** "Add news items for Chen et al. 2026 and Zhang & Gallant 2026 preprints"
+**Status:** Pushed to main, deployed via GitHub Actions
+
+---
+
+## Session: February 23, 2026 - Archive January Sessions and Update NEU 290 Readings Page
+
+### Date
+February 23, 2026
+
+### Overview
+Archived January 2026 session log entries, then made two rounds of edits to the NEU 290 readings page: first deleting 5 specific papers and reordering by publication year, then deleting all papers before Nastase 2018.
+
+### Part 1: Session Log Archive
+
+Created `claude-session-memory-archive-2026-jan.md` with all 5 January 2026 sessions:
+- Jan 6: Move Amanda LeBel to alumni
+- Jan 9: Remove redundant page headers / active menu highlighting
+- Jan 9 (cont.): Fix Hugo version mismatch
+- Jan 28: Move Yashaswini to current lab members
+- Jan 29: NEU 290 paper voting page
+
+Updated `claude-session-memory.md` to contain only February 2026 sessions onward.
+
+### Part 2: NEU 290 Readings Page — Delete 5 Papers and Sort by Year
+
+**Deleted papers:**
+- Parthasarathy et al. 2017
+- Fusi et al. 2016
+- Ester et al. 2016
+- Rigotti et al. 2013
+- Sprague et al. 2018
+
+**Reordered:** All remaining 44 papers sorted by publication year, oldest first (1990–2025).
+
+**Header updated:** "49 papers" → "44 papers in order of publication year"
+
+**Summary box updated:** Reflects year ordering instead of vote ordering.
+
+**Section dividers removed:** Vote-count dividers were only meaningful for the old vote-sorted order.
+
+### Part 3: NEU 290 Readings Page — Delete All Papers Before Nastase 2018
+
+Deleted 18 additional papers (Goldberg 1990 through Kuhl 2014).
+
+**Final state:** 26 papers (Nastase 2018 through Tafazoli 2025), numbered 1–26.
+
+**Header updated:** "44 papers" → "26 papers"
+
+### Files Modified
+- `claude-session-memory-archive-2026-jan.md` — Created (Jan 2026 archive)
+- `claude-session-memory.md` — Trimmed to Feb 2026+
+- `layouts/page/neu290-readings.html` — 23 papers deleted, reordered by year, renumbered
+- `content/neu290-readings.md` — Added to repo (was untracked)
+
+### Deployment
+**Commit:** "Archive Jan 2026 sessions and update NEU 290 readings page"
 **Status:** Pushed to main, deployed via GitHub Actions
 
 ---
