@@ -1,0 +1,8 @@
+User-agent: *
+Disallow:
+
+# Hidden, unlisted page — accessible only via its direct URL
+Disallow: /gallant.shortvita/
+Disallow: /files/Gallant.Short.Vita.June2026.pdf
+
+Sitemap: {{ "sitemap.xml" | absURL }}

@@ -1,0 +1,28 @@
+{{ define "main" -}}
+<article class="gl-page">
+  <header class="gl-page__head">
+    {{- if not .Params.hide_title }}
+      <h1 class="gl-page__title">{{ .Title }}</h1>
+    {{- end }}
+  </header>
+
+  {{- with .Content }}
+    <div class="gl-page__body gl-prose">{{ . }}</div>
+  {{- end }}
+
+  {{- $pages := .Pages.ByDate.Reverse }}
+  {{- if $pages }}
+    <ol class="gl-list">
+      {{- range $pages }}
+        <li class="gl-list__item">
+          <h3 class="gl-list__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          {{- with .Date }}{{- if not .IsZero }}
+            <p class="gl-list__date">{{ .Format site.Params.dateFormat }}</p>
+          {{- end }}{{ end }}
+          {{- with .Params.summary }}<p class="gl-list__summary">{{ . | safeHTML }}</p>{{ end }}
+        </li>
+      {{- end }}
+    </ol>
+  {{- end }}
+</article>
+{{- end }}

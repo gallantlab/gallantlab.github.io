@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="{{ site.LanguageCode | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {{- $title := cond .IsHome site.Title (printf "%s — %s" .Title site.Title) -}}
+  {{- $desc  := .Description | default site.Params.description -}}
+  <title>{{ $title }}</title>
+  <meta name="description" content="{{ $desc }}">
+  {{- with .Params.robots }}
+  <meta name="robots" content="{{ . }}">
+  {{- end }}
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.Title }}">
+  <meta property="og:title" content="{{ $title }}">
+  <meta property="og:description" content="{{ $desc }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{- $og := partial "og-image.html" . }}
+  {{- with $og.url }}
+  <meta property="og:image" content="{{ . }}">
+  <meta property="og:image:alt" content="{{ $og.alt }}">
+  {{- if $og.large }}
+  <meta property="og:image:width" content="{{ $og.width }}">
+  <meta property="og:image:height" content="{{ $og.height }}">
+  {{- end }}
+  {{- end }}
+  <meta name="twitter:card" content="{{ cond $og.large "summary_large_image" "summary" }}">
+  {{- with $og.url }}
+  <meta name="twitter:image" content="{{ . }}">
+  {{- end }}
+
+  {{ partial "schema.html" . }}
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+
+  {{ $css := resources.Get "css/editorial.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+</head>
+<body>
+  {{ partial "header.html" . }}
+
+  <main id="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+</body>
+</html>

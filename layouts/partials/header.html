@@ -1,0 +1,27 @@
+<header class="gl-masthead">
+  <a class="gl-wordmark" href="/">Gallant&nbsp;Lab</a>
+  <p class="gl-wordmark__tagline">A laboratory of cognitive, systems &amp; computational neuroscience</p>
+
+  <div class="gl-masthead__rule gl-masthead__rule--thin"></div>
+
+  <nav class="gl-nav" aria-label="Primary">
+    {{- /* Checkbox toggle (not <details>): only this can be inline on desktop
+           yet collapsed-by-default on mobile with no JS — <details> can't have
+           a per-viewport default open state. */ -}}
+    <input class="gl-nav__checkbox" id="gl-nav-toggle" type="checkbox">
+    <label class="gl-nav__toggle" for="gl-nav-toggle">Menu</label>
+    <ul class="gl-nav__list">
+      {{- $current := .RelPermalink -}}
+      {{- range site.Menus.main }}
+        {{- $active := eq $current .URL }}
+        <li class="gl-nav__item">
+          <a href="{{ .URL }}"
+             class="gl-nav__link{{ if $active }} is-active{{ end }}"
+             {{- if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
+        </li>
+      {{- end }}
+    </ul>
+  </nav>
+
+  <div class="gl-masthead__rule gl-masthead__rule--thick"></div>
+</header>

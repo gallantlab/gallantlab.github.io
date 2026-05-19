@@ -1,0 +1,69 @@
+{{- /* JSON-LD structured data.
+
+       - Every page can carry the Organization node; we emit it on the home
+         page (site identity) and reuse it by @id as publisher/creator of the
+         datasets.
+       - The /data/ list page (gated on its `dataset_schema` front-matter
+         flag) emits an @graph: the Organization plus one Dataset node per
+         dataset bundle, built from each bundle's front matter.
+
+       JSON-LD inside <script> must bypass Go html/template's JS-context
+       escaping, hence `| safeJS` — without it `&`/`<` become entities and
+       the JSON breaks. */ -}}
+
+{{- $orgID := printf "%s#organization" site.BaseURL -}}
+{{- $logo := "" -}}
+{{- with resources.Get "img/logo.webp" }}{{ $logo = .Permalink }}{{ end -}}
+
+{{- $org := dict
+      "@type" "Organization"
+      "@id" $orgID
+      "name" site.Title
+      "url" site.BaseURL
+      "description" site.Params.description
+      "parentOrganization" (dict
+        "@type" "CollegeOrUniversity"
+        "name" "University of California, Berkeley")
+      "address" (dict
+        "@type" "PostalAddress"
+        "streetAddress" "132 Barker Hall, Helen Wills Neuroscience Institute"
+        "addressLocality" "Berkeley"
+        "addressRegion" "CA"
+        "postalCode" "94720"
+        "addressCountry" "US")
+      "sameAs" (slice
+        "https://github.com/gallantlab"
+        "https://scholar.google.com/citations?user=nSZG-vcAAAAJ&hl=en") -}}
+{{- with $logo }}{{ $org = merge $org (dict "logo" .) }}{{ end -}}
+
+{{- $schema := "" -}}
+
+{{- if .IsHome -}}
+  {{- $schema = merge (dict "@context" "https://schema.org") $org -}}
+{{- else if .Params.dataset_schema -}}
+  {{- $nodes := slice $org -}}
+  {{- range .Pages.ByDate.Reverse -}}
+    {{- $ds := dict
+          "@type" "Dataset"
+          "name" .Title
+          "description" .Params.summary
+          "url" (.Params.externalUrl | default .Permalink)
+          "datePublished" (string .Params.date_published)
+          "citation" .Params.citation
+          "isAccessibleForFree" true
+          "publisher" (dict "@id" $orgID)
+          "creator" (dict "@id" $orgID) -}}
+    {{- with .Params.license }}{{ $ds = merge $ds (dict "license" .) }}{{ end -}}
+    {{- with .Params.doi }}{{ $ds = merge $ds (dict "identifier" (printf "https://doi.org/%s" .)) }}{{ end -}}
+    {{- $sameAs := slice -}}
+    {{- with .Params.citation_url }}{{ $sameAs = $sameAs | append . }}{{ end -}}
+    {{- with .Params.doi }}{{ $sameAs = $sameAs | append (printf "https://doi.org/%s" .) }}{{ end -}}
+    {{- if $sameAs }}{{ $ds = merge $ds (dict "sameAs" $sameAs) }}{{ end -}}
+    {{- $nodes = $nodes | append $ds -}}
+  {{- end -}}
+  {{- $schema = dict "@context" "https://schema.org" "@graph" $nodes -}}
+{{- end -}}
+
+{{- with $schema }}
+<script type="application/ld+json">{{ jsonify . | safeJS }}</script>
+{{- end -}}
