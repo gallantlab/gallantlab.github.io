@@ -1,0 +1,8 @@
+<section class="gl-hero">
+  <div class="gl-hero__head">
+    <p class="gl-kicker">{{ .Params.kicker }}</p>
+    <h1 class="gl-hero__headline">{{ .Params.headline }}</h1>
+  </div>
+
+  <p class="gl-hero__lede has-dropcap">{{ .Params.lede | default site.Params.description }}</p>
+</section>
