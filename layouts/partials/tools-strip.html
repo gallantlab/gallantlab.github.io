@@ -1,0 +1,16 @@
+<section class="gl-tools">
+  <div class="gl-section-head">
+    <h2 class="gl-section-title">Open-source tools</h2>
+    <span class="gl-section-rule"></span>
+  </div>
+
+  <ol class="gl-tools__grid">
+    {{- range site.Data.tools }}
+      <li class="gl-tools__item">
+        <h3 class="gl-tools__name">{{ .name }}</h3>
+        <p class="gl-tools__blurb">{{ .blurb }}</p>
+        <a class="gl-tools__link" href="{{ .url }}" target="_blank" rel="noopener">github.com ↗</a>
+      </li>
+    {{- end }}
+  </ol>
+</section>
