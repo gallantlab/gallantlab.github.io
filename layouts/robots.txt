@@ -1,0 +1,26 @@
+User-agent: *
+Disallow:
+
+# Hidden, unlisted page — accessible only via its direct URL
+Disallow: /gallant.shortvita/
+Disallow: /files/Gallant.Short.Vita.June2026.pdf
+
+# Phantom select2.js module paths that Googlebot mistakes for pages inside the
+# brain-viewer apps (e.g. /viewer-chen-2024/dropdown/closeOnSelect). These are
+# not real URLs. The viewer landing pages (/viewer-NAME/) stay crawlable.
+# ("select" also covers select2/ and selection/; "data" covers data/*.)
+Disallow: /viewer-*/array
+Disallow: /viewer-*/base
+Disallow: /viewer-*/data
+Disallow: /viewer-*/defaults
+Disallow: /viewer-*/diacritics
+Disallow: /viewer-*/dropdown
+Disallow: /viewer-*/i18n
+Disallow: /viewer-*/keys
+Disallow: /viewer-*/options
+Disallow: /viewer-*/results
+Disallow: /viewer-*/select
+Disallow: /viewer-*/translation
+Disallow: /viewer-*/utils
+
+Sitemap: {{ "sitemap.xml" | absURL }}
