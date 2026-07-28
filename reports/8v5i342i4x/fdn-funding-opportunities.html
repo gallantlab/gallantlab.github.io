@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="referrer" content="no-referrer">
+<title>Foundation funding scan &mdash; Gallant lab</title>
+<style>
+  :root{
+    --ground:#F2F5F6; --surface:#FFFFFF; --surface-2:#E9EFF0;
+    --ink:#141C21; --muted:#5D6E76; --faint:#7E8F97;
+    --line:#D2DCE0; --line-soft:#E3EAEC;
+    --accent:#136F7E; --accent-soft:#DCEDF0;
+    --warm:#A8611A; --warm-soft:#F6E9D8;
+    --hot:#A33328; --hot-soft:#F8E4E0;
+    --cool:#3C6E8F;
+    --shadow:0 1px 2px rgba(20,28,33,.06), 0 6px 18px rgba(20,28,33,.05);
+    --display:"Superclarendon","Charter",Georgia,"Times New Roman",serif;
+    --body:"Avenir Next","Avenir","Segoe UI",system-ui,-apple-system,sans-serif;
+    --data:"SF Mono","Menlo","Consolas",ui-monospace,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --ground:#0D1417; --surface:#151E22; --surface-2:#1D282D;
+      --ink:#E6EDEF; --muted:#94A8B0; --faint:#7A8D95;
+      --line:#26343A; --line-soft:#1E2A2F;
+      --accent:#4FBDCE; --accent-soft:#123039;
+      --warm:#D9924A; --warm-soft:#33251485;
+      --hot:#E0705F; --hot-soft:#3A1E1A;
+      --cool:#7FA9C4;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 22px rgba(0,0,0,.28);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#0D1417; --surface:#151E22; --surface-2:#1D282D;
+    --ink:#E6EDEF; --muted:#94A8B0; --faint:#7A8D95;
+    --line:#26343A; --line-soft:#1E2A2F;
+    --accent:#4FBDCE; --accent-soft:#123039;
+    --warm:#D9924A; --warm-soft:#33251485;
+    --hot:#E0705F; --hot-soft:#3A1E1A;
+    --cool:#7FA9C4;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 22px rgba(0,0,0,.28);
+  }
+  :root[data-theme="light"]{
+    --ground:#F2F5F6; --surface:#FFFFFF; --surface-2:#E9EFF0;
+    --ink:#141C21; --muted:#5D6E76; --faint:#7E8F97;
+    --line:#D2DCE0; --line-soft:#E3EAEC;
+    --accent:#136F7E; --accent-soft:#DCEDF0;
+    --warm:#A8611A; --warm-soft:#F6E9D8;
+    --hot:#A33328; --hot-soft:#F8E4E0;
+    --cool:#3C6E8F;
+    --shadow:0 1px 2px rgba(20,28,33,.06), 0 6px 18px rgba(20,28,33,.05);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--ground); color:var(--ink);
+    font-family:var(--body); font-size:16px; line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px; margin:0 auto; padding:0 24px 96px;}
+  a{color:var(--accent); text-underline-offset:2px;}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:2px;}
+
+  /* ---------- masthead ---------- */
+  .masthead{padding:44px 0 26px; border-bottom:2px solid var(--ink);}
+  .eyebrow{
+    font-family:var(--data); font-size:11px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--muted); margin:0 0 14px;
+  }
+  h1{
+    font-family:var(--display); font-weight:400; font-size:clamp(30px,4.6vw,46px);
+    line-height:1.08; letter-spacing:-.015em; margin:0 0 12px; text-wrap:balance;
+  }
+  .standfirst{
+    margin:0; max-width:62ch; color:var(--muted); font-size:16.5px;
+  }
+  .provenance{
+    display:flex; flex-wrap:wrap; gap:0; margin-top:26px;
+    border-top:1px solid var(--line-soft); padding-top:16px;
+  }
+  .prov{padding-right:30px; margin-right:30px; border-right:1px solid var(--line-soft);}
+  .prov:last-child{border-right:0; margin-right:0; padding-right:0;}
+  .prov b{
+    display:block; font-family:var(--data); font-size:21px; font-weight:600;
+    font-variant-numeric:tabular-nums; letter-spacing:-.02em;
+  }
+  .prov span{font-size:12px; color:var(--faint); letter-spacing:.02em;}
+  .prov-warn{
+    margin-top:22px; padding:14px 18px; font-size:14px;
+    background:var(--warm-soft); border-left:3px solid var(--warm);
+    border-radius:0 3px 3px 0; max-width:74ch;
+  }
+  .prov-warn b{color:var(--warm);}
+
+  /* ---------- section ---------- */
+  section{margin-top:56px;}
+  .sec-head{
+    display:flex; align-items:baseline; gap:14px; flex-wrap:wrap;
+    border-bottom:1px solid var(--line); padding-bottom:9px; margin-bottom:6px;
+  }
+  h2{
+    font-family:var(--display); font-weight:400; font-size:23px;
+    letter-spacing:-.01em; margin:0;
+  }
+  .sec-note{font-size:13px; color:var(--faint); margin:0;}
+  .lede{max-width:66ch; color:var(--muted); font-size:15px; margin:16px 0 22px;}
+
+  /* ---------- time rail ---------- */
+  .rail-shell{overflow-x:auto; padding:26px 0 4px;}
+  /* Height is set by the rail script once it knows how many label lanes the
+     dates need. Do not pin it here — a fixed height clips the upper lanes. */
+  .rail{min-width:900px; position:relative;}
+  .rail-line{
+    position:absolute; left:0; right:0; bottom:34px; height:2px; background:var(--line);
+  }
+  .month{
+    position:absolute; bottom:0; height:34px; border-left:1px solid var(--line-soft);
+    padding-left:6px; font-family:var(--data); font-size:10px; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--faint); padding-top:8px;
+  }
+  /* Anchored from the BOTTOM so the dot lands on the axis whatever the stem
+     length. Lane assignment varies the stem, never the dot. */
+  .tick{
+    position:absolute; transform:translateX(-50%); text-align:center; width:76px;
+    display:flex; flex-direction:column; align-items:center; justify-content:flex-end;
+  }
+  .tick .stem{
+    width:2px; background:currentColor; margin:0 auto; border-radius:1px; opacity:.5;
+  }
+  .tick .dot{
+    width:11px; height:11px; border-radius:50%; background:currentColor;
+    margin:0 auto; border:2px solid var(--ground);
+  }
+  .tick .lab{
+    font-family:var(--data); font-size:10.5px; font-variant-numeric:tabular-nums;
+    color:var(--ink); margin-bottom:5px; letter-spacing:-.01em;
+    white-space:nowrap;
+  }
+  .tick .cnt{font-size:10px; color:var(--faint); display:block;}
+  .u-open{color:var(--accent);} .u-past{color:var(--faint);}
+
+  /* ---------- docket rows ---------- */
+  .docket{border-top:1px solid var(--line);}
+  .row{
+    display:grid; grid-template-columns:184px 1fr; gap:0 28px;
+    padding:22px 0; border-bottom:1px solid var(--line-soft);
+  }
+  .col-key{display:flex; flex-direction:column; gap:9px;}
+  .code{
+    font-family:var(--data); font-size:13.5px; font-weight:600; letter-spacing:-.02em;
+    color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);
+    padding-bottom:2px; display:inline-block; width:fit-content;
+  }
+  .code:hover{color:var(--accent); border-bottom-color:var(--accent);}
+  .due{font-family:var(--data); font-size:12px; color:var(--muted); font-variant-numeric:tabular-nums;}
+  .due b{display:block; color:var(--ink); font-weight:600; font-size:13px;}
+  .pill{
+    display:inline-block; font-family:var(--data); font-size:10.5px; font-weight:600;
+    letter-spacing:.04em; text-transform:uppercase; padding:3px 8px; border-radius:2px;
+    width:fit-content; border:1px solid;
+  }
+  .p-now{color:var(--hot); background:var(--hot-soft); border-color:var(--hot);}
+  .p-past{color:var(--faint); background:transparent; border-color:var(--line);}
+
+  .col-body h3{
+    font-family:var(--body); font-size:16.5px; font-weight:600; line-height:1.35;
+    margin:0 0 6px; letter-spacing:-.005em; text-wrap:balance;
+  }
+  .meta{
+    font-family:var(--data); font-size:11.5px; color:var(--muted); margin:0 0 10px;
+    display:flex; flex-wrap:wrap; gap:0 10px; font-variant-numeric:tabular-nums;
+  }
+  .meta span:not(:last-child)::after{content:"·"; margin-left:10px; color:var(--line);}
+  .why{margin:0 0 12px; font-size:14.5px; color:var(--ink); max-width:70ch;}
+  .why em{font-style:normal; background:var(--accent-soft); padding:0 3px; border-radius:2px;}
+  .caveat{
+    margin:0 0 12px; font-size:13.5px; color:var(--muted); max-width:70ch;
+    border-left:2px solid var(--warm); padding-left:11px;
+  }
+  .links{display:flex; gap:16px; flex-wrap:wrap; font-family:var(--data); font-size:11.5px;}
+  .links a{text-decoration:none; border-bottom:1px solid transparent;}
+  .links a:hover{border-bottom-color:currentColor;}
+  .links a::after{content:" ↗"; font-size:9px; vertical-align:1px; opacity:.6;}
+
+  /* ---------- compact table ---------- */
+  .tbl-shell{overflow-x:auto; margin-top:6px;}
+  table{border-collapse:collapse; width:100%; min-width:620px; font-size:14px;}
+  th{
+    text-align:left; font-family:var(--data); font-size:10.5px; font-weight:600;
+    letter-spacing:.09em; text-transform:uppercase; color:var(--faint);
+    padding:0 14px 9px 0; border-bottom:1px solid var(--line);
+  }
+  td{padding:13px 14px 13px 0; border-bottom:1px solid var(--line-soft); vertical-align:top;}
+  td.mono{font-family:var(--data); font-size:12.5px; font-variant-numeric:tabular-nums; white-space:nowrap;}
+  td a{text-decoration:none; border-bottom:1px solid var(--line);}
+  td a:hover{border-bottom-color:var(--accent);}
+
+  /* ---------- findings ---------- */
+  .findings{display:grid; gap:0; margin-top:8px;}
+  .finding{
+    padding:20px 0; border-bottom:1px solid var(--line-soft);
+    display:grid; grid-template-columns:184px 1fr; gap:0 28px;
+  }
+  .finding-key{
+    font-family:var(--data); font-size:11px; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--warm); padding-top:3px;
+  }
+  .finding p{margin:0; max-width:70ch; font-size:14.5px;}
+  .finding p + p{margin-top:8px; color:var(--muted); font-size:13.5px;}
+
+  /* ---------- portals ---------- */
+  .portals{display:grid; grid-template-columns:repeat(auto-fit,minmax(228px,1fr)); gap:1px; background:var(--line-soft); border:1px solid var(--line-soft); margin-top:8px;}
+  .portal{background:var(--surface); padding:18px 18px 20px; display:flex; flex-direction:column; gap:5px;}
+  .portal a{
+    font-family:var(--data); font-size:13px; font-weight:600; text-decoration:none;
+    letter-spacing:-.01em;
+  }
+  .portal a:hover{text-decoration:underline;}
+  .portal p{margin:0; font-size:13px; color:var(--muted); line-height:1.45;}
+
+  /* ---------- shortlist ---------- */
+  .shortlist{
+    background:var(--surface); border:1px solid var(--line); padding:26px 28px 28px;
+    box-shadow:var(--shadow); margin-top:8px;
+  }
+  .shortlist ol{margin:0; padding-left:0; list-style:none; counter-reset:s;}
+  .shortlist li{
+    counter-increment:s; padding:13px 0 13px 44px; position:relative;
+    border-bottom:1px solid var(--line-soft); font-size:14.5px; max-width:74ch;
+  }
+  .shortlist li:last-child{border-bottom:0; padding-bottom:0;}
+  .shortlist li::before{
+    content:counter(s); position:absolute; left:0; top:13px;
+    font-family:var(--data); font-size:12px; font-weight:600; color:var(--accent);
+    border:1px solid var(--accent); width:24px; height:24px; border-radius:50%;
+    display:grid; place-items:center;
+  }
+  .shortlist li b{font-family:var(--data); font-size:13.5px; letter-spacing:-.02em;}
+
+  footer{
+    margin-top:64px; padding-top:22px; border-top:1px solid var(--line);
+    font-size:13px; color:var(--faint); max-width:74ch;
+  }
+  footer p{margin:0 0 9px;}
+
+  @media (max-width:720px){
+    .row, .finding{grid-template-columns:1fr; gap:12px 0;}
+    .col-key{flex-direction:row; align-items:center; flex-wrap:wrap; gap:10px;}
+    .prov{padding-right:20px; margin-right:20px;}
+    .wrap{padding:0 18px 72px;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none !important; transition:none !important;}
+  }
+
+  .badge{
+    display:inline-block; font-family:var(--data); font-size:10px; font-weight:700;
+    letter-spacing:.06em; text-transform:uppercase; padding:3px 7px; border-radius:2px;
+    width:fit-content; margin-top:6px;
+  }
+  .b-limited{ background:var(--hot-soft); color:var(--hot); border:1px solid var(--hot); }
+  .b-nomination{ background:var(--warm-soft); color:var(--warm); border:1px solid var(--warm); }
+  .b-invitation{ background:transparent; color:var(--faint); border:1px dashed var(--faint); }
+  .b-open{ background:var(--accent-soft); color:var(--accent); border:1px solid var(--accent); }
+  .unread-pill{
+    display:inline-block; font-family:var(--data); font-size:10.5px; font-weight:600;
+    letter-spacing:.04em; text-transform:uppercase; padding:3px 8px; border-radius:2px;
+    border:1px dashed var(--warm); color:var(--warm); background:transparent; width:fit-content;
+  }
+  .giving{ font-family:var(--data); font-size:11px; color:var(--faint); }
+  .stale{
+    border:1px solid var(--line); background:var(--surface-2); border-radius:3px;
+    padding:12px 16px; margin:0 0 26px; font-size:13.5px; color:var(--muted);
+  }
+  .stale b{ color:var(--ink); }
+</style>
+<style>
+  .gl-fund-nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px;}
+  .gl-fund-nav a{
+    font:600 13px/1 var(--body);letter-spacing:.04em;text-transform:uppercase;
+    text-decoration:none;color:var(--muted);background:var(--surface);
+    border:1px solid var(--line);border-radius:999px;padding:9px 16px;
+  }
+  .gl-fund-nav a:hover{color:var(--accent);border-color:var(--accent);}
+  .gl-fund-nav a[aria-current="page"]{
+    color:var(--surface);background:var(--accent);border-color:var(--accent);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<nav class="gl-fund-nav" aria-label="Funding source">
+  <a href="nih-funding-opportunities.html">NIH</a>
+  <a href="nsf-funding-opportunities.html">NSF</a>
+  <a href="dod-funding-opportunities.html">DoD</a>
+  <a href="fdn-funding-opportunities.html" aria-current="page">Foundations</a>
+</nav>
+  <header class="masthead">
+    <p class="eyebrow">Private foundation scan &middot; 2026-07-27 &middot; prepared for the Gallant lab</p>
+    <h1>Where the Gallant lab could apply to private foundations</h1>
+    <p class="standfirst">
+      Twenty foundations, matched against the lab's program:
+      The human program traces a progression from low/intermediate-level visual encoding and image reconstruction, through cortex-wide semantic mapping of vision and language, to how attention/task warp those representations during active naturalistic behavior — plus the modeling toolkit that makes it all possible.
+    </p>
+
+    <div class="provenance">
+      <div class="prov"><b>20</b><span>foundations tracked</span></div>
+      <div class="prov"><b>28</b><span>programs verified</span></div>
+      <div class="prov"><b>22</b><span>matched this lab</span></div>
+      <div class="prov"><b>8</b><span>early-career only</span></div>
+    </div>
+  </header>
+
+  <div class="stale">
+    <b>This corpus is curated, not indexed.</b> No one publishes a machine-readable
+    list of private-foundation research programs, so unlike the NIH, NSF and DoD
+    pages this one is built from a registry a human maintains
+    (<span class="mono">shared/foundations.json</span>, last reviewed
+    <b>2026-07-27</b>). Every link on it was re-fetched and re-checked on
+    2026-07-27. Of the 28 programs, <b>0</b> had a
+    dead link and <b>1</b> served a page too JavaScript-heavy to
+    read a date from. Those are stated rather than left blank &mdash; a blank
+    deadline that really means &ldquo;we could not tell&rdquo; is indistinguishable
+    from &ldquo;no deadline&rdquo;, and that is the worst thing this page could do.
+  </div>
+
+  <section>
+    <div class="sec-head">
+      <h2>Deadline timeline</h2>
+      <p class="sec-note">Programs with a date read off the live page in the next twelve months</p>
+    </div>
+    <div class="rail-shell"><div class="rail" id="rail"></div></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Tier one &mdash; direct fit</h2>
+      <p class="sec-note">Matches the lab's work without reframing, and the PI can hold it</p>
+    </div>
+    <div class="docket" id="tier1"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Tier two &mdash; plausible routes</h2>
+      <p class="sec-note">Good fit through a broader mandate</p>
+    </div>
+    <div class="docket" id="tier2"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Tier three &mdash; needs a reframing or a collaborator</h2>
+      <p class="sec-note">Eligible, but not a direct fit as written</p>
+    </div>
+    <div class="docket" id="tier3"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Rolling, undated and unreadable</h2>
+      <p class="sec-note">No deadline to sort by &mdash; which is not the same as no deadline</p>
+    </div>
+    <p class="lede">
+      Foundations publish dates far less reliably than agencies do. Some review
+      on a rolling basis and genuinely have no deadline; some post one only when
+      a cycle opens; and some serve a page no parser can read, because the text
+      arrives by JavaScript. <strong>These three cases look identical in a blank
+      date column, so each row says which one it is.</strong> Where it says
+      unreadable, open the page yourself &mdash; there may well be a date on it.
+    </p>
+    <div class="reissue" id="standing"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Early-career routes &mdash; for the lab, not for the PI</h2>
+      <p class="sec-note">8 programs the PI is ineligible to hold</p>
+    </div>
+    <p class="lede">
+      A large share of the best-known foundation awards are restricted to faculty
+      in their first years &mdash; Sloan, Searle, Packard, Klingenstein, Pew, Rita
+      Allen, Beckman. For a senior PI these are not weak fits, they are
+      <strong>ineligible</strong>. They stay on this page because the lab still
+      uses them: they are what a departing postdoc applies for on taking a first
+      faculty job, and knowing the deadline a year ahead is what makes that
+      possible. Same reason the NIH page keeps its F32 and K99 rows.
+    </p>
+    <div class="reissue" id="trainee"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Before committing to any of these</h2>
+      <p class="sec-note">Foundation constraints with no federal equivalent</p>
+    </div>
+    <div class="findings">
+      <div class="finding">
+        <div class="finding-key">Limited submission means an internal deadline</div>
+        <div>
+          <p>Where a program is marked <b>limited</b>, the institution may forward
+          only a capped number of applicants &mdash; sometimes one. The operative
+          deadline is therefore the <b>internal campus deadline, months earlier</b>,
+          and the first competition is against colleagues, not against the field.
+          Missing it means the foundation deadline is irrelevant. Check the
+          sponsored-projects limited-submission calendar before anything else.</p>
+        </div>
+      </div>
+      <div class="finding">
+        <div class="finding-key">Nomination means you cannot apply</div>
+        <div>
+          <p>Where a program is marked <b>nomination</b>, only a nominating official
+          may put a name forward, and for several the foundation invites a fixed
+          list of institutions. A strong application written without a nomination
+          is not a long shot &mdash; it will not be read.</p>
+        </div>
+      </div>
+      <div class="finding">
+        <div class="finding-key">Fit is judged by a program officer, not a panel</div>
+        <div>
+          <p>Foundations rarely run standing study sections. A program officer or a
+          small board decides, often on a written scope that is narrower than the
+          public page suggests. <b>A short exploratory email is normal here</b> and
+          costs nothing; at NIH it would be unusual.</p>
+        </div>
+      </div>
+      <div class="finding">
+        <div class="finding-key">Indirect-cost rates are usually capped</div>
+        <div>
+          <p>Most private foundations cap indirect costs well below a federally
+          negotiated rate &mdash; 10&ndash;15&nbsp;per&nbsp;cent is common and some pay
+          none. That is an institutional matter requiring approval, not a detail to
+          settle at submission. Budget the direct costs accordingly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Where to check next</h2>
+      <p class="sec-note">The registry behind this page, and the offices that gate it</p>
+    </div>
+    <div class="portals">
+      <div class="portal">
+        <a href="https://projects.propublica.org/nonprofits/" target="_blank" rel="noopener">ProPublica Nonprofit Explorer</a>
+        <p>Form 990 filings. Giving capacity and what a foundation actually funded last year.</p>
+      </div>
+      <div class="portal">
+        <a href="https://candid.org/" target="_blank" rel="noopener">Candid / Foundation Directory</a>
+        <p>The commercial index this project deliberately does not depend on. Many universities hold a subscription.</p>
+      </div>
+      <div class="portal">
+        <a href="https://spo.berkeley.edu/" target="_blank" rel="noopener">Berkeley SPO</a>
+        <p>Sponsored Projects Office — institutional sign-off. Budget internal deadlines ahead of every NIH date.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      Prepared for Jack Gallant, University of California, Berkeley. Every program was re-fetched
+      and re-checked on 2026-07-27; dates shown were read from the live page
+      and only counted where a deadline word vouched for them. Dates are absolute; a
+      deadline already past is marked closed.
+    </p>
+    <p>
+      Foundation programs open, close and are discontinued with no announcement
+      anyone indexes. A date here is what the page said today, not a commitment,
+      and the absence of a program from this page is evidence about the registry
+      as much as about the world.
+    </p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var DATA = [{"tier": 1, "slug": "keck-science-engineering", "code": "W. M. Keck Foundation", "url": "https://www.wmkeck.org/research-overview/", "title": "Keck Research Program — Science and Engineering", "fdn": "W. M. Keck Foundation", "submission": "limited", "applicant": "pi", "stage": "any", "budget": "$1M and up, typically 3 years", "why": "Keck asks in as many words for work <em>too speculative for federal review</em>, at a scale ($1M and up) no other foundation here approaches. Methodology development is in scope. For a lab whose federal portfolio is necessarily incremental, this is the place to put the version of the encoding-model program that a study section would call premature.", "caveat": "<b>Limited submission.</b> Berkeley forwards a capped number and the two Keck tracks compete against each other internally, so the real deadline is the campus one, months before the foundation's, and the real competition is the rest of the university. Nothing else on this page has a gate that early. Start with the sponsored-projects limited-submission calendar, not with the science.", "due": "2027-06-07", "dueNote": "", "state": "dates", "giving": "FY2023 total expenses $79M"}, {"tier": 2, "slug": "simons-funding", "code": "Simons Foundation", "url": "https://www.simonsfoundation.org/funding-opportunities/", "title": "Simons Foundation open funding opportunities", "fdn": "Simons Foundation", "submission": "open", "applicant": "pi", "stage": "any", "budget": "varies widely by call", "why": "Simons is the largest private funder of basic neuroscience in the country and its remit covers computational and systems work directly. The verification pass read three live dates off this page, so something is genuinely open now.", "caveat": "This is an <b>index page, not a program</b>: what is open changes several times a year, and the dates found belong to whichever calls are live today. Treat it as a route to check each cycle rather than a single opportunity, and read the live page before acting on any date shown here.", "due": "2026-07-30", "dueNote": "then 2026-09-10, 2026-09-30, 2026-10-01, 2026-10-29", "state": "dates", "giving": "FY2023 total expenses $565M"}, {"tier": 2, "slug": "brf-scientific-innovations", "code": "Brain Research Foundation", "url": "https://www.thebrf.org/scientific-innovations-award/", "title": "BRF Scientific Innovations Award", "fdn": "Brain Research Foundation", "submission": "nomination", "applicant": "pi", "stage": "mid", "budget": "$150,000 over two years", "why": "Aimed squarely at established investigators proposing a genuinely new direction, at $150,000 over two years &mdash; enough to run a pilot that no federal mechanism will fund before it has preliminary data. Career stage is right: associate or full professor, which is where the PI sits.", "caveat": "<b>Nomination only.</b> Institutions are invited to nominate and an investigator cannot self-apply, so this depends on Berkeley putting the name forward. Find out who controls that nomination and when it is decided; the answer is usually a research-development office, not a department.", "due": "2027-04-01", "dueNote": "", "state": "dates", "giving": "FY2023 total expenses $3M"}];
+  var STANDING = [{"tier": 1, "slug": "czi-eoss", "code": "Chan Zuckerberg Initiative", "url": "https://chanzuckerberg.com/rfa/essential-open-source-software-for-science/", "title": "CZI Essential Open Source Software for Science", "fdn": "Chan Zuckerberg Initiative", "submission": "open", "applicant": "pi", "stage": "any", "budget": "roughly $200,000-$400,000 per cycle", "why": "This program funds the <em>maintenance and growth of software other scientists already depend on</em>, which is the rarest thing to get funded and exactly what the lab has. pycortex and himalaya have real external user bases, and the voxelwise-modeling tutorials are the kind of documentation and community work CZI names explicitly. The federal analog is the NIH R50 and U24 and the NSF CSSI, all of which already rank high on the other pages &mdash; this is the fourth route to the same asset.", "caveat": "Not continuously open: CZI runs this as a periodic RFA, and cycles have lapsed. Confirm a live cycle before writing anything. Adoption evidence &mdash; downloads, dependent packages, citing papers &mdash; <b>is</b> the application, so gather it first.", "due": "", "dueNote": "no deadline stated on the page; by RFA, not continuous", "state": "not-stated", "giving": "FY2023 total expenses $128M"}, {"tier": 1, "slug": "mathers-research", "code": "G. Harold & Leila Y. Mathers Foundation", "url": "https://www.mathersfoundation.org/", "title": "Mathers Foundation research grant", "fdn": "G. Harold & Leila Y. Mathers Foundation", "submission": "open", "applicant": "pi", "stage": "any", "budget": "typically $300,000 over three years", "why": "Mathers funds basic life-science research with <b>no disease requirement and no topical program structure</b> &mdash; among the very few remaining routes for mechanism work that has no translational hook to offer. The lab's core question, how the cortex represents natural language and natural vision, can be proposed here as itself rather than reframed around a clinical population it does not study.", "caveat": "Rolling review and a foundation that publishes very little: the site yielded no dates and almost no prose, so the process is opaque from the outside. Typical awards are around $300,000 over three years. An exploratory approach before a full submission is worth more here than on any federal route.", "due": "", "dueNote": "no deadline stated on the page; rolling review", "state": "not-stated", "giving": ""}, {"tier": 1, "slug": "mcknight-technological-innovations", "code": "McKnight Endowment Fund for Neuroscience", "url": "https://www.mcknight.org/programs/the-mcknight-endowment-fund-for-neuroscience/", "title": "McKnight Technological Innovations in Neuroscience Award", "fdn": "McKnight Endowment Fund for Neuroscience", "submission": "open", "applicant": "pi", "stage": "any", "budget": "$200,000 over two years", "why": "The single best structural match on this list. McKnight funds novel <em>technologies and methods for studying brain function</em>, and explicitly counts analysis methods and software rather than only instruments. Voxelwise encoding models, banded ridge regression and the pycortex/himalaya stack are method contributions that a neuroscience panel already recognizes, and the lab's naturalistic-stimulus work is the demonstration case. Crucially this is the one McKnight award with <b>no career-stage bar</b>, so unlike the Scholars award the PI can hold it.", "caveat": "$200,000 over two years is modest and is meant to build or extend a method, not to run a program. Frame it around the tool and its adoption by other labs, not around a scientific question the tool happens to serve.", "due": "", "dueNote": "no deadline stated on the page; annual", "state": "not-stated", "giving": "FY2023 total expenses $163M"}, {"tier": 2, "slug": "hfsp-program-grant", "code": "Human Frontier Science Program", "url": "https://www.hfsp.org/funding/hfsp-funding/research-grants", "title": "HFSP Research Grants — Program and Early Career", "fdn": "Human Frontier Science Program", "submission": "open", "applicant": "pi", "stage": "any", "budget": "up to $400,000 a year for three years, across the team", "why": "HFSP funds frontier, genuinely interdisciplinary work and is comfortable with projects that do not fit a disciplinary panel &mdash; encoding models sitting between linguistics, vision science and machine learning are a natural fit. Award size is substantial and the money follows the team rather than one institution.", "caveat": "The <b>international-team requirement is structural</b>, not a preference: members must be in different countries and the collaboration has to be new. No team, no application. That makes this a twelve-month lead item, not something to assemble against a deadline.", "due": "", "dueNote": "no deadline stated on the page; annual, letter of intent first", "state": "not-stated", "giving": ""}, {"tier": 2, "slug": "jsmf-human-cognition", "code": "James S. McDonnell Foundation", "url": "https://www.jsmf.org/", "title": "JSMF Understanding Human Cognition", "fdn": "James S. McDonnell Foundation", "submission": "open", "applicant": "pi", "stage": "any", "budget": "historically $500,000 over six years", "why": "The Understanding Human Cognition program has historically been among the best fits in existence for this lab &mdash; human cognition broadly construed, including language and higher-order perception, at $500,000 over six years with unusual freedom in how it is spent.", "caveat": "<b>Verify the program still exists before spending an hour on it.</b> The foundation has restructured, and the site returned a server error during the reconnaissance pass and yielded no dates during verification. Historic fit is not current availability.", "due": "", "dueNote": "no deadline stated on the page; has been between cycles", "state": "not-stated", "giving": "FY2023 total expenses $37M"}, {"tier": 2, "slug": "whitehall-neurobiology", "code": "Whitehall Foundation", "url": "https://www.whitehall.org/grants/", "title": "Whitehall Foundation research grant in neurobiology", "fdn": "Whitehall Foundation", "submission": "open", "applicant": "pi", "stage": "any", "budget": "up to $75,000 a year for three years", "why": "One of the few foundations still funding basic neurobiology on an investigator-initiated basis, with three letter-of-intent windows a year and a low barrier to a first approach.", "caveat": "Two real problems. Whitehall <b>explicitly excludes clinical and disease-directed work</b>, and its stated remit is how the nervous system produces behavior &mdash; historically read as favoring animal and invertebrate systems over human neuroimaging. And the grants page is <b>fully JavaScript-rendered</b>: it served one character of text to the verifier, so nothing here about its current dates or scope was confirmed. Read the scope statement yourself before writing a letter of intent.", "due": "", "dueNote": "deadline not machine-readable — the page is JavaScript-rendered; check it directly", "state": "unreadable", "giving": "FY2023 total expenses $7M"}, {"tier": 3, "slug": "dana-neuroscience-society", "code": "Dana Foundation", "url": "https://dana.org/", "title": "Dana Foundation — neuroscience and society", "fdn": "Dana Foundation", "submission": "open", "applicant": "pi", "stage": "any", "budget": "modest, program-dependent", "why": "Dana retains real interest in how neuroscience reaches the public, and the lab has an unusually communicable asset in cortical flatmaps and semantic-space visualizations, which have already travelled well outside the field.", "caveat": "Dana has <b>reoriented away from bench neuroscience</b> toward neuroscience and society, so this is not a route for the research program itself. Awards are modest. Worth considering only as an outreach or public-engagement project built on work funded elsewhere.", "due": "", "dueNote": "no deadline stated on the page; by call", "state": "not-stated", "giving": ""}, {"tier": 3, "slug": "templeton-funding-areas", "code": "John Templeton Foundation", "url": "https://www.templeton.org/funding-areas", "title": "John Templeton Foundation funding areas", "fdn": "John Templeton Foundation", "submission": "open", "applicant": "pi", "stage": "any", "budget": "varies by area; large awards exist", "why": "Mind and consciousness sit inside Templeton's remit, and it funds work on meaning, language and human experience at a scale most foundations do not. Semantic representation across cortex is a legitimate Templeton subject if it is posed as a question about how meaning is organized.", "caveat": "<b>Framing matters more here than anywhere else on this page.</b> Templeton funds a portfolio that includes explicitly religious and philosophical work, and the reputational calculus of taking that money is a decision for the PI, not a scoring question. Start with the online funding inquiry rather than a full proposal.", "due": "", "dueNote": "no deadline stated on the page; rolling, online funding inquiry first", "state": "not-stated", "giving": "FY2023 total expenses $162M"}, {"tier": 3, "slug": "kavli-foundation", "code": "The Kavli Foundation", "url": "https://www.kavlifoundation.org/", "title": "Kavli Foundation neuroscience activities", "fdn": "The Kavli Foundation", "submission": "invitation", "applicant": "pi", "stage": "any", "budget": "institute-scale", "why": "Kavli is a major neuroscience funder and Berkeley hosts Kavli-affiliated activity, so proximity is real.", "caveat": "<b>Not an open competition.</b> Kavli works through endowed institutes and invited activity rather than a call anyone can answer. Listed here so it is visibly ruled out rather than rediscovered and re-investigated every cycle. The route in is institutional, through an existing Kavli institute, not an application.", "due": "", "dueNote": "no deadline stated on the page; not an open call", "state": "not-stated", "giving": "FY2023 total expenses $37M"}, {"tier": 3, "slug": "mcknight-brain-disorders", "code": "McKnight Endowment Fund for Neuroscience", "url": "https://www.mcknight.org/programs/the-mcknight-endowment-fund-for-neuroscience/", "title": "McKnight Neurobiology of Brain Disorders Award", "fdn": "McKnight Endowment Fund for Neuroscience", "submission": "open", "applicant": "pi", "stage": "any", "budget": "$300,000 over three years", "why": "Well-sized at $300,000 over three years, and the lab's language and low-vision-adjacent work touches conditions McKnight cares about &mdash; aphasia in particular is squarely a disorder of exactly the system this lab models.", "caveat": "Requires a <b>genuine disease link</b>, not a healthy-brain study with a clinical paragraph attached. The lab's own capability record says it does not work with patient populations, so this needs a clinical collaborator who brings the participants, and that collaboration has to exist before the application, not be promised in it.", "due": "", "dueNote": "no deadline stated on the page; annual", "state": "not-stated", "giving": "FY2023 total expenses $163M"}, {"tier": 3, "slug": "simons-global-brain", "code": "Simons Foundation", "url": "https://www.simonsfoundation.org/collaborations/global-brain/", "title": "Simons Collaboration on the Global Brain", "fdn": "Simons Foundation", "submission": "invitation", "applicant": "pi", "stage": "any", "budget": "collaboration-scale", "why": "SCGB's subject &mdash; internal brain states and population-level neural computation &mdash; overlaps the lab's encoding-model work closely, and its investigator list is full of people the lab already publishes alongside.", "caveat": "<b>Largely by invitation</b> into an existing collaboration rather than an open call, and historically weighted toward invasive recording in animals rather than human neuroimaging. The realistic route is a collaboration with a current SCGB investigator, not a direct application.", "due": "", "dueNote": "no deadline stated on the page; by collaboration cycle", "state": "not-stated", "giving": "FY2023 total expenses $565M"}];
+  var TRAINEE = [{"tier": 1, "slug": "hfsp-postdoctoral-fellowships", "code": "Human Frontier Science Program", "url": "https://www.hfsp.org/funding/hfsp-funding/postdoctoral-fellowships", "title": "HFSP Postdoctoral Fellowships", "fdn": "Human Frontier Science Program", "submission": "open", "applicant": "trainee", "stage": "early", "budget": "three years, portable", "why": "The best-matched postdoc award on this list for how this lab actually recruits. The cross-disciplinary track exists for people moving <em>into</em> a new field &mdash; a physics, statistics or machine-learning graduate entering neuroscience, which is the modal hire for encoding-model work. It is portable and runs three years, so it funds a fellow through an entire project rather than a first year.", "caveat": "The fellow must move to a <b>new country</b>, so this is a route for recruiting from abroad, not for retaining someone already here. The fellow applies and the host PI writes in support &mdash; the application is theirs, and the lead time is long.", "due": "2026-09-24", "dueNote": "", "state": "dates", "giving": ""}, {"tier": 1, "slug": "klingenstein-simons", "code": "Esther A. & Joseph Klingenstein Fund", "url": "https://www.klingfund.org/", "title": "Klingenstein-Simons Fellowship Award in Neuroscience", "fdn": "Esther A. & Joseph Klingenstein Fund", "submission": "limited", "applicant": "pi", "stage": "early", "budget": "$300,000 over three years", "why": "Early-career neuroscience specifically, run jointly with Simons, and open to both basic and computational work. One of the few early-career awards where a modeling-heavy candidate is not at a disadvantage against a wet-lab one.", "caveat": "Requires institutional endorsement, so the candidate's new institution has to be willing to put them forward. Worth checking that institution's internal process the moment an offer is accepted.", "due": "", "dueNote": "no deadline stated on the page; annual", "state": "not-stated", "giving": "FY2023 total expenses $8M"}, {"tier": 1, "slug": "mcknight-scholars", "code": "McKnight Endowment Fund for Neuroscience", "url": "https://www.mcknight.org/programs/the-mcknight-endowment-fund-for-neuroscience/", "title": "McKnight Scholars Award", "fdn": "McKnight Endowment Fund for Neuroscience", "submission": "open", "applicant": "pi", "stage": "early", "budget": "$75,000 a year for three years", "why": "The strongest early-career neuroscience award a departing postdoc from this lab could target, and it comes from the same foundation as the PI's own best fit on this page &mdash; which means the lab already has reason to know the program well.", "caveat": "For neuroscientists in the first years of an independent appointment. Plan around it before the postdoc leaves: the first application window usually falls within a year of starting, and the case is far stronger if the independent direction was staked out while still in the lab.", "due": "", "dueNote": "no deadline stated on the page; annual", "state": "not-stated", "giving": "FY2023 total expenses $163M"}, {"tier": 2, "slug": "beckman-postdoctoral-fellows", "code": "Arnold and Mabel Beckman Foundation", "url": "https://www.beckman-foundation.org/programs/beckman-postdoctoral-fellows/", "title": "Arnold O. Beckman Postdoctoral Fellowship", "fdn": "Arnold and Mabel Beckman Foundation", "submission": "open", "applicant": "trainee", "stage": "early", "budget": "salary plus research support, two years", "why": "Salary plus research support for two years, with an explicit methods and instrumentation bias that suits a fellow building analysis tooling rather than running experiments.", "caveat": "Beckman leans chemistry and the physical life sciences, so a purely computational neuroscience pitch needs a concrete methods contribution in front of it. Open submission, which makes it a lower-cost attempt than the nomination-gated awards above.", "due": "2026-09-04", "dueNote": "", "state": "dates", "giving": "FY2023 total expenses $42M"}, {"tier": 2, "slug": "packard-fellowship", "code": "David and Lucile Packard Foundation", "url": "https://www.packard.org/what-we-fund/science/packard-fellowships-for-science-and-engineering/", "title": "Packard Fellowship for Science and Engineering", "fdn": "David and Lucile Packard Foundation", "submission": "limited", "applicant": "pi", "stage": "early", "budget": "$875,000 over five years, unrestricted", "why": "The most unrestricted early-career money in American science: $875,000 over five years with essentially no strings, which is transformative for someone starting a lab that needs scanner time.", "caveat": "<b>Two nominations per invited institution</b>, and only some institutions are invited. This is the most restrictive limited submission on the page &mdash; the odds of even being forwarded are low, and it must not be the only plan.", "due": "", "dueNote": "no deadline stated on the page; annual", "state": "not-stated", "giving": "FY2023 total expenses $458M"}, {"tier": 2, "slug": "searle-scholars", "code": "Searle Scholars Program (Kinship Foundation)", "url": "https://www.searlescholars.net/", "title": "Searle Scholars Program", "fdn": "Searle Scholars Program (Kinship Foundation)", "submission": "limited", "applicant": "pi", "stage": "early", "budget": "$300,000 over three years", "why": "Substantial and prestigious for first-time faculty, and the program has funded computational and quantitative biology alongside bench science.", "caveat": "Invited institutions only, and each may forward very few. Biomedical framing is expected, so a purely methodological pitch needs a biological question in front of it.", "due": "", "dueNote": "no deadline stated on the page; annual", "state": "not-stated", "giving": "FY2023 total expenses $2M"}, {"tier": 2, "slug": "sloan-research-fellowship", "code": "Alfred P. Sloan Foundation", "url": "https://sloan.org/fellowships", "title": "Sloan Research Fellowship — Neuroscience", "fdn": "Alfred P. Sloan Foundation", "submission": "nomination", "applicant": "pi", "stage": "early", "budget": "$75,000 over two years", "why": "Runs a neuroscience category and is among the most portable early-career awards there is. A senior PI's role here is as <b>nominator and letter-writer</b>, which is a concrete way to support someone leaving the lab.", "caveat": "Departmental nomination with supporting letters, and the field categories are strict &mdash; a computational candidate has to choose between neuroscience and computer science, and the choice changes the comparison set.", "due": "2026-09-15", "dueNote": "", "state": "dates", "giving": "FY2023 total expenses $119M"}, {"tier": 3, "slug": "brf-seed-grant", "code": "Brain Research Foundation", "url": "https://www.thebrf.org/seed-grants/", "title": "BRF Fay/Frank Seed Grant", "fdn": "Brain Research Foundation", "submission": "limited", "applicant": "pi", "stage": "early", "budget": "$80,000 over two years", "why": "A genuine seed mechanism for newly independent investigators at $80,000 over two years &mdash; the right size for the first pilot dataset before an R01 is credible.", "caveat": "Limited submission through the institution, and aimed at assistant or early associate professors. Smaller than the others in this section, so it is a complement to an R00 or a startup package rather than an alternative.", "due": "", "dueNote": "no deadline stated on the page; annual", "state": "not-stated", "giving": "FY2023 total expenses $3M"}];
+  var MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  var DAY = 86400000;
+
+  function today(){ var d=new Date(); return new Date(d.getFullYear(),d.getMonth(),d.getDate()); }
+  function parse(s){ var p=s.split("-"); return new Date(+p[0],+p[1]-1,+p[2]); }
+  function daysUntil(s){ return Math.round((parse(s)-today())/DAY); }
+  function fmt(s){ var d=parse(s); return d.getDate()+" "+MONTHS[d.getMonth()]+" "+d.getFullYear(); }
+  function urgency(n){ return n<0?"past":"open"; }
+  function countdown(n){ return n<0?"closed":n===0?"due today":""; }
+  function el(t,c,h){ var n=document.createElement(t); if(c)n.className=c; if(h!=null)n.innerHTML=h; return n; }
+
+  /* The submission kind is the single most actionable fact on this page, so it
+     is a badge rather than a line of prose. "limited" and "nomination" change
+     what you do next; "open" and "invitation" change whether you do anything. */
+  function badge(kind){
+    var label = {limited:"limited submission", nomination:"nomination only",
+                 invitation:"by invitation", open:"open"}[kind] || kind;
+    return el("span","badge b-"+kind,label);
+  }
+  /* Never render "no date" as an empty cell: say WHICH kind of no-date it is. */
+  function stateLabel(s){
+    return {"unreadable":"date unreadable","dead-link":"link dead",
+            "not-stated":"no date posted"}[s] || "rolling";
+  }
+
+  function renderRow(d){
+    var hasDate = !!d.due && d.state === "dates";
+    var n = hasDate ? daysUntil(d.due) : null;
+    var row = el("div","row");
+    var key = el("div","col-key");
+    var a = el("a","code",d.fdn); a.href=d.url; a.target="_blank"; a.rel="noopener";
+    key.appendChild(a);
+    if (hasDate){
+      key.appendChild(el("div","due","<b>"+fmt(d.due)+"</b>"+(d.dueNote?" "+d.dueNote:"")));
+      var cd = countdown(n);
+      if (cd) key.appendChild(el("span","pill p-"+(n<0?"past":"now"),cd));
+    } else {
+      key.appendChild(el("span","unread-pill",stateLabel(d.state)));
+    }
+    key.appendChild(badge(d.submission));
+    if (d.giving) key.appendChild(el("div","giving",d.giving));
+    row.appendChild(key);
+    var body = el("div","col-body");
+    body.appendChild(el("h3",null,d.title));
+    body.appendChild(el("p","meta","<span>"+d.budget+"</span>"));
+    if (d.why) body.appendChild(el("p","why",d.why));
+    if (d.caveat) body.appendChild(el("p","caveat",d.caveat));
+    if (!hasDate && d.dueNote) body.appendChild(el("p","caveat",d.dueNote));
+    var links = el("div","links");
+    var l1 = el("a",null,"Foundation page"); l1.href=d.url; l1.target="_blank"; l1.rel="noopener";
+    links.appendChild(l1);
+    body.appendChild(links);
+    row.appendChild(body);
+    return row;
+  }
+
+  [1,2,3].forEach(function(t){
+    var host=document.getElementById("tier"+t);
+    DATA.filter(function(d){return d.tier===t;})
+        .sort(function(a,b){ if(a.due&&b.due) return parse(a.due)-parse(b.due);
+                             if(a.due) return -1; if(b.due) return 1; return 0; })
+        .forEach(function(d){ host.appendChild(renderRow(d)); });
+  });
+
+  function renderCompact(hostId, rows){
+    var host=document.getElementById(hostId);
+    rows.forEach(function(w){
+      var row=el("div","reissue-row");
+      var k=el("div");
+      var a=el("a","code",w.fdn); a.href=w.url; a.target="_blank"; a.rel="noopener";
+      k.appendChild(a);
+      k.appendChild(el("div","solic", (w.due && w.state==="dates") ? "due "+fmt(w.due)
+                                                                  : stateLabel(w.state)));
+      k.appendChild(badge(w.submission));
+      row.appendChild(k);
+      var b=el("div");
+      b.appendChild(el("h4",null,w.title));
+      b.appendChild(el("p","dirs",w.budget));
+      if(w.why) b.appendChild(el("p",null,w.why));
+      if(w.caveat) b.appendChild(el("p","caveat",w.caveat));
+      if(w.dueNote) b.appendChild(el("p","caveat",w.dueNote));
+      row.appendChild(b);
+      host.appendChild(row);
+    });
+  }
+  renderCompact("standing", STANDING);
+  renderCompact("trainee", TRAINEE);
+
+  /* ---- time rail: same lane assignment as the other three pages. Only
+     programs with a date actually READ off the page get a tick. */
+  (function(){
+    var rail=document.getElementById("rail");
+    var t0=today();
+    var start=new Date(t0.getFullYear(),t0.getMonth(),1);
+    var end=new Date(t0.getFullYear()+1,t0.getMonth()+1,1);
+    var span=end-start;
+    var LABEL_W=76, GAP=8, LANE_STEP=30, STEM_BASE=12, AXIS_BOTTOM=34, DOT_HALF=7;
+
+    var byDate={};
+    DATA.concat(TRAINEE).forEach(function(d){
+      if(d.due && d.state==="dates")(byDate[d.due]=byDate[d.due]||[]).push(d); });
+    var dates=Object.keys(byDate).sort().filter(function(iso){
+      var dt=parse(iso); return dt>=start&&dt<end; });
+
+    function layout(){
+      rail.innerHTML="";
+      rail.appendChild(el("div","rail-line"));
+      for(var m=new Date(start);m<end;m=new Date(m.getFullYear(),m.getMonth()+1,1)){
+        var mk=el("div","month",MONTHS[m.getMonth()]+(m.getMonth()===0?" "+String(m.getFullYear()).slice(2):""));
+        mk.style.left=((m-start)/span*100)+"%"; rail.appendChild(mk);
+      }
+      var W=rail.clientWidth||900, laneEnd=[], maxLane=0;
+      dates.forEach(function(iso){
+        var items=byDate[iso], dt=parse(iso), cx=(dt-start)/span*W, lane=0;
+        while(laneEnd[lane]!==undefined && cx-LABEL_W/2<laneEnd[lane]) lane++;
+        laneEnd[lane]=cx+LABEL_W/2+GAP; if(lane>maxLane) maxLane=lane;
+        var n=daysUntil(iso), u=urgency(n);
+        var tick=el("div","tick u-"+u);
+        tick.style.left=((dt-start)/span*100)+"%";
+        tick.style.bottom=(AXIS_BOTTOM-DOT_HALF)+"px";
+        tick.title=fmt(iso)+" \u2014 "+items.map(function(i){return i.fdn;}).join(", ");
+        tick.innerHTML='<div class="lab">'+dt.getDate()+" "+MONTHS[dt.getMonth()]+
+          '<span class="cnt">'+items.length+(items.length>1?" items":" item")+"</span></div>"+
+          '<div class="stem" style="height:'+(STEM_BASE+lane*LANE_STEP)+'px"></div>'+
+          '<div class="dot"></div>';
+        rail.appendChild(tick);
+      });
+      var LABEL_H=32, DOT_H=15, PAD=10;
+      rail.style.height=((AXIS_BOTTOM-DOT_HALF)+DOT_H+STEM_BASE+maxLane*LANE_STEP+LABEL_H+PAD)+"px";
+    }
+    layout();
+    var pending;
+    addEventListener("resize",function(){ clearTimeout(pending); pending=setTimeout(layout,120); });
+  })();
+})();
+</script>
+
+</body>
+</html>
