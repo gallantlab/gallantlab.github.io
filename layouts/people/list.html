@@ -1,0 +1,24 @@
+{{ define "main" -}}
+{{- $people := .Pages -}}
+{{- $pi      := where $people "Params.status" "pi" -}}
+{{- $current := (where $people "Params.status" "current").ByWeight -}}
+{{- $alumni  := (where $people "Params.status" "alumni").ByWeight -}}
+
+<article class="gl-page">
+  <header class="gl-page__head">
+    <h1 class="gl-page__title">{{ .Title }}</h1>
+  </header>
+
+  {{- with .Content }}<div class="gl-page__body gl-prose">{{ . }}</div>{{ end }}
+
+  {{- with $pi }}
+    {{- partial "people-group.html" (dict "title" "Head of Lab" "people" .) }}
+  {{- end }}
+  {{- with $current }}
+    {{- partial "people-group.html" (dict "title" "Current members" "people" .) }}
+  {{- end }}
+  {{- with $alumni }}
+    {{- partial "people-group.html" (dict "title" "Alumni" "people" .) }}
+  {{- end }}
+</article>
+{{- end }}
