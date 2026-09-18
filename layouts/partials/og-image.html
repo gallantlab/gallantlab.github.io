@@ -1,0 +1,33 @@
+{{- /* Resolves the social-share image for a page and returns a dict:
+       { url (absolute), large (bool), width, height, alt }.
+
+       Precedence:
+         1. page-bundle feature image (news, people, datasets)
+         2. publications' `featureimage` param (points into assets/img/papers/)
+         3. site default: the lab logo
+
+       `large` is true only for a real content image, so the caller can pick
+       twitter:card = summary_large_image vs. the small logo `summary`. */ -}}
+
+{{- $img := partial "featured-image.html" . -}}
+{{- if not $img }}
+  {{- with .Params.featureimage }}
+    {{- $img = resources.Get (strings.TrimPrefix "/" .) }}
+  {{- end }}
+{{- end -}}
+
+{{- $res := "" -}}
+{{- $large := false -}}
+{{- with $img -}}
+  {{- $res = .Resize "1200x q82" -}}
+  {{- $large = true -}}
+{{- else -}}
+  {{- $res = resources.Get "img/logo.webp" -}}
+{{- end -}}
+
+{{- $out := dict "url" "" "large" $large "width" 0 "height" 0
+      "alt" (cond .IsHome site.Title (printf "%s — %s" .Title site.Title)) -}}
+{{- with $res -}}
+  {{- $out = merge $out (dict "url" .Permalink "width" .Width "height" .Height) -}}
+{{- end -}}
+{{- return $out -}}

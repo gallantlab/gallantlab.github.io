@@ -1,0 +1,15 @@
+{{ define "main" -}}
+<article class="gl-page">
+  <header class="gl-page__head">
+    <h1 class="gl-page__title">Page not found</h1>
+  </header>
+  <div class="gl-page__body gl-prose">
+    <p>That page doesn’t exist here. Redirecting you to the
+       <a href="/">news page</a> now.</p>
+  </div>
+</article>
+{{- /* Any unmatched URL — including legacy inbound links from much older
+       versions of the site — falls back to the front news page so nothing
+       ever dead-ends on a 404. */ -}}
+<script>location.replace('/');</script>
+{{- end }}
