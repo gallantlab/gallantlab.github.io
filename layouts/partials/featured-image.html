@@ -1,0 +1,8 @@
+{{- /* Returns the page bundle's featured image resource, or nil.
+       Tries feature.* and featured.*, then falls back to the first image. */ -}}
+{{- $img := .Resources.GetMatch "feature.*" -}}
+{{- if not $img }}{{ $img = .Resources.GetMatch "featured.*" }}{{ end -}}
+{{- if not $img }}
+  {{- with .Resources.ByType "image" }}{{ $img = index . 0 }}{{ end -}}
+{{- end -}}
+{{- return $img -}}
