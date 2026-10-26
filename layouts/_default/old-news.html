@@ -1,0 +1,22 @@
+{{ define "main" -}}
+{{- $news := (where site.RegularPages "Section" "news").ByDate.Reverse -}}
+<article class="gl-page">
+  <header class="gl-page__head">
+    <h1 class="gl-page__title">{{ .Title }}</h1>
+  </header>
+
+  {{- with .Content }}<div class="gl-page__body gl-prose">{{ . }}</div>{{ end }}
+
+  {{- if $news }}
+    <ol class="gl-news-archive">
+      {{- range $news }}
+        <li class="gl-news-archive__item">
+          <p class="gl-news-archive__date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format site.Params.dateFormat }}</time></p>
+          <h3 class="gl-news-archive__title">{{ .Title }}</h3>
+          <div class="gl-prose">{{ .Content }}</div>
+        </li>
+      {{- end }}
+    </ol>
+  {{- end }}
+</article>
+{{- end }}

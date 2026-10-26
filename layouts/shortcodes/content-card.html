@@ -1,0 +1,36 @@
+{{- /* Editorial content card — figure on top, title and description below.
+       Used by /code/, /brain-viewers/, /learn/. Designed to tile into a
+       .gl-cards-grid container so figures align across the row. */ -}}
+
+{{- $title       := .Get "title" -}}
+{{- $id          := .Get "id" -}}
+{{- $url         := .Get "url" -}}
+{{- $imagePath   := .Get "image" -}}
+{{- $alt         := .Get "alt" | default "" -}}
+{{- $description := .Get "description" -}}
+{{- $date        := .Get "date" -}}
+
+{{- $img := "" -}}
+{{- with $imagePath -}}
+  {{- with resources.Get (strings.TrimPrefix "/" .) -}}
+    {{- $img = . -}}
+  {{- end -}}
+{{- end -}}
+
+<article class="gl-card"{{ with $id }} id="{{ . }}"{{ end }}>
+  {{- with $img }}
+    <a class="gl-card__media" href="{{ $url }}"{{ if $url }} target="_blank" rel="noopener"{{ end }} aria-hidden="true" tabindex="-1">
+      {{ partial "responsive-img.html" (dict "image" . "alt" $alt "sizes" "(max-width: 720px) 92vw, (max-width: 1100px) 46vw, (max-width: 1500px) 31vw, (max-width: 1900px) 23vw, 18vw") }}
+    </a>
+  {{- end }}
+
+  <h3 class="gl-card__title">
+    {{- if $url -}}
+      <a href="{{ $url }}" target="_blank" rel="noopener">{{ $title }} <span aria-hidden="true">↗</span></a>
+    {{- else -}}
+      {{ $title }}
+    {{- end -}}
+  </h3>
+  {{- with $date }}<p class="gl-card__date">{{ . }}</p>{{ end }}
+  <div class="gl-card__desc">{{ $description | safeHTML }}</div>
+</article>

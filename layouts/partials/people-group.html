@@ -1,0 +1,41 @@
+{{- /* Renders a heading + grid of person cards. Args: title (string),
+       people (Pages). Original portrait grid. People have no individual
+       pages (see content/people/_index.md), so the card no longer links to
+       .RelPermalink: it links out to the person's externalUrl when they
+       have one, otherwise it is a non-clickable card. The <li> carries an
+       id (= bundle slug) so news items deep-link via /people/#slug. */ -}}
+<section class="gl-people-group">
+  <div class="gl-section-head">
+    <h2 class="gl-section-title">{{ .title }}</h2>
+    <span class="gl-section-rule"></span>
+  </div>
+
+  <ol class="gl-people-grid">
+    {{- range .people }}
+      {{- $img := partial "featured-image.html" . }}
+      {{- $ext := .Params.externalUrl }}
+      <li class="gl-people-card" id="{{ .File.ContentBaseName }}">
+        {{- if $ext }}<a class="gl-people-card__link" href="{{ $ext }}" target="_blank" rel="noopener">
+        {{- else }}<div class="gl-people-card__link">{{ end }}
+          {{- with $img }}
+            {{- /* Height-only resize so every portrait shows at the same
+                   display height while keeping its source aspect ratio
+                   (variable width, no cropping). */ -}}
+            {{- $thumb := .Resize "x280 q80" }}
+            {{- $retina := cond (ge .Height 560) (.Resize "x560 q80") $thumb }}
+            <span class="gl-people-card__portrait">
+              <img src="{{ $thumb.RelPermalink }}" srcset="{{ $thumb.RelPermalink }} 1x, {{ $retina.RelPermalink }} 2x" alt="" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" loading="lazy" decoding="async">
+            </span>
+          {{- else }}
+            <span class="gl-people-card__portrait gl-people-card__portrait--empty" aria-hidden="true"></span>
+          {{- end }}
+          <span class="gl-people-card__name">{{ .Title }}{{ if $ext }} <span aria-hidden="true">↗</span>{{ end }}</span>
+          {{- with .Params.role }}<span class="gl-people-card__role">{{ . }}</span>{{ end }}
+        {{- if $ext }}</a>{{ else }}</div>{{ end }}
+        {{- /* Bio sits OUTSIDE the card link: bios carry their own links
+               (lab site, email), and an <a> inside an <a> is invalid. */ -}}
+        {{- with .Content }}<div class="gl-people-card__bio">{{ . }}</div>{{ end }}
+      </li>
+    {{- end }}
+  </ol>
+</section>

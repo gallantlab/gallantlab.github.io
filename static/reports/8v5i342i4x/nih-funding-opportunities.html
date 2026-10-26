@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="referrer" content="no-referrer">
+<title>NIH funding scan — Gallant lab</title>
+<style>
+  :root{
+    --ground:#F2F5F6; --surface:#FFFFFF; --surface-2:#E9EFF0;
+    --ink:#141C21; --muted:#5D6E76; --faint:#7E8F97;
+    --line:#D2DCE0; --line-soft:#E3EAEC;
+    --accent:#136F7E; --accent-soft:#DCEDF0;
+    --warm:#A8611A; --warm-soft:#F6E9D8;
+    --hot:#A33328; --hot-soft:#F8E4E0;
+    --cool:#3C6E8F;
+    --shadow:0 1px 2px rgba(20,28,33,.06), 0 6px 18px rgba(20,28,33,.05);
+    --display:"Superclarendon","Charter",Georgia,"Times New Roman",serif;
+    --body:"Avenir Next","Avenir","Segoe UI",system-ui,-apple-system,sans-serif;
+    --data:"SF Mono","Menlo","Consolas",ui-monospace,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --ground:#0D1417; --surface:#151E22; --surface-2:#1D282D;
+      --ink:#E6EDEF; --muted:#94A8B0; --faint:#7A8D95;
+      --line:#26343A; --line-soft:#1E2A2F;
+      --accent:#4FBDCE; --accent-soft:#123039;
+      --warm:#D9924A; --warm-soft:#33251485;
+      --hot:#E0705F; --hot-soft:#3A1E1A;
+      --cool:#7FA9C4;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 22px rgba(0,0,0,.28);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#0D1417; --surface:#151E22; --surface-2:#1D282D;
+    --ink:#E6EDEF; --muted:#94A8B0; --faint:#7A8D95;
+    --line:#26343A; --line-soft:#1E2A2F;
+    --accent:#4FBDCE; --accent-soft:#123039;
+    --warm:#D9924A; --warm-soft:#33251485;
+    --hot:#E0705F; --hot-soft:#3A1E1A;
+    --cool:#7FA9C4;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 22px rgba(0,0,0,.28);
+  }
+  :root[data-theme="light"]{
+    --ground:#F2F5F6; --surface:#FFFFFF; --surface-2:#E9EFF0;
+    --ink:#141C21; --muted:#5D6E76; --faint:#7E8F97;
+    --line:#D2DCE0; --line-soft:#E3EAEC;
+    --accent:#136F7E; --accent-soft:#DCEDF0;
+    --warm:#A8611A; --warm-soft:#F6E9D8;
+    --hot:#A33328; --hot-soft:#F8E4E0;
+    --cool:#3C6E8F;
+    --shadow:0 1px 2px rgba(20,28,33,.06), 0 6px 18px rgba(20,28,33,.05);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--ground); color:var(--ink);
+    font-family:var(--body); font-size:16px; line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px; margin:0 auto; padding:0 24px 96px;}
+  a{color:var(--accent); text-underline-offset:2px;}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:2px;}
+
+  /* ---------- masthead ---------- */
+  .masthead{padding:44px 0 26px; border-bottom:2px solid var(--ink);}
+  .eyebrow{
+    font-family:var(--data); font-size:11px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--muted); margin:0 0 14px;
+  }
+  h1{
+    font-family:var(--display); font-weight:400; font-size:clamp(30px,4.6vw,46px);
+    line-height:1.08; letter-spacing:-.015em; margin:0 0 12px; text-wrap:balance;
+  }
+  .standfirst{
+    margin:0; max-width:62ch; color:var(--muted); font-size:16.5px;
+  }
+  .provenance{
+    display:flex; flex-wrap:wrap; gap:0; margin-top:26px;
+    border-top:1px solid var(--line-soft); padding-top:16px;
+  }
+  .prov{padding-right:30px; margin-right:30px; border-right:1px solid var(--line-soft);}
+  .prov:last-child{border-right:0; margin-right:0; padding-right:0;}
+  .prov b{
+    display:block; font-family:var(--data); font-size:21px; font-weight:600;
+    font-variant-numeric:tabular-nums; letter-spacing:-.02em;
+  }
+  .prov span{font-size:12px; color:var(--faint); letter-spacing:.02em;}
+  .prov-warn{
+    margin-top:22px; padding:14px 18px; font-size:14px;
+    background:var(--warm-soft); border-left:3px solid var(--warm);
+    border-radius:0 3px 3px 0; max-width:74ch;
+  }
+  .prov-warn b{color:var(--warm);}
+
+  /* ---------- section ---------- */
+  section{margin-top:56px;}
+  .sec-head{
+    display:flex; align-items:baseline; gap:14px; flex-wrap:wrap;
+    border-bottom:1px solid var(--line); padding-bottom:9px; margin-bottom:6px;
+  }
+  h2{
+    font-family:var(--display); font-weight:400; font-size:23px;
+    letter-spacing:-.01em; margin:0;
+  }
+  .sec-note{font-size:13px; color:var(--faint); margin:0;}
+  .lede{max-width:66ch; color:var(--muted); font-size:15px; margin:16px 0 22px;}
+
+  /* ---------- time rail ---------- */
+  .rail-shell{overflow-x:auto; padding:26px 0 4px;}
+  /* Height is set by the rail script once it knows how many label lanes the
+     dates need. Do not pin it here — a fixed height clips the upper lanes. */
+  .rail{min-width:900px; position:relative;}
+  .rail-line{
+    position:absolute; left:0; right:0; bottom:34px; height:2px; background:var(--line);
+  }
+  .month{
+    position:absolute; bottom:0; height:34px; border-left:1px solid var(--line-soft);
+    padding-left:6px; font-family:var(--data); font-size:10px; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--faint); padding-top:8px;
+  }
+  /* Anchored from the BOTTOM so the dot lands on the axis whatever the stem
+     length. Lane assignment varies the stem, never the dot. */
+  .tick{
+    position:absolute; transform:translateX(-50%); text-align:center; width:76px;
+    display:flex; flex-direction:column; align-items:center; justify-content:flex-end;
+  }
+  .tick .stem{
+    width:2px; background:currentColor; margin:0 auto; border-radius:1px; opacity:.5;
+  }
+  .tick .dot{
+    width:11px; height:11px; border-radius:50%; background:currentColor;
+    margin:0 auto; border:2px solid var(--ground);
+  }
+  .tick .lab{
+    font-family:var(--data); font-size:10.5px; font-variant-numeric:tabular-nums;
+    color:var(--ink); margin-bottom:5px; letter-spacing:-.01em;
+    white-space:nowrap;
+  }
+  .tick .cnt{font-size:10px; color:var(--faint); display:block;}
+  .u-open{color:var(--accent);} .u-past{color:var(--faint);}
+
+  /* ---------- docket rows ---------- */
+  .docket{border-top:1px solid var(--line);}
+  .row{
+    display:grid; grid-template-columns:184px 1fr; gap:0 28px;
+    padding:22px 0; border-bottom:1px solid var(--line-soft);
+  }
+  .col-key{display:flex; flex-direction:column; gap:9px;}
+  .code{
+    font-family:var(--data); font-size:13.5px; font-weight:600; letter-spacing:-.02em;
+    color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);
+    padding-bottom:2px; display:inline-block; width:fit-content;
+  }
+  .code:hover{color:var(--accent); border-bottom-color:var(--accent);}
+  .due{font-family:var(--data); font-size:12px; color:var(--muted); font-variant-numeric:tabular-nums;}
+  .due b{display:block; color:var(--ink); font-weight:600; font-size:13px;}
+  .pill{
+    display:inline-block; font-family:var(--data); font-size:10.5px; font-weight:600;
+    letter-spacing:.04em; text-transform:uppercase; padding:3px 8px; border-radius:2px;
+    width:fit-content; border:1px solid;
+  }
+  .p-now{color:var(--hot); background:var(--hot-soft); border-color:var(--hot);}
+  .p-past{color:var(--faint); background:transparent; border-color:var(--line);}
+
+  .col-body h3{
+    font-family:var(--body); font-size:16.5px; font-weight:600; line-height:1.35;
+    margin:0 0 6px; letter-spacing:-.005em; text-wrap:balance;
+  }
+  .meta{
+    font-family:var(--data); font-size:11.5px; color:var(--muted); margin:0 0 10px;
+    display:flex; flex-wrap:wrap; gap:0 10px; font-variant-numeric:tabular-nums;
+  }
+  .meta span:not(:last-child)::after{content:"·"; margin-left:10px; color:var(--line);}
+  .why{margin:0 0 12px; font-size:14.5px; color:var(--ink); max-width:70ch;}
+  .why em{font-style:normal; background:var(--accent-soft); padding:0 3px; border-radius:2px;}
+  .caveat{
+    margin:0 0 12px; font-size:13.5px; color:var(--muted); max-width:70ch;
+    border-left:2px solid var(--warm); padding-left:11px;
+  }
+  .links{display:flex; gap:16px; flex-wrap:wrap; font-family:var(--data); font-size:11.5px;}
+  .links a{text-decoration:none; border-bottom:1px solid transparent;}
+  .links a:hover{border-bottom-color:currentColor;}
+  .links a::after{content:" ↗"; font-size:9px; vertical-align:1px; opacity:.6;}
+
+  /* ---------- compact table ---------- */
+  .tbl-shell{overflow-x:auto; margin-top:6px;}
+  table{border-collapse:collapse; width:100%; min-width:620px; font-size:14px;}
+  th{
+    text-align:left; font-family:var(--data); font-size:10.5px; font-weight:600;
+    letter-spacing:.09em; text-transform:uppercase; color:var(--faint);
+    padding:0 14px 9px 0; border-bottom:1px solid var(--line);
+  }
+  td{padding:13px 14px 13px 0; border-bottom:1px solid var(--line-soft); vertical-align:top;}
+  td.mono{font-family:var(--data); font-size:12.5px; font-variant-numeric:tabular-nums; white-space:nowrap;}
+  td a{text-decoration:none; border-bottom:1px solid var(--line);}
+  td a:hover{border-bottom-color:var(--accent);}
+
+  /* ---------- findings ---------- */
+  .findings{display:grid; gap:0; margin-top:8px;}
+  .finding{
+    padding:20px 0; border-bottom:1px solid var(--line-soft);
+    display:grid; grid-template-columns:184px 1fr; gap:0 28px;
+  }
+  .finding-key{
+    font-family:var(--data); font-size:11px; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--warm); padding-top:3px;
+  }
+  .finding p{margin:0; max-width:70ch; font-size:14.5px;}
+  .finding p + p{margin-top:8px; color:var(--muted); font-size:13.5px;}
+
+  /* ---------- portals ---------- */
+  .portals{display:grid; grid-template-columns:repeat(auto-fit,minmax(228px,1fr)); gap:1px; background:var(--line-soft); border:1px solid var(--line-soft); margin-top:8px;}
+  .portal{background:var(--surface); padding:18px 18px 20px; display:flex; flex-direction:column; gap:5px;}
+  .portal a{
+    font-family:var(--data); font-size:13px; font-weight:600; text-decoration:none;
+    letter-spacing:-.01em;
+  }
+  .portal a:hover{text-decoration:underline;}
+  .portal p{margin:0; font-size:13px; color:var(--muted); line-height:1.45;}
+
+  /* ---------- shortlist ---------- */
+  .shortlist{
+    background:var(--surface); border:1px solid var(--line); padding:26px 28px 28px;
+    box-shadow:var(--shadow); margin-top:8px;
+  }
+  .shortlist ol{margin:0; padding-left:0; list-style:none; counter-reset:s;}
+  .shortlist li{
+    counter-increment:s; padding:13px 0 13px 44px; position:relative;
+    border-bottom:1px solid var(--line-soft); font-size:14.5px; max-width:74ch;
+  }
+  .shortlist li:last-child{border-bottom:0; padding-bottom:0;}
+  .shortlist li::before{
+    content:counter(s); position:absolute; left:0; top:13px;
+    font-family:var(--data); font-size:12px; font-weight:600; color:var(--accent);
+    border:1px solid var(--accent); width:24px; height:24px; border-radius:50%;
+    display:grid; place-items:center;
+  }
+  .shortlist li b{font-family:var(--data); font-size:13.5px; letter-spacing:-.02em;}
+
+  footer{
+    margin-top:64px; padding-top:22px; border-top:1px solid var(--line);
+    font-size:13px; color:var(--faint); max-width:74ch;
+  }
+  footer p{margin:0 0 9px;}
+
+  @media (max-width:720px){
+    .row, .finding{grid-template-columns:1fr; gap:12px 0;}
+    .col-key{flex-direction:row; align-items:center; flex-wrap:wrap; gap:10px;}
+    .prov{padding-right:20px; margin-right:20px;}
+    .wrap{padding:0 18px 72px;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none !important; transition:none !important;}
+  }
+</style>
+<style>
+  .gl-fund-nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px;}
+  .gl-fund-nav a{
+    font:600 13px/1 var(--body);letter-spacing:.04em;text-transform:uppercase;
+    text-decoration:none;color:var(--muted);background:var(--surface);
+    border:1px solid var(--line);border-radius:999px;padding:9px 16px;
+  }
+  .gl-fund-nav a:hover{color:var(--accent);border-color:var(--accent);}
+  .gl-fund-nav a[aria-current="page"]{
+    color:var(--surface);background:var(--accent);border-color:var(--accent);
+  }
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+
+<nav class="gl-fund-nav" aria-label="Funding source">
+  <a href="nih-funding-opportunities.html" aria-current="page">NIH</a>
+  <a href="nsf-funding-opportunities.html">NSF</a>
+  <a href="dod-funding-opportunities.html">DoD</a>
+  <a href="fdn-funding-opportunities.html">Foundations</a>
+</nav>
+
+  <header class="masthead">
+    <p class="eyebrow">Funding scan · 27 July 2026 · prepared for the Gallant lab</p>
+    <h1>Where the Gallant lab could apply at NIH</h1>
+    <p class="standfirst">
+      A complete sweep of the NIH Guide active-NOFO index and the Grants.gov forecast pipeline,
+      matched against the lab's program: The human program traces a progression from low/intermediate-level visual encoding and image reconstruction, through cortex-wide semantic mapping of vision and language, to how attention/task warp those representations during active naturalistic behavior — plus the modeling toolkit that makes it all possible.
+    </p>
+
+    <div class="provenance">
+      <div class="prov"><b>412</b><span>active NOFOs read</span></div>
+      <div class="prov"><b>1,400</b><span>Guide notices, back to Nov 2023</span></div>
+      <div class="prov"><b>19</b><span>opportunities shortlisted</span></div>
+      <div class="prov"><b>8</b><span>forecast, not yet published</span></div>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <h2>Deadline timeline</h2>
+      <p class="sec-note">Every shortlisted due date across the next twelve months</p>
+    </div>
+    <div class="rail-shell">
+      <div class="rail" id="rail"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Tier one — direct fit, act this cycle</h2>
+      <p class="sec-note">Four opportunities that match the program without reframing</p>
+    </div>
+    <div class="docket" id="tier1"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Tier two — standard routes</h2>
+      <p class="sec-note">Solid fit through parent announcements and IC-specific PARs</p>
+    </div>
+    <p class="lede">
+      The parent R01 matters more here than it looks. NEI is primary institute on only two active
+      NOFOs, so basic vision-neuroscience R01s essentially have to travel through PA-25-301 with
+      NEI or NIMH assignment.
+    </p>
+    <div class="docket" id="tier2"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Tier three — viable with the right collaborator</h2>
+      <p class="sec-note">Mechanically plausible, but each needs a partner or a reframing</p>
+    </div>
+    <div class="docket" id="tier3"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Trainee and personnel mechanisms</h2>
+      <p class="sec-note">Standing parent announcements on NIH standard dates</p>
+    </div>
+    <div class="tbl-shell">
+      <table id="training">
+        <thead>
+          <tr><th>NOFO</th><th>Mechanism</th><th>Next due</th><th>Cycle</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Watch list</h2>
+      <p class="sec-note">Forecast at Grants.gov with no due date set — monitor the Guide weekly</p>
+    </div>
+    <p class="lede">
+      <b>RFA-MH-28-100</b> (BRAIN data archives) and <b>RFA-MH-28-110</b> (novel tools and new
+      approaches) are the two most likely to become tier-one fits the moment they publish.
+    </p>
+    <div class="tbl-shell">
+      <table id="watch">
+        <thead>
+          <tr><th>NOFO</th><th>Title</th><th>Forecast posted</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>What the landscape itself says</h2>
+      <p class="sec-note">Four findings that change how the lab should target</p>
+    </div>
+    <div class="findings">
+      <div class="finding">
+        <div class="finding-key">Thin field</div>
+        <div>
+          <p><b>412 active NOFOs across all 27 institutes and offices.</b> NCI alone holds 56 of
+          them. Targeted basic-neuroscience solicitations are genuinely scarce right now.</p>
+        </div>
+      </div>
+      <div class="finding">
+        <div class="finding-key">NEI is nearly absent</div>
+        <div>
+          <p><b>NEI is primary institute on exactly two active NOFOs</b> — a secondary-data-analysis
+          R21 and a clinical study-planning R34.</p>
+          <p>There is currently no NEI-specific basic vision research announcement. That work has to
+          go through the parent R01 or through BRAIN Initiative RFAs.</p>
+        </div>
+      </div>
+      <div class="finding">
+        <div class="finding-key">NOSIs have wound down</div>
+        <div>
+          <p><b>The Notice of Special Interest route has largely closed.</b> Across every Guide
+          notice since December 2023, the most recent NOSI dates to May 2025, and essentially all
+          recent NOSI-related notices are expirations or participations rather than new topic
+          solicitations.</p>
+          <p>If the lab previously relied on finding a relevant NOSI and applying to the parent R01,
+          targeting now means matching a specific RFA or PAR — or going in cold on the parent.</p>
+        </div>
+      </div>
+      <div class="finding">
+        <div class="finding-key">A lost R21 route</div>
+        <div>
+          <p><b>NINDS let PA-25-150 expire</b> — the joint NINDS/NIMH Exploratory Neuroscience
+          Research Grant, per NOT-NS-26-007 in March 2026.</p>
+          <p>That was a common basic-neuroscience R21 route. The generic parent R21 (PA-25-304) is
+          now the replacement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>If the goal is the autumn 2026 cycle</h2>
+      <p class="sec-note">Highest-yield combination, in the order I would write them</p>
+    </div>
+    <div class="shortlist">
+      <ol>
+        <li><b>RFA-NS-27-001</b> — U24, 6 October. Dissemination of the existing toolkit. Best
+          fit-to-effort ratio in the whole scan: budgets uncapped, ten to twenty awards available.</li>
+        <li><b>RFA-DA-27-004</b> — R01, 6 October. Encoding-model methodology framed as BRAIN
+          theories, models and methods.</li>
+        <li><b>PA-25-301</b> — Parent R01, 5 October. The core science aims, NEI or NIMH assignment.</li>
+        <li><b>RFA-RM-27-001</b> — DP1, 9 September. Only if there is an idea worth the single-PI,
+          high-risk framing, and only if it can be written in six weeks.</li>
+        <li><b>RFA-OD-24-011</b> — R50, 4 December. Last cycle, cheap to write, funds a maintainer.</li>
+      </ol>
+      <p class="lede" style="margin-bottom:0">
+        Items one and two share the 6 October deadline and draw on overlapping material, but they
+        are scientifically distinct — dissemination of existing resources versus development of new
+        methods — so they are not "highly overlapping" under NIH policy.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Submission portals and reference</h2>
+      <p class="sec-note">Where the applications actually get built and filed</p>
+    </div>
+    <div class="portals">
+      <div class="portal">
+        <a href="https://public.era.nih.gov/assist/" target="_blank" rel="noopener">NIH ASSIST</a>
+        <p>NIH's own application builder. The usual route for R01, U24 and RFA submissions.</p>
+      </div>
+      <div class="portal">
+        <a href="https://www.grants.gov/applicants/workspace-overview" target="_blank" rel="noopener">Grants.gov Workspace</a>
+        <p>The federal alternative to ASSIST. Same forms, different builder.</p>
+      </div>
+      <div class="portal">
+        <a href="https://public.era.nih.gov/commons/" target="_blank" rel="noopener">eRA Commons</a>
+        <p>Status tracking, summary statements, just-in-time, progress reports.</p>
+      </div>
+      <div class="portal">
+        <a href="https://spo.berkeley.edu/" target="_blank" rel="noopener">Berkeley SPO</a>
+        <p>Sponsored Projects Office — institutional sign-off. Budget internal deadlines ahead of every NIH date.</p>
+      </div>
+      <div class="portal">
+        <a href="https://grants.nih.gov/grants/how-to-apply-application-guide.html" target="_blank" rel="noopener">How to Apply — Application Guide</a>
+        <p>The SF424 instructions every NOFO defers to.</p>
+      </div>
+      <div class="portal">
+        <a href="https://grants.nih.gov/grants/how-to-apply-application-guide/due-dates-and-submission-policies/due-dates.htm" target="_blank" rel="noopener">NIH standard due dates</a>
+        <p>The recurring cycle behind every date marked as standard.</p>
+      </div>
+      <div class="portal">
+        <a href="https://grants.nih.gov/funding/searchguide" target="_blank" rel="noopener">NIH Guide search</a>
+        <p>The live index this scan was built from. Re-run it to catch new postings.</p>
+      </div>
+      <div class="portal">
+        <a href="https://www.nih.gov/brain/funding/funding-opportunities" target="_blank" rel="noopener">BRAIN Initiative funding</a>
+        <p>Where the watch-list RFAs will appear first.</p>
+      </div>
+      <div class="portal">
+        <a href="https://grants.nih.gov/grants/guide/WeeklyIndex.cfm" target="_blank" rel="noopener">Guide weekly index</a>
+        <p>Each week's new notices and announcements, in one page.</p>
+      </div>
+      <div class="portal">
+        <a href="https://reporter.nih.gov/" target="_blank" rel="noopener">NIH RePORTER</a>
+        <p>Who already holds awards under a given NOFO — useful for calibrating fit.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      Every due date, budget cap and eligibility statement on this page was read out of the NOFO
+      full text rather than inferred, and all 19 shortlisted opportunities plus 8 forecasts were
+      link-checked. Six of the newer announcements return 404 on the legacy Guide URL scheme and
+      are linked to Grants.gov only; that is noted on each.
+    </p>
+    <p>
+      Prepared for Jack Gallant, University of California, Berkeley. Dates are absolute; a deadline
+      already past is marked closed. Verify against the live NOFO before
+      committing — key dates are amended by Guide notice with some regularity, as NOT-OD-25-147 did
+      to the R50 schedule.
+    </p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var GUIDE = "https://grants.nih.gov/grants/guide/";
+  var GG    = "https://www.grants.gov/search-results-detail/";
+
+  // guide:true  -> legacy Guide URL verified live (HTTP 200)
+  // guide:false -> 404 on legacy scheme; Grants.gov is the only working link
+  var DATA = [
+    {"tier": 1, "code": "RFA-DA-27-004", "kind": "rfa", "guide": true, "gg": "359068", "title": "BRAIN Initiative: Theories, Models and Methods for Analysis of Complex Data from the Brain", "mech": "R01", "ic": "NIDA / BRAIN", "due": "2026-10-06", "dueNote": "resubmission 6 Nov", "budget": "$150–350k direct / yr, 3 yrs", "why": "The encoding-model program written as a funding announcement. It funds <em>theories, models and methods as tools</em> for analyzing large-scale brain data — banded ridge regression, feature-space comparison, variance partitioning, cross-subject alignment — and requires the tools be released to the community.", "caveat": "Experimental work must be limited to model parameter estimation and validation of the delivered tools. This is a methods grant: new data collection cannot be an aim, so existing lab datasets are the natural substrate."},
+    {"tier": 1, "code": "RFA-NS-27-001", "kind": "rfa", "guide": false, "gg": "358859", "title": "BRAIN Initiative: Research Resource Grants for Technology Integration and Dissemination", "mech": "U24", "ic": "NINDS / BRAIN", "due": "2026-10-06", "dueNote": "then 10 Jun 2027, 18 Feb 2028", "budget": "uncapped · ~$10M/yr across 10–20 awards · ≤5 yrs", "why": "The strongest match in the entire landscape. It funds dissemination of an <em>existing</em> resource with a real user community — pycortex, himalaya, tikreg, the voxelwise-modeling tutorials and the public fMRI datasets are exactly that. User training is an explicitly fundable activity, which the lab already does informally.", "caveat": "Rewards dissemination, not new development. Frame around users served and community need, not new features."},
+    {"tier": 1, "code": "RFA-OD-24-011", "kind": "rfa", "guide": true, "gg": "355439", "title": "NIH Research Software Engineer (RSE) Award", "mech": "R50", "ic": "NIH OD", "due": "2026-12-04", "dueNote": "final due date · LOI 30 days prior", "budget": "$300k direct over ≤3 yrs", "why": "Salary support for a named research software engineer contributing to <em>development, dissemination and user training</em> for biomedical software. Funds a dedicated toolkit maintainer as a person-award rather than a project, and pairs naturally with the U24 above.", "caveat": "The NOFO expires 5 December 2026 and no reissue has been posted. This is the last cycle under this mechanism."},
+    {"tier": 1, "code": "RFA-RM-27-001", "kind": "rfa", "guide": false, "gg": "360986", "title": "NIH Director's Pioneer Award", "mech": "DP1", "ic": "NIH Common Fund", "due": "2026-09-09", "dueNote": "no late applications accepted", "budget": "$700k direct / yr × 5 yrs · ~7 awards from ~$8M", "why": "Open to <em>any individual at any career stage</em>, single PI only, one application per person. The vehicle for a bold, non-incremental claim that would not survive a study section — and the only mechanism here funding at a scale comparable to the lab's full program.", "caveat": "Six weeks of runway, and the no-late-applications rule is absolute. Worth it only if the idea already exists in outline."},
+    {"tier": 2, "code": "PA-25-301", "kind": "pa", "guide": true, "gg": "357812", "title": "NIH Research Project Grant — Parent R01 (clinical trial not allowed)", "mech": "R01", "ic": "NIH parent", "due": "2026-10-05", "dueNote": "resubmission 5 Nov · standard dates", "budget": "uncapped · ≤5 yrs", "why": "The default vehicle for the lab's core science aims. With NEI holding no basic vision announcement, this is where vision, semantic-mapping and language-encoding R01s have to go, with NEI or NIMH assignment.", "caveat": ""},
+    {"tier": 2, "code": "PAR-25-357", "kind": "pa", "guide": true, "gg": "357979", "title": "NEI Research Grant for Vision-Related Secondary Data Analysis", "mech": "R21", "ic": "NEI", "due": "2026-10-16", "dueNote": "standard dates", "budget": "$275k direct across 2 yrs · ≤$200k in one yr", "why": "A genuine fit despite the clinical-sounding title: it funds vision research that is <em>secondary analysis of existing databases</em>, plus statistical methodology for vision data. The lab's archived datasets, and NSD or BOLD5000, all qualify. Small, but low effort relative to an R01.", "caveat": ""},
+    {"tier": 2, "code": "PA-25-304", "kind": "pa", "guide": true, "gg": "357807", "title": "NIH Exploratory/Developmental Research Grant — Parent R21", "mech": "R21", "ic": "NIH parent", "due": "2026-10-16", "dueNote": "standard dates", "budget": "$275k direct across 2 yrs · ≤$200k in one yr", "why": "Now the replacement for the expired joint NINDS/NIMH exploratory neuroscience R21. The route for a self-contained pilot that does not need R01 scale.", "caveat": ""},
+    {"tier": 2, "code": "PAR-25-279", "kind": "pa", "guide": true, "gg": "357378", "title": "New Approaches for Measuring Brain Changes Across Longer Timespans", "mech": "R01", "ic": "NIA", "due": "2026-10-05", "dueNote": "R21 companion PAR-25-272 due 16 Oct", "budget": "uncapped · ≤5 yrs", "why": "Funds new ways to <em>measure</em> brain change across long timespans, which a longitudinal encoding-model design would satisfy.", "caveat": "Requires a genuine lifespan, ageing or neurodevelopment angle. Viable only if the lab wants to push that direction — otherwise skip."},
+    {"tier": 3, "code": "RFA-DC-27-004", "kind": "rfa", "guide": false, "gg": "359649", "title": "BRAIN Initiative: Exploratory Research Using Invasive Neural Recording and Stimulating Technologies in the Human Brain", "mech": "R61", "ic": "NIDCD / BRAIN", "due": "2027-02-11", "dueNote": "~5 awards per receipt date", "budget": "≤$700k direct / yr", "why": "NIDCD issuance means speech and language framing is welcome, which maps cleanly onto the lab's narrative-language program.", "caveat": "Requires an intracranial recording site. Only viable with an ECoG or sEEG surgical partner."},
+    {"tier": 3, "code": "PAR-25-290", "kind": "pa", "guide": true, "gg": "357346", "title": "Utilizing Invasive Recording and Stimulating Opportunities in Humans to Advance Neural Circuitry Understanding of Mental Health Disorders", "mech": "R01", "ic": "NIMH", "due": "2026-10-05", "dueNote": "R21 companion PAR-25-291 due 16 Oct", "budget": "uncapped · ≤5 yrs", "why": "Invasive human recording at R01 scale with no budget cap.", "caveat": "Needs both a surgical partner and a mental-health framing — two reframings away from the current program."},
+    {"tier": 3, "code": "PAR-27-024", "kind": "pa", "guide": false, "gg": "360446", "title": "Biomedical Technology Optimization and Dissemination Center (BTOD)", "mech": "RM1", "ic": "NIGMS", "due": "2026-09-29", "dueNote": "then 28 Jan 2027", "budget": "≤$850k direct / yr, excluding equipment", "why": "Mechanically a good fit for a toolkit dissemination center at real scale.", "caveat": "NIGMS mission fit is the risk — general biomedical technology, not neuroscience. RFA-NS-27-001 is the better version of this same bet."},
+    {"tier": 3, "code": "RFA-MH-26-140", "kind": "rfa", "guide": true, "gg": "356811", "title": "BRAIN Initiative: Brain Behavior Quantification and Synchronization — Next Generation Sensor Technology Development", "mech": "U01", "ic": "NIMH / BRAIN", "due": "2027-06-15", "dueNote": "LOI 30 days prior", "budget": "uncapped · ≤5 yrs", "why": "The behavioral-modeling half — computational models of naturalistic behavior synchronized to brain recording — sits close to the lab's naturalistic program.", "caveat": "The sensor and bioelectronic hardware half does not. Needs a device-engineering partner."},
+    {"tier": 3, "code": "PAR-27-022", "kind": "pa", "guide": false, "gg": "360532", "title": "Shared Instrumentation Grant (SIG) Program", "mech": "S10", "ic": "ORIP", "due": "2027-07-01", "dueNote": "annual cycle", "budget": "$300k–$5M for a single instrument or integrated system", "why": "The route to scanner or large-scale compute hardware.", "caveat": "Institutional rather than lab-level, and requires a group of major NIH-funded users."},
+    {"tier": 3, "code": "RFA-NS-27-015", "kind": "rfa", "guide": false, "gg": "356205", "title": "BRAIN CONNECTS: Specialized Projects for Scalable Technologies", "mech": "U01", "ic": "NINDS / BRAIN", "due": "2027-02-08", "dueNote": "3–6 awards from ~$10M", "budget": "uncapped · ≤3 yrs", "why": "Listed for completeness — scalable connectomics technology.", "caveat": "Weak fit. The program is about mapping connectivity at scale, not modeling representation."}
+  ];
+
+  var TRAINING = [
+    {"code": "PA-25-423", "gg": "358830", "guide": true, "mech": "NRSA F32 — postdoctoral fellowship", "due": "2026-08-08", "cycle": "8 Aug · 8 Dec · 8 Apr"},
+    {"code": "PA-25-422", "gg": "358848", "guide": true, "mech": "NRSA F31 — predoctoral fellowship", "due": "2026-08-08", "cycle": "8 Aug · 8 Dec · 8 Apr"},
+    {"code": "PA-24-194", "gg": "353762", "guide": true, "mech": "K99/R00 — Pathway to Independence", "due": "2026-10-12", "cycle": "12 Feb · 12 Jun · 12 Oct"},
+    {"code": "PA-25-168", "gg": "357140", "guide": true, "mech": "T32 — institutional training grant", "due": "2026-09-25", "cycle": "25 Jan · 25 May · 25 Sep"},
+    {"code": "PA-26-001", "gg": "360368", "guide": false, "mech": "Administrative supplements (parent)", "due": "", "cycle": "rolling, set per institute"}
+  ];
+
+  var WATCH = [
+    {"code": "RFA-MH-28-110", "gg": "362947", "title": "BRAIN Initiative: Development and Validation of Novel Tools and New Approaches for Neuroscience Research", "posted": "24 Jun 2026"},
+    {"code": "RFA-AT-27-002", "gg": "362097", "title": "Establishing a Research Network to Guide Foundational Research on Human Consciousness", "posted": "28 Apr 2026"},
+    {"code": "RFA-MH-28-100", "gg": "361448", "title": "BRAIN Initiative: Data Archives for the BRAIN Initiative", "posted": "11 Mar 2026"},
+    {"code": "PAR-26-113", "gg": "361426", "title": "NEI Center Core Grant for Vision Research (P30) — institutional", "posted": "9 Mar 2026"},
+    {"code": "RFA-DA-27-011", "gg": "361205", "title": "BRAIN Initiative: BBQS — Transformative Research on Behavior", "posted": "26 Jan 2026"},
+    {"code": "PAR-26-043", "gg": "360574", "title": "Silvio O. Conte Centers for Basic Neuroscience or Translational Mental Health Research", "posted": "12 Sep 2025"},
+    {"code": "RFA-NS-26-011", "gg": "360398", "title": "BRAIN Initiative: Integrative Team-Research BRAIN Circuits Program (iTeamBCP, RM1)", "posted": "28 Aug 2025"},
+    {"code": "RFA-NS-26-007", "gg": "360402", "title": "BRAIN Initiative: Research Opportunities Using Invasive Neural Recording and Stimulating Technologies in the Human Brain", "posted": "28 Aug 2025"}
+  ];
+
+  var MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  var DAY = 86400000;
+
+  function today(){ var d = new Date(); return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+  function parse(s){ var p = s.split("-"); return new Date(+p[0], +p[1] - 1, +p[2]); }
+  function daysUntil(s){ return Math.round((parse(s) - today()) / DAY); }
+  function fmt(s){ var d = parse(s); return d.getDate() + " " + MONTHS[d.getMonth()] + " " + d.getFullYear(); }
+
+  function urgency(n){ return n < 0 ? "past" : "open"; }
+  function countdown(n){ return n < 0 ? "closed" : n === 0 ? "due today" : ""; }
+  function guideUrl(d){ return GUIDE + (d.kind === "rfa" ? "rfa-files/" : "pa-files/") + d.code + ".html"; }
+
+  function el(tag, cls, html){
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (html != null) n.innerHTML = html;
+    return n;
+  }
+
+  /* ---- docket rows ---- */
+  function renderRow(d){
+    var n = daysUntil(d.due);
+    var row = el("div", "row");
+
+    var key = el("div", "col-key");
+    var codeLink = el("a", "code", d.code);
+    codeLink.href = d.guide ? guideUrl(d) : GG + d.gg;
+    codeLink.target = "_blank"; codeLink.rel = "noopener";
+    key.appendChild(codeLink);
+    key.appendChild(el("div", "due", "<b>" + fmt(d.due) + "</b>" + (d.dueNote ? d.dueNote : "")));
+    var cd = countdown(n);
+    if (cd) key.appendChild(el("span", "pill p-" + (n < 0 ? "past" : "now"), cd));
+    row.appendChild(key);
+
+    var body = el("div", "col-body");
+    body.appendChild(el("h3", null, d.title));
+    body.appendChild(el("p", "meta",
+      "<span>" + d.mech + "</span><span>" + d.ic + "</span><span>" + d.budget + "</span>"));
+    body.appendChild(el("p", "why", d.why));
+    if (d.caveat) body.appendChild(el("p", "caveat", d.caveat));
+
+    var links = el("div", "links");
+    if (d.guide){
+      var a1 = el("a", null, "NIH Guide"); a1.href = guideUrl(d);
+      a1.target = "_blank"; a1.rel = "noopener"; links.appendChild(a1);
+    }
+    var a2 = el("a", null, "Grants.gov" + (d.guide ? "" : " (Guide URL retired)"));
+    a2.href = GG + d.gg; a2.target = "_blank"; a2.rel = "noopener"; links.appendChild(a2);
+    var a3 = el("a", null, "Apply in ASSIST");
+    a3.href = "https://public.era.nih.gov/assist/"; a3.target = "_blank"; a3.rel = "noopener";
+    links.appendChild(a3);
+    body.appendChild(links);
+
+    row.appendChild(body);
+    return row;
+  }
+
+  [1, 2, 3].forEach(function(t){
+    var host = document.getElementById("tier" + t);
+    DATA.filter(function(d){ return d.tier === t; })
+        .sort(function(a, b){ return parse(a.due) - parse(b.due); })
+        .forEach(function(d){ host.appendChild(renderRow(d)); });
+  });
+
+  /* ---- training table ---- */
+  (function(){
+    var tb = document.querySelector("#training tbody");
+    TRAINING.forEach(function(t){
+      var tr = el("tr");
+      var c1 = el("td", "mono");
+      var a = el("a", null, t.code);
+      a.href = t.guide ? GUIDE + "pa-files/" + t.code + ".html" : GG + t.gg;
+      a.target = "_blank"; a.rel = "noopener";
+      c1.appendChild(a); tr.appendChild(c1);
+      tr.appendChild(el("td", null, t.mech));
+      if (t.due){
+        var n = daysUntil(t.due);
+        tr.appendChild(el("td", "mono",
+          fmt(t.due) + (countdown(n)
+            ? ' <span class="pill p-' + (n < 0 ? "past" : "now") +
+              '" style="margin-left:6px">' + countdown(n) + "</span>"
+            : "")));
+      } else {
+        tr.appendChild(el("td", "mono", "—"));
+      }
+      tr.appendChild(el("td", "mono", t.cycle));
+      tb.appendChild(tr);
+    });
+  })();
+
+  /* ---- watch list ---- */
+  (function(){
+    var tb = document.querySelector("#watch tbody");
+    WATCH.forEach(function(w){
+      var tr = el("tr");
+      var c1 = el("td", "mono");
+      var a = el("a", null, w.code);
+      a.href = GG + w.gg; a.target = "_blank"; a.rel = "noopener";
+      c1.appendChild(a); tr.appendChild(c1);
+      tr.appendChild(el("td", null, w.title));
+      tr.appendChild(el("td", "mono", w.posted));
+      tb.appendChild(tr);
+    });
+  })();
+
+  /* ---- time rail ----
+
+     Labels are assigned to vertical LANES so they can never overlap. The dot
+     always sits on the true date; only the stem length changes.
+
+     Grouping by identical date — which is all this used to do — is not enough.
+     Across a 13-month span at roughly 1.9 px per day, a 76 px label needs about
+     40 days of clearance, so 5, 6, 12 and 16 October piled into an unreadable
+     smear. Lanes are recomputed on resize because the collision set depends on
+     the rendered width. */
+  (function(){
+    var rail = document.getElementById("rail");
+    var t0 = today();
+    var start = new Date(t0.getFullYear(), t0.getMonth(), 1);
+    var end = new Date(t0.getFullYear() + 1, t0.getMonth() + 1, 1);
+    var span = end - start;
+
+    var LABEL_W = 76;    // px — must match .tick width
+    var GAP = 8;         // px of breathing room between labels in a lane
+    var LANE_STEP = 30;  // px of extra stem per lane
+    var STEM_BASE = 12;
+    var AXIS_BOTTOM = 34;  // px reserved below the axis for month names
+    var DOT_HALF = 7;      // half the dot incl. its border
+
+    // One entry per distinct due date; same-day NOFOs still share a tick.
+    var byDate = {};
+    DATA.concat(TRAINING.filter(function(t){ return t.due; })).forEach(function(d){
+      if (!d.due) return;
+      (byDate[d.due] = byDate[d.due] || []).push(d);
+    });
+    var dates = Object.keys(byDate).sort().filter(function(iso){
+      var dt = parse(iso);
+      return dt >= start && dt < end;
+    });
+
+    function layout(){
+      rail.innerHTML = "";
+      rail.appendChild(el("div", "rail-line"));
+
+      for (var m = new Date(start); m < end; m = new Date(m.getFullYear(), m.getMonth() + 1, 1)){
+        var mk = el("div", "month",
+          MONTHS[m.getMonth()] + (m.getMonth() === 0 ? " " + String(m.getFullYear()).slice(2) : ""));
+        mk.style.left = ((m - start) / span * 100) + "%";
+        rail.appendChild(mk);
+      }
+
+      var W = rail.clientWidth || 900;
+      var laneEnd = [];   // laneEnd[i] = right edge in px of the last label in lane i
+      var maxLane = 0;
+
+      dates.forEach(function(iso){
+        var items = byDate[iso], dt = parse(iso);
+        var cx = (dt - start) / span * W;
+
+        // Dates are sorted, so a label only has to clear the last one in its
+        // lane. First lane with room wins; labels stay as low as possible.
+        var lane = 0;
+        while (laneEnd[lane] !== undefined && cx - LABEL_W / 2 < laneEnd[lane]) lane++;
+        laneEnd[lane] = cx + LABEL_W / 2 + GAP;
+        if (lane > maxLane) maxLane = lane;
+
+        var n = daysUntil(iso), u = urgency(n);
+        var tick = el("div", "tick u-" + u);
+        tick.style.left = ((dt - start) / span * 100) + "%";
+        tick.style.bottom = (AXIS_BOTTOM - DOT_HALF) + "px";
+        tick.title = fmt(iso) + " — " + items.map(function(i){ return i.code; }).join(", ");
+        tick.innerHTML =
+          '<div class="lab">' + dt.getDate() + " " + MONTHS[dt.getMonth()] +
+          '<span class="cnt">' + items.length + (items.length > 1 ? " NOFOs" : " NOFO") + "</span></div>" +
+          '<div class="stem" style="height:' + (STEM_BASE + lane * LANE_STEP) + 'px"></div>' +
+          '<div class="dot"></div>';
+        rail.appendChild(tick);
+      });
+
+      // Grow to fit the tallest lane rather than clipping it. Spelled out
+      // rather than a magic number, because getting it wrong silently cuts the
+      // top label off instead of failing.
+      var LABEL_H = 32;   // two lines of .lab plus its margin
+      var DOT_H = 15;     // dot incl. its 2px border
+      var PAD = 10;
+      rail.style.height = ((AXIS_BOTTOM - DOT_HALF) + DOT_H + STEM_BASE +
+                           maxLane * LANE_STEP + LABEL_H + PAD) + "px";
+    }
+
+    layout();
+    var pending;
+    addEventListener("resize", function(){
+      clearTimeout(pending);
+      pending = setTimeout(layout, 120);
+    });
+  })();
+})();
+</script>
+
+</body>
+</html>

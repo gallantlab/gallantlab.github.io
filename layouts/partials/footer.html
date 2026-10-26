@@ -1,0 +1,45 @@
+<footer class="gl-foot">
+  <div class="gl-foot__rule"></div>
+
+  <div class="gl-foot__top">
+    <span class="gl-foot__wordmark">Gallant Lab</span>
+    <span class="gl-foot__tagline">A laboratory of cognitive, systems &amp; computational neuroscience</span>
+  </div>
+
+  <div class="gl-foot__grid">
+    <section class="gl-foot__col">
+      <p class="gl-kicker gl-kicker--muted">Find us</p>
+      <address class="gl-foot__addr">
+        Helen Wills Neuroscience Institute<br>
+        132 Barker Hall, UC Berkeley<br>
+        Berkeley, CA 94720
+      </address>
+    </section>
+
+    <section class="gl-foot__col">
+      <p class="gl-kicker gl-kicker--muted">Around the web</p>
+      <ul class="gl-foot__links">
+        <li><a href="https://github.com/gallantlab" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://scholar.google.com/citations?user=nSZG-vcAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="/joinus/">Join us</a></li>
+      </ul>
+    </section>
+
+    <section class="gl-foot__col">
+      <p class="gl-kicker gl-kicker--muted">Colophon</p>
+      <p class="gl-foot__colophon">
+        Set in Source Serif 4, Inter, and JetBrains Mono. Built with
+        <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>.
+        Source on
+        <a href="https://github.com/gallantlab/gallantlab.github.io" target="_blank" rel="noopener">GitHub</a>.
+        Last updated {{ now.Format (site.Params.dateFormat | default "January 2, 2006") }}.
+      </p>
+    </section>
+  </div>
+
+  <div class="gl-foot__rule gl-foot__rule--thin"></div>
+
+  <p class="gl-foot__copy">
+    © Copyright {{ now.Format "2006" }} Jack Gallant. And also by the Regents of the University of California, our benevolent overlords.
+  </p>
+</footer>
