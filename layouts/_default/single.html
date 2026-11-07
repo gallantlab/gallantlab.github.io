@@ -1,0 +1,45 @@
+{{ define "main" -}}
+{{- $img := partial "featured-image.html" . -}}
+<article class="gl-page">
+  <header class="gl-page__head">
+    {{- if not .Params.hide_title }}
+      <h1 class="gl-page__title">{{ .Title }}</h1>
+    {{- end }}
+    {{- with .Params.role }}<p class="gl-page__role">{{ . }}</p>{{ end }}
+    {{- if and (eq .Kind "page") (not .Params.hide_date) }}
+      {{- with .Date }}{{- if not .IsZero }}
+        <p class="gl-page__date"><time datetime="{{ .Format "2006-01-02" }}">{{ .Format site.Params.dateFormat }}</time></p>
+      {{- end }}{{ end }}
+    {{- end }}
+  </header>
+
+  {{- with $img }}
+    <figure class="gl-page__hero">
+      {{ partial "responsive-img.html" (dict "image" . "alt" $.Title "sizes" "(max-width: 1100px) 100vw, calc(100vw - 128px)" "widths" (slice 640 960 1400) "loading" "eager" "fetchpriority" "high") }}
+    </figure>
+  {{- end }}
+
+  {{- /* For publications / datasets the body is often empty; surface the
+         summary and external link so the page isn't a dead end. */ -}}
+  {{- with .Params.summary }}
+    <p class="gl-page__summary gl-prose">{{ . | safeHTML }}</p>
+  {{- end }}
+  {{- with .Params.externalUrl }}
+    <p class="gl-page__external"><a href="{{ . }}" target="_blank" rel="noopener">Read the full article ↗</a></p>
+  {{- end }}
+  {{- $citeUrl := .Params.citation_url }}
+  {{- with .Params.citation }}
+    <p class="gl-page__citation">
+      {{- if $citeUrl -}}
+        <a href="{{ $citeUrl }}" target="_blank" rel="noopener">{{ . | safeHTML }}</a>
+      {{- else -}}
+        {{ . | safeHTML }}
+      {{- end -}}
+    </p>
+  {{- end }}
+
+  <div class="gl-page__body gl-prose">
+    {{ .Content }}
+  </div>
+</article>
+{{- end }}

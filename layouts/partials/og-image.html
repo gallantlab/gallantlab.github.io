@@ -1,0 +1,41 @@
+{{- /* Resolves the social-share image for a page and returns a dict:
+       { url (absolute), large (bool), width, height, alt }.
+
+       Precedence:
+         1. page-bundle feature image (news, people, datasets)
+         2. publications' `featureimage` param (points into assets/img/papers/)
+         3. site default: assets/img/social-card.png (1200x630, hand-made by
+            Jack, 2026-11-06; replace the file to change it)
+
+       Nothing is emitted as WebP: LinkedIn's scraper rejects it, so a WebP
+       og:image yields a card with no picture. Content images are converted
+       to JPEG; the default card stays PNG so its text renders crisply. `large` is true for the
+       card and for content images, so the caller can pick
+       twitter:card = summary_large_image; it is only false if nothing
+       resolved at all. */ -}}
+
+{{- $img := partial "featured-image.html" . -}}
+{{- if not $img }}
+  {{- with .Params.featureimage }}
+    {{- $img = resources.Get (strings.TrimPrefix "/" .) }}
+  {{- end }}
+{{- end -}}
+
+{{- $res := "" -}}
+{{- $large := false -}}
+{{- with $img -}}
+  {{- $res = .Resize "1200x q82 jpg" -}}
+  {{- $large = true -}}
+{{- else -}}
+  {{- with resources.Get "img/social-card.png" -}}
+    {{- $res = . -}}
+    {{- $large = true -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $out := dict "url" "" "large" $large "width" 0 "height" 0
+      "alt" (cond .IsHome site.Title (printf "%s — %s" .Title site.Title)) -}}
+{{- with $res -}}
+  {{- $out = merge $out (dict "url" .Permalink "width" .Width "height" .Height) -}}
+{{- end -}}
+{{- return $out -}}

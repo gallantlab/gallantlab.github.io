@@ -1,0 +1,31 @@
+{{- /* Recent news on the front page. News items have no individual pages
+       (see content/news/_index.md): the thumbnail and title are not links;
+       the item's body renders inline, carrying whatever links it already
+       contains. */ -}}
+{{- $news := first 6 (where site.RegularPages "Section" "news").ByDate.Reverse -}}
+{{- if $news }}
+  <section class="gl-recent">
+    <div class="gl-section-head">
+      <h2 class="gl-section-title">Recent news</h2>
+      <span class="gl-section-rule"></span>
+    </div>
+
+    <ol class="gl-cards-grid">
+      {{- range $news }}
+        {{- $img := partial "featured-image.html" . }}
+        <li class="gl-card">
+          {{- with $img }}
+            <div class="gl-card__media">
+              {{ partial "responsive-img.html" (dict "image" . "alt" "" "sizes" "(max-width: 720px) 92vw, (max-width: 1100px) 46vw, (max-width: 1500px) 31vw, (max-width: 1900px) 23vw, 18vw") }}
+            </div>
+          {{- end }}
+          <h3 class="gl-card__title">{{ .Title }}</h3>
+          <p class="gl-card__date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format site.Params.dateFormat }}</time></p>
+          <div class="gl-card__desc">{{ .Content }}</div>
+        </li>
+      {{- end }}
+    </ol>
+
+    <p class="gl-recent__more"><a href="/old-news/">Browse the full news archive →</a></p>
+  </section>
+{{- end }}

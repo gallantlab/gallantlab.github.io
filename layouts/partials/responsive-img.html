@@ -1,0 +1,30 @@
+{{- /* Responsive <img> with a width-based WebP srcset.
+
+       Dict params:
+         image          (resource, required) — the ORIGINAL image resource
+         sizes          (string, required)   — the `sizes` attribute
+         alt            (string)             — alt text ("" for decorative)
+         class          (string)             — optional class on <img>
+         loading        (string)             — defaults to "lazy"
+         fetchpriority  (string)             — optional ("high" for LCP)
+         widths         (slice of ints)      — candidate widths, default 320..960
+
+       Widths larger than the source are skipped (Hugo never upscales), so a
+       small source still yields a valid single-candidate srcset. */ -}}
+{{- $img := .image -}}
+{{- $widths := .widths | default (slice 320 480 640 960) -}}
+{{- $set := slice -}}
+{{- $fallback := $img -}}
+{{- range $widths -}}
+  {{- if le . $img.Width -}}
+    {{- $r := $img.Resize (printf "%dx" .) -}}
+    {{- $set = $set | append (printf "%s %dw" $r.RelPermalink .) -}}
+    {{- $fallback = $r -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $set -}}
+  {{- $r := $img.Resize (printf "%dx" $img.Width) -}}
+  {{- $set = slice (printf "%s %dw" $r.RelPermalink $img.Width) -}}
+  {{- $fallback = $r -}}
+{{- end -}}
+<img src="{{ $fallback.RelPermalink }}" srcset="{{ delimit $set ", " }}" sizes="{{ .sizes }}"{{ with .class }} class="{{ . }}"{{ end }} alt="{{ .alt }}" width="{{ $fallback.Width }}" height="{{ $fallback.Height }}" loading="{{ .loading | default "lazy" }}" decoding="async"{{ with .fetchpriority }} fetchpriority="{{ . }}"{{ end }}>

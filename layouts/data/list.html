@@ -1,0 +1,39 @@
+{{ define "main" -}}
+<article class="gl-page">
+  <header class="gl-page__head">
+    <h1 class="gl-page__title">{{ .Title }}</h1>
+  </header>
+
+  {{- with .Content }}<div class="gl-page__body gl-prose">{{ . }}</div>{{ end }}
+
+  <ol class="gl-cards-grid">
+    {{- range .Pages }}
+      {{- $img := partial "featured-image.html" . }}
+      {{- $url := .Params.externalUrl | default .RelPermalink }}
+      {{- $extern := .Params.externalUrl }}
+      <li class="gl-card">
+        {{- with $img }}
+          <a class="gl-card__media" href="{{ $url }}"{{ if $extern }} target="_blank" rel="noopener"{{ end }} aria-hidden="true" tabindex="-1">
+            {{ partial "responsive-img.html" (dict "image" . "alt" "" "sizes" "(max-width: 720px) 92vw, (max-width: 1100px) 46vw, (max-width: 1500px) 31vw, (max-width: 1900px) 23vw, 18vw") }}
+          </a>
+        {{- end }}
+        <h3 class="gl-card__title">
+          <a href="{{ $url }}"{{ if $extern }} target="_blank" rel="noopener"{{ end }}>{{ .Title }}{{ if $extern }} <span aria-hidden="true">↗</span>{{ end }}</a>
+        </h3>
+        {{- with .Params.summary }}<p class="gl-card__desc">{{ . | safeHTML }}</p>{{ end }}
+        {{- /* `$` inside `range` refers to the list page, not the item — capture the item's citation URL up here. */ -}}
+        {{- $citeUrl := .Params.citation_url }}
+        {{- with .Params.citation }}
+          <p class="gl-card__cite">
+            {{- if $citeUrl -}}
+              <a href="{{ $citeUrl }}" target="_blank" rel="noopener">{{ . | safeHTML }}</a>
+            {{- else -}}
+              {{ . | safeHTML }}
+            {{- end -}}
+          </p>
+        {{- end }}
+      </li>
+    {{- end }}
+  </ol>
+</article>
+{{- end }}

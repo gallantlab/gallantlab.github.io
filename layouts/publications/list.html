@@ -1,0 +1,44 @@
+{{ define "main" -}}
+{{- $byYear := .Pages.ByDate.Reverse.GroupByDate "2006" -}}
+
+<article class="gl-page">
+  <header class="gl-page__head">
+    <h1 class="gl-page__title">{{ .Title }}</h1>
+  </header>
+
+  {{- with .Content }}<div class="gl-page__body gl-prose">{{ . }}</div>{{ end }}
+
+  {{- range $byYear }}
+    <section class="gl-pubs-group">
+      <div class="gl-section-head">
+        <h2 class="gl-section-title">{{ .Key }}</h2>
+        <span class="gl-section-rule"></span>
+      </div>
+
+      <ol class="gl-pubs-grid">
+        {{- range .Pages }}
+          {{- $url := .Params.externalUrl | default .RelPermalink }}
+          {{- $extern := .Params.externalUrl }}
+          {{- $img := "" }}
+          {{- with .Params.featureimage }}
+            {{- with resources.Get (strings.TrimPrefix "/" .) }}
+              {{- $img = . }}
+            {{- end }}
+          {{- end }}
+          <li class="gl-card">
+            {{- with $img }}
+              <a class="gl-card__media" href="{{ $url }}"{{ if $extern }} target="_blank" rel="noopener"{{ end }} aria-hidden="true" tabindex="-1">
+                {{ partial "responsive-img.html" (dict "image" . "alt" "" "sizes" "(max-width: 720px) 92vw, 320px" "widths" (slice 320 480 640)) }}
+              </a>
+            {{- end }}
+            <h3 class="gl-card__title">
+              <a href="{{ $url }}"{{ if $extern }} target="_blank" rel="noopener"{{ end }}>{{ .Title }}</a>
+            </h3>
+            {{- with .Params.summary }}<p class="gl-card__desc">{{ . | safeHTML }}</p>{{ end }}
+          </li>
+        {{- end }}
+      </ol>
+    </section>
+  {{- end }}
+</article>
+{{- end }}
